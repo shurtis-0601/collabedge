@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   description:
     "30+ years of Fortune 500 expertise, now empowering Australian healthcare providers and enterprises. Australian-owned, Melbourne-based consultancy.",
   metadataBase: new URL("https://collabedgesolutions.com.au"),
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
