@@ -14,6 +14,7 @@ export default function SiteFooter() {
               alt="CollabEdge Solutions"
               width={160}
               height={40}
+              unoptimized
               className="h-9 w-auto mb-4"
             />
             <p className="text-[12px] text-white/50 tracking-[.12em] uppercase mb-5">

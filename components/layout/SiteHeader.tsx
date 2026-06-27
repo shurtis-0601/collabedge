@@ -156,6 +156,7 @@ export default function SiteHeader() {
             width={200}
             height={48}
             priority
+            unoptimized
             className="h-10 w-auto"
           />
         </Link>
@@ -287,6 +288,7 @@ export default function SiteHeader() {
                 alt="CollabEdge Solutions"
                 width={180}
                 height={44}
+                unoptimized
                 className="h-9 w-auto"
               />
             </Link>
