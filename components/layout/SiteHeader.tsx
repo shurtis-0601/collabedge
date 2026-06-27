@@ -153,7 +153,7 @@ export default function SiteHeader() {
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
         </Link>
 
@@ -283,7 +283,7 @@ export default function SiteHeader() {
               <img
                 src="/images/logo.png"
                 alt="CollabEdge Solutions"
-                className="h-9 w-auto"
+                className="h-11 w-auto"
               />
             </Link>
             <button
