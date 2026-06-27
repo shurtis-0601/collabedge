@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -150,13 +149,10 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
         <Link href="/" aria-label="CollabEdge Solutions home" className="flex items-center shrink-0">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            width={200}
-            height={48}
-            priority
-            unoptimized
             className="h-10 w-auto"
           />
         </Link>
@@ -283,12 +279,10 @@ export default function SiteHeader() {
           {/* Overlay header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
             <Link href="/" onClick={() => setMobileOpen(false)} aria-label="Home">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/logo.png"
                 alt="CollabEdge Solutions"
-                width={180}
-                height={44}
-                unoptimized
                 className="h-9 w-auto"
               />
             </Link>

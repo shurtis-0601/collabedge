@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function SiteFooter() {
@@ -9,12 +8,10 @@ export default function SiteFooter() {
 
           {/* Col 1: Brand */}
           <div>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/logo.png"
               alt="CollabEdge Solutions"
-              width={160}
-              height={40}
-              unoptimized
               className="h-9 w-auto mb-4"
             />
             <p className="text-[12px] text-white/50 tracking-[.12em] uppercase mb-5">
