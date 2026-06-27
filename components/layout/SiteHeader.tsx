@@ -153,7 +153,7 @@ export default function SiteHeader() {
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            className="h-12 w-auto"
+            style={{ height: "44px", width: "auto" }}
           />
         </Link>
 
@@ -196,21 +196,25 @@ export default function SiteHeader() {
 
                 {isOpen && (
                   <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-navy-deep border border-white/10 rounded-lg shadow-gold-soft overflow-hidden"
-                    style={{ minWidth: item.columns.length === 3 ? "580px" : "380px" }}
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 rounded-lg shadow-2xl overflow-hidden"
+                    style={{
+                      minWidth: item.cta ? "640px" : "380px",
+                      backgroundColor: "#0A1628",
+                      border: "1px solid rgba(255,255,255,0.1)",
+                      borderTop: "2px solid #C6973F",
+                    }}
                   >
                     <div
                       className={`grid gap-0 ${
-                        item.columns.length === 3
-                          ? "grid-cols-3"
-                          : item.cta
+                        item.cta
                           ? "grid-cols-[1fr_1fr_180px]"
                           : "grid-cols-2"
                       }`}
                     >
                       {item.columns.map((col) => (
-                        <div key={col.heading} className="p-5 border-r border-white/8 last:border-r-0">
-                          <p className="text-[10px] font-semibold tracking-[.14em] uppercase text-slate-light mb-3">
+                        <div key={col.heading} className="p-5 border-r border-white/10 last:border-r-0">
+                          <p className="text-[10px] font-semibold tracking-[.14em] uppercase mb-3"
+                            style={{ color: "rgba(255,255,255,0.4)" }}>
                             {col.heading}
                           </p>
                           <ul className="space-y-0.5">
@@ -218,9 +222,12 @@ export default function SiteHeader() {
                               <li key={link.href}>
                                 <Link
                                   href={link.href}
-                                  className={`block px-2 py-2 text-[13px] rounded hover:bg-white/5 transition-colors ${
-                                    link.featured ? "text-gold font-semibold" : "text-white/80 hover:text-white"
+                                  className={`block pl-3 pr-2 py-2 text-[13px] rounded transition-all border-l-2 ${
+                                    link.featured
+                                      ? "text-gold font-semibold border-transparent hover:border-gold hover:bg-white/5"
+                                      : "border-transparent hover:border-gold hover:bg-white/5 hover:text-white"
                                   }`}
+                                  style={link.featured ? undefined : { color: "rgba(255,255,255,0.85)" }}
                                   onClick={() => setOpenMenu(null)}
                                 >
                                   {link.featured && <span className="mr-1">⭐</span>}
@@ -233,7 +240,8 @@ export default function SiteHeader() {
                       ))}
 
                       {item.cta && (
-                        <div className="p-5 bg-navy flex flex-col items-start justify-center gap-3">
+                        <div className="p-5 flex flex-col items-start justify-center gap-3"
+                          style={{ backgroundColor: "#072638" }}>
                           <p className="text-[11px] text-white/60 leading-snug">Not sure where to start?</p>
                           <Link
                             href={item.cta.href}
