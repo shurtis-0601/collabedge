@@ -137,7 +137,7 @@ export default function SiteHeader() {
     <header
       ref={rootRef}
       className="sticky top-0 z-50 w-full bg-navy"
-      style={{ height: "180px" }}
+      style={{ height: "168px" }}
     >
       {/* Gold gradient bottom line */}
       <div
