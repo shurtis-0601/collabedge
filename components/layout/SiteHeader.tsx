@@ -106,6 +106,7 @@ export default function SiteHeader() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -133,10 +134,16 @@ export default function SiteHeader() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <header
       ref={rootRef}
-      className="sticky top-0 z-50 w-full bg-navy"
+      className={`sticky top-0 z-50 w-full bg-navy transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}
       style={{ height: "168px" }}
     >
       {/* Gold gradient bottom line */}
@@ -168,7 +175,7 @@ export default function SiteHeader() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors"
+                  className="relative text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -179,7 +186,7 @@ export default function SiteHeader() {
             return (
               <div key={item.label} className="relative">
                 <button
-                  className="flex items-center gap-1 text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors"
+                  className="relative flex items-center gap-1 text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
                   onClick={(e) => {
                     e.stopPropagation();
                     setOpenMenu(isOpen ? null : item.label);

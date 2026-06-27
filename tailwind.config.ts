@@ -39,9 +39,24 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        drawLine: {
+          "0%": { width: "0px" },
+          "100%": { width: "36px" },
+        },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
-        fadeUp: "fadeUp 0.8s ease-out both",
+        "fade-up": "fadeUp 0.4s ease-out forwards",
+        "fade-up-slow": "fadeUp 0.6s ease-out forwards",
+        "fade-in": "fadeIn 0.3s ease-out forwards",
+        "draw-line": "drawLine 0.4s ease-out forwards",
       },
     },
   },

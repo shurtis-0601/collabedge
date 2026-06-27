@@ -1,46 +1,48 @@
-"use client";
+'use client'
+import { useEffect, useRef, useState } from 'react'
 
-import { useEffect, useRef, useState } from "react";
+interface FadeInProps {
+  children: React.ReactNode
+  variant?: 'fadeUp' | 'fadeIn' | 'slideRight'
+  delay?: number
+  duration?: number
+  threshold?: number
+  className?: string
+}
 
 export default function FadeIn({
   children,
+  variant = 'fadeUp',
   delay = 0,
-  className = "",
-  as: Tag = "div",
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  className?: string;
-  as?: keyof JSX.IntrinsicElements;
-}) {
-  const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  duration = 400,
+  threshold = 0.12,
+  className = '',
+}: FadeInProps) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setTimeout(() => setVisible(true), delay);
-            observer.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [delay]);
+      ([entry]) => { if (entry.isIntersecting) setVisible(true) },
+      { threshold }
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [threshold])
 
-  const Component = Tag as any;
+  const variants = {
+    fadeUp: visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
+    fadeIn: visible ? 'opacity-100' : 'opacity-0',
+    slideRight: visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4',
+  }
+
   return (
-    <Component
+    <div
       ref={ref}
-      className={`fade-up ${visible ? "is-visible" : ""} ${className}`}
+      className={`transition-all ${variants[variant]} ${className}`}
+      style={{ transitionDuration: `${duration}ms`, transitionDelay: `${delay}ms` }}
     >
       {children}
-    </Component>
-  );
+    </div>
+  )
 }
