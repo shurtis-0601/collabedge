@@ -11,24 +11,25 @@ const config: Config = {
       colors: {
         navy: {
           DEFAULT: "#072638",
-          deep: "#05192a",
-          light: "#0d3853",
+          deep: "#0A1628",
+          mid: "#0d3a52",
         },
-        gold: {
-          DEFAULT: "#C6973F",
-          light: "#d7ae5c",
-          dark: "#a97f2e",
+        gold: "#C6973F",
+        offwhite: "#F7F5F0",
+        slate: {
+          DEFAULT: "#64748B",
+          light: "#94A3B8",
         },
-        accent: {
-          blue: "#38B6FF",
-        },
+        "text-dark": "#0F1923",
+        "text-body": "#1F2937",
+        border: "#E2E8F0",
       },
       fontFamily: {
-        serif: ["var(--font-playfair)", "Georgia", "serif"],
-        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        serif: ["Georgia", "Times New Roman", "serif"],
       },
       maxWidth: {
-        container: "1500px",
+        container: "1000px",
       },
       boxShadow: {
         "gold-soft": "0 12px 40px -20px rgba(198,151,63,0.5)",

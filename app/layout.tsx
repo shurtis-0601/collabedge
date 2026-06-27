@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import SiteHeader from "@/components/layout/SiteHeader";
+import SiteFooter from "@/components/layout/SiteFooter";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,16 +11,34 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "CollabEdge Solutions",
+  url: "https://collabedgesolutions.com.au",
+  logo: "https://collabedgesolutions.com.au/images/logo.png",
+  description:
+    "NDIS compliance, workflow automation, and enterprise technology consulting. Melbourne, Australia.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Point Cook",
+    addressRegion: "VIC",
+    postalCode: "3030",
+    addressCountry: "AU",
+  },
+  telephone: "0426464442",
+  areaServed: "AU",
+  founder: {
+    "@type": "Person",
+    name: "Sinclair Hurtis",
+    jobTitle: "Founder and Principal Consultant",
+  },
+};
 
 export const metadata: Metadata = {
-  title: "CollabEdge Solutions — Empowering Australian Businesses",
+  title: "CollabEdge Solutions — NDIS Compliance & Enterprise Technology",
   description:
-    "30+ years of Fortune 500 expertise, now empowering Australian healthcare providers and enterprises. Australian-owned, Melbourne-based consultancy.",
+    "NDIS compliance, workflow automation, and enterprise technology consulting for Australian healthcare providers and businesses. Melbourne-based, Australian-owned.",
   metadataBase: new URL("https://collabedgesolutions.com.au"),
   robots: {
     index: false,
@@ -33,11 +52,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={inter.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+      </head>
       <body className="bg-navy text-white min-h-screen flex flex-col">
-        <Header />
+        <SiteHeader />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );

@@ -1,0 +1,9 @@
+Place the following image assets in this directory before deploying:
+
+  logo.png          — CollabEdge CE gold monogram + white wordmark
+                      Referenced by: components/layout/SiteHeader.tsx
+                                     components/layout/SiteFooter.tsx
+
+  sinclair-hero.jpg — Sinclair Hurtis office/portrait photo
+                      Source file: Team_Pic_-_Sinclair_Hurtis.jpeg
+                      Referenced by: components/home/HeroHome.tsx
