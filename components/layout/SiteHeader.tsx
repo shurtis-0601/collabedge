@@ -137,7 +137,7 @@ export default function SiteHeader() {
     <header
       ref={rootRef}
       className="sticky top-0 z-50 w-full bg-navy"
-      style={{ height: "96px" }}
+      style={{ height: "180px" }}
     >
       {/* Gold gradient bottom line */}
       <div
@@ -149,14 +149,13 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <Link href="/">
+        <Link href="/" style={{ display: "inline-block", lineHeight: 0 }}>
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
             style={{
-              height: "80px",
+              height: "160px",
               width: "auto",
-              display: "block",
             }}
           />
         </Link>
