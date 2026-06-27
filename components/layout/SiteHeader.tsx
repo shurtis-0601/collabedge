@@ -148,12 +148,12 @@ export default function SiteHeader() {
 
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="CollabEdge Solutions home" className="flex items-center shrink-0">
+        <Link href="/" aria-label="CollabEdge Solutions home" className="flex shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            style={{ height: "44px", width: "auto" }}
+            style={{ height: "48px", width: "auto", display: "block" }}
           />
         </Link>
 
@@ -202,6 +202,7 @@ export default function SiteHeader() {
                       backgroundColor: "#0A1628",
                       border: "1px solid rgba(255,255,255,0.1)",
                       borderTop: "2px solid #C6973F",
+                      borderLeft: "2px solid #C6973F",
                     }}
                   >
                     <div
@@ -213,8 +214,7 @@ export default function SiteHeader() {
                     >
                       {item.columns.map((col) => (
                         <div key={col.heading} className="p-5 border-r border-white/10 last:border-r-0">
-                          <p className="text-[10px] font-semibold tracking-[.14em] uppercase mb-3"
-                            style={{ color: "rgba(255,255,255,0.4)" }}>
+                          <p className="text-[11px] font-bold tracking-[.16em] uppercase text-white/55 mb-3">
                             {col.heading}
                           </p>
                           <ul className="space-y-0.5">
@@ -222,12 +222,11 @@ export default function SiteHeader() {
                               <li key={link.href}>
                                 <Link
                                   href={link.href}
-                                  className={`block pl-3 pr-2 py-2 text-[13px] rounded transition-all border-l-2 ${
+                                  className={`group block pr-2 py-2 text-[13px] font-medium rounded transition-all border-l-2 ${
                                     link.featured
-                                      ? "text-gold font-semibold border-transparent hover:border-gold hover:bg-white/5"
-                                      : "border-transparent hover:border-gold hover:bg-white/5 hover:text-white"
+                                      ? "text-gold font-semibold border-transparent hover:border-gold hover:pl-2"
+                                      : "text-white/80 border-transparent hover:border-gold hover:text-white hover:pl-2"
                                   }`}
-                                  style={link.featured ? undefined : { color: "rgba(255,255,255,0.85)" }}
                                   onClick={() => setOpenMenu(null)}
                                 >
                                   {link.featured && <span className="mr-1">⭐</span>}
@@ -240,16 +239,18 @@ export default function SiteHeader() {
                       ))}
 
                       {item.cta && (
-                        <div className="p-5 flex flex-col items-start justify-center gap-3"
-                          style={{ backgroundColor: "#072638" }}>
-                          <p className="text-[11px] text-white/60 leading-snug">Not sure where to start?</p>
+                        <div className="bg-navy-deep p-5 flex flex-col justify-center gap-0">
+                          <p className="text-[12px] text-white/50 mb-3">Not sure where to start?</p>
                           <Link
                             href={item.cta.href}
-                            className="btn-gold text-[12px] px-4 py-2.5 w-full text-center"
+                            className="block w-full bg-gold text-navy font-bold text-[12px] py-3 rounded text-center transition-opacity hover:opacity-90"
                             onClick={() => setOpenMenu(null)}
                           >
                             {item.cta.label}
                           </Link>
+                          <p className="text-[10px] text-white/25 text-center mt-2">
+                            30 min · Free · Senior-led
+                          </p>
                         </div>
                       )}
                     </div>
