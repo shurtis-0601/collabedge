@@ -137,7 +137,7 @@ export default function SiteHeader() {
     <header
       ref={rootRef}
       className="sticky top-0 z-50 w-full bg-navy"
-      style={{ height: "68px" }}
+      style={{ height: "76px" }}
     >
       {/* Gold gradient bottom line */}
       <div
@@ -154,11 +154,9 @@ export default function SiteHeader() {
             src="/images/logo.png"
             alt="CollabEdge Solutions"
             style={{
-              height: "44px",
+              height: "60px",
               width: "auto",
               display: "block",
-              minWidth: "160px",
-              objectFit: "contain",
             }}
           />
         </Link>
