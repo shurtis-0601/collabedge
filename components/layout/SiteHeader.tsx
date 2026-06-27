@@ -148,12 +148,18 @@ export default function SiteHeader() {
 
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="CollabEdge Solutions home" className="flex shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <Link href="/">
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            style={{ height: "48px", width: "auto", display: "block" }}
+            style={{
+              height: "44px",
+              width: "auto",
+              display: "block",
+              minWidth: "160px",
+              objectFit: "contain",
+            }}
           />
         </Link>
 
