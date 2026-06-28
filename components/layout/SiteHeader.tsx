@@ -145,9 +145,9 @@ export default function SiteHeader() {
       ref={rootRef}
       className={`sticky top-0 z-50 w-full bg-navy h-[72px] lg:h-[96px] transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}
     >
-      {/* Gold gradient bottom line */}
+      {/* Gold gradient bottom line — desktop only */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-[2px]"
+        className="hidden lg:block absolute bottom-0 left-0 right-0 h-[2px]"
         style={{ background: "linear-gradient(90deg, #C6973F 0%, rgba(198,151,63,0.2) 100%)" }}
         aria-hidden="true"
       />
