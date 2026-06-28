@@ -206,7 +206,7 @@ export default function SiteHeader() {
                     className="absolute top-full left-1/2 -translate-x-1/2 mt-2 rounded-lg shadow-2xl overflow-hidden"
                     style={{
                       minWidth: item.cta ? "640px" : "380px",
-                      backgroundColor: "#0A1628",
+                      backgroundColor: "#020A18",
                       border: "1px solid rgba(255,255,255,0.1)",
                       borderTop: "2px solid #C6973F",
                       borderLeft: "2px solid #C6973F",
