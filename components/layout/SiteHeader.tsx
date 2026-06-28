@@ -144,7 +144,7 @@ export default function SiteHeader() {
     <header
       ref={rootRef}
       className={`sticky top-0 z-50 w-full bg-navy transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}
-      style={{ height: "168px" }}
+      style={{ height: "96px" }}
     >
       {/* Gold gradient bottom line */}
       <div
@@ -155,28 +155,14 @@ export default function SiteHeader() {
 
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
-        <div className="border border-gold/40 rounded-xl px-4 py-2 hover:border-gold/60 transition-colors">
-          <Link href="/" className="flex flex-col gap-[2px] group">
-            <div className="flex items-center gap-3">
-              {/* CE Monogram */}
-              <div className="relative">
-                <span className="text-[28px] font-black text-gold leading-none tracking-[-0.05em]">C</span>
-                <span className="text-[28px] font-black text-white/90 leading-none tracking-[-0.05em] -ml-2">E</span>
-              </div>
-              {/* Vertical divider */}
-              <div className="w-[1px] h-8 bg-gold/40" />
-              {/* Wordmark */}
-              <div className="flex flex-col leading-tight">
-                <span className="text-[17px] font-bold text-gold tracking-[0.02em]">CollabEdge</span>
-                <span className="text-[11px] font-semibold text-white/80 tracking-[0.18em] uppercase">Solutions</span>
-              </div>
-            </div>
-            {/* Tagline */}
-            <span className="text-[9px] text-gold/80 italic tracking-[0.08em] font-medium pl-[2px]">
-              Simplify. Streamline. Automate. Grow.
-            </span>
-          </Link>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <Link href="/">
+          <img
+            src="/images/logo.png"
+            alt="CollabEdge Solutions"
+            style={{ height: '68px', width: 'auto', display: 'block' }}
+          />
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
