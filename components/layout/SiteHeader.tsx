@@ -268,12 +268,11 @@ export default function SiteHeader() {
         </nav>
 
         {/* Book Consultation CTA */}
-        <Link
-          href="/contact"
-          className="hidden lg:inline-flex btn-gold text-[13px] px-5 py-2.5 shrink-0"
-        >
-          Book Consultation
-        </Link>
+        <div className="hidden lg:block shrink-0">
+          <Link href="/contact" className="btn-gold text-[13px] px-5 py-2.5">
+            Book Consultation
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
