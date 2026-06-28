@@ -143,8 +143,7 @@ export default function SiteHeader() {
   return (
     <header
       ref={rootRef}
-      className={`sticky top-0 z-50 w-full bg-navy transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}
-      style={{ height: "96px" }}
+      className={`sticky top-0 z-50 w-full bg-navy h-[72px] lg:h-[96px] transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}
     >
       {/* Gold gradient bottom line */}
       <div

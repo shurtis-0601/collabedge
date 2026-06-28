@@ -12,11 +12,9 @@ export default function SiteFooter() {
             <img
               src="/images/logo.png"
               alt="CollabEdge Solutions"
-              className="h-11 w-auto mb-4"
+              style={{ height: '56px', width: 'auto', display: 'block' }}
+              className="mb-5"
             />
-            <p className="text-[12px] text-white/50 tracking-[.12em] uppercase mb-5">
-              Simplify · Streamline · Automate · Grow
-            </p>
             <p className="text-[13px] text-white/60 leading-relaxed">
               ABN 38 557 169 242
               <br />
