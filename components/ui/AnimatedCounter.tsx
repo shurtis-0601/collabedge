@@ -47,10 +47,10 @@ export default function AnimatedCounter({ value, label, dark = true }: AnimatedC
 
   return (
     <div ref={ref} className="flex flex-col">
-      <span className={`text-[22px] font-extrabold leading-none tracking-tight ${dark ? 'text-white' : 'text-text-dark'}`}>
+      <span className={`text-[22px] font-extrabold leading-none tracking-tight ${dark ? 'text-white' : 'text-navy'}`}>
         {triggered ? displayed : (isNonNumeric ? value : `0${suffix}`)}
       </span>
-      <span className={`text-[10px] mt-1 uppercase tracking-[.06em] ${dark ? 'text-white/35' : 'text-slate-light'}`}>
+      <span className={`text-[10px] mt-1 uppercase tracking-[.06em] ${dark ? 'text-white/35' : 'text-navy/60'}`}>
         {label}
       </span>
     </div>
