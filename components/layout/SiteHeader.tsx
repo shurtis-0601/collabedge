@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 type MegaColumn = {
@@ -15,13 +16,14 @@ type NavCTA = {
 
 type NavItem =
   | { kind: "link"; label: string; href: string }
-  | { kind: "mega"; label: string; columns: MegaColumn[]; cta?: NavCTA };
+  | { kind: "mega"; label: string; href?: string; columns: MegaColumn[]; cta?: NavCTA };
 
 const NAV: NavItem[] = [
   { kind: "link", label: "Home", href: "/" },
   {
     kind: "mega",
     label: "About",
+    href: "/about",
     columns: [
       {
         heading: "Company",
@@ -43,6 +45,7 @@ const NAV: NavItem[] = [
   {
     kind: "mega",
     label: "Services",
+    href: "/services",
     columns: [
       {
         heading: "NDIS and Healthcare",
@@ -108,6 +111,20 @@ export default function SiteHeader() {
   const [mobileSection, setMobileSection] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const router = useRouter();
+
+  const handleDesktopEnter = (label: string) => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setOpenMenu(label);
+  };
+
+  const handleDesktopLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => setOpenMenu(null), 150);
+  };
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -180,13 +197,24 @@ export default function SiteHeader() {
 
             const isOpen = openMenu === item.label;
             return (
-              <div key={item.label} className="relative">
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => handleDesktopEnter(item.label)}
+                onMouseLeave={handleDesktopLeave}
+              >
                 <button
                   className="relative flex items-center gap-1 text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
                   onClick={(e) => {
                     e.stopPropagation();
-                    setOpenMenu(isOpen ? null : item.label);
+                    if (item.href) {
+                      router.push(item.href);
+                      setOpenMenu(null);
+                    } else {
+                      setOpenMenu(isOpen ? null : item.label);
+                    }
                   }}
+                  onFocus={() => setOpenMenu(item.label)}
                   aria-expanded={isOpen}
                 >
                   {item.label}
