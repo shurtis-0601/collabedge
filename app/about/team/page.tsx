@@ -55,9 +55,9 @@ const schema = {
         member: {
           '@type': 'Person',
           name: 'Raj Purshotham',
-          jobTitle: 'Strategy and Growth Advisor',
+          jobTitle: 'Strategy, Growth and International Advisory',
         },
-        roleName: 'Strategy and Growth Advisor',
+        roleName: 'Strategy, Growth and International Advisory',
       },
     ],
   },
@@ -81,7 +81,7 @@ const rajSkills = [
   'Go-to-Market Strategy',
   'Commercial Growth',
   'Enterprise Partnerships',
-  'Proptech Solutions',
+  'International Network',
 ]
 
 const networkCards = [
@@ -217,12 +217,12 @@ export default function TeamPage() {
                   <img src="/images/team-raj.jpg" alt="Raj Purshotham" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
-                  Strategy and Growth Advisor
+                  Strategy, Growth and International Advisory
                 </span>
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
-                <p className="text-[12px] text-gold mb-4">Melbourne, VIC</p>
+                <p className="text-[12px] text-gold mb-4">Dubai, UAE</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
-                  CMO at Property Automate and Strategy and Growth Advisor to CollabEdge Solutions. Brings go-to-market strategy, commercial growth, and enterprise partnership expertise to the CollabEdge advisory team.
+                  Fractional Consultant and Growth Advisor to CollabEdge Solutions, based in Dubai. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
                 </p>
                 <SkillList skills={rajSkills} />
                 <a
