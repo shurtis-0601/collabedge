@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 
-export default function GoldRuleAnimated({ className = '' }: { className?: string }) {
+export default function GoldRuleAnimated({ className = '', center = false }: { className?: string; center?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
 
@@ -15,10 +15,11 @@ export default function GoldRuleAnimated({ className = '' }: { className?: strin
   }, [])
 
   return (
-    <div
-      ref={ref}
-      className={`h-[2px] bg-gold mb-3 transition-all duration-500 ease-out ${className}`}
-      style={{ width: visible ? '36px' : '0px' }}
-    />
+    <div ref={ref} className={`mb-3 ${center ? 'flex justify-center' : ''} ${className}`}>
+      <div
+        className="h-[2px] bg-gold transition-all duration-500 ease-out"
+        style={{ width: visible ? (center ? '60px' : '36px') : '0px' }}
+      />
+    </div>
   )
 }
