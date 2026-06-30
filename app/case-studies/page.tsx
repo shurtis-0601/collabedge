@@ -159,7 +159,7 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <a
-                  href="/case-studies/enhance-ability-services"
+                  href="https://collabedgesolutions.com.au/appt"
                   className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
                 >
                   Discuss Your Situation
