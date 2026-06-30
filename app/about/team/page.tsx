@@ -46,9 +46,9 @@ const schema = {
         member: {
           '@type': 'Person',
           name: 'Magdalena Paczkowska',
-          jobTitle: 'Strategic Advisor — NDIS Industry',
+          jobTitle: 'NDIS Practitioner and Strategic Advisor',
         },
-        roleName: 'Strategic Advisor',
+        roleName: 'NDIS Practitioner and Strategic Advisor',
       },
       {
         '@type': 'OrganizationRole',
@@ -71,10 +71,10 @@ const sinclairSkills = [
 ]
 
 const magdalenaSkills = [
-  'NDIS Operations',
+  'Complex Participant Support',
+  'NDIS Commission Navigation',
   'Support Coordination',
-  'Compliance Advisory',
-  'Provider Frameworks',
+  'Practitioner Advocacy',
 ]
 
 const rajSkills = [
@@ -195,12 +195,12 @@ export default function TeamPage() {
                   <img src="/images/team-magda.jpg" alt="Magdalena Paczkowska" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
-                  Strategic Advisor
+                  NDIS Practitioner and Strategic Advisor
                 </span>
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
-                <p className="text-[12px] text-gold mb-4">NDIS Operations and Compliance</p>
+                <p className="text-[12px] text-gold mb-4">Complex Participant Support and Advocacy</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
-                  NDIS Industry Expert and Strategic Advisor to CollabEdge Solutions. Support Coordinator at My Ability Services with deep operational knowledge of NDIS provider requirements, compliance obligations, and participant support frameworks.
+                  Magdalena works directly with complex NDIS participants at My Ability Services every day, navigating the system at its most demanding level. That frontline knowledge is what she brings to CollabEdge — grounding every recommendation in what actually works for real participants and providers. She is the practitioner who empowered Sinclair to become a Support Coordinator, and her daily contact with the NDIS Commission and complex participants keeps CollabEdge&apos;s advice connected to ground-level reality.
                 </p>
                 <SkillList skills={magdalenaSkills} />
                 <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/30 mt-auto">
@@ -222,7 +222,7 @@ export default function TeamPage() {
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
                 <p className="text-[12px] text-gold mb-4">Strategy, Growth and International</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
-                  Fractional Consultant and Growth Advisor to CollabEdge Solutions, based in Dubai. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
+                  Fractional Consultant and Growth Advisor to CollabEdge Solutions. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
                 </p>
                 <SkillList skills={rajSkills} />
                 <a
