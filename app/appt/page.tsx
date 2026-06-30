@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Mail, Phone } from 'lucide-react'
+import { Mail, MessageCircle, Phone } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 
 export const metadata: Metadata = {
@@ -64,6 +64,15 @@ export default function ApptPage() {
               >
                 <Phone size={15} className="text-gold" />
                 0426 464 442
+              </a>
+              <a
+                href="https://wa.me/61426464442"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+              >
+                <MessageCircle size={15} className="text-gold" />
+                WhatsApp
               </a>
             </div>
           </FadeIn>
