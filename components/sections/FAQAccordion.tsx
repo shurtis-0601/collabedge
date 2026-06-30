@@ -2,7 +2,9 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
-const faqs = [
+export type FAQ = { q: string; a: string }
+
+const defaultFaqs: FAQ[] = [
   {
     q: 'How long does an NDIS compliance engagement take?',
     a: 'Tier 1 engagements typically take 3-4 weeks. Tier 2 engagements take 6-8 weeks. Tier 3 multi-site engagements are scoped individually based on complexity.',
@@ -25,7 +27,7 @@ const faqs = [
   },
 ]
 
-export default function FAQAccordion() {
+export default function FAQAccordion({ faqs = defaultFaqs }: { faqs?: FAQ[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
