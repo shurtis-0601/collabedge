@@ -278,7 +278,7 @@ export default function EnhanceAbilityServicesPage() {
         heading="Facing a similar challenge?"
         sub="Let us talk about what is getting in the way of your operations."
         ctaLabel="Book a Free Consultation"
-        ctaHref="https://collabedgesolutions.com.au/appt"
+        ctaHref="/appt"
       />
     </>
   )

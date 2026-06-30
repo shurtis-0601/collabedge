@@ -299,7 +299,7 @@ export default function TeamPage() {
         heading="Work with a team that stays accountable."
         sub="Senior-led from first conversation to final delivery."
         ctaLabel="Book a Free Consultation"
-        ctaHref="https://collabedgesolutions.com.au/appt"
+        ctaHref="/appt"
       />
     </>
   )

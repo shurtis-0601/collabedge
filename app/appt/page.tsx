@@ -1,84 +1,74 @@
-import Hero from "@/components/Hero";
-import FadeIn from "@/components/FadeIn";
+import type { Metadata } from 'next'
+import { Mail, Phone } from 'lucide-react'
+import FadeIn from '@/components/FadeIn'
 
-export const metadata = {
-  title: "Book a Consultation — CollabEdge Solutions",
-  description:
-    "Book a complimentary 30-minute consultation with CollabEdge Solutions. Australian-owned, Melbourne-based, 30+ years of experience.",
-};
+export const metadata: Metadata = {
+  title: 'Book a Free Consultation | CollabEdge Solutions',
+  description: 'Book a free 30-minute consultation with CollabEdge Solutions. Senior-led, no obligation.',
+}
 
 export default function ApptPage() {
   return (
     <>
-      <Hero
-        eyebrow="Book a Consultation"
-        title="Let's talk through your challenge"
-        subtitle="A complimentary 30-minute session with a senior consultant — no obligation, just a clear view of where we could help."
-      />
+      {/* Hero */}
+      <section className="bg-navy py-16 px-5 sm:px-10 text-center">
+        <div className="max-w-[680px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+              Book a Consultation
+            </span>
+            <h1 className="text-[32px] md:text-[38px] font-bold text-white tracking-tight leading-[1.1] mb-4">
+              30 Minutes. Free. Senior-led.
+            </h1>
+            <p className="text-[14px] text-white/60 leading-relaxed max-w-[480px] mx-auto">
+              Pick a time that works for you below. No form to fill in first — just book directly and we will talk through your situation.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
 
-      <section className="section py-12 sm:py-16">
-        <div className="mx-auto max-w-container grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10">
-          <FadeIn>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
-              <h2 className="font-serif text-2xl text-gold mb-4">
-                Pick a time that suits you
-              </h2>
-              <p className="text-white/75 text-sm mb-5">
-                Use the scheduler below to book directly. Prefer email or phone?
-                Reach us with the details to the right.
-              </p>
-              {/* Calendly / scheduler embed placeholder — swap the src for your real booking URL */}
-              <div className="aspect-[4/5] w-full rounded-xl border border-white/10 bg-navy-deep flex items-center justify-center">
-                <div className="text-center px-6">
-                  <p className="text-white/70 mb-3">Scheduler embed</p>
-                  <p className="text-white/50 text-sm">
-                    Replace this block with your Calendly / scheduler iframe.
-                  </p>
-                </div>
-              </div>
+      {/* Booking Embed */}
+      <section className="bg-white py-16 px-5 sm:px-10">
+        <div className="max-w-[780px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+              <iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1qXBTuu9WDHQX_rC9UE_ed_fh0kH5VQ9pu7YaeZvaoebQI_tPt69xPopjSO8Df08TQlQM-coOT?gv=true"
+                style={{ border: 0 }}
+                width="100%"
+                height="600"
+                frameBorder={0}
+                title="Book a consultation with CollabEdge Solutions"
+              />
             </div>
           </FadeIn>
+        </div>
+      </section>
 
-          <FadeIn delay={120}>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 space-y-6">
-              <div>
-                <h3 className="font-serif text-xl text-gold">Email</h3>
-                <a
-                  className="text-white/90 hover:text-gold"
-                  href="mailto:info@collabedgesolutions.com.au"
-                >
-                  info@collabedgesolutions.com.au
-                </a>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl text-gold">Phone</h3>
-                <p className="text-white/90">(61) 426 464 442</p>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl text-gold">LinkedIn</h3>
-                <a
-                  className="text-white/90 hover:text-gold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/company/collabedge-solutions/"
-                >
-                  linkedin.com/company/collabedge-solutions
-                </a>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl text-gold">Where we are</h3>
-                <p className="text-white/90">Melbourne, Australia</p>
-              </div>
-
-              <div className="pt-4 border-t border-white/10">
-                <p className="text-white/60 text-sm">
-                  Australian-owned · 30+ years Fortune 500 experience · Responsive in your time zone
-                </p>
-              </div>
+      {/* Alternative Contact */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[680px] mx-auto text-center">
+          <FadeIn variant="fadeUp">
+            <p className="text-[13px] text-slate mb-6">Prefer email or phone?</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="mailto:sinclair@collabedgesolutions.com.au"
+                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+              >
+                <Mail size={15} className="text-gold" />
+                sinclair@collabedgesolutions.com.au
+              </a>
+              <a
+                href="tel:0426464442"
+                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+              >
+                <Phone size={15} className="text-gold" />
+                0426 464 442
+              </a>
             </div>
           </FadeIn>
         </div>
       </section>
     </>
-  );
+  )
 }

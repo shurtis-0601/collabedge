@@ -73,9 +73,7 @@ export default function ContactPage() {
               The Book Consultation button links directly to the booking page. No form to fill in first — just pick a time that works.
             </p>
             <a
-              href="https://collabedgesolutions.com.au/appt"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/appt"
               className="inline-flex items-center gap-2 bg-gold text-navy font-bold text-[13px] px-6 py-3 rounded hover:bg-gold/90 hover:scale-[1.02] transition-all duration-200 w-full sm:w-auto justify-center sm:justify-start"
             >
               <Calendar size={15} />
@@ -211,7 +209,7 @@ export default function ContactPage() {
         heading="Ready to talk about your situation?"
         sub="30 minutes. Free. Senior-led. No pitch."
         ctaLabel="Book a Free Consultation"
-        ctaHref="https://collabedgesolutions.com.au/appt"
+        ctaHref="/appt"
       />
     </>
   )

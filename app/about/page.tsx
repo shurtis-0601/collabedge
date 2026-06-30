@@ -396,7 +396,7 @@ export default function AboutPage() {
         heading="Ready to talk about your situation?"
         sub="30 minutes. Free. Senior-led. No pitch."
         ctaLabel="Book a Free Consultation"
-        ctaHref="https://collabedgesolutions.com.au/appt"
+        ctaHref="/appt"
       />
     </>
   )

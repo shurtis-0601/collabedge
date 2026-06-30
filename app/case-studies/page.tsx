@@ -159,7 +159,7 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <a
-                  href="https://collabedgesolutions.com.au/appt"
+                  href="/appt"
                   className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
                 >
                   Discuss Your Situation
@@ -256,7 +256,7 @@ export default function CaseStudiesPage() {
         heading="Want to be our next case study?"
         sub="Let us talk about what you are trying to solve."
         ctaLabel="Book a Free Consultation"
-        ctaHref="https://collabedgesolutions.com.au/appt"
+        ctaHref="/appt"
       />
     </>
   )
