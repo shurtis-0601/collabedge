@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import {
-  Award, Stethoscope, TrendingUp,
-  Users, ArrowRight, CheckCircle,
+  Stethoscope, Users, ArrowRight, CheckCircle,
   Globe, GraduationCap
 } from 'lucide-react'
 import PageHero from '@/components/corporate/PageHero'
@@ -166,8 +165,9 @@ export default function TeamPage() {
             {/* Sinclair */}
             <FadeIn variant="fadeUp" delay={0}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 hover:border-gold/40 hover:shadow-lg hover:-translate-y-[3px] transition-all duration-200 h-full flex flex-col group">
-                <div className="w-12 h-12 rounded-full bg-gold/[0.15] flex items-center justify-center mb-5 group-hover:bg-gold/25 transition-colors">
-                  <Award size={22} className="text-gold" />
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 mb-5 flex-shrink-0 group-hover:border-gold/60 transition-colors">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/team-sinclair.jpg" alt="Sinclair Hurtis" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
                   Founder and Principal
@@ -190,8 +190,9 @@ export default function TeamPage() {
             {/* Magdalena */}
             <FadeIn variant="fadeUp" delay={100}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 hover:border-gold/40 hover:shadow-lg hover:-translate-y-[3px] transition-all duration-200 h-full flex flex-col group">
-                <div className="w-12 h-12 rounded-full bg-gold/[0.15] flex items-center justify-center mb-5 group-hover:bg-gold/25 transition-colors">
-                  <Stethoscope size={22} className="text-gold" />
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 mb-5 flex-shrink-0 group-hover:border-gold/60 transition-colors">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/team-magda.jpg" alt="Magdalena Paczkowska" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
                   Strategic Advisor
@@ -211,8 +212,9 @@ export default function TeamPage() {
             {/* Raj */}
             <FadeIn variant="fadeUp" delay={200}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 hover:border-gold/40 hover:shadow-lg hover:-translate-y-[3px] transition-all duration-200 h-full flex flex-col group">
-                <div className="w-12 h-12 rounded-full bg-gold/[0.15] flex items-center justify-center mb-5 group-hover:bg-gold/25 transition-colors">
-                  <TrendingUp size={22} className="text-gold" />
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 mb-5 flex-shrink-0 group-hover:border-gold/60 transition-colors">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/team-raj.jpg" alt="Raj Purshotham" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
                   Strategy and Growth Advisor
