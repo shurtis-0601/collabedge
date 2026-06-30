@@ -173,7 +173,7 @@ export default function TeamPage() {
                   Founder and Principal
                 </span>
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
-                <p className="text-[12px] text-gold mb-4">Melbourne, VIC</p>
+                <p className="text-[12px] text-gold mb-4">NDIS, Healthcare and Enterprise</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
                   30+ years across Citibank, Singtel, NAB, and the Victorian Department of Health. Active NDIS Support Coordinator at My Ability Services. Adjunct Lecturer at Monash University teaching Masters IT students. Leads every CollabEdge engagement.
                 </p>
@@ -198,7 +198,7 @@ export default function TeamPage() {
                   Strategic Advisor
                 </span>
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
-                <p className="text-[12px] text-gold mb-4">Melbourne, VIC</p>
+                <p className="text-[12px] text-gold mb-4">NDIS Operations and Compliance</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
                   NDIS Industry Expert and Strategic Advisor to CollabEdge Solutions. Support Coordinator at My Ability Services with deep operational knowledge of NDIS provider requirements, compliance obligations, and participant support frameworks.
                 </p>
@@ -220,7 +220,7 @@ export default function TeamPage() {
                   Strategy, Growth and International Advisory
                 </span>
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
-                <p className="text-[12px] text-gold mb-4">Dubai, UAE</p>
+                <p className="text-[12px] text-gold mb-4">Strategy, Growth and International</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
                   Fractional Consultant and Growth Advisor to CollabEdge Solutions, based in Dubai. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
                 </p>
