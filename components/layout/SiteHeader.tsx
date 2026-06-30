@@ -297,7 +297,7 @@ export default function SiteHeader() {
 
         {/* Book Consultation CTA */}
         <div className="hidden lg:block shrink-0">
-          <Link href="/contact" className="btn-gold text-[13px] px-5 py-2.5">
+          <Link href="/appt" className="btn-gold text-[13px] px-5 py-2.5">
             Book Consultation
           </Link>
         </div>
@@ -415,7 +415,7 @@ export default function SiteHeader() {
           {/* Gold CTA at bottom */}
           <div className="px-5 pb-8 pt-4 border-t border-white/10">
             <Link
-              href="/contact"
+              href="/appt"
               className="btn-gold w-full text-center text-[15px] py-4"
               onClick={() => setMobileOpen(false)}
             >
