@@ -182,7 +182,7 @@ export default function PartnerSolutionsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Dynamic Netsoft / Property Automate */}
             <FadeIn variant="slideRight">
-              <div className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200">
+              <div id="dynamic-netsoft" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4 flex-wrap">
                   <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60">
                     Enterprise Lane
@@ -229,7 +229,7 @@ export default function PartnerSolutionsPage() {
 
             {/* Newgen Consulting */}
             <FadeIn variant="fadeUp" delay={100}>
-              <div className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200">
+              <div id="newgen-consulting" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60">
                     SME Lane
