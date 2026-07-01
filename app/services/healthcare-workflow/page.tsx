@@ -106,8 +106,8 @@ const processSteps = [
 ]
 
 const toolsList = [
-  'Microsoft 365 — Power Automate, SharePoint, Teams',
-  'Google Workspace — Apps Script, Forms, Sheets',
+  'Microsoft 365: Power Automate, SharePoint, Teams',
+  'Google Workspace: Apps Script, Forms, Sheets',
   'Existing CRM or case management systems',
   'AI tools already included in your subscription',
 ]
@@ -143,7 +143,7 @@ export default function HealthcareWorkflowPage() {
       <PageHero
         eyebrow="Healthcare Workflow Automation"
         h1="Less admin. More time with participants."
-        answerBlock="CollabEdge Solutions removes manual effort from day-to-day healthcare and NDIS operations using the Microsoft 365 or Google Workspace environment you already have. No new platforms, no retraining your whole team — just the tools you own, used properly."
+        answerBlock="CollabEdge Solutions removes manual effort from day-to-day healthcare and NDIS operations using the Microsoft 365 or Google Workspace environment you already have. No new platforms, no retraining your whole team. Just the tools you own, used properly."
       />
 
       {/* Section — What kind of workflows can be automated? */}
@@ -155,7 +155,7 @@ export default function HealthcareWorkflowPage() {
               What kind of workflows can be automated?
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              Most healthcare and NDIS providers lose time to the same handful of repetitive tasks — intake paperwork, scheduling, reminders, and document handling. CollabEdge Solutions identifies which of these are costing your team the most time and automates them using tools you already have.
+              Most healthcare and NDIS providers lose time to the same handful of repetitive tasks: intake paperwork, scheduling, reminders, and document handling. CollabEdge Solutions identifies which of these are costing your team the most time and automates them using tools you already have.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -187,7 +187,7 @@ export default function HealthcareWorkflowPage() {
                 We automate with what you already own
               </h2>
               <p className="text-[14px] text-white/60 leading-relaxed mb-6">
-                Most providers already have Microsoft 365 or Google Workspace, paid for and underused. CollabEdge Solutions builds automation inside those platforms using Power Automate, native workflow tools, and AI features already included in your subscription — not a new platform that adds cost and complexity.
+                Most providers already have Microsoft 365 or Google Workspace, paid for and underused. CollabEdge Solutions builds automation inside those platforms using Power Automate, native workflow tools, and AI features already included in your subscription, not a new platform that adds cost and complexity.
               </p>
               <p className="text-[14px] text-white/60 leading-relaxed">
                 This means faster implementation, no extra licensing, and a system your team can actually maintain after we leave.
@@ -223,7 +223,7 @@ export default function HealthcareWorkflowPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/20 block mb-2">{item.step}</span>
+                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
                   <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
                   <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
@@ -246,7 +246,7 @@ export default function HealthcareWorkflowPage() {
               <Quote size={24} className="text-gold/40 mb-5" />
               <blockquote className="font-serif italic text-[18px] text-white leading-relaxed mb-6 max-w-[620px]">
                 Working with Sinclair has transformed what once felt overwhelming into something
-                <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement — he taught me along the way.
+                <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement. He taught me along the way.
               </blockquote>
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>

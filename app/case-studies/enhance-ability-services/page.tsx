@@ -123,7 +123,7 @@ export default function EnhanceAbilityServicesPage() {
 
           <FadeIn variant="fadeUp" delay={100}>
             <p className="text-[15px] text-white/70 leading-relaxed max-w-[680px] border-l-2 border-gold pl-5">
-              CollabEdge Solutions helped Enhance Ability Services, a Geelong-based NDIS provider, move from fragmented manual processes to structured, auditable operations — using only the Microsoft 365 environment they already had. No new platforms were introduced.
+              CollabEdge Solutions helped Enhance Ability Services, a Geelong-based NDIS provider, move from fragmented manual processes to structured, auditable operations, using only the Microsoft 365 environment they already had. No new platforms were introduced.
             </p>
           </FadeIn>
         </div>
@@ -167,7 +167,7 @@ export default function EnhanceAbilityServicesPage() {
                   Enhance Ability Services was managing NDIS compliance and day-to-day operations through fragmented, manual processes. Documentation lived across multiple disconnected systems, audit readiness depended on individual memory rather than structured process, and the time spent on administrative overhead was pulling focus away from participant outcomes.
                 </p>
                 <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
-                  Director Rebecca Delaney described the business as feeling overwhelmed by the complexity of staying compliant while still trying to grow and deliver quality support — a familiar position for many NDIS providers at a similar stage of operation.
+                  Director Rebecca Delaney described the business as feeling overwhelmed by the complexity of staying compliant while still trying to grow and deliver quality support, a familiar position for many NDIS providers at a similar stage of operation.
                 </p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function EnhanceAbilityServicesPage() {
                   What changed for Enhance Ability Services?
                 </h2>
                 <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
-                  Operations and documentation became structured and auditable. The administrative burden on Rebecca and her team reduced significantly, audit confidence improved, and the business moved from feeling overwhelmed to having a clear operational system they understood and trusted — built on tools they already owned.
+                  Operations and documentation became structured and auditable. The administrative burden on Rebecca and her team reduced significantly, audit confidence improved, and the business moved from feeling overwhelmed to having a clear operational system they understood and trusted, built on tools they already owned.
                 </p>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function EnhanceAbilityServicesPage() {
             <Quote size={32} className="text-gold/30 mb-6" />
             <blockquote className="font-serif italic text-[19px] md:text-[26px] text-white leading-relaxed mb-8 max-w-[700px]">
               Working with Sinclair has transformed what once felt overwhelming into something
-              <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions — he taught me along the way, and that mentorship made all the difference to how confident I now feel running this business.
+              <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way, and that mentorship made all the difference to how confident I now feel running this business.
             </blockquote>
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">

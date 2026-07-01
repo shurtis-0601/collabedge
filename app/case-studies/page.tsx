@@ -48,7 +48,7 @@ export default function CaseStudiesPage() {
       <PageHero
         eyebrow="Case Studies"
         h1="Real organisations. Documented outcomes."
-        answerBlock="CollabEdge Solutions publishes case studies with named clients and specific results — not anonymous testimonials. Every engagement on this page is a real organisation we have worked with, describing what actually changed."
+        answerBlock="CollabEdge Solutions publishes case studies with named clients and specific results, not anonymous testimonials. Every engagement on this page is a real organisation we have worked with, describing what actually changed."
       />
 
       {/* AEO — Why does CollabEdge publish named case studies? */}
@@ -100,7 +100,7 @@ export default function CaseStudiesPage() {
 
               <h3 className="text-[14px] font-bold text-white mb-2">The Approach</h3>
               <p className="text-[13px] text-white/60 leading-relaxed mb-6">
-                CollabEdge Solutions worked directly with the Director to map existing processes, identify where manual effort could be safely automated, and rebuild documentation and compliance workflows using the Microsoft 365 environment the business already had. No new platforms were introduced — the existing tools were simply used properly.
+                CollabEdge Solutions worked directly with the Director to map existing processes, identify where manual effort could be safely automated, and rebuild documentation and compliance workflows using the Microsoft 365 environment the business already had. No new platforms were introduced. The existing tools were simply used properly.
               </p>
 
               <h3 className="text-[14px] font-bold text-white mb-2">The Outcome</h3>
@@ -113,7 +113,7 @@ export default function CaseStudiesPage() {
                 <Quote size={18} className="text-gold/40 mb-3" />
                 <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
                   Working with Sinclair has transformed what once felt overwhelming into something
-                  <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions — he taught me along the way.
+                  <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way.
                 </blockquote>
                 <span className="text-[12px] font-semibold text-white block">Rebecca Delaney</span>
                 <span className="text-[11px] text-gold">Director, Enhance Ability Services</span>
@@ -153,7 +153,7 @@ export default function CaseStudiesPage() {
                     <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="text-[12px] font-semibold text-white block mb-0.5">Tools Used</span>
-                      <span className="text-[12px] text-white/50">Microsoft 365 — existing infrastructure, no new platforms</span>
+                      <span className="text-[12px] text-white/50">Microsoft 365, existing infrastructure. No new platforms.</span>
                     </div>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function CaseStudiesPage() {
               <div className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm hover:-translate-y-[2px] transition-all duration-200">
                 <Quote size={18} className="text-gold/30 mb-4" />
                 <blockquote className="text-[14px] text-text-body leading-relaxed mb-5">
-                  Sinclair brings rare depth — Fortune 500 discipline applied with genuine care for the businesses he works with.
+                  Sinclair brings rare depth: Fortune 500 discipline applied with genuine care for the businesses he works with.
                 </blockquote>
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
                   <div className="w-9 h-9 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">

@@ -46,7 +46,7 @@ const silFaqs: FAQ[] = [
   },
   {
     q: 'What if I am not eligible for the micro-provider concession?',
-    a: 'The standard $2,000 rate applies. We will confirm your eligibility honestly during the free consultation — there is no obligation either way.',
+    a: 'The standard $2,000 rate applies. We will confirm your eligibility honestly during the free consultation. There is no obligation either way.',
   },
   {
     q: 'Do you guarantee registration approval?',
@@ -142,7 +142,7 @@ export default function SILRegistrationPage() {
               <span className="text-gold">$2,000.</span>
             </h1>
             <p className="text-[15px] text-white/65 leading-relaxed max-w-[540px] mx-auto mb-8">
-              Senior-led support to get your Supported Independent Living registration documentation right the first time — without the back and forth that usually comes with it.
+              Senior-led support to get your Supported Independent Living registration documentation right the first time, without the back and forth that usually comes with it.
             </p>
             <a
               href="/appt"
@@ -223,7 +223,7 @@ export default function SILRegistrationPage() {
               What is included for $2,000?
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              A complete, guided path to SIL registration readiness — not a template you fill in alone.
+              A complete, guided path to SIL registration readiness, not a template you fill in alone.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -252,7 +252,7 @@ export default function SILRegistrationPage() {
               <div className="flex-1">
                 <h3 className="text-[16px] font-bold text-white mb-2">Micro-Provider Concession</h3>
                 <p className="text-[13px] text-white/60 leading-relaxed">
-                  If your organisation supports fewer than 10 NDIS participants, a reduced rate applies. This reflects the smaller documentation scope typically required for micro and emerging providers — confirm eligibility during your free consultation.
+                  If your organisation supports fewer than 10 NDIS participants, a reduced rate applies. This reflects the smaller documentation scope typically required for micro and emerging providers. Confirm eligibility during your free consultation.
                 </p>
               </div>
               <a
@@ -280,7 +280,7 @@ export default function SILRegistrationPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/20 block mb-2">{item.step}</span>
+                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
                   <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
                   <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
                 </div>

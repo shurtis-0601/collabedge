@@ -55,7 +55,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get In Touch"
         h1="Let us talk about what you are trying to solve."
-        answerBlock="Book a free 30-minute consultation. No sales pitch — a genuine conversation about your situation and whether we can help."
+        answerBlock="Book a free 30-minute consultation. No sales pitch, just a genuine conversation about your situation and whether we can help."
       />
 
       {/* Section 2 — Booking */}
@@ -70,7 +70,7 @@ export default function ContactPage() {
               30 Minutes. Free. Senior-led.
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-6">
-              The Book Consultation button links directly to the booking page. No form to fill in first — just pick a time that works.
+              The Book Consultation button links directly to the booking page. No form to fill in first. Just pick a time that works.
             </p>
             <a
               href="/appt"
@@ -183,7 +183,7 @@ export default function ContactPage() {
               Every consultation is with a senior practitioner. No hand-offs.
             </h3>
             <p className="text-[14px] text-slate leading-relaxed mb-5">
-              Sinclair Hurtis brings 30+ years of Fortune 500 experience across Citibank, Singtel, NAB, and the Victorian Department of Health. He actively coordinates NDIS participants through My Ability Services — testing every solution in a live environment before recommending it.
+              Sinclair Hurtis brings 30+ years of Fortune 500 experience across Citibank, Singtel, NAB, and the Victorian Department of Health. He actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it.
             </p>
 
             <div className="flex gap-8 pt-5 border-t border-border">

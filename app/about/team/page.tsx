@@ -127,7 +127,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="Our Team"
         h1="Senior-led. Every engagement."
-        answerBlock="CollabEdge Solutions is built around a small team of senior practitioners and strategic advisors. Every client engagement is led by the same person who assessed your situation — Sinclair Hurtis — supported by specialists drawn in when the work requires it."
+        answerBlock="CollabEdge Solutions is built around a small team of senior practitioners and strategic advisors. Every client engagement is led by the same person who assessed your situation, Sinclair Hurtis, supported by specialists drawn in when the work requires it."
       />
 
       {/* 3. AEO — Who leads CollabEdge engagements? */}
@@ -200,12 +200,18 @@ export default function TeamPage() {
                 <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
                 <p className="text-[12px] text-gold mb-4">Complex Participant Support and Advocacy</p>
                 <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
-                  Magdalena works directly with complex NDIS participants at My Ability Services every day, navigating the system at its most demanding level. That frontline knowledge is what she brings to CollabEdge — grounding every recommendation in what actually works for real participants and providers. She is the practitioner who empowered Sinclair to become a Support Coordinator, and her daily contact with the NDIS Commission and complex participants keeps CollabEdge&apos;s advice connected to ground-level reality.
+                  Magdalena works directly with complex NDIS participants at My Ability Services every day, navigating the system at its most demanding level. That frontline knowledge is what she brings to CollabEdge, grounding every recommendation in what actually works for real participants and providers. She is the practitioner who empowered Sinclair to become a Support Coordinator, and her daily contact with the NDIS Commission and complex participants keeps CollabEdge&apos;s advice connected to ground-level reality.
                 </p>
                 <SkillList skills={magdalenaSkills} />
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/30 mt-auto">
+                <a
+                  href="https://myabilityservices.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
+                >
                   My Ability Services
-                </span>
+                  <Globe size={12} />
+                </a>
               </div>
             </FadeIn>
 
@@ -278,10 +284,10 @@ export default function TeamPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-[15px] font-bold text-text-dark mb-1">
-                  Adjunct Lecturer — Monash University
+                  Adjunct Lecturer, Monash University
                 </h3>
                 <p className="text-[13px] text-slate leading-relaxed max-w-[580px]">
-                  Sinclair teaches soft skills and real-world business practice to Masters of Information Technology students at Monash University — mentoring the next generation of technology professionals across communication, collaboration, and applied consulting.
+                  Sinclair teaches soft skills and real-world business practice to Masters of Information Technology students at Monash University, mentoring the next generation of technology professionals across communication, collaboration, and applied consulting.
                 </p>
               </div>
               <div className="flex-shrink-0">

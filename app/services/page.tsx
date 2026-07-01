@@ -70,7 +70,7 @@ const healthcareServices = [
   {
     icon: Brain,
     title: 'AI Advisory',
-    desc: 'Practical AI tooling for healthcare operators — tested before it reaches your team.',
+    desc: 'Practical AI tooling for healthcare operators, tested before it reaches your team.',
     price: 'Custom scope',
     href: '/ai-automation',
   },
@@ -95,7 +95,7 @@ const partnerCards = [
 ]
 
 const pillars = [
-  'Senior-led — no hand-offs to junior staff',
+  'Senior-led, with no hand-offs to junior staff',
   'We start with what you already have',
   'Transparent, published pricing where possible',
 ]
@@ -112,7 +112,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         h1="Two pillars. One senior consultant."
-        answerBlock="CollabEdge Solutions delivers services across two areas — healthcare and NDIS operational consulting, and enterprise technology partnerships. Every engagement, regardless of size, is led directly by the same senior consultant from first conversation to final delivery."
+        answerBlock="CollabEdge Solutions delivers services across two areas: healthcare and NDIS operational consulting, and enterprise technology partnerships. Every engagement, regardless of size, is led directly by the same senior consultant from first conversation to final delivery."
       />
 
       {/* Pillar Selector */}
@@ -137,7 +137,7 @@ export default function ServicesPage() {
                   Healthcare and NDIS Solutions
                 </h2>
                 <p className="text-[13px] text-white/55 leading-relaxed mb-6">
-                  Compliance, automation, document governance, and AI advisory for NDIS providers and healthcare operators — built on what you already have.
+                  Compliance, automation, document governance, and AI advisory for NDIS providers and healthcare operators, built on what you already have.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
                   View healthcare services <ArrowRight size={13} />
@@ -161,7 +161,7 @@ export default function ServicesPage() {
                   Enterprise Partnerships
                 </h2>
                 <p className="text-[13px] text-slate leading-relaxed mb-6">
-                  Specialist enterprise technology delivered through selected partnerships — security, data quality, and property automation.
+                  Specialist enterprise technology delivered through selected partnerships: security, data quality, and property automation.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-navy group-hover:gap-3 group-hover:text-gold transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
@@ -184,7 +184,7 @@ export default function ServicesPage() {
               What healthcare and NDIS services does CollabEdge Solutions offer?
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              CollabEdge Solutions supports NDIS providers and healthcare operators across four core areas — compliance and audit readiness, workflow automation, document governance, and AI advisory. Every service is delivered using infrastructure you already have, not new platforms you need to learn.
+              CollabEdge Solutions supports NDIS providers and healthcare operators across four core areas: compliance and audit readiness, workflow automation, document governance, and AI advisory. Every service is delivered using infrastructure you already have, not new platforms you need to learn.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -247,7 +247,7 @@ export default function ServicesPage() {
                     <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold mb-1 block">
                       Featured Partner
                     </span>
-                    <h3 className="text-[17px] font-bold text-white">SHIELD — Voice Fraud Prevention</h3>
+                    <h3 className="text-[17px] font-bold text-white">SHIELD: Voice Fraud Prevention</h3>
                   </div>
                 </div>
                 <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
@@ -255,7 +255,7 @@ export default function ServicesPage() {
                 </span>
               </div>
               <p className="text-[13px] text-white/50 leading-relaxed mt-4 max-w-[680px]">
-                Enterprise-grade voice authentication protecting call centres and customer-facing operations from synthetic voice fraud — delivered by CollabEdge Solutions as Sekunce&apos;s Australian and APAC delivery partner.
+                Enterprise-grade voice authentication protecting call centres and customer-facing operations from synthetic voice fraud, delivered by CollabEdge Solutions as Sekunce&apos;s Australian and APAC delivery partner.
               </p>
             </a>
           </FadeIn>
@@ -292,7 +292,7 @@ export default function ServicesPage() {
                   </span>
                   <h2 className="text-[18px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
                   <p className="text-[13px] text-slate leading-relaxed max-w-[480px]">
-                    Websites, branding, and digital marketing for growing businesses — not limited to healthcare. From $1,500.
+                    Websites, branding, and digital marketing for growing businesses, not limited to healthcare. From $1,500.
                   </p>
                 </div>
                 <a
@@ -316,7 +316,7 @@ export default function ServicesPage() {
               Why we work across two service pillars
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-8 max-w-[680px]">
-              Operating across healthcare consulting and enterprise technology partnerships keeps CollabEdge Solutions connected to both ends of the market — the practical realities of NDIS providers, and the technology standards expected by larger enterprises. Each pillar makes the other better.
+              Operating across healthcare consulting and enterprise technology partnerships keeps CollabEdge Solutions connected to both ends of the market: the practical realities of NDIS providers, and the technology standards expected by larger enterprises. Each pillar makes the other better.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

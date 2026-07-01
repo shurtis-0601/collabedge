@@ -169,7 +169,7 @@ export default function NDISComplianceAuditPage() {
       <PageHero
         eyebrow="NDIS Compliance and Audit"
         h1="Compliance that holds up under review."
-        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers — structured, practitioner-tested, and built to withstand NDIS Commission scrutiny. Pricing starts from $3,500 with three transparent tiers based on scope."
+        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers, structured, practitioner-tested, and built to withstand NDIS Commission scrutiny. Pricing starts from $3,500 with three transparent tiers based on scope."
       />
 
       {/* What does NDIS compliance support include? */}
@@ -181,7 +181,7 @@ export default function NDISComplianceAuditPage() {
               What does NDIS compliance and audit support include?
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              CollabEdge Solutions reviews existing documentation and processes against NDIS Practice Standards, identifies compliance gaps, and rebuilds governance frameworks so they are structured, evidence-based, and ready for audit — without introducing new software your team needs to learn.
+              CollabEdge Solutions reviews existing documentation and processes against NDIS Practice Standards, identifies compliance gaps, and rebuilds governance frameworks so they are structured, evidence-based, and ready for audit, without introducing new software your team needs to learn.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -224,7 +224,7 @@ export default function NDISComplianceAuditPage() {
             <FadeIn variant="fadeUp" delay={0}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 h-full flex flex-col">
                 <span className="text-[11px] font-bold tracking-[.1em] uppercase text-white/40 mb-2 block">
-                  Tier 1 — Foundation
+                  Tier 1: Foundation
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$3,500</span>
@@ -257,7 +257,7 @@ export default function NDISComplianceAuditPage() {
                   Most Popular
                 </span>
                 <span className="text-[11px] font-bold tracking-[.1em] uppercase text-gold mb-2 block mt-2">
-                  Tier 2 — Comprehensive
+                  Tier 2: Comprehensive
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$6,000</span>
@@ -287,7 +287,7 @@ export default function NDISComplianceAuditPage() {
             <FadeIn variant="fadeUp" delay={200}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 h-full flex flex-col">
                 <span className="text-[11px] font-bold tracking-[.1em] uppercase text-white/40 mb-2 block">
-                  Tier 3 — Enterprise
+                  Tier 3: Enterprise
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$10,000</span>
@@ -335,7 +335,7 @@ export default function NDISComplianceAuditPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/20 block mb-2">{item.step}</span>
+                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
                   <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
                   <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
                 </div>

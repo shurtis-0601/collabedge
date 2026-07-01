@@ -21,7 +21,7 @@ export default function ApptPage() {
               30 Minutes. Free. Senior-led.
             </h1>
             <p className="text-[14px] text-white/60 leading-relaxed max-w-[480px] mx-auto">
-              Pick a time that works for you below. No form to fill in first — just book directly and we will talk through your situation.
+              Pick a time that works for you below. No form to fill in first. Just book directly and we will talk through your situation.
             </p>
           </FadeIn>
         </div>

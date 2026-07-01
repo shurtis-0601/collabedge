@@ -176,7 +176,8 @@ export default function SiteHeader() {
           <img
             src="/images/logo.png"
             alt="CollabEdge Solutions"
-            style={{ height: '68px', width: 'auto', display: 'block' }}
+            className="h-12 md:h-14 w-auto"
+            style={{ mixBlendMode: 'lighten', background: 'transparent' }}
           />
         </Link>
 
@@ -326,6 +327,7 @@ export default function SiteHeader() {
                 src="/images/logo.png"
                 alt="CollabEdge Solutions"
                 className="h-11 w-auto"
+                style={{ mixBlendMode: 'lighten', background: 'transparent' }}
               />
             </Link>
             <button

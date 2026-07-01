@@ -54,11 +54,11 @@ const services = [
 ]
 
 const checklist = [
-  'Every engagement is senior-led — no hand-offs',
+  'Every engagement is senior-led, with no hand-offs',
   'We start with what you already have',
   'Practitioner-tested before it reaches you',
-  'Transparent pricing — published on our site',
-  'Active NDIS coordinator — not just a consultant',
+  'Transparent pricing, published on our site',
+  'Active NDIS coordinator, not just a consultant',
   'Fortune 500 methods applied to SME budgets',
   'Melbourne-based, Australia-wide delivery',
   'Victorian Government registered supplier',
@@ -74,7 +74,7 @@ const team = [
   },
   {
     name: 'Magdalena Paczkowska',
-    role: 'Strategic Advisor — NDIS',
+    role: 'NDIS Strategic Advisor',
     bio: 'Support Coordinator at My Ability Services. Deep NDIS operations expertise.',
     icon: Stethoscope,
     href: '/about/team',
@@ -128,7 +128,7 @@ export default function AboutPage() {
               {
                 icon: Users,
                 title: 'Practitioner-Led',
-                body: 'Sinclair actively coordinates NDIS participants through My Ability Services — testing every solution in a live environment before recommending it to clients.',
+                body: 'Sinclair actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it to clients.',
               },
               {
                 icon: Zap,
@@ -138,7 +138,7 @@ export default function AboutPage() {
               {
                 icon: TrendingUp,
                 title: 'Fortune 500 Depth for SMEs',
-                body: '30+ years across Citibank, Singtel, NAB and the Victorian Department of Health — applied to the specific challenges of Australian healthcare providers and growing businesses.',
+                body: '30+ years across Citibank, Singtel, NAB and the Victorian Department of Health, applied to the specific challenges of Australian healthcare providers and growing businesses.',
               },
             ].map((card, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
@@ -164,7 +164,7 @@ export default function AboutPage() {
               What does CollabEdge Solutions do?
             </h2>
             <p className="text-[14px] text-white/70 leading-relaxed mb-6">
-              CollabEdge Solutions delivers operational consulting, NDIS compliance support, workflow automation, AI advisory, digital services, and enterprise technology implementation. We serve NDIS providers, allied health operators, and Australian enterprises across two service pillars — healthcare and SME solutions, and enterprise technology partnerships.
+              CollabEdge Solutions delivers operational consulting, NDIS compliance support, workflow automation, AI advisory, digital services, and enterprise technology implementation. We serve NDIS providers, allied health operators, and Australian enterprises across two service pillars: healthcare and SME solutions, and enterprise technology partnerships.
             </p>
             <a
               href="/services"
@@ -213,7 +213,7 @@ export default function AboutPage() {
               Why choose CollabEdge Solutions over a larger consulting firm?
             </h2>
             <p className="text-[14px] text-slate leading-relaxed mb-8 max-w-[680px]">
-              CollabEdge Solutions combines Fortune 500 experience with boutique accountability — every engagement is led by the same senior practitioner who assessed your situation, with no hand-offs to junior staff. We recommend what simplifies your operation, not what pays us the most.
+              CollabEdge Solutions combines Fortune 500 experience with boutique accountability. Every engagement is led by the same senior practitioner who assessed your situation, with no hand-offs to junior staff. We recommend what simplifies your operation, not what pays us the most.
             </p>
           </FadeIn>
 
@@ -242,7 +242,7 @@ export default function AboutPage() {
               Who is behind every CollabEdge engagement?
             </h2>
             <p className="text-[14px] text-slate mb-8 max-w-[540px]">
-              CollabEdge Solutions is senior-led and supported by a small team of specialists and strategic advisors — not a large agency where you never know who you will work with.
+              CollabEdge Solutions is senior-led and supported by a small team of specialists and strategic advisors, not a large agency where you never know who you will work with.
             </p>
           </FadeIn>
 
@@ -305,7 +305,7 @@ export default function AboutPage() {
                   Healthcare and NDIS Solutions
                 </h3>
                 <p className="text-[13px] text-white/50 leading-relaxed mb-5">
-                  Supporting NDIS providers and healthcare operators with compliance, workflow automation, document governance, and AI-powered tools — built on the systems they already have.
+                  Supporting NDIS providers and healthcare operators with compliance, workflow automation, document governance, and AI-powered tools, built on the systems they already have.
                 </p>
                 <a
                   href="/services/ndis-compliance-audit"
@@ -328,7 +328,7 @@ export default function AboutPage() {
                   Enterprise Partnerships
                 </h3>
                 <p className="text-[13px] text-white/50 leading-relaxed mb-5">
-                  Delivering specialist enterprise technology through selected partnerships — SHIELD voice fraud prevention, DQOps data quality, Vanta security compliance, and Property Automate — with advisory and implementation included.
+                  Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, DQOps data quality, Vanta security compliance, and Property Automate, with advisory and implementation included.
                 </p>
                 <a
                   href="/services/partner-solutions"
@@ -362,12 +362,12 @@ export default function AboutPage() {
             <div className="bg-navy rounded-xl p-8 border border-gold/20 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gold/[0.05] rounded-full -translate-y-20 translate-x-20 pointer-events-none" />
               <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-4 block">
-                Case Study — NDIS Provider
+                Case Study: NDIS Provider
               </span>
               <blockquote className="font-serif italic text-[17px] text-white leading-relaxed mb-6 max-w-[620px]">
                 &ldquo;Transformed what once felt overwhelming into something{' '}
                 <em className="text-gold not-italic font-medium">clear, structured, and exciting.</em>{' '}
-                He did not just implement — he guided us with mentorship that made all the difference.&rdquo;
+                He did not just implement. He guided us with mentorship that made all the difference.&rdquo;
               </blockquote>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">

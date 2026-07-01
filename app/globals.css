@@ -5,6 +5,8 @@
 :root {
   --header-height: 68px;
   --euc: #3C6E5E;
+  --text-body: #3D4451;
+  --text-slate: #33404E;
 }
 
 html,

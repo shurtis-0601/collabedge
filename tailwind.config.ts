@@ -22,11 +22,11 @@ const config: Config = {
         },
         offwhite: "#F7F5F0",
         slate: {
-          DEFAULT: "#64748B",
+          DEFAULT: "#33404E",
           light: "#94A3B8",
         },
         "text-dark": "#0F1923",
-        "text-body": "#1F2937",
+        "text-body": "#3D4451",
         border: "#E2E8F0",
       },
       fontFamily: {
