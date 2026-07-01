@@ -204,13 +204,10 @@ export default function TeamPage() {
                 </p>
                 <SkillList skills={magdalenaSkills} />
                 <a
-                  href="https://myabilityservices.com.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/about/magdalena-paczkowska"
                   className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
                 >
-                  My Ability Services
-                  <Globe size={12} />
+                  Full bio <ArrowRight size={12} />
                 </a>
               </div>
             </FadeIn>
@@ -232,12 +229,10 @@ export default function TeamPage() {
                 </p>
                 <SkillList skills={rajSkills} />
                 <a
-                  href="https://propertyautomate.com.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/about/raj-purshotham"
                   className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
                 >
-                  Property Automate <Globe size={12} />
+                  Full bio <ArrowRight size={12} />
                 </a>
               </div>
             </FadeIn>
