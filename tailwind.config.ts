@@ -15,6 +15,11 @@ const config: Config = {
           mid: "#0A2340",
         },
         gold: "#C6973F",
+        eucalyptus: {
+          DEFAULT: "#3C6E5E",
+          light: "#EAF3EE",
+          dark: "#2A5044",
+        },
         offwhite: "#F7F5F0",
         slate: {
           DEFAULT: "#64748B",
