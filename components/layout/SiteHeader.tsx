@@ -59,10 +59,9 @@ const NAV: NavItem[] = [
       {
         heading: "Enterprise Partners",
         links: [
-          { label: "SHIELD — Voice Fraud", href: "/services/partner-solutions/shield", featured: true },
-          { label: "Property Automate", href: "/services/partner-solutions/property-automate" },
-          { label: "DQOps — Data Quality", href: "/services/partner-solutions/dqops" },
-          { label: "Vanta — Security", href: "/services/partner-solutions/vanta" },
+          { label: "SHIELD: Voice Fraud Prevention", href: "/services/partner-solutions/shield", featured: true },
+          { label: "Dynamic Netsoft / Property Automate", href: "/services/partner-solutions" },
+          { label: "Newgen Consulting", href: "/services/partner-solutions" },
         ],
       },
     ],
