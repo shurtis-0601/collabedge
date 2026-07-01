@@ -65,6 +65,7 @@ const testimonials = [
 export default function TestimonialCarousel() {
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [clicked, setClicked] = useState(false)
 
   useEffect(() => {
     if (paused) return
@@ -75,11 +76,13 @@ export default function TestimonialCarousel() {
   }, [paused])
 
   const handlePrev = () => {
+    setClicked(true)
     setPaused(true)
     setCurrent(c => (c === 0 ? testimonials.length - 1 : c - 1))
   }
 
   const handleNext = () => {
+    setClicked(true)
     setPaused(true)
     setCurrent(c => (c === testimonials.length - 1 ? 0 : c + 1))
   }
@@ -90,7 +93,7 @@ export default function TestimonialCarousel() {
     <div
       className="relative"
       onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
+      onMouseLeave={() => { if (!clicked) setPaused(false) }}
     >
       <div className="text-[36px] text-gold/25 font-serif leading-none mb-4">&ldquo;</div>
       <blockquote className="font-serif italic text-[15px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
@@ -129,7 +132,7 @@ export default function TestimonialCarousel() {
           <button
             key={i}
             aria-label={`Go to testimonial ${i + 1}`}
-            onClick={() => { setPaused(true); setCurrent(i) }}
+            onClick={() => { setClicked(true); setPaused(true); setCurrent(i) }}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               i === current ? 'w-6 bg-gold' : 'w-1.5 bg-white/20'
             }`}
