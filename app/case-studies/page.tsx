@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import {
-  Award, ArrowRight, CheckCircle,
+  ArrowRight, CheckCircle,
   TrendingUp, Clock, Target,
   Building2, Quote
 } from 'lucide-react'
@@ -171,68 +171,89 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Additional Testimonials */}
-      <section className="bg-offwhite py-16 px-5 sm:px-10">
+      {/* Case Study — Safe Star Supports */}
+      <section className="bg-navy py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-slate mb-2 block">
-              More From Our Clients
+            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+              Case Study
             </span>
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
-              What do other clients say about working with CollabEdge Solutions?
+            <h2 className="text-[22px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
+              How did CollabEdge Solutions help Safe Star Supports build an audit-ready foundation?
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_320px] gap-10">
 
-            {/* Katelyn */}
-            <FadeIn variant="fadeUp" delay={0}>
-              <div className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm hover:-translate-y-[2px] transition-all duration-200">
-                <Quote size={18} className="text-gold/30 mb-4" />
-                <blockquote className="text-[14px] text-text-body leading-relaxed mb-5">
-                  CollabEdge managed delivery of a very complex and involved data warehousing product without any disruption to our operations.
-                </blockquote>
-                <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <div className="w-9 h-9 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                    <Award size={15} className="text-gold" />
-                  </div>
-                  <div>
-                    <span className="text-[12px] font-semibold text-text-dark block">Katelyn Leighton</span>
-                    <span className="text-[11px] text-slate">Founder, Safe Star Supports · Perth WA</span>
-                  </div>
+            {/* LEFT — Story content */}
+            <FadeIn variant="slideRight">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <Building2 size={18} className="text-gold" />
                 </div>
+                <div>
+                  <span className="text-[14px] font-bold text-white block">Safe Star Supports</span>
+                  <span className="text-[12px] text-gold">NDIS Provider · Perth, WA</span>
+                </div>
+              </div>
+
+              <p className="text-[13px] text-white/60 leading-relaxed mb-8">
+                Katelyn came to CollabEdge as a new NDIS provider navigating a complex onboarding process. We worked together on compliance documentation, service agreements, and building an audit-ready operational foundation.
+              </p>
+
+              {/* Quote block */}
+              <div className="bg-white/[0.04] border-l-2 border-gold pl-6 py-5 pr-5 rounded-r-lg">
+                <Quote size={18} className="text-gold/40 mb-3" />
+                <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
+                  As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
+                </blockquote>
+                <span className="text-[12px] font-semibold text-white block">Katelyn Leighton</span>
+                <span className="text-[11px] text-gold">Founder, Safe Star Supports, Perth WA</span>
               </div>
             </FadeIn>
 
-            {/* Dale */}
-            <FadeIn variant="fadeUp" delay={100}>
-              <div className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm hover:-translate-y-[2px] transition-all duration-200">
-                <Quote size={18} className="text-gold/30 mb-4" />
-                <blockquote className="text-[14px] text-text-body leading-relaxed mb-5">
-                  Sinclair brings rare depth: Fortune 500 discipline applied with genuine care for the businesses he works with.
-                </blockquote>
-                <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <div className="w-9 h-9 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                    <Award size={15} className="text-gold" />
+            {/* RIGHT — Results sidebar */}
+            <FadeIn variant="fadeUp" delay={150}>
+              <div className="bg-white/[0.04] border border-white/10 rounded-xl p-6 md:sticky md:top-24">
+                <h3 className="text-[12px] font-bold tracking-[.1em] uppercase text-gold/60 mb-5">
+                  At a Glance
+                </h3>
+
+                <div className="flex flex-col gap-5">
+                  <div className="flex items-start gap-3">
+                    <Target size={16} className="text-gold flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-[12px] font-semibold text-white block mb-0.5">Service Area</span>
+                      <span className="text-[12px] text-white/50">Document Governance and NDIS Compliance</span>
+                    </div>
                   </div>
-                  <div>
-                    <span className="text-[12px] font-semibold text-text-dark block">Dale Beaumont</span>
-                    <span className="text-[11px] text-slate">Founder, Business Blueprint</span>
+                  <div className="flex items-start gap-3">
+                    <Clock size={16} className="text-gold flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-[12px] font-semibold text-white block mb-0.5">Engagement Type</span>
+                      <span className="text-[12px] text-white/50">New provider onboarding and compliance foundation</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-[12px] font-semibold text-white block mb-0.5">Location</span>
+                      <span className="text-[12px] text-white/50">Perth, WA</span>
+                    </div>
                   </div>
                 </div>
+
+                <a
+                  href="/services/document-governance"
+                  className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
+                >
+                  View Document Governance
+                  <ArrowRight size={13} />
+                </a>
               </div>
             </FadeIn>
           </div>
-
-          <FadeIn variant="fadeUp" delay={200}>
-            <p className="text-[12px] text-slate text-center mt-8">
-              5.0 on Google · 11 reviews ·
-              <a href="#" className="text-gold font-semibold hover:underline ml-1">
-                Read all reviews
-              </a>
-            </p>
-          </FadeIn>
         </div>
       </section>
 
