@@ -62,51 +62,127 @@ const testimonials = [
   },
 ]
 
+type Dir = 'next' | 'prev'
+type Phase = 'idle' | 'setup' | 'animate'
+
+function SlideContent({ t }: { t: typeof testimonials[number] }) {
+  return (
+    <>
+      <div className="text-[36px] text-gold/25 font-serif leading-none mb-4">&ldquo;</div>
+      <blockquote className="font-serif italic text-[15px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
+        {t.quote}
+      </blockquote>
+      <div className="pb-2">
+        <p className="text-[14px] font-semibold text-white">{t.name}</p>
+        <p className="text-[12px] text-gold">{t.role}</p>
+        <p className="text-[11px] text-white/40 mt-0.5">
+          {t.context} &middot; {t.year}
+        </p>
+      </div>
+    </>
+  )
+}
+
 export default function TestimonialCarousel() {
   const [current, setCurrent] = useState(0)
+  const [previous, setPrevious] = useState<number | null>(null)
+  const [dir, setDir] = useState<Dir>('next')
+  const [phase, setPhase] = useState<Phase>('idle')
   const [paused, setPaused] = useState(false)
   const [clicked, setClicked] = useState(false)
 
+  const goTo = (next: number, d: Dir) => {
+    if (phase !== 'idle') return
+    setPrevious(current)
+    setDir(d)
+    setCurrent(next)
+    setPhase('setup')
+  }
+
+  // setup → animate: two rAFs so the browser paints both slides at their
+  // start positions before the CSS transitions fire
   useEffect(() => {
-    if (paused) return
-    const timer = setInterval(() => {
-      setCurrent(c => (c === testimonials.length - 1 ? 0 : c + 1))
+    if (phase !== 'setup') return
+    let r1: number, r2: number
+    r1 = requestAnimationFrame(() => {
+      r2 = requestAnimationFrame(() => setPhase('animate'))
+    })
+    return () => { cancelAnimationFrame(r1); cancelAnimationFrame(r2) }
+  }, [phase])
+
+  // animate → idle: wait for transition to complete
+  useEffect(() => {
+    if (phase !== 'animate') return
+    const t = setTimeout(() => {
+      setPhase('idle')
+      setPrevious(null)
+    }, 450)
+    return () => clearTimeout(t)
+  }, [phase])
+
+  // auto-advance: only when idle and not paused
+  useEffect(() => {
+    if (paused || phase !== 'idle') return
+    const t = setInterval(() => {
+      goTo(current === testimonials.length - 1 ? 0 : current + 1, 'next')
     }, 5000)
-    return () => clearInterval(timer)
-  }, [paused])
+    return () => clearInterval(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [paused, current, phase])
 
   const handlePrev = () => {
     setClicked(true)
     setPaused(true)
-    setCurrent(c => (c === 0 ? testimonials.length - 1 : c - 1))
+    goTo(current === 0 ? testimonials.length - 1 : current - 1, 'prev')
   }
 
   const handleNext = () => {
     setClicked(true)
     setPaused(true)
-    setCurrent(c => (c === testimonials.length - 1 ? 0 : c + 1))
+    goTo(current === testimonials.length - 1 ? 0 : current + 1, 'next')
   }
 
-  const t = testimonials[current]
+  // Incoming (current) slide:
+  //   setup   → start off-screen (right for 'next', left for 'prev'), no transition
+  //   animate → slide to centre, 400ms transition
+  //   idle    → sit at centre, no transition
+  const inFrom = dir === 'next' ? '100%' : '-100%'
+  const inTransform = phase === 'setup' ? `translateX(${inFrom})` : 'translateX(0%)'
+  const inTransition = phase === 'animate' ? 'transform 400ms ease-in-out' : 'none'
+
+  // Outgoing (previous) slide:
+  //   setup   → sit at centre, no transition
+  //   animate → slide off-screen, 400ms transition
+  const outTo = dir === 'next' ? '-100%' : '100%'
+  const outTransform = phase === 'animate' ? `translateX(${outTo})` : 'translateX(0%)'
+  const outTransition = phase === 'animate' ? 'transform 400ms ease-in-out' : 'none'
+
+  const prevT = previous !== null ? testimonials[previous] : null
 
   return (
     <div
-      className="relative"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => { if (!clicked) setPaused(false) }}
     >
-      <div className="text-[36px] text-gold/25 font-serif leading-none mb-4">&ldquo;</div>
-      <blockquote className="font-serif italic text-[15px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
-        {t.quote}
-      </blockquote>
-      <div className="flex items-center justify-between flex-wrap gap-4">
-        <div>
-          <p className="text-[14px] font-semibold text-white">{t.name}</p>
-          <p className="text-[12px] text-gold">{t.role}</p>
-          <p className="text-[11px] text-white/40 mt-0.5">
-            {t.context} &middot; {t.year}
-          </p>
+      {/* Animated slide area */}
+      <div className="relative overflow-hidden">
+        {/* Outgoing slide — absolutely positioned so it doesn't affect layout height */}
+        {prevT && phase !== 'idle' && (
+          <div
+            className="absolute inset-0"
+            style={{ transform: outTransform, transition: outTransition }}
+          >
+            <SlideContent t={prevT} />
+          </div>
+        )}
+        {/* Incoming (current) slide — in flow, determines container height */}
+        <div style={{ transform: inTransform, transition: inTransition }}>
+          <SlideContent t={testimonials[current]} />
         </div>
+      </div>
+
+      {/* Controls */}
+      <div className="flex items-center justify-between flex-wrap gap-4 mt-4">
         <div className="flex items-center gap-3">
           <button
             onClick={handlePrev}
@@ -127,12 +203,18 @@ export default function TestimonialCarousel() {
           </button>
         </div>
       </div>
+
+      {/* Dot indicators */}
       <div className="flex items-center gap-2 mt-6 flex-wrap">
         {testimonials.map((_, i) => (
           <button
             key={i}
             aria-label={`Go to testimonial ${i + 1}`}
-            onClick={() => { setClicked(true); setPaused(true); setCurrent(i) }}
+            onClick={() => {
+              setClicked(true)
+              setPaused(true)
+              goTo(i, i >= current ? 'next' : 'prev')
+            }}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               i === current ? 'w-6 bg-gold' : 'w-1.5 bg-white/20'
             }`}
