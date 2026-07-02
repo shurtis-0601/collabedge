@@ -74,8 +74,8 @@ export default function PartnerSolutionsPage() {
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
-          <ol className="flex items-center gap-2 text-[12px] text-slate">
-            <li><a href="/services" className="hover:text-gold transition-colors">Services</a></li>
+          <ol className="flex items-center gap-2 text-[14px] text-slate">
+            <li><a href="/services" className="hover:text-brand-goldLight transition-colors">Services</a></li>
             <li className="text-slate-light">/</li>
             <li className="text-text-dark font-medium">Partner Solutions</li>
           </ol>
@@ -94,10 +94,10 @@ export default function PartnerSolutionsPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               How the CollabEdge partner model works
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Most consulting firms either try to do everything themselves or refer clients to whoever pays them a commission. CollabEdge does neither. We maintain a small, carefully selected network of specialist partners, each with deep expertise in a specific domain, and bring them in only when the client situation genuinely calls for it. No referral fees influence our recommendations.
             </p>
           </FadeIn>
@@ -108,8 +108,8 @@ export default function PartnerSolutionsPage() {
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
                     <card.icon size={18} className="text-gold" />
                   </div>
-                  <h3 className="text-[14px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{card.desc}</p>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{card.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -126,7 +126,7 @@ export default function PartnerSolutionsPage() {
 
               <div className="flex items-center gap-3 mb-2">
                 <Star size={14} className="text-gold" fill="currentColor" />
-                <span className="text-[11px] font-bold tracking-[.14em] uppercase text-gold">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark">
                   Featured Partner
                 </span>
               </div>
@@ -136,27 +136,27 @@ export default function PartnerSolutionsPage() {
                   <Lock size={22} className="text-gold" />
                 </div>
                 <div>
-                  <h2 className="text-[24px] font-bold text-white leading-tight">SHIELD by Sekunce</h2>
-                  <p className="text-[13px] text-gold">Voice Fraud Prevention</p>
+                  <h2 className="text-[26px] font-bold text-white leading-tight">SHIELD by Sekunce</h2>
+                  <p className="text-[14px] text-brand-goldDark">Voice Fraud Prevention</p>
                 </div>
               </div>
 
-              <p className="text-[14px] text-white/65 leading-relaxed mb-6 max-w-[620px]">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6 max-w-[620px]">
                 SHIELD is an enterprise-grade inline voice fraud prevention platform developed by Sekunce Global. It sits in the SIP transport path and scores every call before it is accepted, blocking IRSF, CLI spoofing, deepfake voice, robocall, and account takeover attempts in under 100 milliseconds. CollabEdge Solutions is the Australian and Asia Pacific delivery partner.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 border-t border-white/10 pt-6">
                 {shieldStats.map((stat, i) => (
                   <div key={i}>
-                    <span className="text-[20px] font-bold text-gold block">{stat.value}</span>
-                    <span className="text-[11px] text-white/40 leading-tight">{stat.label}</span>
+                    <span className="text-[20px] font-bold text-brand-goldDark block">{stat.value}</span>
+                    <span className="text-[13px] text-[#9CA3AF] leading-tight">{stat.label}</span>
                   </div>
                 ))}
               </div>
 
               <a
                 href="/services/partner-solutions/shield"
-                className="inline-flex items-center gap-2 bg-gold text-navy text-[13px] font-bold rounded-lg px-6 py-3 hover:bg-gold/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-6 py-3 hover:bg-gold/90 transition-colors"
               >
                 View SHIELD Details
                 <ArrowRight size={14} />
@@ -171,10 +171,10 @@ export default function PartnerSolutionsPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-slate mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate mb-2 block">
               Active Partners
             </span>
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               Specialist partners across two lanes
             </h2>
           </FadeIn>
@@ -184,24 +184,24 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="slideRight">
               <div id="dynamic-netsoft" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
                     Enterprise Lane
                   </span>
-                  <span className="text-[10px] bg-gold/10 text-gold font-semibold px-2 py-0.5 rounded-full">
+                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
                     Microsoft D365
                   </span>
-                  <span className="text-[10px] bg-gold/10 text-gold font-semibold px-2 py-0.5 rounded-full">
+                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
                     PropTech
                   </span>
                 </div>
                 <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
                   <Building2 size={18} className="text-navy" />
                 </div>
-                <h3 className="text-[16px] font-bold text-text-dark mb-1">
+                <h3 className="text-[18px] font-bold text-text-dark mb-1">
                   Dynamic Netsoft Technologies
                 </h3>
-                <p className="text-[12px] text-gold font-semibold mb-3">Including Property Automate</p>
-                <p className="text-[13px] text-slate leading-relaxed mb-5">
+                <p className="text-[14px] text-brand-goldDark font-semibold mb-3">Including Property Automate</p>
+                <p className="text-[14px] text-slate leading-relaxed mb-5">
                   The only full-suite Microsoft Dynamics 365 F&amp;O ISV exclusively focused on Real Estate and Construction. Founded in 2011 with offices across Singapore, Dubai, Riyadh and Chennai, all six solutions are certified on Microsoft AppSource and Co-Sell Ready. Property Automate is the workflow automation product from the same group, covering commercial and residential property management operations.
                 </p>
                 <div className="flex flex-col gap-2">
@@ -209,7 +209,7 @@ export default function PartnerSolutionsPage() {
                     href="https://www.dynamicnetsoft.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
                     Visit Dynamic Netsoft
                     <ExternalLink size={12} />
@@ -218,7 +218,7 @@ export default function PartnerSolutionsPage() {
                     href="https://propertyautomate.com.au"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-slate hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-slate hover:text-brand-goldDark transition-colors"
                   >
                     Visit Property Automate
                     <ExternalLink size={12} />
@@ -231,25 +231,25 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="fadeUp" delay={100}>
               <div id="newgen-consulting" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
                     SME Lane
                   </span>
-                  <span className="text-[10px] bg-gold/10 text-gold font-semibold px-2 py-0.5 rounded-full">
+                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
                     Healthcare Software
                   </span>
                 </div>
                 <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
                   <Users size={18} className="text-navy" />
                 </div>
-                <h3 className="text-[16px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
-                <p className="text-[13px] text-slate leading-relaxed mb-5">
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
+                <p className="text-[14px] text-slate leading-relaxed mb-5">
                   Zoho ecosystem specialist working with CollabEdge Solutions to bring healthcare domain expertise to Zoho CRM and operations platforms. For NDIS providers and allied health operators who prefer a packaged software solution over custom builds, CollabEdge provides the healthcare domain knowledge, Newgen provides the Zoho implementation depth.
                 </p>
                 <a
                   href="https://newgenconsulting.au"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                 >
                   Visit Newgen Consulting
                   <ExternalLink size={12} />
@@ -265,20 +265,20 @@ export default function PartnerSolutionsPage() {
         <div className="max-w-[1000px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
             <FadeIn variant="slideRight">
-              <span className="text-[11px] font-bold tracking-[.14em] uppercase text-white/60 mb-2 block">
+              <span className="text-[13px] font-bold tracking-[.14em] uppercase text-[#D1D5DB] mb-2 block">
                 Partner Enquiries
               </span>
-              <h2 className="text-[24px] font-bold text-white mb-3 leading-snug">
+              <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                 Interested in partnering with CollabEdge?
               </h2>
-              <p className="text-[14px] text-white/70 leading-relaxed max-w-[520px]">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px]">
                 CollabEdge evaluates new partner relationships on a case-by-case basis. If you have a specialist capability that serves Australian or Asia Pacific enterprises or healthcare providers, we welcome the conversation. Partner enquiries are managed by Raj Purshotham, Strategy and Growth Advisor.
               </p>
             </FadeIn>
             <FadeIn variant="fadeUp" delay={100}>
               <a
                 href="/appt"
-                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[13px] font-bold rounded-lg px-7 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-7 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
               >
                 Start a Conversation
                 <ArrowRight size={14} />

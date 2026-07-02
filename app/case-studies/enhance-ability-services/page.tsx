@@ -86,7 +86,7 @@ export default function EnhanceAbilityServicesPage() {
           <FadeIn variant="fadeIn">
             <a
               href="/case-studies"
-              className="inline-flex items-center gap-2 text-[12px] font-medium text-white/50 hover:text-gold transition-colors"
+              className="inline-flex items-center gap-2 text-[14px] font-medium text-[#D1D5DB] hover:text-brand-goldDark transition-colors"
             >
               <ArrowLeft size={13} />
               All Case Studies
@@ -99,13 +99,13 @@ export default function EnhanceAbilityServicesPage() {
       <section className="bg-navy pt-8 pb-16 px-5 sm:px-10">
         <div className="max-w-[860px] mx-auto">
           <FadeIn variant="fadeUp">
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-4 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-4 block">
               Case Study
             </span>
             <h1 className="text-[28px] md:text-[42px] font-bold text-white tracking-tight leading-[1.1] mb-6 max-w-[720px]">
               From overwhelmed to structured: how Enhance Ability Services rebuilt NDIS operations
             </h1>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px] text-white/50 mb-8">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[14px] text-[#D1D5DB] mb-8">
               <span className="flex items-center gap-2">
                 <Building2 size={14} className="text-gold" />
                 Enhance Ability Services
@@ -122,7 +122,7 @@ export default function EnhanceAbilityServicesPage() {
           </FadeIn>
 
           <FadeIn variant="fadeUp" delay={100}>
-            <p className="text-[15px] text-white/70 leading-relaxed max-w-[680px] border-l-2 border-gold pl-5">
+            <p className="text-[15px] text-[#D1D5DB] leading-relaxed max-w-[680px] border-l-2 border-gold pl-5">
               CollabEdge Solutions helped Enhance Ability Services, a Geelong-based NDIS provider, move from fragmented manual processes to structured, auditable operations, using only the Microsoft 365 environment they already had. No new platforms were introduced.
             </p>
           </FadeIn>
@@ -136,7 +136,7 @@ export default function EnhanceAbilityServicesPage() {
             {glanceStats.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                 <div>
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-navy/60 block mb-1">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-navy/60 block mb-1">
                     {item.label}
                   </span>
                   <span className="text-[14px] font-bold text-navy block">
@@ -160,13 +160,13 @@ export default function EnhanceAbilityServicesPage() {
                 <Target size={18} className="text-gold" />
               </div>
               <div>
-                <h2 className="text-[20px] font-bold text-text-dark mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-text-dark mb-3 leading-snug">
                   What challenge was Enhance Ability Services facing?
                 </h2>
-                <p className="text-[14px] text-slate leading-relaxed mb-4 max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
                   Enhance Ability Services was managing NDIS compliance and day-to-day operations through fragmented, manual processes. Documentation lived across multiple disconnected systems, audit readiness depended on individual memory rather than structured process, and the time spent on administrative overhead was pulling focus away from participant outcomes.
                 </p>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
                   Director Rebecca Delaney described the business as feeling overwhelmed by the complexity of staying compliant while still trying to grow and deliver quality support, a familiar position for many NDIS providers at a similar stage of operation.
                 </p>
               </div>
@@ -180,20 +180,20 @@ export default function EnhanceAbilityServicesPage() {
                 <Clock size={18} className="text-gold" />
               </div>
               <div>
-                <h2 className="text-[20px] font-bold text-text-dark mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-text-dark mb-3 leading-snug">
                   How did CollabEdge Solutions approach the engagement?
                 </h2>
-                <p className="text-[14px] text-slate leading-relaxed mb-4 max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
                   CollabEdge Solutions began by mapping Enhance Ability Services&apos; existing processes end to end, working directly with Rebecca to understand where manual effort was consuming the most time and where compliance risk was highest. Rather than introducing new software, the engagement focused on rebuilding documentation and workflow structures inside the Microsoft 365 environment the business already had.
                 </p>
-                <p className="text-[14px] text-slate leading-relaxed mb-6 max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
                   This vendor-agnostic approach meant no additional licensing costs, no new platform to learn, and no disruption to day-to-day operations during the transition.
                 </p>
                 <div className="flex flex-col gap-2">
                   {approachSteps.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[13px] text-text-body">{item}</span>
+                      <span className="text-[14px] text-text-body">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -208,10 +208,10 @@ export default function EnhanceAbilityServicesPage() {
                 <TrendingUp size={18} className="text-gold" />
               </div>
               <div>
-                <h2 className="text-[20px] font-bold text-text-dark mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-text-dark mb-3 leading-snug">
                   What changed for Enhance Ability Services?
                 </h2>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
                   Operations and documentation became structured and auditable. The administrative burden on Rebecca and her team reduced significantly, audit confidence improved, and the business moved from feeling overwhelmed to having a clear operational system they understood and trusted, built on tools they already owned.
                 </p>
               </div>
@@ -228,7 +228,7 @@ export default function EnhanceAbilityServicesPage() {
             <Quote size={32} className="text-gold/30 mb-6" />
             <blockquote className="font-serif italic text-[19px] md:text-[26px] text-white leading-relaxed mb-8 max-w-[700px]">
               Working with Sinclair has transformed what once felt overwhelming into something
-              <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way, and that mentorship made all the difference to how confident I now feel running this business.
+              <em className="text-brand-goldDark not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way, and that mentorship made all the difference to how confident I now feel running this business.
             </blockquote>
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
@@ -236,7 +236,7 @@ export default function EnhanceAbilityServicesPage() {
               </div>
               <div>
                 <span className="text-[14px] font-semibold text-white block">Rebecca Delaney</span>
-                <span className="text-[12px] text-gold block mt-0.5">Director, Enhance Ability Services · Geelong VIC</span>
+                <span className="text-[14px] text-brand-goldDark block mt-0.5">Director, Enhance Ability Services · Geelong VIC</span>
               </div>
             </div>
           </FadeIn>
@@ -248,7 +248,7 @@ export default function EnhanceAbilityServicesPage() {
         <div className="max-w-[860px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[18px] font-bold text-text-dark mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark mb-8 leading-snug">
               Services involved in this engagement
             </h2>
           </FadeIn>
@@ -259,11 +259,11 @@ export default function EnhanceAbilityServicesPage() {
                   href={service.href}
                   className="block bg-white rounded-xl p-6 border border-border h-full hover:border-gold/40 hover:shadow-sm hover:-translate-y-[2px] transition-all duration-200 group"
                 >
-                  <h3 className="text-[14px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[12px] text-slate leading-relaxed mb-4">{service.desc}</p>
-                  <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
+                  <p className="text-[14px] text-slate leading-relaxed mb-4">{service.desc}</p>
+                  <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={12} />
                   </span>
                 </a>

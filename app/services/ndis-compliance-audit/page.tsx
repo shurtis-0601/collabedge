@@ -156,10 +156,10 @@ export default function NDISComplianceAuditPage() {
       <div className="bg-navy px-5 sm:px-10 pt-6 pb-2">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40">
-              <a href="/services" className="hover:text-gold transition-colors">Services</a>
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF]">
+              <a href="/services" className="hover:text-brand-goldDark transition-colors">Services</a>
               <span>/</span>
-              <span className="text-white/60">NDIS Compliance and Audit</span>
+              <span className="text-[#D1D5DB]">NDIS Compliance and Audit</span>
             </div>
           </FadeIn>
         </div>
@@ -177,10 +177,10 @@ export default function NDISComplianceAuditPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               What does NDIS compliance and audit support include?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               CollabEdge Solutions reviews existing documentation and processes against NDIS Practice Standards, identifies compliance gaps, and rebuilds governance frameworks so they are structured, evidence-based, and ready for audit, without introducing new software your team needs to learn.
             </p>
           </FadeIn>
@@ -192,8 +192,8 @@ export default function NDISComplianceAuditPage() {
                     <item.icon size={18} className="text-gold" />
                   </div>
                   <div>
-                    <h3 className="text-[14px] font-bold text-text-dark mb-1.5">{item.title}</h3>
-                    <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                    <h3 className="text-[18px] font-bold text-text-dark mb-1.5">{item.title}</h3>
+                    <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -207,13 +207,13 @@ export default function NDISComplianceAuditPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Transparent Pricing
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               How much does NDIS compliance and audit support cost?
             </h2>
-            <p className="text-[14px] text-white/60 leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-10 max-w-[680px]">
               Pricing depends on the scope of your current documentation and the size of your organisation. Most providers fall into Tier 2. Every engagement begins with a free consultation to confirm the right scope before any commitment.
             </p>
           </FadeIn>
@@ -223,27 +223,27 @@ export default function NDISComplianceAuditPage() {
             {/* Tier 1 */}
             <FadeIn variant="fadeUp" delay={0}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 h-full flex flex-col">
-                <span className="text-[11px] font-bold tracking-[.1em] uppercase text-white/40 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.1em] uppercase text-[#9CA3AF] mb-2 block">
                   Tier 1: Foundation
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$3,500</span>
-                  <span className="text-[13px] text-white/40"> – $5,000</span>
+                  <span className="text-[14px] text-[#9CA3AF]"> – $5,000</span>
                 </div>
-                <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For sole traders and small providers needing core compliance documentation in place.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
                   {tier1Features.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle size={13} className="text-gold/60 flex-shrink-0 mt-0.5" />
-                      <span className="text-[12px] text-white/60">{item}</span>
+                      <span className="text-[14px] text-[#D1D5DB]">{item}</span>
                     </div>
                   ))}
                 </div>
                 <a
                   href="/appt"
-                  className="block text-center bg-white/[0.08] text-white text-[12px] font-semibold rounded-lg py-3 hover:bg-white/[0.15] transition-colors"
+                  className="block text-center bg-white/[0.08] text-white text-[14px] font-semibold rounded-lg py-3 hover:bg-white/[0.15] transition-colors"
                 >
                   Discuss This Tier
                 </a>
@@ -253,30 +253,30 @@ export default function NDISComplianceAuditPage() {
             {/* Tier 2 — Most Popular */}
             <FadeIn variant="fadeUp" delay={100}>
               <div className="bg-gradient-to-b from-gold/15 to-gold/[0.05] border-2 border-gold rounded-xl p-7 h-full flex flex-col relative md:-translate-y-3 md:shadow-2xl">
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[10px] font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-[13px] font-bold uppercase tracking-wide px-3 py-1 rounded-full">
                   Most Popular
                 </span>
-                <span className="text-[11px] font-bold tracking-[.1em] uppercase text-gold mb-2 block mt-2">
+                <span className="text-[13px] font-bold tracking-[.1em] uppercase text-brand-goldDark mb-2 block mt-2">
                   Tier 2: Comprehensive
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$6,000</span>
-                  <span className="text-[13px] text-white/50"> – $8,000</span>
+                  <span className="text-[14px] text-[#D1D5DB]"> – $8,000</span>
                 </div>
-                <p className="text-[12px] text-white/70 leading-relaxed mb-6">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For established providers preparing for certification or surveillance audit.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
                   {tier2Features.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle size={13} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[12px] text-white/85">{item}</span>
+                      <span className="text-[14px] text-[#F1F5F9]">{item}</span>
                     </div>
                   ))}
                 </div>
                 <a
                   href="/appt"
-                  className="block text-center bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
+                  className="block text-center bg-gold text-navy text-[14px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
                 >
                   Discuss This Tier
                 </a>
@@ -286,27 +286,27 @@ export default function NDISComplianceAuditPage() {
             {/* Tier 3 */}
             <FadeIn variant="fadeUp" delay={200}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 h-full flex flex-col">
-                <span className="text-[11px] font-bold tracking-[.1em] uppercase text-white/40 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.1em] uppercase text-[#9CA3AF] mb-2 block">
                   Tier 3: Enterprise
                 </span>
                 <div className="mb-5">
                   <span className="text-[26px] font-bold text-white">$10,000</span>
-                  <span className="text-[13px] text-white/40"> – $15,000</span>
+                  <span className="text-[14px] text-[#9CA3AF]"> – $15,000</span>
                 </div>
-                <p className="text-[12px] text-white/50 leading-relaxed mb-6">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For larger providers or multi-site organisations with complex compliance needs.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
                   {tier3Features.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle size={13} className="text-gold/60 flex-shrink-0 mt-0.5" />
-                      <span className="text-[12px] text-white/60">{item}</span>
+                      <span className="text-[14px] text-[#D1D5DB]">{item}</span>
                     </div>
                   ))}
                 </div>
                 <a
                   href="/appt"
-                  className="block text-center bg-white/[0.08] text-white text-[12px] font-semibold rounded-lg py-3 hover:bg-white/[0.15] transition-colors"
+                  className="block text-center bg-white/[0.08] text-white text-[14px] font-semibold rounded-lg py-3 hover:bg-white/[0.15] transition-colors"
                 >
                   Discuss This Tier
                 </a>
@@ -315,7 +315,7 @@ export default function NDISComplianceAuditPage() {
           </div>
 
           <FadeIn variant="fadeUp" delay={300}>
-            <p className="text-[12px] text-white/40 text-center mt-8">
+            <p className="text-[14px] text-[#9CA3AF] text-center mt-8">
               Not sure which tier fits? Every engagement starts with a free 30-minute consultation to confirm scope.
             </p>
           </FadeIn>
@@ -327,7 +327,7 @@ export default function NDISComplianceAuditPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               How the engagement works
             </h2>
           </FadeIn>
@@ -335,9 +335,9 @@ export default function NDISComplianceAuditPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
-                  <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -350,7 +350,7 @@ export default function NDISComplianceAuditPage() {
         <div className="max-w-[760px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Frequently asked questions
             </h2>
           </FadeIn>
@@ -370,17 +370,17 @@ export default function NDISComplianceAuditPage() {
             >
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
                     Case Study
                   </span>
-                  <h3 className="text-[16px] font-bold text-white mb-2">
+                  <h3 className="text-[18px] font-bold text-white mb-2">
                     See this in action: Enhance Ability Services
                   </h3>
-                  <p className="text-[13px] text-white/50 max-w-[520px]">
+                  <p className="text-[14px] text-[#D1D5DB] max-w-[520px]">
                     How a Geelong NDIS provider moved from overwhelmed to structured, audit-ready operations.
                   </p>
                 </div>
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200 flex-shrink-0">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200 flex-shrink-0">
                   Read the case study <ArrowRight size={13} />
                 </span>
               </div>

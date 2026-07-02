@@ -1,5 +1,15 @@
 import type { Config } from "tailwindcss";
 
+// ACCESSIBILITY RULES — apply to all new pages
+// Minimum font size: 14px (text-sm) for secondary
+// Minimum font size: 16px (text-base) for body prose
+// Eyebrow labels: minimum 13px, uppercase, tracked
+// H2: 26px | H3: 18px | H1: 44px
+// Gold on dark backgrounds: #E6B85C (brand.goldDark)
+// Gold on light backgrounds: #B8821A (brand.goldLight)
+// No opacity-based text on dark cards
+// Use solid hex values: #F1F5F9 / #D1D5DB / #9CA3AF
+
 const config: Config = {
   content: [
     "./app/**/*.{ts,tsx}",
@@ -15,6 +25,10 @@ const config: Config = {
           mid: "#0A2340",
         },
         gold: "#C6973F",
+        brand: {
+          goldDark: "#E6B85C",
+          goldLight: "#B8821A",
+        },
         eucalyptus: {
           DEFAULT: "#3C6E5E",
           light: "#EAF3EE",

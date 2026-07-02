@@ -113,14 +113,14 @@ export default function SILRegistrationPage() {
       <div className="bg-navy px-5 sm:px-10 pt-6 pb-2">
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40 flex-wrap">
-              <a href="/services" className="hover:text-gold transition-colors">Services</a>
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF] flex-wrap">
+              <a href="/services" className="hover:text-brand-goldDark transition-colors">Services</a>
               <span>/</span>
-              <a href="/services/ndis-compliance-audit" className="hover:text-gold transition-colors">
+              <a href="/services/ndis-compliance-audit" className="hover:text-brand-goldDark transition-colors">
                 NDIS Compliance and Audit
               </a>
               <span>/</span>
-              <span className="text-white/60">SIL Registration</span>
+              <span className="text-[#D1D5DB]">SIL Registration</span>
             </div>
           </FadeIn>
         </div>
@@ -132,26 +132,26 @@ export default function SILRegistrationPage() {
           <FadeIn variant="fadeUp">
             <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-4 py-1.5 mb-6">
               <Clock size={13} className="text-gold" />
-              <span className="text-[11px] font-semibold text-gold">10 spots available this round</span>
+              <span className="text-[13px] font-semibold text-brand-goldDark">10 spots available this round</span>
             </div>
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
               SIL Registration Support
             </span>
             <h1 className="text-[26px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-5">
               Get SIL registered.{' '}
-              <span className="text-gold">$2,000.</span>
+              <span className="text-brand-goldDark">$2,000.</span>
             </h1>
-            <p className="text-[15px] text-white/65 leading-relaxed max-w-[540px] mx-auto mb-8">
+            <p className="text-[15px] text-[#D1D5DB] leading-relaxed max-w-[540px] mx-auto mb-8">
               Senior-led support to get your Supported Independent Living registration documentation right the first time, without the back and forth that usually comes with it.
             </p>
             <a
               href="/appt"
-              className="inline-flex items-center gap-2 bg-gold text-navy text-[13px] font-bold rounded-lg px-7 py-3.5 hover:bg-gold/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-7 py-3.5 hover:bg-gold/90 transition-colors"
             >
               Secure Your Spot
               <ArrowRight size={14} />
             </a>
-            <p className="text-[11px] text-white/35 mt-4">
+            <p className="text-[13px] text-[#9CA3AF] mt-4">
               Micro-provider concession available for providers under 10 participants
             </p>
           </FadeIn>
@@ -163,7 +163,7 @@ export default function SILRegistrationPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Is SIL registration support right for you?
             </h2>
           </FadeIn>
@@ -174,13 +174,13 @@ export default function SILRegistrationPage() {
               <div className="bg-offwhite rounded-xl p-6 border border-border">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle size={16} className="text-gold" />
-                  <span className="text-[13px] font-bold text-text-dark">This is for you if</span>
+                  <span className="text-[14px] font-bold text-text-dark">This is for you if</span>
                 </div>
                 <div className="flex flex-col gap-2.5">
                   {rightFit.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle size={13} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[12px] text-text-body">{item}</span>
+                      <span className="text-[14px] text-text-body">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -192,18 +192,18 @@ export default function SILRegistrationPage() {
               <div className="bg-white rounded-xl p-6 border border-border">
                 <div className="flex items-center gap-2 mb-4">
                   <AlertTriangle size={16} className="text-slate-light" />
-                  <span className="text-[13px] font-bold text-text-dark">This may not be for you if</span>
+                  <span className="text-[14px] font-bold text-text-dark">This may not be for you if</span>
                 </div>
                 <div className="flex flex-col gap-2.5">
                   {notFit.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
-                      <span className="text-[12px] text-slate-light leading-relaxed">{item}</span>
+                      <span className="text-[14px] text-slate-light leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
                 <a
                   href="/services/ndis-compliance-audit"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-5"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-5"
                 >
                   See general NDIS compliance support
                   <ArrowRight size={12} />
@@ -219,10 +219,10 @@ export default function SILRegistrationPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               What is included for $2,000?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               A complete, guided path to SIL registration readiness, not a template you fill in alone.
             </p>
           </FadeIn>
@@ -233,7 +233,7 @@ export default function SILRegistrationPage() {
                   <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
                     <item.icon size={16} className="text-gold" />
                   </div>
-                  <span className="text-[13px] text-text-body leading-relaxed">{item.text}</span>
+                  <span className="text-[14px] text-text-body leading-relaxed">{item.text}</span>
                 </div>
               </FadeIn>
             ))}
@@ -250,14 +250,14 @@ export default function SILRegistrationPage() {
                 <Users size={22} className="text-gold" />
               </div>
               <div className="flex-1">
-                <h3 className="text-[16px] font-bold text-white mb-2">Micro-Provider Concession</h3>
-                <p className="text-[13px] text-white/60 leading-relaxed">
+                <h3 className="text-[18px] font-bold text-white mb-2">Micro-Provider Concession</h3>
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
                   If your organisation supports fewer than 10 NDIS participants, a reduced rate applies. This reflects the smaller documentation scope typically required for micro and emerging providers. Confirm eligibility during your free consultation.
                 </p>
               </div>
               <a
                 href="/appt"
-                className="inline-flex items-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg px-5 py-3 hover:bg-gold/90 transition-colors whitespace-nowrap flex-shrink-0"
+                className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-5 py-3 hover:bg-gold/90 transition-colors whitespace-nowrap flex-shrink-0"
               >
                 Check Eligibility
                 <ArrowRight size={13} />
@@ -272,7 +272,7 @@ export default function SILRegistrationPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               How SIL registration support works
             </h2>
           </FadeIn>
@@ -280,9 +280,9 @@ export default function SILRegistrationPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
-                  <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -295,7 +295,7 @@ export default function SILRegistrationPage() {
         <div className="max-w-[760px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Frequently asked questions
             </h2>
           </FadeIn>
@@ -312,12 +312,12 @@ export default function SILRegistrationPage() {
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               10 spots. Senior-led. $2,000.
             </h2>
-            <p className="text-[14px] text-white/55 leading-relaxed mb-8">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8">
               Book your free consultation now to secure your place in this round.
             </p>
             <a
               href="/appt"
-              className="inline-flex items-center gap-2 bg-gold text-navy text-[13px] font-bold rounded-lg px-7 py-3.5 hover:bg-gold/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-7 py-3.5 hover:bg-gold/90 transition-colors"
             >
               Secure Your Spot
               <ArrowRight size={14} />

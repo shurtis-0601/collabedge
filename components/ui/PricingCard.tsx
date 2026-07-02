@@ -20,7 +20,7 @@ export default function PricingCard({ tier, price, period, features, ctaLabel, c
       }`}
     >
       {featured && (
-        <p className="text-[10px] font-semibold tracking-[.16em] uppercase text-gold mb-3">
+        <p className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-3">
           Most Popular
         </p>
       )}
@@ -31,15 +31,15 @@ export default function PricingCard({ tier, price, period, features, ctaLabel, c
         {price}
       </p>
       {period && (
-        <p className={`text-[12px] mb-5 ${featured ? "text-white/60" : "text-slate"}`}>{period}</p>
+        <p className={`text-[14px] mb-5 ${featured ? "text-[#D1D5DB]" : "text-slate"}`}>{period}</p>
       )}
       <ul className="space-y-2.5 mb-6 flex-1">
         {features.map((f) => (
-          <li key={f} className="flex items-start gap-2 text-[13px]">
-            <svg viewBox="0 0 16 16" className="h-4 w-4 text-gold shrink-0 mt-0.5" fill="none" aria-hidden="true">
+          <li key={f} className="flex items-start gap-2 text-[14px]">
+            <svg viewBox="0 0 16 16" className="h-4 w-4 text-brand-goldDark shrink-0 mt-0.5" fill="none" aria-hidden="true">
               <path d="M2 8l4 4 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <span className={featured ? "text-white/80" : "text-slate"}>{f}</span>
+            <span className={featured ? "text-[#F1F5F9]" : "text-slate"}>{f}</span>
           </li>
         ))}
       </ul>

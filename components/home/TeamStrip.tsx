@@ -24,7 +24,7 @@ export default function TeamStrip({ members }: { members: Member[] }) {
             </div>
             <div className="p-4">
               <p className="text-[14px] font-bold text-text-dark">{m.name}</p>
-              <p className="text-[12px] text-slate mt-0.5">{m.title}</p>
+              <p className="text-[14px] text-slate mt-0.5">{m.title}</p>
             </div>
           </div>
         );

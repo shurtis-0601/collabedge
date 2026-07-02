@@ -61,13 +61,13 @@ export default function TestimonialCarousel() {
         aria-live="polite"
         aria-label="Testimonials"
       >
-        <span className="block font-serif text-gold text-5xl leading-none mb-4" aria-hidden="true">
+        <span className="block font-serif text-brand-goldDark text-5xl leading-none mb-4" aria-hidden="true">
           &ldquo;
         </span>
-        <blockquote className="text-[17px] text-white/90 leading-relaxed font-serif italic max-w-2xl mb-5">
+        <blockquote className="text-[17px] text-[#F1F5F9] leading-relaxed font-serif italic max-w-2xl mb-5">
           {slide.quote}
         </blockquote>
-        <p className="text-[13px] text-white/50">
+        <p className="text-[14px] text-[#D1D5DB]">
           — <span className="text-white font-semibold">{slide.author}</span>, {slide.role},{" "}
           {slide.company}
         </p>
@@ -78,7 +78,7 @@ export default function TestimonialCarousel() {
         <button
           onClick={prev}
           aria-label="Previous testimonial"
-          className="h-8 w-8 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/50 transition-colors"
+          className="h-8 w-8 rounded-full border border-white/20 flex items-center justify-center text-[#D1D5DB] hover:text-white hover:border-white/50 transition-colors"
         >
           <svg viewBox="0 0 16 16" className="h-4 w-4" fill="none" aria-hidden="true">
             <path d="M10 4L6 8l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -102,7 +102,7 @@ export default function TestimonialCarousel() {
         <button
           onClick={next}
           aria-label="Next testimonial"
-          className="h-8 w-8 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/50 transition-colors"
+          className="h-8 w-8 rounded-full border border-white/20 flex items-center justify-center text-[#D1D5DB] hover:text-white hover:border-white/50 transition-colors"
         >
           <svg viewBox="0 0 16 16" className="h-4 w-4" fill="none" aria-hidden="true">
             <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -111,14 +111,14 @@ export default function TestimonialCarousel() {
       </div>
 
       {/* Google review strip */}
-      <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-[13px] text-white/60">
-        <span className="text-gold">★★★★★</span>
+      <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-[14px] text-[#D1D5DB]">
+        <span className="text-brand-goldDark">★★★★★</span>
         <span>5.0 on Google · 11 reviews ·</span>
         <Link
           href="https://g.page/r/collabedge"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gold hover:underline"
+          className="text-brand-goldDark hover:underline"
         >
           Read all reviews →
         </Link>

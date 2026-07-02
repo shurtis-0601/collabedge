@@ -41,12 +41,12 @@ export default function FAQAccordion({ faqs = defaultFaqs }: { faqs?: FAQ[] }) {
             <span className="text-[14px] font-semibold text-text-dark">{faq.q}</span>
             <ChevronDown
               size={16}
-              className={`text-gold flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
+              className={`text-brand-goldLight flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
             />
           </button>
           {openIndex === i && (
             <div className="px-5 pb-5">
-              <p className="text-[13px] text-slate leading-relaxed">{faq.a}</p>
+              <p className="text-[14px] text-slate leading-relaxed">{faq.a}</p>
             </div>
           )}
         </div>

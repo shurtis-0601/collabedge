@@ -121,10 +121,10 @@ export default function ShieldPage() {
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
-          <ol className="flex items-center gap-2 text-[12px] text-slate">
-            <li><a href="/services" className="hover:text-gold transition-colors">Services</a></li>
+          <ol className="flex items-center gap-2 text-[14px] text-slate">
+            <li><a href="/services" className="hover:text-brand-goldLight transition-colors">Services</a></li>
             <li className="text-slate-light">/</li>
-            <li><a href="/services/partner-solutions" className="hover:text-gold transition-colors">Partner Solutions</a></li>
+            <li><a href="/services/partner-solutions" className="hover:text-brand-goldLight transition-colors">Partner Solutions</a></li>
             <li className="text-slate-light">/</li>
             <li className="text-text-dark font-medium">SHIELD</li>
           </ol>
@@ -143,10 +143,10 @@ export default function ShieldPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Why voice fraud is the fastest-growing threat operators face
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Global telecom voice fraud reached $41.8 billion in 2025 and is accelerating. The average operator loses 5 to 15 percent of revenue annually to fraud, with deepfake vishing attacks growing 1,633 percent in Q1 2025 versus Q4 2024. The voice channel is the largest, fastest-growing, and least-defended revenue surface in modern telecoms.
             </p>
           </FadeIn>
@@ -157,7 +157,7 @@ export default function ShieldPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div className="bg-gold rounded-xl p-6 text-center">
                   <span className="text-[28px] font-bold text-navy block mb-1">{stat.value}</span>
-                  <span className="text-[12px] text-navy/70 leading-snug">{stat.label}</span>
+                  <span className="text-[14px] text-navy/70 leading-snug">{stat.label}</span>
                 </div>
               </FadeIn>
             ))}
@@ -170,10 +170,10 @@ export default function ShieldPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               Five threats. One inline defence.
             </h2>
-            <p className="text-[14px] text-white/60 leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-10 max-w-[680px]">
               SHIELD handles every major voice fraud attack vector inline on the same B2BUA, under one risk score, no microservice overhead, no batch lag, under 100 milliseconds per call.
             </p>
           </FadeIn>
@@ -185,8 +185,8 @@ export default function ShieldPage() {
                     <vector.icon size={18} className="text-gold" />
                   </div>
                   <div>
-                    <h3 className="text-[14px] font-bold text-white mb-1">{vector.title}</h3>
-                    <p className="text-[13px] text-white/55 leading-relaxed">{vector.desc}</p>
+                    <h3 className="text-[18px] font-bold text-white mb-1">{vector.title}</h3>
+                    <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{vector.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -200,7 +200,7 @@ export default function ShieldPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               Documented outcomes from live deployments
             </h2>
           </FadeIn>
@@ -208,20 +208,20 @@ export default function ShieldPage() {
             {/* European Tier-2 Carrier */}
             <FadeIn variant="slideRight">
               <div className="bg-white rounded-xl p-7 border border-border h-full">
-                <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60 mb-2 block">
                   Live Deployment
                 </span>
-                <h3 className="text-[15px] font-bold text-text-dark mb-3">
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">
                   European Tier-2 Carrier
                 </h3>
-                <p className="text-[13px] text-slate leading-relaxed mb-6">
+                <p className="text-[14px] text-slate leading-relaxed mb-6">
                   A carrier with EUR 25 million annual revenue deployed SHIELD drop-in alongside an existing SBC with zero CapEx. Results: EUR 575,000 annual revenue leak closed, 35 percent reduction in failed calls, 84 percent reduction in partner penalties, 8.1 month payback.
                 </p>
                 <div className="grid grid-cols-3 gap-3 border-t border-border pt-5">
                   {carrierResult.map((r, i) => (
                     <div key={i}>
-                      <span className="text-[16px] font-bold text-gold block">{r.value}</span>
-                      <span className="text-[10px] text-slate leading-tight">{r.label}</span>
+                      <span className="text-[16px] font-bold text-brand-goldLight block">{r.value}</span>
+                      <span className="text-[13px] text-slate leading-tight">{r.label}</span>
                     </div>
                   ))}
                 </div>
@@ -231,20 +231,20 @@ export default function ShieldPage() {
             {/* Financial Services Operator */}
             <FadeIn variant="fadeUp" delay={100}>
               <div className="bg-white rounded-xl p-7 border border-border h-full">
-                <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60 mb-2 block">
                   Live Deployment
                 </span>
-                <h3 className="text-[15px] font-bold text-text-dark mb-3">
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">
                   Financial Services Operator
                 </h3>
-                <p className="text-[13px] text-slate leading-relaxed mb-6">
+                <p className="text-[14px] text-slate leading-relaxed mb-6">
                   Real-time per-call scoring replaced batch updates. Every call scored in flight against origination network and behavioural stack. Results: 35 percent per-call cost reduction with 100 percent coverage, 11 percent lift in fraudulent attempt identification, 15 percent reduction in telecom-based fraud.
                 </p>
                 <div className="grid grid-cols-3 gap-3 border-t border-border pt-5">
                   {finServResult.map((r, i) => (
                     <div key={i}>
-                      <span className="text-[16px] font-bold text-gold block">{r.value}</span>
-                      <span className="text-[10px] text-slate leading-tight">{r.label}</span>
+                      <span className="text-[16px] font-bold text-brand-goldLight block">{r.value}</span>
+                      <span className="text-[13px] text-slate leading-tight">{r.label}</span>
                     </div>
                   ))}
                 </div>
@@ -259,10 +259,10 @@ export default function ShieldPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Before the call is accepted
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-8 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
               SHIELD sits as an inline B2BUA in the SIP transport path. Every call is scored before SIP 200 OK, the call can be refused, redirected, or passed with a risk score attached in the SIP header. The decision happens in under 100 milliseconds. The call never reaches an agent if it should not.
             </p>
           </FadeIn>
@@ -272,7 +272,7 @@ export default function ShieldPage() {
                 {capabilities.map((cap, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle size={15} className="text-gold flex-shrink-0 mt-0.5" />
-                    <span className="text-[13px] text-text-body leading-relaxed">{cap}</span>
+                    <span className="text-[14px] text-text-body leading-relaxed">{cap}</span>
                   </div>
                 ))}
               </div>
@@ -286,7 +286,7 @@ export default function ShieldPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
               Where SHIELD has the strongest fit
             </h2>
           </FadeIn>
@@ -294,8 +294,8 @@ export default function ShieldPage() {
             {sectors.map((sector, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="bg-white/[0.04] border border-white/10 rounded-xl p-5 hover:border-gold/30 transition-colors h-full">
-                  <h3 className="text-[13px] font-bold text-white mb-2">{sector.name}</h3>
-                  <p className="text-[12px] text-white/50 leading-relaxed">{sector.desc}</p>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{sector.name}</h3>
+                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{sector.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -309,16 +309,16 @@ export default function ShieldPage() {
           <FadeIn variant="fadeUp">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
               <div className="flex-1">
-                <h3 className="text-[16px] font-bold text-white mb-2">
+                <h3 className="text-[18px] font-bold text-white mb-2">
                   CollabEdge Solutions, Australian and Asia Pacific Delivery Partner
                 </h3>
-                <p className="text-[13px] text-white/70 leading-relaxed">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
                   CollabEdge Solutions brings SHIELD to Australian and Asia Pacific operators, carriers, and enterprises, providing local advisory, implementation support, and ongoing account management. Enquiries for SHIELD deployments in this region are handled directly by CollabEdge.
                 </p>
               </div>
               <a
                 href="/appt"
-                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[13px] font-bold rounded-lg px-6 py-3 hover:bg-white/90 transition-colors whitespace-nowrap flex-shrink-0"
+                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-6 py-3 hover:bg-white/90 transition-colors whitespace-nowrap flex-shrink-0"
               >
                 Discuss SHIELD
                 <ArrowRight size={14} />

@@ -130,16 +130,16 @@ export default function ServicesPage() {
                 <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center mb-6 group-hover:bg-gold/25 transition-colors">
                   <Stethoscope size={22} className="text-gold" />
                 </div>
-                <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldLight/60 mb-2 block">
                   Give Back
                 </span>
-                <h2 className="text-[20px] font-bold text-white mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                   Healthcare and NDIS Solutions
                 </h2>
-                <p className="text-[13px] text-white/55 leading-relaxed mb-6">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   Compliance, automation, document governance, and AI advisory for NDIS providers and healthcare operators, built on what you already have.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
                   View healthcare services <ArrowRight size={13} />
                 </span>
               </a>
@@ -154,16 +154,16 @@ export default function ServicesPage() {
                 <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
                   <Building2 size={22} className="text-navy" />
                 </div>
-                <span className="text-[10px] font-bold tracking-[.14em] uppercase text-slate mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-slate mb-2 block">
                   Transform Forward
                 </span>
-                <h2 className="text-[20px] font-bold text-text-dark mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-text-dark mb-3 leading-snug">
                   Enterprise Partnerships
                 </h2>
-                <p className="text-[13px] text-slate leading-relaxed mb-6">
+                <p className="text-[14px] text-slate leading-relaxed mb-6">
                   Specialist enterprise technology delivered through selected partnerships: security, data quality, and property automation.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-navy group-hover:gap-3 group-hover:text-gold transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-navy group-hover:gap-3 group-hover:text-brand-goldLight transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
                 </span>
               </a>
@@ -177,13 +177,13 @@ export default function ServicesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-slate mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate mb-2 block">
               Healthcare and NDIS Solutions
             </span>
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               What healthcare and NDIS services does CollabEdge Solutions offer?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               CollabEdge Solutions supports NDIS providers and healthcare operators across four core areas: compliance and audit readiness, workflow automation, document governance, and AI advisory. Every service is delivered using infrastructure you already have, not new platforms you need to learn.
             </p>
           </FadeIn>
@@ -198,15 +198,15 @@ export default function ServicesPage() {
                     <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors">
                       <service.icon size={18} className="text-gold" />
                     </div>
-                    <span className="text-[10px] font-semibold text-slate-light uppercase tracking-wide mt-1">
+                    <span className="text-[13px] font-semibold text-slate-light uppercase tracking-wide mt-1">
                       {service.price}
                     </span>
                   </div>
-                  <h3 className="text-[15px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[12px] text-slate leading-relaxed mb-4">{service.desc}</p>
-                  <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
+                  <p className="text-[14px] text-slate leading-relaxed mb-4">{service.desc}</p>
+                  <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={12} />
                   </span>
                 </a>
@@ -221,13 +221,13 @@ export default function ServicesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Enterprise Partnerships
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               Enterprise technology, delivered through selected partnerships
             </h2>
-            <p className="text-[14px] text-white/60 leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-10 max-w-[680px]">
               CollabEdge Solutions is the Australian and Asia Pacific delivery partner for a small number of carefully selected enterprise technology providers. We recommend based on fit, not financial relationships.
             </p>
           </FadeIn>
@@ -244,17 +244,17 @@ export default function ServicesPage() {
                     <Lock size={22} className="text-gold" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold mb-1 block">
+                    <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark mb-1 block">
                       Featured Partner
                     </span>
-                    <h3 className="text-[17px] font-bold text-white">SHIELD: Voice Fraud Prevention</h3>
+                    <h3 className="text-[18px] font-bold text-white">SHIELD: Voice Fraud Prevention</h3>
                   </div>
                 </div>
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                   View partner page <ArrowRight size={13} />
                 </span>
               </div>
-              <p className="text-[13px] text-white/50 leading-relaxed mt-4 max-w-[680px]">
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mt-4 max-w-[680px]">
                 Enterprise-grade voice authentication protecting call centres and customer-facing operations from synthetic voice fraud, delivered by CollabEdge Solutions as Sekunce&apos;s Australian and APAC delivery partner.
               </p>
             </a>
@@ -268,8 +268,8 @@ export default function ServicesPage() {
                   <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <partner.icon size={16} className="text-gold" />
                   </div>
-                  <h3 className="text-[14px] font-bold text-white mb-2">{partner.title}</h3>
-                  <p className="text-[12px] text-white/45 leading-relaxed">{partner.desc}</p>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{partner.title}</h3>
+                  <p className="text-[14px] text-[#9CA3AF] leading-relaxed">{partner.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -287,17 +287,17 @@ export default function ServicesPage() {
                   <Globe size={24} className="text-gold" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-slate mb-1 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-slate mb-1 block">
                     For Any Australian Business
                   </span>
-                  <h2 className="text-[18px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
-                  <p className="text-[13px] text-slate leading-relaxed max-w-[480px]">
+                  <h2 className="text-[26px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
+                  <p className="text-[14px] text-slate leading-relaxed max-w-[480px]">
                     Websites, branding, and digital marketing for growing businesses, not limited to healthcare. From $1,500.
                   </p>
                 </div>
                 <a
                   href="/services/digital"
-                  className="inline-flex items-center gap-2 bg-navy text-white text-[12px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-2 bg-navy text-white text-[14px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors whitespace-nowrap"
                 >
                   View Digital Services <ArrowRight size={13} />
                 </a>
@@ -312,10 +312,10 @@ export default function ServicesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Why we work across two service pillars
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-8 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
               Operating across healthcare consulting and enterprise technology partnerships keeps CollabEdge Solutions connected to both ends of the market: the practical realities of NDIS providers, and the technology standards expected by larger enterprises. Each pillar makes the other better.
             </p>
           </FadeIn>
@@ -324,7 +324,7 @@ export default function ServicesPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div className="flex items-start gap-3 bg-white rounded-lg p-4 border border-border">
                   <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span className="text-[13px] text-text-body leading-relaxed">{item}</span>
+                  <span className="text-[14px] text-text-body leading-relaxed">{item}</span>
                 </div>
               </FadeIn>
             ))}

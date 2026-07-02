@@ -30,7 +30,7 @@ export default function AudienceSplit({
         <h3 className="text-[20px] font-bold text-text-dark leading-tight tracking-[-0.02em] mb-3">
           {leftHeading}
         </h3>
-        <p className="text-[14px] text-slate leading-relaxed mb-6">{leftBody}</p>
+        <p className="text-[16px] text-slate leading-relaxed mb-6">{leftBody}</p>
         <Link href={leftCtaHref} className="btn-gold">
           {leftCta}
         </Link>
@@ -42,7 +42,7 @@ export default function AudienceSplit({
         <h3 className="text-[20px] font-bold text-white leading-tight tracking-[-0.02em] mb-3">
           {rightHeading}
         </h3>
-        <p className="text-[14px] text-white/70 leading-relaxed mb-6">{rightBody}</p>
+        <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">{rightBody}</p>
         <Link href={rightCtaHref} className="btn-ghost">
           {rightCta}
         </Link>

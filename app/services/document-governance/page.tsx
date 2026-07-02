@@ -213,8 +213,8 @@ export default function DocumentGovernancePage() {
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
-          <ol className="flex items-center gap-2 text-[12px] text-slate">
-            <li><a href="/services" className="hover:text-gold transition-colors">Services</a></li>
+          <ol className="flex items-center gap-2 text-[14px] text-slate">
+            <li><a href="/services" className="hover:text-brand-goldLight transition-colors">Services</a></li>
             <li className="text-slate-light">/</li>
             <li className="text-text-dark font-medium">Document Governance</li>
           </ol>
@@ -233,13 +233,13 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Why do NDIS providers struggle with document management?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-6 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
               Most NDIS providers have the right documents somewhere. The problem is that nobody can find them when it matters, during an audit, a staff handover, or a participant review. Documents live in email threads, desktop folders, shared drives with no structure, and personal devices. When an auditor asks for a specific policy or participant file, the whole team stops work to search for it.
             </p>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
               CollabEdge Solutions has seen this in every provider engagement. The fix is not more documents, it is a clear, consistent system that staff understand and actually follow.
             </p>
           </FadeIn>
@@ -248,7 +248,7 @@ export default function DocumentGovernancePage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="flex items-start gap-3 bg-offwhite rounded-lg p-5 border border-border">
                   <item.icon size={16} className="text-slate-light flex-shrink-0 mt-0.5" />
-                  <span className="text-[13px] text-slate leading-relaxed">{item.text}</span>
+                  <span className="text-[14px] text-slate leading-relaxed">{item.text}</span>
                 </div>
               </FadeIn>
             ))}
@@ -261,13 +261,13 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               The CollabEdge Approach
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               A document system built for staff, not just auditors
             </h2>
-            <p className="text-[14px] text-white/60 leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-10 max-w-[680px]">
               CollabEdge Solutions designs a numbered folder architecture inside your existing SharePoint or Google Drive, structured so that every document has one correct location, every staff member knows where to look, and every auditor can navigate independently without a guide.
             </p>
           </FadeIn>
@@ -276,19 +276,19 @@ export default function DocumentGovernancePage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="bg-white/[0.04] border border-white/10 rounded-xl p-5 hover:border-gold/30 transition-colors">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[13px] font-bold text-gold font-mono">{folder.number}</span>
+                    <span className="text-[14px] font-bold text-brand-goldDark font-mono">{folder.number}</span>
                     <div className="w-7 h-7 rounded-lg bg-gold/10 flex items-center justify-center">
                       <folder.icon size={14} className="text-gold" />
                     </div>
                   </div>
-                  <h3 className="text-[13px] font-bold text-white mb-2">{folder.name}</h3>
-                  <p className="text-[11px] text-white/50 leading-relaxed">{folder.desc}</p>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{folder.name}</h3>
+                  <p className="text-[13px] text-[#D1D5DB] leading-relaxed">{folder.desc}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
           <FadeIn variant="fadeUp" delay={400}>
-            <p className="text-[13px] text-white/40 border-l-2 border-gold/30 pl-4">
+            <p className="text-[14px] text-[#9CA3AF] border-l-2 border-gold/30 pl-4">
               This structure is implemented inside SharePoint (Microsoft 365) or Google Drive, the platform your team already uses. No new software required.
             </p>
           </FadeIn>
@@ -300,10 +300,10 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               What makes a CollabEdge document system different?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Most document systems are built for compliance on paper but ignored in practice. CollabEdge builds systems that staff actually use, because they are simple, logical, and trained properly from day one.
             </p>
           </FadeIn>
@@ -314,8 +314,8 @@ export default function DocumentGovernancePage() {
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
                     <item.icon size={18} className="text-gold" />
                   </div>
-                  <h3 className="text-[14px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -328,10 +328,10 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Built on the platform you already have
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               CollabEdge implements document governance inside SharePoint (Microsoft 365) or Google Drive, whichever your organisation already uses. No new platform to purchase, no migration required.
             </p>
           </FadeIn>
@@ -339,15 +339,15 @@ export default function DocumentGovernancePage() {
             {platforms.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
                 <div className="bg-navy rounded-xl p-7 border border-white/10 h-full">
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
                     {item.suite}
                   </span>
-                  <h3 className="text-[16px] font-bold text-white mb-5">{item.platform}</h3>
+                  <h3 className="text-[18px] font-bold text-white mb-5">{item.platform}</h3>
                   <div className="flex flex-col gap-2.5">
                     {item.features.map((f, j) => (
                       <div key={j} className="flex items-start gap-2">
                         <CheckCircle size={13} className="text-gold/60 flex-shrink-0 mt-0.5" />
-                        <span className="text-[12px] text-white/60">{f}</span>
+                        <span className="text-[14px] text-[#D1D5DB]">{f}</span>
                       </div>
                     ))}
                   </div>
@@ -363,7 +363,7 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               How a document governance engagement works
             </h2>
           </FadeIn>
@@ -371,9 +371,9 @@ export default function DocumentGovernancePage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
-                  <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -388,19 +388,19 @@ export default function DocumentGovernancePage() {
             <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 hover:border-gold/30 transition-colors">
               <div className="flex items-start justify-between flex-wrap gap-6">
                 <div>
-                  <span className="text-[10px] font-bold tracking-[.12em] uppercase text-gold/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
                     Real Engagement
                   </span>
-                  <h3 className="text-[16px] font-bold text-white mb-2">
+                  <h3 className="text-[18px] font-bold text-white mb-2">
                     Safe Star Supports — Perth, WA
                   </h3>
-                  <p className="text-[13px] text-white/55 max-w-[560px] leading-relaxed">
+                  <p className="text-[14px] text-[#D1D5DB] max-w-[560px] leading-relaxed">
                     CollabEdge Solutions designed and implemented a complete document governance system for Safe Star Supports, a registered NDIS provider in Perth. The system included a five-folder numbered architecture, staff workspace privacy controls, a seven-year archive structure, general filing rules, and an AI Use Policy, all built inside their existing platform.
                   </p>
                 </div>
                 <a
                   href="/appt"
-                  className="inline-flex items-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg px-5 py-3 hover:bg-gold/90 transition-colors flex-shrink-0 self-start"
+                  className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-5 py-3 hover:bg-gold/90 transition-colors flex-shrink-0 self-start"
                 >
                   Discuss Your Situation
                   <ArrowRight size={13} />
@@ -416,7 +416,7 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[760px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Frequently asked questions
             </h2>
           </FadeIn>

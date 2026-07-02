@@ -24,7 +24,7 @@ export default function FAQBlock({ items }: { items: FAQItem[] }) {
               <span className="text-[15px] font-semibold text-text-dark leading-snug">{item.question}</span>
               <svg
                 viewBox="0 0 16 16"
-                className={`h-4 w-4 text-gold shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                className={`h-4 w-4 text-brand-goldDark shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`}
                 fill="none"
                 aria-hidden="true"
               >
@@ -32,7 +32,7 @@ export default function FAQBlock({ items }: { items: FAQItem[] }) {
               </svg>
             </button>
             {isOpen && (
-              <p className="pb-5 text-[14px] text-slate leading-relaxed">{item.answer}</p>
+              <p className="pb-5 text-[16px] text-slate leading-relaxed">{item.answer}</p>
             )}
           </li>
         );

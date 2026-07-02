@@ -11,7 +11,7 @@ export default function StatRow({ stats, dark = true }: { stats: Stat[]; dark?: 
           <p className={`text-[28px] font-bold tracking-tight leading-none ${dark ? "text-white" : "text-text-dark"}`}>
             {stat.value}
           </p>
-          <p className={`text-[12px] mt-1 ${dark ? "text-white/60" : "text-slate"}`}>{stat.label}</p>
+          <p className={`text-[14px] mt-1 ${dark ? "text-[#D1D5DB]" : "text-slate"}`}>{stat.label}</p>
         </div>
       ))}
     </div>

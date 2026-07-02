@@ -14,13 +14,13 @@ export default function ApptPage() {
       <section className="bg-navy py-16 px-5 sm:px-10 text-center">
         <div className="max-w-[680px] mx-auto">
           <FadeIn variant="fadeUp">
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
               Book a Consultation
             </span>
             <h1 className="text-[32px] md:text-[38px] font-bold text-white tracking-tight leading-[1.1] mb-4">
               30 Minutes. Free. Senior-led.
             </h1>
-            <p className="text-[14px] text-white/60 leading-relaxed max-w-[480px] mx-auto">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[480px] mx-auto">
               Pick a time that works for you below. No form to fill in first. Just book directly and we will talk through your situation.
             </p>
           </FadeIn>
@@ -49,18 +49,18 @@ export default function ApptPage() {
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[680px] mx-auto text-center">
           <FadeIn variant="fadeUp">
-            <p className="text-[13px] text-slate mb-6">Prefer email or phone?</p>
+            <p className="text-[14px] text-slate mb-6">Prefer email or phone?</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
                 href="mailto:sinclair@collabedgesolutions.com.au"
-                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+                className="flex items-center gap-2 text-[14px] font-semibold text-navy hover:text-brand-goldLight transition-colors"
               >
                 <Mail size={15} className="text-gold" />
                 sinclair@collabedgesolutions.com.au
               </a>
               <a
                 href="tel:0426464442"
-                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+                className="flex items-center gap-2 text-[14px] font-semibold text-navy hover:text-brand-goldLight transition-colors"
               >
                 <Phone size={15} className="text-gold" />
                 0426 464 442
@@ -69,7 +69,7 @@ export default function ApptPage() {
                 href="https://wa.me/61426464442"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-[13px] font-semibold text-navy hover:text-gold transition-colors"
+                className="flex items-center gap-2 text-[14px] font-semibold text-navy hover:text-brand-goldLight transition-colors"
               >
                 <MessageCircle size={15} className="text-gold" />
                 WhatsApp

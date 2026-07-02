@@ -77,11 +77,11 @@ export default function HeroHome({
         <Eyebrow>{eyebrow}</Eyebrow>
         <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-2">
           {h1}{" "}
-          <em className="font-serif not-italic text-gold">{serifWord}</em>
+          <em className="font-serif not-italic text-brand-goldDark">{serifWord}</em>
         </h1>
-        <p className="text-[13px] text-white/60 mb-1">{name}</p>
-        <p className="text-[12px] text-white/45 mb-5">{credential}</p>
-        <p className="text-[14px] text-white/75 leading-relaxed max-w-md mb-8">{sub}</p>
+        <p className="text-[14px] text-[#D1D5DB] mb-1">{name}</p>
+        <p className="text-[14px] text-[#9CA3AF] mb-5">{credential}</p>
+        <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-md mb-8">{sub}</p>
 
         {ctas.length > 0 && (
           <div className="flex flex-wrap gap-3 mb-10">

@@ -188,7 +188,7 @@ export default function SiteHeader() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="relative text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
+                  className="relative text-[14px] text-[#D1D5DB] px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -204,7 +204,7 @@ export default function SiteHeader() {
                 onMouseLeave={handleDesktopLeave}
               >
                 <button
-                  className="relative flex items-center gap-1 text-[13px] text-white/70 px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
+                  className="relative flex items-center gap-1 text-[14px] text-[#D1D5DB] px-[11px] py-[6px] rounded hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
                   onClick={(e) => {
                     e.stopPropagation();
                     if (item.href) {
@@ -248,7 +248,7 @@ export default function SiteHeader() {
                     >
                       {item.columns.map((col) => (
                         <div key={col.heading} className="p-5 border-r border-white/10 last:border-r-0">
-                          <p className="text-[11px] font-bold tracking-[.16em] uppercase text-white/55 mb-3">
+                          <p className="text-[13px] font-bold tracking-[.16em] uppercase text-[#D1D5DB] mb-3">
                             {col.heading}
                           </p>
                           <ul className="space-y-0.5">
@@ -256,10 +256,10 @@ export default function SiteHeader() {
                               <li key={link.href}>
                                 <Link
                                   href={link.href}
-                                  className={`group block pr-2 py-2 text-[13px] font-medium rounded transition-all border-l-2 ${
+                                  className={`group block pr-2 py-2 text-[14px] font-medium rounded transition-all border-l-2 ${
                                     link.featured
-                                      ? "text-gold font-semibold border-transparent hover:border-gold hover:pl-2"
-                                      : "text-white/80 border-transparent hover:border-gold hover:text-white hover:pl-2"
+                                      ? "text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
+                                      : "text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
                                   }`}
                                   onClick={() => setOpenMenu(null)}
                                 >
@@ -274,15 +274,15 @@ export default function SiteHeader() {
 
                       {item.cta && (
                         <div className="bg-navy-deep p-5 flex flex-col justify-center gap-0">
-                          <p className="text-[12px] text-white/50 mb-3">Not sure where to start?</p>
+                          <p className="text-[14px] text-[#D1D5DB] mb-3">Not sure where to start?</p>
                           <Link
                             href={item.cta.href}
-                            className="block w-full bg-gold text-navy font-bold text-[12px] py-3 rounded text-center transition-opacity hover:opacity-90"
+                            className="block w-full bg-gold text-navy font-bold text-[14px] py-3 rounded text-center transition-opacity hover:opacity-90"
                             onClick={() => setOpenMenu(null)}
                           >
                             {item.cta.label}
                           </Link>
-                          <p className="text-[10px] text-white/25 text-center mt-2">
+                          <p className="text-[13px] text-[#9CA3AF] text-center mt-2">
                             30 min · Free · Senior-led
                           </p>
                         </div>
@@ -297,7 +297,7 @@ export default function SiteHeader() {
 
         {/* Book Consultation CTA */}
         <div className="hidden lg:block shrink-0">
-          <Link href="/appt" className="btn-gold text-[13px] px-5 py-2.5">
+          <Link href="/appt" className="btn-gold text-[14px] px-5 py-2.5">
             Book Consultation
           </Link>
         </div>
@@ -332,7 +332,7 @@ export default function SiteHeader() {
             <button
               onClick={() => { setMobileOpen(false); setMobileSection(null); }}
               aria-label="Close menu"
-              className="p-2 text-white/70 hover:text-white"
+              className="p-2 text-[#D1D5DB] hover:text-white"
             >
               <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true" fill="none">
                 <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -365,7 +365,7 @@ export default function SiteHeader() {
                         className="w-full flex items-center justify-between py-3.5 text-[18px] font-semibold text-white border-b border-white/8"
                       >
                         {item.label}
-                        <svg viewBox="0 0 20 20" className="h-4 w-4 text-white/40" fill="none" aria-hidden="true">
+                        <svg viewBox="0 0 20 20" className="h-4 w-4 text-[#9CA3AF]" fill="none" aria-hidden="true">
                           <path d="M7 5l6 5-6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                       </button>
@@ -377,7 +377,7 @@ export default function SiteHeader() {
               <>
                 <button
                   onClick={() => setMobileSection(null)}
-                  className="flex items-center gap-2 mb-6 text-[12px] uppercase tracking-[.14em] font-semibold text-gold"
+                  className="flex items-center gap-2 mb-6 text-[14px] uppercase tracking-[.14em] font-semibold text-brand-goldDark"
                 >
                   <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" aria-hidden="true">
                     <path d="M13 5L7 10l6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -389,7 +389,7 @@ export default function SiteHeader() {
                     i.kind === "mega" && i.label === mobileSection
                 )[0]?.columns.map((col) => (
                   <div key={col.heading} className="mb-6">
-                    <p className="text-[10px] font-semibold tracking-[.14em] uppercase text-slate-light mb-2">
+                    <p className="text-[13px] font-semibold tracking-[.14em] uppercase text-slate-light mb-2">
                       {col.heading}
                     </p>
                     <ul className="space-y-1">
@@ -399,7 +399,7 @@ export default function SiteHeader() {
                             href={link.href}
                             onClick={() => { setMobileOpen(false); setMobileSection(null); }}
                             className={`block py-2.5 text-[16px] font-semibold border-b border-white/8 ${
-                              link.featured ? "text-gold" : "text-white"
+                              link.featured ? "text-brand-goldDark" : "text-white"
                             }`}
                           >
                             {link.label}

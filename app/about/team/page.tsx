@@ -108,7 +108,7 @@ function SkillList({ skills }: { skills: string[] }) {
       {skills.map((skill, i) => (
         <div key={i} className="flex items-center gap-2">
           <CheckCircle size={12} className="text-gold/60 flex-shrink-0" />
-          <span className="text-[11px] text-white/50">{skill}</span>
+          <span className="text-[13px] text-[#D1D5DB]">{skill}</span>
         </div>
       ))}
     </div>
@@ -135,13 +135,13 @@ export default function TeamPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Who leads every CollabEdge Solutions engagement?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-4 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
               Every CollabEdge Solutions engagement is led by Sinclair Hurtis, founder and principal consultant. There are no hand-offs to junior staff. Sinclair is supported by a small team of strategic advisors and a vetted specialist network drawn in based on the specific requirements of each engagement.
             </p>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
               This model gives clients Fortune 500 depth and accountability without the overhead of a large consulting firm.
             </p>
           </FadeIn>
@@ -153,10 +153,10 @@ export default function TeamPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Core Team
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
               Who are the people behind CollabEdge Solutions?
             </h2>
           </FadeIn>
@@ -169,18 +169,18 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-sinclair.jpg" alt="Sinclair Hurtis" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
                   Founder and Principal
                 </span>
-                <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
-                <p className="text-[12px] text-gold mb-4">NDIS, Healthcare and Enterprise</p>
-                <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
+                <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
+                <p className="text-[14px] text-brand-goldDark mb-4">NDIS, Healthcare and Enterprise</p>
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   30+ years across Citibank, Singtel, NAB, and the Victorian Department of Health. Active NDIS Support Coordinator at My Ability Services. Adjunct Lecturer at Monash University teaching Masters IT students. Leads every CollabEdge engagement.
                 </p>
                 <SkillList skills={sinclairSkills} />
                 <a
                   href="/about/sinclair-hurtis"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200 mt-auto"
                 >
                   Full bio <ArrowRight size={12} />
                 </a>
@@ -194,18 +194,18 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-magda.jpg" alt="Magdalena Paczkowska" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
                   NDIS Practitioner and Strategic Advisor
                 </span>
-                <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
-                <p className="text-[12px] text-gold mb-4">Complex Participant Support and Advocacy</p>
-                <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
+                <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
+                <p className="text-[14px] text-brand-goldDark mb-4">Complex Participant Support and Advocacy</p>
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   Magdalena works directly with complex NDIS participants at My Ability Services every day, navigating the system at its most demanding level. That frontline knowledge is what she brings to CollabEdge, grounding every recommendation in what actually works for real participants and providers. She is the practitioner who empowered Sinclair to become a Support Coordinator, and her daily contact with the NDIS Commission and complex participants keeps CollabEdge&apos;s advice connected to ground-level reality.
                 </p>
                 <SkillList skills={magdalenaSkills} />
                 <a
                   href="/about/magdalena-paczkowska"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200 mt-auto"
                 >
                   Full bio <ArrowRight size={12} />
                 </a>
@@ -219,18 +219,18 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-raj.jpg" alt="Raj Purshotham" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[10px] font-bold tracking-[.14em] uppercase text-gold/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
                   Strategy, Growth and International Advisory
                 </span>
-                <h3 className="text-[17px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
-                <p className="text-[12px] text-gold mb-4">Strategy, Growth and International</p>
-                <p className="text-[13px] text-white/60 leading-relaxed mb-6 flex-1">
+                <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
+                <p className="text-[14px] text-brand-goldDark mb-4">Strategy, Growth and International</p>
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   Fractional Consultant and Growth Advisor to CollabEdge Solutions. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
                 </p>
                 <SkillList skills={rajSkills} />
                 <a
                   href="/about/raj-purshotham"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200 mt-auto"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200 mt-auto"
                 >
                   Full bio <ArrowRight size={12} />
                 </a>
@@ -245,10 +245,10 @@ export default function TeamPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Does CollabEdge Solutions use contractors or subcontractors?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-8 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
               For engagements requiring specialist capability beyond the core team, CollabEdge Solutions draws on a vetted network of contractors and specialists. Every specialist brought into a client engagement is personally approved by Sinclair and operates under the same standards and confidentiality obligations as the core team.
             </p>
           </FadeIn>
@@ -260,8 +260,8 @@ export default function TeamPage() {
                   <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <card.icon size={16} className="text-gold" />
                   </div>
-                  <h3 className="text-[14px] font-bold text-text-dark mb-2">{card.heading}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{card.body}</p>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.heading}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -278,15 +278,15 @@ export default function TeamPage() {
                 <GraduationCap size={22} className="text-gold" />
               </div>
               <div className="flex-1">
-                <h3 className="text-[15px] font-bold text-text-dark mb-1">
+                <h3 className="text-[18px] font-bold text-text-dark mb-1">
                   Adjunct Lecturer, Monash University
                 </h3>
-                <p className="text-[13px] text-slate leading-relaxed max-w-[580px]">
+                <p className="text-[14px] text-slate leading-relaxed max-w-[580px]">
                   Sinclair teaches soft skills and real-world business practice to Masters of Information Technology students at Monash University, mentoring the next generation of technology professionals across communication, collaboration, and applied consulting.
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-[11px] font-semibold text-gold uppercase tracking-wider">
+                <span className="text-[13px] font-semibold text-brand-goldLight uppercase tracking-wider">
                   Monash University · Melbourne
                 </span>
               </div>

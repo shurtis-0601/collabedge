@@ -24,7 +24,7 @@ export default function ProductHero({ eyebrow, h1, sub, stats, ctaLabel, ctaHref
           {h1}
         </h1>
         {sub && (
-          <p className="text-[15px] text-white/70 leading-relaxed max-w-xl mb-7">{sub}</p>
+          <p className="text-[15px] text-[#D1D5DB] leading-relaxed max-w-xl mb-7">{sub}</p>
         )}
         {ctaLabel && ctaHref && (
           <Link href={ctaHref} className="btn-gold mb-10 inline-flex">

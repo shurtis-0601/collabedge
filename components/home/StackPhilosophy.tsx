@@ -33,22 +33,22 @@ export default function StackPhilosophy({
       <div className="max-w-container mx-auto">
         <GoldRule />
         <Eyebrow>The CollabEdge Stack Philosophy</Eyebrow>
-        <h2 className="text-[24px] font-bold text-white leading-tight tracking-[-0.02em] mb-3 max-w-xl">
+        <h2 className="text-[26px] font-bold text-white leading-tight tracking-[-0.02em] mb-3 max-w-xl">
           {heading}
         </h2>
-        <p className="text-[14px] text-white/70 leading-relaxed max-w-xl mb-10">{body}</p>
+        <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-xl mb-10">{body}</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-[2px] bg-white/10">
           {STACK_ITEMS.map((item) => (
             <div key={item.name} className="bg-navy-mid p-6">
               <span className="text-3xl block mb-3">{item.icon}</span>
-              <h3 className="text-[15px] font-bold text-white mb-1.5">{item.name}</h3>
-              <p className="text-[13px] text-white/65 leading-relaxed">{item.desc}</p>
+              <h3 className="text-[18px] font-bold text-white mb-1.5">{item.name}</h3>
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-8 text-[18px] font-bold text-gold">
+        <p className="mt-8 text-[18px] font-bold text-brand-goldDark">
           M365 + Google + AI = enough.
         </p>
       </div>

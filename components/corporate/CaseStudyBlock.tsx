@@ -13,13 +13,13 @@ export default function CaseStudyBlock({ quote, author, role, company, ctaLabel,
   return (
     <div className="bg-navy rounded-lg p-8 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-8 items-center">
       <div>
-        <span className="block font-serif text-gold text-4xl leading-none mb-3" aria-hidden="true">
+        <span className="block font-serif text-brand-goldDark text-4xl leading-none mb-3" aria-hidden="true">
           &ldquo;
         </span>
-        <blockquote className="text-[15px] text-white/85 leading-relaxed font-serif italic">
+        <blockquote className="text-[15px] text-[#F1F5F9] leading-relaxed font-serif italic">
           {quote}
         </blockquote>
-        <p className="mt-4 text-[12px] text-white/50">
+        <p className="mt-4 text-[14px] text-[#D1D5DB]">
           — <span className="text-white font-semibold">{author}</span>, {role}, {company}
         </p>
       </div>

@@ -128,12 +128,12 @@ export default function HealthcareWorkflowPage() {
       <div className="bg-navy px-10 pt-6 pb-2">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40">
-              <a href="/services" className="hover:text-gold transition-colors">
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF]">
+              <a href="/services" className="hover:text-brand-goldDark transition-colors">
                 Services
               </a>
               <span>/</span>
-              <span className="text-white/60">Healthcare Workflow Automation</span>
+              <span className="text-[#D1D5DB]">Healthcare Workflow Automation</span>
             </div>
           </FadeIn>
         </div>
@@ -151,10 +151,10 @@ export default function HealthcareWorkflowPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               What kind of workflows can be automated?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Most healthcare and NDIS providers lose time to the same handful of repetitive tasks: intake paperwork, scheduling, reminders, and document handling. CollabEdge Solutions identifies which of these are costing your team the most time and automates them using tools you already have.
             </p>
           </FadeIn>
@@ -165,8 +165,8 @@ export default function HealthcareWorkflowPage() {
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
                     <item.icon size={18} className="text-gold" />
                   </div>
-                  <h3 className="text-[14px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -180,16 +180,16 @@ export default function HealthcareWorkflowPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
                 Our Approach
               </span>
-              <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+              <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
                 We automate with what you already own
               </h2>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 Most providers already have Microsoft 365 or Google Workspace, paid for and underused. CollabEdge Solutions builds automation inside those platforms using Power Automate, native workflow tools, and AI features already included in your subscription, not a new platform that adds cost and complexity.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                 This means faster implementation, no extra licensing, and a system your team can actually maintain after we leave.
               </p>
             </FadeIn>
@@ -201,7 +201,7 @@ export default function HealthcareWorkflowPage() {
                     className="flex items-center gap-3 bg-white/[0.04] border border-white/10 rounded-lg p-4"
                   >
                     <Workflow size={16} className="text-gold flex-shrink-0" />
-                    <span className="text-[13px] text-white/75">{item}</span>
+                    <span className="text-[14px] text-[#D1D5DB]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -215,7 +215,7 @@ export default function HealthcareWorkflowPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
               How a workflow automation engagement works
             </h2>
           </FadeIn>
@@ -223,9 +223,9 @@ export default function HealthcareWorkflowPage() {
             {processSteps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div>
-                  <span className="text-[32px] font-bold text-gold/40 block mb-2">{item.step}</span>
-                  <h3 className="text-[13px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[12px] text-slate leading-relaxed">{item.desc}</p>
+                  <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -246,16 +246,16 @@ export default function HealthcareWorkflowPage() {
               <Quote size={24} className="text-gold/40 mb-5" />
               <blockquote className="font-serif italic text-[18px] text-white leading-relaxed mb-6 max-w-[620px]">
                 Working with Sinclair has transformed what once felt overwhelming into something
-                <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement. He taught me along the way.
+                <em className="text-brand-goldDark not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement. He taught me along the way.
               </blockquote>
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
-                  <span className="text-[13px] font-semibold text-white block">Rebecca Delaney</span>
-                  <span className="text-[11px] text-gold">Director, Enhance Ability Services</span>
+                  <span className="text-[14px] font-semibold text-white block">Rebecca Delaney</span>
+                  <span className="text-[13px] text-brand-goldDark">Director, Enhance Ability Services</span>
                 </div>
                 <a
                   href="/case-studies/enhance-ability-services"
-                  className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                 >
                   Read the full case study
                   <ArrowRight size={12} />
@@ -271,7 +271,7 @@ export default function HealthcareWorkflowPage() {
         <div className="max-w-[760px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Frequently asked questions
             </h2>
           </FadeIn>

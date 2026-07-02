@@ -56,10 +56,10 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Why does CollabEdge Solutions publish named case studies?
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
               Anonymous case studies are easy to write and impossible to verify. CollabEdge Solutions only publishes outcomes from clients who have agreed to be named, because a result attached to a real organisation is the only kind of proof worth publishing.
             </p>
           </FadeIn>
@@ -71,10 +71,10 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Featured Case Study
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
               How did CollabEdge Solutions help Enhance Ability Services transform their NDIS operations?
             </h2>
           </FadeIn>
@@ -89,22 +89,22 @@ export default function CaseStudiesPage() {
                 </div>
                 <div>
                   <span className="text-[14px] font-bold text-white block">Enhance Ability Services</span>
-                  <span className="text-[12px] text-gold">NDIS Provider · Geelong, VIC</span>
+                  <span className="text-[14px] text-brand-goldDark">NDIS Provider · Geelong, VIC</span>
                 </div>
               </div>
 
-              <h3 className="text-[14px] font-bold text-white mb-2 mt-6">The Challenge</h3>
-              <p className="text-[13px] text-white/60 leading-relaxed mb-6">
+              <h3 className="text-[18px] font-bold text-white mb-2 mt-6">The Challenge</h3>
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                 Enhance Ability Services was managing NDIS compliance and operations through fragmented, manual processes. Documentation, audit readiness, and day-to-day workflows were consuming time that should have been spent on participant outcomes, and the business felt overwhelmed by the complexity of staying compliant.
               </p>
 
-              <h3 className="text-[14px] font-bold text-white mb-2">The Approach</h3>
-              <p className="text-[13px] text-white/60 leading-relaxed mb-6">
+              <h3 className="text-[18px] font-bold text-white mb-2">The Approach</h3>
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                 CollabEdge Solutions worked directly with the Director to map existing processes, identify where manual effort could be safely automated, and rebuild documentation and compliance workflows using the Microsoft 365 environment the business already had. No new platforms were introduced. The existing tools were simply used properly.
               </p>
 
-              <h3 className="text-[14px] font-bold text-white mb-2">The Outcome</h3>
-              <p className="text-[13px] text-white/60 leading-relaxed mb-8">
+              <h3 className="text-[18px] font-bold text-white mb-2">The Outcome</h3>
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-8">
                 Operations and documentation became structured and auditable. The business moved from feeling overwhelmed to having a clear operational system they understood and trusted, with significantly reduced administrative burden and improved audit confidence.
               </p>
 
@@ -113,17 +113,17 @@ export default function CaseStudiesPage() {
                 <Quote size={18} className="text-gold/40 mb-3" />
                 <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
                   Working with Sinclair has transformed what once felt overwhelming into something
-                  <em className="text-gold not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way.
+                  <em className="text-brand-goldDark not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way.
                 </blockquote>
-                <span className="text-[12px] font-semibold text-white block">Rebecca Delaney</span>
-                <span className="text-[11px] text-gold">Director, Enhance Ability Services</span>
+                <span className="text-[14px] font-semibold text-white block">Rebecca Delaney</span>
+                <span className="text-[13px] text-brand-goldDark">Director, Enhance Ability Services</span>
               </div>
             </FadeIn>
 
             {/* RIGHT — Results sidebar */}
             <FadeIn variant="fadeUp" delay={150}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-6 md:sticky md:top-24">
-                <h3 className="text-[12px] font-bold tracking-[.1em] uppercase text-gold/60 mb-5">
+                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/60 mb-5">
                   At a Glance
                 </h3>
 
@@ -131,36 +131,36 @@ export default function CaseStudiesPage() {
                   <div className="flex items-start gap-3">
                     <Target size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Service Area</span>
-                      <span className="text-[12px] text-white/50">NDIS Compliance and Workflow Automation</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Service Area</span>
+                      <span className="text-[14px] text-[#D1D5DB]">NDIS Compliance and Workflow Automation</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Engagement Type</span>
-                      <span className="text-[12px] text-white/50">Operational consulting and documentation rebuild</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Engagement Type</span>
+                      <span className="text-[14px] text-[#D1D5DB]">Operational consulting and documentation rebuild</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <TrendingUp size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Result</span>
-                      <span className="text-[12px] text-white/50">Structured, auditable operations and reduced administrative burden</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Result</span>
+                      <span className="text-[14px] text-[#D1D5DB]">Structured, auditable operations and reduced administrative burden</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Tools Used</span>
-                      <span className="text-[12px] text-white/50">Microsoft 365, existing infrastructure. No new platforms.</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Tools Used</span>
+                      <span className="text-[14px] text-[#D1D5DB]">Microsoft 365, existing infrastructure. No new platforms.</span>
                     </div>
                   </div>
                 </div>
 
                 <a
                   href="/appt"
-                  className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
+                  className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
                 >
                   Discuss Your Situation
                   <ArrowRight size={13} />
@@ -176,10 +176,10 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Case Study
             </span>
-            <h2 className="text-[22px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
               How did CollabEdge Solutions help Safe Star Supports build an audit-ready foundation?
             </h2>
           </FadeIn>
@@ -194,11 +194,11 @@ export default function CaseStudiesPage() {
                 </div>
                 <div>
                   <span className="text-[14px] font-bold text-white block">Safe Star Supports</span>
-                  <span className="text-[12px] text-gold">NDIS Provider · Perth, WA</span>
+                  <span className="text-[14px] text-brand-goldDark">NDIS Provider · Perth, WA</span>
                 </div>
               </div>
 
-              <p className="text-[13px] text-white/60 leading-relaxed mb-8">
+              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-8">
                 Katelyn came to CollabEdge as a new NDIS provider navigating a complex onboarding process. We worked together on compliance documentation, service agreements, and building an audit-ready operational foundation.
               </p>
 
@@ -208,15 +208,15 @@ export default function CaseStudiesPage() {
                 <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
                   As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
                 </blockquote>
-                <span className="text-[12px] font-semibold text-white block">Katelyn Leighton</span>
-                <span className="text-[11px] text-gold">Founder, Safe Star Supports, Perth WA</span>
+                <span className="text-[14px] font-semibold text-white block">Katelyn Leighton</span>
+                <span className="text-[13px] text-brand-goldDark">Founder, Safe Star Supports, Perth WA</span>
               </div>
             </FadeIn>
 
             {/* RIGHT — Results sidebar */}
             <FadeIn variant="fadeUp" delay={150}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-6 md:sticky md:top-24">
-                <h3 className="text-[12px] font-bold tracking-[.1em] uppercase text-gold/60 mb-5">
+                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/60 mb-5">
                   At a Glance
                 </h3>
 
@@ -224,29 +224,29 @@ export default function CaseStudiesPage() {
                   <div className="flex items-start gap-3">
                     <Target size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Service Area</span>
-                      <span className="text-[12px] text-white/50">Document Governance and NDIS Compliance</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Service Area</span>
+                      <span className="text-[14px] text-[#D1D5DB]">Document Governance and NDIS Compliance</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Engagement Type</span>
-                      <span className="text-[12px] text-white/50">New provider onboarding and compliance foundation</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Engagement Type</span>
+                      <span className="text-[14px] text-[#D1D5DB]">New provider onboarding and compliance foundation</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[12px] font-semibold text-white block mb-0.5">Location</span>
-                      <span className="text-[12px] text-white/50">Perth, WA</span>
+                      <span className="text-[14px] font-semibold text-white block mb-0.5">Location</span>
+                      <span className="text-[14px] text-[#D1D5DB]">Perth, WA</span>
                     </div>
                   </div>
                 </div>
 
                 <a
                   href="/services/document-governance"
-                  className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[12px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
+                  className="mt-7 w-full inline-flex items-center justify-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg py-3 hover:bg-gold/90 transition-colors"
                 >
                   View Document Governance
                   <ArrowRight size={13} />
@@ -262,10 +262,10 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto text-center">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated center />
-            <h2 className="text-[18px] font-bold text-text-dark mb-3">
+            <h2 className="text-[26px] font-bold text-text-dark mb-3">
               More case studies are in progress
             </h2>
-            <p className="text-[13px] text-slate max-w-[480px] mx-auto mb-2">
+            <p className="text-[14px] text-slate max-w-[480px] mx-auto mb-2">
               We are documenting outcomes from current engagements as they conclude. Every case study published here will be a named, verifiable client.
             </p>
           </FadeIn>

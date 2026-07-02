@@ -113,16 +113,16 @@ export default function MagdalenaPaczkowskaPage() {
       <div className="bg-navy px-5 sm:px-10 pt-6 pb-2">
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40">
-              <a href="/about" className="hover:text-gold transition-colors">
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF]">
+              <a href="/about" className="hover:text-brand-goldDark transition-colors">
                 About
               </a>
               <span>/</span>
-              <a href="/about/team" className="hover:text-gold transition-colors">
+              <a href="/about/team" className="hover:text-brand-goldDark transition-colors">
                 Our Team
               </a>
               <span>/</span>
-              <span className="text-white/60">Magdalena Paczkowska</span>
+              <span className="text-[#D1D5DB]">Magdalena Paczkowska</span>
             </div>
           </FadeIn>
         </div>
@@ -145,7 +145,7 @@ export default function MagdalenaPaczkowskaPage() {
                 <div className="flex flex-col gap-2 w-full items-center md:items-start">
                   <a
                     href="/appt"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#D1D5DB] hover:text-brand-goldDark transition-colors"
                   >
                     <ArrowRight size={13} />
                     Book a consultation
@@ -156,20 +156,20 @@ export default function MagdalenaPaczkowskaPage() {
 
             {/* RIGHT — Bio content */}
             <FadeIn variant="fadeUp" delay={100}>
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
                 NDIS Practitioner and Strategic Advisor
               </span>
               <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-5">
                 Magdalena Paczkowska
               </h1>
-              <p className="text-[15px] text-white/70 leading-relaxed mb-5 border-l-2 border-gold pl-5">
+              <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
                 Magdalena has always been passionate about supporting and empowering people.
                 With qualifications and experience across early childhood, special education,
                 social work and physiotherapy, she brings over 25 years of relevant industry
                 experience to every engagement, working directly with individuals who have complex
                 needs, their families, and their carers.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 As a Senior Support Coordinator and Early Intervention Key Worker at My Ability
                 Services, Magdalena navigates the NDIS on behalf of real participants daily.
                 That frontline experience is what she brings to CollabEdge Solutions as Strategic
@@ -178,8 +178,8 @@ export default function MagdalenaPaczkowskaPage() {
               <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                 {bioStats.map((stat, i) => (
                   <div key={i}>
-                    <span className="text-[22px] font-bold text-gold block">{stat.value}</span>
-                    <span className="text-[11px] text-white/40 uppercase tracking-wider">
+                    <span className="text-[22px] font-bold text-brand-goldDark block">{stat.value}</span>
+                    <span className="text-[13px] text-[#9CA3AF] uppercase tracking-wider">
                       {stat.label}
                     </span>
                   </div>
@@ -195,10 +195,10 @@ export default function MagdalenaPaczkowskaPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Empowerment through independence
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Magdalena believes deeply in the right of every person with a disability to make
               their own choices and achieve the highest possible level of independence across every
               area of their life. Her approach to support coordination reflects this philosophy,
@@ -212,8 +212,8 @@ export default function MagdalenaPaczkowskaPage() {
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <card.icon size={18} className="text-gold" />
                   </div>
-                  <h3 className="text-[15px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[13px] text-slate leading-relaxed">{card.body}</p>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -226,10 +226,10 @@ export default function MagdalenaPaczkowskaPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               25 years across four disciplines
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Magdalena brings a breadth of qualifications that is rare in the NDIS sector.
               Her background spans four distinct disciplines, giving her a uniquely comprehensive
               understanding of participant needs and support frameworks.
@@ -243,10 +243,10 @@ export default function MagdalenaPaczkowskaPage() {
                     <item.icon size={18} className="text-gold" />
                   </div>
                   <div>
-                    <h3 className="text-[15px] font-bold text-text-dark mb-1">
+                    <h3 className="text-[18px] font-bold text-text-dark mb-1">
                       {item.discipline}
                     </h3>
-                    <p className="text-[13px] text-slate leading-relaxed">{item.detail}</p>
+                    <p className="text-[14px] text-slate leading-relaxed">{item.detail}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -262,13 +262,13 @@ export default function MagdalenaPaczkowskaPage() {
 
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
                 Leadership and Management
               </span>
-              <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+              <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
                 Leadership, mentoring, and management
               </h2>
-              <p className="text-[14px] text-white/60 leading-relaxed">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                 Beyond direct participant support, Magdalena has extensive experience undertaking
                 higher-level responsibilities within support organisations. She has demonstrated
                 her skills in leadership, training, mentoring, and management of teams, with a
@@ -283,7 +283,7 @@ export default function MagdalenaPaczkowskaPage() {
                   <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                     <div className="flex items-start gap-3 bg-white/[0.04] border border-white/[0.08] rounded-lg p-4">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[13px] text-white/70 leading-relaxed">{item}</span>
+                      <span className="text-[14px] text-[#D1D5DB] leading-relaxed">{item}</span>
                     </div>
                   </FadeIn>
                 ))}

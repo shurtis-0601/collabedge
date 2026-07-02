@@ -68,14 +68,14 @@ type Phase = 'idle' | 'setup' | 'animate'
 function SlideContent({ t }: { t: typeof testimonials[number] }) {
   return (
     <>
-      <div className="text-[36px] text-gold/25 font-serif leading-none mb-4">&ldquo;</div>
+      <div className="text-[36px] text-brand-goldDark/25 font-serif leading-none mb-4">&ldquo;</div>
       <blockquote className="font-serif italic text-[15px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
         {t.quote}
       </blockquote>
       <div className="pb-2">
         <p className="text-[14px] font-semibold text-white">{t.name}</p>
-        <p className="text-[12px] text-gold">{t.role}</p>
-        <p className="text-[11px] text-white/40 mt-0.5">
+        <p className="text-[14px] text-brand-goldDark">{t.role}</p>
+        <p className="text-[13px] text-[#9CA3AF] mt-0.5">
           {t.context} &middot; {t.year}
         </p>
       </div>
@@ -191,7 +191,7 @@ export default function TestimonialCarousel() {
           >
             <ChevronLeft size={16} className="text-white" />
           </button>
-          <span className="text-[12px] text-white/40">
+          <span className="text-[14px] text-[#9CA3AF]">
             {current + 1} / {testimonials.length}
           </span>
           <button

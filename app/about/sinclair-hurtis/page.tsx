@@ -191,12 +191,12 @@ export default function SinclairHurtisPage() {
       <div className="bg-navy px-5 sm:px-10 pt-6 pb-2">
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40">
-              <a href="/about" className="hover:text-gold transition-colors">About</a>
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF]">
+              <a href="/about" className="hover:text-brand-goldDark transition-colors">About</a>
               <span>/</span>
-              <a href="/about/team" className="hover:text-gold transition-colors">Our Team</a>
+              <a href="/about/team" className="hover:text-brand-goldDark transition-colors">Our Team</a>
               <span>/</span>
-              <span className="text-white/60">Sinclair Hurtis</span>
+              <span className="text-[#D1D5DB]">Sinclair Hurtis</span>
             </div>
           </FadeIn>
         </div>
@@ -223,14 +223,14 @@ export default function SinclairHurtisPage() {
                     href="https://www.linkedin.com/in/sinclairhurtis"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
                     <ExternalLink size={14} />
                     Connect on LinkedIn
                   </a>
                   <a
                     href="/appt"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#D1D5DB] hover:text-brand-goldDark transition-colors"
                   >
                     <ArrowRight size={13} />
                     Book a consultation
@@ -240,19 +240,19 @@ export default function SinclairHurtisPage() {
             </FadeIn>
 
             <FadeIn variant="fadeUp" delay={100}>
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
                 Founder and Principal Consultant
               </span>
               <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-5">
                 Sinclair Hurtis
               </h1>
-              <p className="text-[15px] text-white/70 leading-relaxed mb-5 border-l-2 border-gold pl-5">
+              <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
                 With over 30 years across Fortune 500 organisations in Australia and Asia Pacific,
                 Sinclair founded CollabEdge Solutions to give healthcare providers and growing
                 businesses access to the same calibre of operational expertise that was previously
                 available only to large enterprises.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 His career spans Citibank Singapore, Singtel, NAB, DBS Singapore, and the Victorian
                 Department of Health, covering financial services, telecommunications, government,
                 and healthcare across Australia, Singapore, Thailand, and Asia Pacific. Today he
@@ -262,8 +262,8 @@ export default function SinclairHurtisPage() {
               <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                 {bioStats.map((stat, i) => (
                   <div key={i}>
-                    <span className="text-[22px] font-bold text-gold block">{stat.value}</span>
-                    <span className="text-[11px] text-white/40 uppercase tracking-wider">
+                    <span className="text-[22px] font-bold text-brand-goldDark block">{stat.value}</span>
+                    <span className="text-[13px] text-[#9CA3AF] uppercase tracking-wider">
                       {stat.label}
                     </span>
                   </div>
@@ -282,7 +282,7 @@ export default function SinclairHurtisPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                 <div className="text-center md:text-left">
                   <span className="text-[26px] font-bold text-navy block">{stat.value}</span>
-                  <span className="text-[11px] font-semibold text-navy/60 uppercase tracking-wider">
+                  <span className="text-[13px] font-semibold text-navy/60 uppercase tracking-wider">
                     {stat.label}
                   </span>
                 </div>
@@ -297,10 +297,10 @@ export default function SinclairHurtisPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               30 years of enterprise experience
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Before founding CollabEdge Solutions, Sinclair spent three decades leading digital
               transformation, data strategy, and operational change across financial services,
               telecommunications, government, and healthcare, across Australia, Singapore,
@@ -315,19 +315,19 @@ export default function SinclairHurtisPage() {
                     <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
                       <item.icon size={18} className="text-gold" />
                     </div>
-                    <span className="text-[10px] text-slate text-center leading-tight">
+                    <span className="text-[13px] text-slate text-center leading-tight">
                       {item.period}
                     </span>
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-1 flex-wrap">
-                      <h3 className="text-[15px] font-bold text-text-dark">{item.org}</h3>
-                      <span className="text-[11px] text-slate uppercase tracking-wider">
+                      <h3 className="text-[18px] font-bold text-text-dark">{item.org}</h3>
+                      <span className="text-[13px] text-slate uppercase tracking-wider">
                         {item.region}
                       </span>
                     </div>
-                    <p className="text-[12px] font-semibold text-gold mb-2">{item.role}</p>
-                    <p className="text-[13px] text-slate leading-relaxed">{item.focus}</p>
+                    <p className="text-[14px] font-semibold text-brand-goldLight mb-2">{item.role}</p>
+                    <p className="text-[14px] text-slate leading-relaxed">{item.focus}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -342,19 +342,19 @@ export default function SinclairHurtisPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
                 Active Practitioner
               </span>
-              <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+              <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
                 What makes Sinclair different from other consultants?
               </h2>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-5">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-5">
                 Sinclair does not just consult on NDIS operations. He actively coordinates NDIS
                 participants through My Ability Services, working directly with complex participants
                 and navigating the Commission daily. Every solution he recommends to a provider
                 client has been tested in a live environment first.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                 This dual role as practitioner and consultant is the foundation of CollabEdge&apos;s
                 Built by Practitioners positioning, and the reason clients trust that
                 recommendations are grounded in operational reality, not theory.
@@ -366,7 +366,7 @@ export default function SinclairHurtisPage() {
                   <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                     <div className="flex items-start gap-3 bg-white/[0.04] border border-white/[0.08] rounded-lg p-4">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[13px] text-white/70 leading-relaxed">{item}</span>
+                      <span className="text-[14px] text-[#D1D5DB] leading-relaxed">{item}</span>
                     </div>
                   </FadeIn>
                 ))}
@@ -383,7 +383,7 @@ export default function SinclairHurtisPage() {
 
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <h2 className="text-[18px] font-bold text-text-dark mb-6">Awards</h2>
+              <h2 className="text-[26px] font-bold text-text-dark mb-6">Awards</h2>
               <div className="flex flex-col gap-4">
                 {awards.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -391,8 +391,8 @@ export default function SinclairHurtisPage() {
                       <Award size={15} className="text-gold" />
                     </div>
                     <div>
-                      <p className="text-[13px] font-semibold text-text-dark">{item.award}</p>
-                      <p className="text-[11px] text-slate">{item.org} &middot; {item.year}</p>
+                      <p className="text-[14px] font-semibold text-text-dark">{item.award}</p>
+                      <p className="text-[13px] text-slate">{item.org} &middot; {item.year}</p>
                     </div>
                   </div>
                 ))}
@@ -401,7 +401,7 @@ export default function SinclairHurtisPage() {
 
             <FadeIn variant="fadeUp" delay={100}>
               <GoldRuleAnimated />
-              <h2 className="text-[18px] font-bold text-text-dark mb-6">Certifications</h2>
+              <h2 className="text-[26px] font-bold text-text-dark mb-6">Certifications</h2>
               <div className="flex flex-col gap-4">
                 {certs.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -409,8 +409,8 @@ export default function SinclairHurtisPage() {
                       <Shield size={15} className="text-gold" />
                     </div>
                     <div>
-                      <p className="text-[13px] font-semibold text-text-dark">{item.cert}</p>
-                      <p className="text-[11px] text-slate">{item.body}</p>
+                      <p className="text-[14px] font-semibold text-text-dark">{item.cert}</p>
+                      <p className="text-[13px] text-slate">{item.body}</p>
                     </div>
                   </div>
                 ))}
@@ -425,10 +425,10 @@ export default function SinclairHurtisPage() {
         <div className="max-w-[800px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
               Peer Endorsements
             </span>
-            <h2 className="text-[20px] font-bold text-white tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
               What colleagues and clients say
             </h2>
             <TestimonialCarousel />
@@ -445,10 +445,10 @@ export default function SinclairHurtisPage() {
                 <GraduationCap size={24} className="text-gold" />
               </div>
               <div className="flex-1">
-                <h2 className="text-[18px] font-bold text-text-dark mb-2">
+                <h2 className="text-[26px] font-bold text-text-dark mb-2">
                   Teaching the next generation
                 </h2>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[580px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[580px]">
                   As an Adjunct Lecturer at Monash University, Sinclair teaches soft skills and
                   real-world business practice to Masters of Information Technology students,
                   equipping them not just with technical knowledge, but with the communication and
@@ -457,10 +457,10 @@ export default function SinclairHurtisPage() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-[11px] font-semibold text-gold uppercase tracking-wider">
+                <span className="text-[13px] font-semibold text-brand-goldDark uppercase tracking-wider">
                   Monash University
                 </span>
-                <span className="text-[11px] text-slate block mt-0.5">Adjunct Lecturer</span>
+                <span className="text-[13px] text-slate block mt-0.5">Adjunct Lecturer</span>
               </div>
             </div>
           </FadeIn>
@@ -472,7 +472,7 @@ export default function SinclairHurtisPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[20px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Areas of expertise
             </h2>
           </FadeIn>
@@ -481,7 +481,7 @@ export default function SinclairHurtisPage() {
               {expertiseTags.map((tag, i) => (
                 <span
                   key={i}
-                  className="bg-white border border-border text-[12px] font-medium text-text-body px-4 py-2 rounded-full hover:border-gold/40 transition-colors"
+                  className="bg-white border border-border text-[14px] font-medium text-text-body px-4 py-2 rounded-full hover:border-gold/40 transition-colors"
                 >
                   {tag}
                 </span>

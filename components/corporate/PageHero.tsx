@@ -22,7 +22,7 @@ export default function PageHero({ eyebrow, h1, answerBlock, ctaLabel, ctaHref, 
           {h1}
         </h1>
         {answerBlock && (
-          <p className="mt-5 text-[15px] text-white/75 leading-relaxed max-w-xl">
+          <p className="mt-5 text-[15px] text-[#D1D5DB] leading-relaxed max-w-xl">
             {answerBlock}
           </p>
         )}

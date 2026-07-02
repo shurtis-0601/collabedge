@@ -98,16 +98,16 @@ export default function RajPurshothamPage() {
       <div className="bg-navy px-5 sm:px-10 pt-6 pb-2">
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeIn">
-            <div className="flex items-center gap-2 text-[12px] text-white/40">
-              <a href="/about" className="hover:text-gold transition-colors">
+            <div className="flex items-center gap-2 text-[14px] text-[#9CA3AF]">
+              <a href="/about" className="hover:text-brand-goldDark transition-colors">
                 About
               </a>
               <span>/</span>
-              <a href="/about/team" className="hover:text-gold transition-colors">
+              <a href="/about/team" className="hover:text-brand-goldDark transition-colors">
                 Our Team
               </a>
               <span>/</span>
-              <span className="text-white/60">Raj Purshotham</span>
+              <span className="text-[#D1D5DB]">Raj Purshotham</span>
             </div>
           </FadeIn>
         </div>
@@ -132,14 +132,14 @@ export default function RajPurshothamPage() {
                     href="https://www.linkedin.com/in/rajpurus/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold hover:gap-3 transition-all duration-200"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
                     <ExternalLink size={14} />
                     Connect on LinkedIn
                   </a>
                   <a
                     href="/appt"
-                    className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#D1D5DB] hover:text-brand-goldDark transition-colors"
                   >
                     <ArrowRight size={13} />
                     Book a consultation
@@ -150,7 +150,7 @@ export default function RajPurshothamPage() {
 
             {/* RIGHT — Bio content */}
             <FadeIn variant="fadeUp" delay={100}>
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-3 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
                 Strategy, Growth and International Advisory
               </span>
               <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-2">
@@ -158,15 +158,15 @@ export default function RajPurshothamPage() {
               </h1>
               <div className="flex items-center gap-2 mb-5">
                 <Globe size={13} className="text-gold/60" />
-                <span className="text-[12px] text-white/40">Based in Dubai, UAE</span>
+                <span className="text-[14px] text-[#9CA3AF]">Based in Dubai, UAE</span>
               </div>
-              <p className="text-[15px] text-white/70 leading-relaxed mb-5 border-l-2 border-gold pl-5">
+              <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
                 Raj Purshotham is a Fractional Consultant and Growth Advisor to CollabEdge
                 Solutions, bringing deep enterprise technology, go-to-market, and international
                 business development expertise built across nearly two decades in the Middle East,
                 Africa, India and Asia Pacific.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 His career spans nearly 10 years at Cisco across the MEAR region, senior marketing
                 and alliance roles at Black Box, and current fractional engagements at Property
                 Automate and Dynamic Netsoft Technologies, where he leads international business
@@ -177,8 +177,8 @@ export default function RajPurshothamPage() {
               <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                 {bioStats.map((stat, i) => (
                   <div key={i}>
-                    <span className="text-[22px] font-bold text-gold block">{stat.value}</span>
-                    <span className="text-[11px] text-white/40 uppercase tracking-wider">
+                    <span className="text-[22px] font-bold text-brand-goldDark block">{stat.value}</span>
+                    <span className="text-[13px] text-[#9CA3AF] uppercase tracking-wider">
                       {stat.label}
                     </span>
                   </div>
@@ -194,10 +194,10 @@ export default function RajPurshothamPage() {
         <div className="max-w-[900px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[22px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Enterprise technology across three continents
             </h2>
-            <p className="text-[14px] text-slate leading-relaxed mb-10 max-w-[680px]">
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               Raj has spent his career at the intersection of enterprise technology, channel
               strategy, and international market development, building go-to-market capability
               across some of the world&apos;s most complex regions.
@@ -212,12 +212,12 @@ export default function RajPurshothamPage() {
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-1 flex-wrap">
-                      <h3 className="text-[15px] font-bold text-text-dark">{item.org}</h3>
-                      <span className="text-[11px] text-slate uppercase tracking-wider">
+                      <h3 className="text-[18px] font-bold text-text-dark">{item.org}</h3>
+                      <span className="text-[13px] text-slate uppercase tracking-wider">
                         {item.period}
                       </span>
                     </div>
-                    <p className="text-[13px] text-slate leading-relaxed">{item.focus}</p>
+                    <p className="text-[14px] text-slate leading-relaxed">{item.focus}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -233,13 +233,13 @@ export default function RajPurshothamPage() {
 
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[11px] font-semibold tracking-[.16em] uppercase text-gold/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
                 Role at CollabEdge
               </span>
-              <h2 className="text-[22px] font-bold text-white tracking-tight mb-4 leading-snug">
+              <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
                 What Raj brings to CollabEdge
               </h2>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 Raj brings growth strategy, enterprise partnerships, and international market
                 development to CollabEdge, complementing the firm with genuine international reach
                 and a proven enterprise technology network across MEA, India and Asia Pacific.
@@ -248,7 +248,7 @@ export default function RajPurshothamPage() {
                 href="https://www.linkedin.com/in/rajpurus/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[12px] text-white/40 hover:text-gold transition-colors"
+                className="inline-flex items-center gap-2 text-[14px] text-[#9CA3AF] hover:text-brand-goldDark transition-colors"
               >
                 <ExternalLink size={13} />
                 Full career history on LinkedIn
@@ -261,7 +261,7 @@ export default function RajPurshothamPage() {
                   <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                     <div className="flex items-start gap-3 bg-white/[0.04] border border-white/[0.08] rounded-lg p-4">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[13px] text-white/70 leading-relaxed">{item}</span>
+                      <span className="text-[14px] text-[#D1D5DB] leading-relaxed">{item}</span>
                     </div>
                   </FadeIn>
                 ))}
