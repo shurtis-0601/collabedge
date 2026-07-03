@@ -119,11 +119,39 @@ export default function AboutPage() {
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Who is CollabEdge Solutions?
             </h2>
-            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
-              CollabEdge Solutions is an Australian-based operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions. We support NDIS providers and healthcare organisations with compliance, AI-powered workflow automation, and practical advisory.
+            <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
+              CollabEdge Solutions is an Australian-based operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions.
             </p>
-            <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
-              We also deliver enterprise transformation for larger organisations, from data platform strategy and migration leadership to specialised implementations through a curated network of technology partners across Australia and Asia Pacific. Every engagement is senior-led, practitioner-tested, and built around what is right for your organisation.
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <FadeIn variant="fadeUp">
+              <div className="border-l-2 border-gold pl-6 h-full">
+                <span className="font-serif text-[40px] leading-none text-gold/40 block mb-3">01</span>
+                <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate block mb-2">
+                  Healthcare &amp; NDIS
+                </span>
+                <p className="text-[16px] text-slate leading-relaxed">
+                  We support NDIS providers and healthcare organisations with compliance, AI-powered workflow automation, and practical advisory.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn variant="fadeUp" delay={120}>
+              <div className="border-l-2 border-gold pl-6 h-full">
+                <span className="font-serif text-[40px] leading-none text-gold/40 block mb-3">02</span>
+                <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate block mb-2">
+                  Enterprise Transformation
+                </span>
+                <p className="text-[16px] text-slate leading-relaxed">
+                  We deliver enterprise transformation for larger organisations, from data platform strategy and migration leadership to specialised implementations through a curated network of technology partners across Australia and Asia Pacific.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+
+          <FadeIn variant="fadeUp" delay={200}>
+            <p className="text-[16px] font-medium text-text-dark leading-relaxed mb-6 max-w-[680px]">
+              Every engagement is senior-led, practitioner-tested, and built around what is right for your organisation.
             </p>
           </FadeIn>
 
