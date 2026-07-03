@@ -30,7 +30,7 @@ const schema = {
   offers: {
     '@type': 'Offer',
     seller: { '@type': 'Organization', name: 'CollabEdge Solutions' },
-    areaServed: ['AU', 'SG', 'AE', 'IN'],
+    areaServed: ['AU', 'SG', 'IN'],
   },
 }
 

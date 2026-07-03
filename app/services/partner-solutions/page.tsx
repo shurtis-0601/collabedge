@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 import {
   Shield, ArrowRight, CheckCircle,
-  Globe, Users, Star, Lock, ExternalLink, Building2
+  Globe, Users, Star, Lock, ExternalLink, Building2, Home
 } from 'lucide-react'
 import PageHero from '@/components/corporate/PageHero'
 import CTASection from '@/components/ui/CTASection'
@@ -29,7 +29,7 @@ const schema = {
     name: 'CollabEdge Solutions',
     url: 'https://collabedgesolutions.com.au',
   },
-  areaServed: ['AU', 'SG', 'AE'],
+  areaServed: ['AU', 'SG'],
   description:
     'CollabEdge Solutions curates and delivers specialist enterprise technology through a vetted partner network across Australia and Asia Pacific.',
 }
@@ -179,8 +179,8 @@ export default function PartnerSolutionsPage() {
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Dynamic Netsoft / Property Automate */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Dynamic Netsoft Technologies */}
             <FadeIn variant="slideRight">
               <div id="dynamic-netsoft" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4 flex-wrap">
@@ -190,45 +190,62 @@ export default function PartnerSolutionsPage() {
                   <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
                     Microsoft D365
                   </span>
+                </div>
+                <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
+                  <Building2 size={18} className="text-navy" />
+                </div>
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">
+                  Dynamic Netsoft Technologies
+                </h3>
+                <p className="text-[14px] text-slate leading-relaxed mb-5">
+                  Full-suite Microsoft Dynamics 365 Finance and Operations ISV, certified on Microsoft AppSource, focused on real estate and construction. Enterprise-grade property and contract lifecycle management for organisations on the Microsoft stack.
+                </p>
+                <a
+                  href="https://www.dynamicnetsoft.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                >
+                  Visit Dynamic Netsoft
+                  <ExternalLink size={12} />
+                </a>
+              </div>
+            </FadeIn>
+
+            {/* Property Automate */}
+            <FadeIn variant="fadeUp" delay={80}>
+              <div id="property-automate" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
+                <div className="flex items-center gap-2 mb-4 flex-wrap">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
+                    Enterprise Lane
+                  </span>
                   <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
                     PropTech
                   </span>
                 </div>
                 <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
-                  <Building2 size={18} className="text-navy" />
+                  <Home size={18} className="text-navy" />
                 </div>
-                <h3 className="text-[18px] font-bold text-text-dark mb-1">
-                  Dynamic Netsoft Technologies
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">
+                  Property Automate
                 </h3>
-                <p className="text-[14px] text-brand-goldDark font-semibold mb-3">Including Property Automate</p>
                 <p className="text-[14px] text-slate leading-relaxed mb-5">
-                  The only full-suite Microsoft Dynamics 365 F&amp;O ISV exclusively focused on Real Estate and Construction. Founded in 2011 with offices across Singapore, Dubai, Riyadh and Chennai, all six solutions are certified on Microsoft AppSource and Co-Sell Ready. Property Automate is the workflow automation product from the same group, covering commercial and residential property management operations.
+                  Property operations technology for residential, commercial, and facilities management. Purpose-built platforms that digitise property workflows end to end.
                 </p>
-                <div className="flex flex-col gap-2">
-                  <a
-                    href="https://www.dynamicnetsoft.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
-                  >
-                    Visit Dynamic Netsoft
-                    <ExternalLink size={12} />
-                  </a>
-                  <a
-                    href="https://propertyautomate.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-slate hover:text-brand-goldDark transition-colors"
-                  >
-                    Visit Property Automate
-                    <ExternalLink size={12} />
-                  </a>
-                </div>
+                <a
+                  href="https://propertyautomate.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                >
+                  Visit Property Automate
+                  <ExternalLink size={12} />
+                </a>
               </div>
             </FadeIn>
 
             {/* Newgen Consulting */}
-            <FadeIn variant="fadeUp" delay={100}>
+            <FadeIn variant="fadeUp" delay={160}>
               <div id="newgen-consulting" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">

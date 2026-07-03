@@ -58,6 +58,7 @@ const checklist = [
   'We start with what you already have',
   'Practitioner-tested before it reaches you',
   'Transparent pricing, published on our site',
+  'Honest recommendations backed by cost benefit analysis, not sales pitches',
   'Active NDIS coordinator, not just a consultant',
   'Fortune 500 methods applied to SME budgets',
   'Melbourne-based, Australia-wide delivery',
@@ -118,8 +119,11 @@ export default function AboutPage() {
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Who is CollabEdge Solutions?
             </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
+              CollabEdge Solutions is an Australian-based operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions. We support NDIS providers and healthcare organisations with compliance, AI-powered workflow automation, and practical advisory.
+            </p>
             <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
-              CollabEdge Solutions is an Australian operational consulting firm founded by Sinclair Hurtis, delivering compliance support, workflow automation, AI advisory, and enterprise technology implementation to NDIS providers and businesses across Australia. Every engagement is senior-led and practitioner-tested.
+              We also deliver enterprise transformation for larger organisations, from data platform strategy and migration leadership to specialised implementations through a curated network of technology partners across Australia and Asia Pacific. Every engagement is senior-led, practitioner-tested, and built around what is right for your organisation.
             </p>
           </FadeIn>
 
@@ -133,12 +137,12 @@ export default function AboutPage() {
               {
                 icon: Zap,
                 title: 'We Start With What You Have',
-                body: 'Most clients already have Microsoft 365 or Google Workspace. We show them how to unlock compliance, automation, and AI capability from tools they are already paying for.',
+                body: "Most clients already have Microsoft 365 or Google Workspace. We show them how to unlock compliance, automation, and AI capability from tools they are already paying for, including AI agents that take repetitive work off your team's plate.",
               },
               {
                 icon: TrendingUp,
-                title: 'Fortune 500 Depth for SMEs',
-                body: '30+ years across Citibank, Singtel, NAB and the Victorian Department of Health, applied to the specific challenges of Australian healthcare providers and growing businesses.',
+                title: 'Fortune 500 Depth, Applied at Any Scale',
+                body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health, delivered from within global System Integrators and end client environments alike. That dual perspective, business and IT, functional and technical, is applied to the specific challenges of Australian healthcare providers and growing businesses across Asia Pacific.',
               },
             ].map((card, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
@@ -161,7 +165,7 @@ export default function AboutPage() {
           <FadeIn variant="slideRight">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
-              What does CollabEdge Solutions do?
+              Our Services
             </h2>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
               CollabEdge Solutions delivers operational consulting, NDIS compliance support, workflow automation, AI advisory, digital services, and enterprise technology implementation. We serve NDIS providers, allied health operators, and Australian enterprises across two service pillars: healthcare and SME solutions, and enterprise technology partnerships.
@@ -210,7 +214,7 @@ export default function AboutPage() {
           <FadeIn variant="slideRight">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Why choose CollabEdge Solutions over a larger consulting firm?
+              Boutique Accountability, Fortune 500 Depth
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
               CollabEdge Solutions combines Fortune 500 experience with boutique accountability. Every engagement is led by the same senior practitioner who assessed your situation, with no hand-offs to junior staff. We recommend what simplifies your operation, not what pays us the most.
@@ -230,6 +234,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* 6b. Recommendations Grounded in Cost and Fit */}
+      <section className="bg-white py-16 px-5 sm:px-10 border-t border-border">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+              Recommendations Grounded in Cost and Fit
+            </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
+              Many of our clients already run third-party applications such as ShiftCare, their own CRM, or established practice management systems. Our job is not to replace what works. It is to reduce cost and lift capability across what you already have.
+            </p>
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
+              After understanding your challenges, we assess all options: your existing platforms, custom-built solutions using your current infrastructure, or third-party providers where they genuinely fit. When a third-party provider makes sense, we recommend it with a full cost benefit analysis and a roadmap strategy, so you can see exactly what the change delivers before you commit.
+            </p>
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
+              Our advice is based solely on what is right for your specific situation, not on reseller margins or sales quotas. You get honest, unbiased guidance focused on your outcomes.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* 7. Team Preview Strip */}
       <section className="bg-white py-16 px-5 sm:px-10 border-t border-border">
         <div className="max-w-[1000px] mx-auto">
@@ -239,7 +264,7 @@ export default function AboutPage() {
               Our Team
             </span>
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-2 leading-snug">
-              Who is behind every CollabEdge engagement?
+              The Team Behind Every Engagement
             </h2>
             <p className="text-[14px] text-slate mb-8 max-w-[540px]">
               CollabEdge Solutions is senior-led and supported by a small team of specialists and strategic advisors, not a large agency where you never know who you will work with.
@@ -288,7 +313,7 @@ export default function AboutPage() {
               Our Dual Mission
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
-              What are CollabEdge Solutions&apos; two service areas?
+              Our Dual Mission
             </h2>
           </FadeIn>
 
@@ -328,7 +353,7 @@ export default function AboutPage() {
                   Enterprise Partnerships
                 </h3>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-5">
-                  Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, DQOps data quality, Vanta security compliance, and Property Automate, with advisory and implementation included.
+                  Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, Dynamic Netsoft for Microsoft Dynamics 365 property solutions, Property Automate for property operations technology, and Newgen Consulting for the Zoho ecosystem, with advisory and implementation included across Australia and Asia Pacific.
                 </p>
                 <a
                   href="/services/partner-solutions"
@@ -351,10 +376,10 @@ export default function AboutPage() {
               Proof
             </span>
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Does CollabEdge Solutions have documented client outcomes?
+              Documented Client Outcomes
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[580px]">
-              Yes. We document real client outcomes with named organisations, specific results, and honest accounts of what was delivered. No anonymous case studies or vague claims.
+              We document real client outcomes with named organisations, specific results, and honest accounts of what was delivered. No anonymous case studies or vague claims.
             </p>
           </FadeIn>
 

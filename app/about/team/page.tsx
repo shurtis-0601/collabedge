@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Our Team | CollabEdge Solutions Melbourne',
   description:
-    'Meet the CollabEdge Solutions team — senior consultants, NDIS specialists, and strategic advisors delivering practitioner-led consulting across Australia.',
+    'Meet the CollabEdge Solutions team: senior consultants, NDIS specialists, and strategic advisors delivering practitioner-led consulting across Australia.',
   openGraph: {
     title: 'Our Team | CollabEdge Solutions',
     description:
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  name: 'Our Team — CollabEdge Solutions',
+  name: 'Our Team | CollabEdge Solutions',
   url: 'https://collabedgesolutions.com.au/about/team',
   description:
     'The CollabEdge Solutions team includes founder Sinclair Hurtis, NDIS advisor Magdalena Paczkowska, and strategy advisor Raj Purshotham.',
@@ -79,9 +79,9 @@ const magdalenaSkills = [
 
 const rajSkills = [
   'Go-to-Market Strategy',
-  'Commercial Growth',
-  'Enterprise Partnerships',
-  'International Network',
+  'Enterprise Applications',
+  'International Partnerships',
+  'Proptech Solutions',
 ]
 
 const networkCards = [
@@ -130,7 +130,7 @@ export default function TeamPage() {
         answerBlock="CollabEdge Solutions is built around a small team of senior practitioners and strategic advisors. Every client engagement is led by the same person who assessed your situation, Sinclair Hurtis, supported by specialists drawn in when the work requires it."
       />
 
-      {/* 3. AEO — Who leads CollabEdge engagements? */}
+      {/* 3. AEO: Who leads CollabEdge engagements? */}
       <section className="bg-white py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -154,10 +154,10 @@ export default function TeamPage() {
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
-              Core Team
+              Our People
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
-              Who are the people behind CollabEdge Solutions?
+              Core Team
             </h2>
           </FadeIn>
 
@@ -223,9 +223,9 @@ export default function TeamPage() {
                   Strategy, Growth and International Advisory
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
-                <p className="text-[14px] text-brand-goldDark mb-4">Strategy, Growth and International</p>
+                <p className="text-[14px] text-brand-goldDark mb-4">Dubai, UAE</p>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
-                  Fractional Consultant and Growth Advisor to CollabEdge Solutions. Raj brings go-to-market strategy, commercial growth, and enterprise partnership expertise, with a strong personal network across international markets that complements CollabEdge&apos;s Australian and Asia Pacific focus.
+                  CMO at Property Automate and Strategy, Growth and International Advisory to CollabEdge Solutions. Based in Dubai, Raj brings go-to-market strategy, enterprise applications expertise, and international partnership reach across Asia Pacific and beyond to the CollabEdge advisory team.
                 </p>
                 <SkillList skills={rajSkills} />
                 <a
@@ -246,7 +246,7 @@ export default function TeamPage() {
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Does CollabEdge Solutions use contractors or subcontractors?
+              Our Specialist Network
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
               For engagements requiring specialist capability beyond the core team, CollabEdge Solutions draws on a vetted network of contractors and specialists. Every specialist brought into a client engagement is personally approved by Sinclair and operates under the same standards and confidentiality obligations as the core team.

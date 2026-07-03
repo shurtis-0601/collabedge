@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import {
   Shield, Zap, BookOpen, Brain, Globe,
   Building2, ArrowRight, CheckCircle,
-  Stethoscope, Lock, Database, Home as HomeIcon
+  Stethoscope, Lock, Home as HomeIcon
 } from 'lucide-react'
 import PageHero from '@/components/corporate/PageHero'
 import CTASection from '@/components/ui/CTASection'
@@ -78,19 +78,19 @@ const healthcareServices = [
 
 const partnerCards = [
   {
+    icon: Building2,
+    title: 'Dynamic Netsoft Technologies',
+    desc: 'Full-suite Microsoft Dynamics 365 Finance and Operations ISV focused on real estate and construction, certified on Microsoft AppSource.',
+  },
+  {
     icon: HomeIcon,
     title: 'Property Automate',
-    desc: 'Property management workflow automation for commercial and residential portfolios.',
+    desc: 'Property operations technology for residential, commercial, and facilities management, digitising property workflows end to end.',
   },
   {
-    icon: Database,
-    title: 'DQOps',
-    desc: 'Enterprise data quality monitoring that catches issues before they reach decision-makers.',
-  },
-  {
-    icon: Shield,
-    title: 'Vanta',
-    desc: 'Security and compliance automation for organisations pursuing SOC 2 and ISO certification.',
+    icon: Globe,
+    title: 'Newgen Consulting',
+    desc: 'Zoho ecosystem specialist delivering CRM and operations platforms for healthcare providers and growing businesses.',
   },
 ]
 

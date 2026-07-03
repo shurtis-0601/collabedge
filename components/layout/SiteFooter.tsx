@@ -42,10 +42,10 @@ export default function SiteFooter() {
             </ul>
             <div className="my-4 h-px bg-white/10" />
             <ul className="space-y-2.5 text-[14px]">
-              <li><Link href="/services/partner-solutions/shield" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">SHIELD — Voice Fraud</Link></li>
-              <li><Link href="/services/partner-solutions/property-automate" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Property Automate</Link></li>
-              <li><Link href="/services/partner-solutions/dqops" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">DQOps — Data Quality</Link></li>
-              <li><Link href="/services/partner-solutions/vanta" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Vanta — Security</Link></li>
+              <li><Link href="/services/partner-solutions/shield" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">SHIELD Voice Fraud Prevention</Link></li>
+              <li><Link href="/services/partner-solutions#dynamic-netsoft" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Dynamic Netsoft</Link></li>
+              <li><Link href="/services/partner-solutions#property-automate" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Property Automate</Link></li>
+              <li><Link href="/services/partner-solutions#newgen-consulting" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Newgen Consulting</Link></li>
             </ul>
           </div>
 

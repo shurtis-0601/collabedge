@@ -60,7 +60,8 @@ const NAV: NavItem[] = [
         heading: "Enterprise Partners",
         links: [
           { label: "SHIELD: Voice Fraud Prevention", href: "/services/partner-solutions/shield", featured: true },
-          { label: "Dynamic Netsoft / Property Automate", href: "/services/partner-solutions#dynamic-netsoft" },
+          { label: "Dynamic Netsoft", href: "/services/partner-solutions#dynamic-netsoft" },
+          { label: "Property Automate", href: "/services/partner-solutions#property-automate" },
           { label: "Newgen Consulting", href: "/services/partner-solutions#newgen-consulting" },
         ],
       },

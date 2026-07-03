@@ -175,7 +175,7 @@ const expertiseTags = [
 
 const bioStats = [
   { value: '30+', label: 'Years experience' },
-  { value: 'Singapore', label: 'APAC base' },
+  { value: '4 Countries', label: 'APAC delivery experience' },
   { value: 'Active', label: 'NDIS practitioner' },
 ]
 

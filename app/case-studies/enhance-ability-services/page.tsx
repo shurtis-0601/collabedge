@@ -187,7 +187,7 @@ export default function EnhanceAbilityServicesPage() {
                   CollabEdge Solutions began by mapping Enhance Ability Services&apos; existing processes end to end, working directly with Rebecca to understand where manual effort was consuming the most time and where compliance risk was highest. Rather than introducing new software, the engagement focused on rebuilding documentation and workflow structures inside the Microsoft 365 environment the business already had.
                 </p>
                 <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
-                  This vendor-agnostic approach meant no additional licensing costs, no new platform to learn, and no disruption to day-to-day operations during the transition.
+                  This right-fit, cost-focused approach meant no additional licensing costs, no new platform to learn, and no disruption to day-to-day operations during the transition.
                 </p>
                 <div className="flex flex-col gap-2">
                   {approachSteps.map((item, i) => (
