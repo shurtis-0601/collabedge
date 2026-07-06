@@ -343,9 +343,12 @@ export default function HomePage() {
                   As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
                 </blockquote>
                 <div className="flex items-center gap-4 flex-wrap">
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-[16px] font-bold text-brand-goldLight">SS</span>
-                  </div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/safe-star-logo.jpg"
+                    alt="Safe Star Supports"
+                    className="h-12 w-auto"
+                  />
                   <div>
                     <span className="text-[14px] font-semibold text-text-dark block">Katelyn Leighton</span>
                     <span className="text-[14px] text-slate">Founder, Safe Star Supports · Perth WA</span>
