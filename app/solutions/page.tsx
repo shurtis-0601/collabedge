@@ -12,12 +12,12 @@ const LINKS = [
   {
     title: "Core Offerings",
     blurb: "Strategic consulting across NDIS, data governance, healthcare analytics, transformation and automation.",
-    href: "/core-offerings",
+    href: "/services",
   },
   {
     title: "Specialised Solutions",
     blurb: "Enterprise platforms implemented with vetted partners — security, CRM, data quality, PropTech, telco and logistics.",
-    href: "/specialised-solutions",
+    href: "/services/partner-solutions",
   },
   {
     title: "MedPrivacy",

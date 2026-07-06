@@ -9,12 +9,12 @@ export default function Footer() {
             <h4 className="text-gold tracking-[0.25em] text-sm mb-6">SOLUTIONS</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link className="hover:text-gold" href="/core-offerings">
+                <Link className="hover:text-gold" href="/services">
                   Core Offerings
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-gold" href="/specialised-solutions">
+                <Link className="hover:text-gold" href="/services/partner-solutions">
                   Specialised Solutions
                 </Link>
               </li>

@@ -24,8 +24,8 @@ const NAV: NavItem[] = [
     label: "Solutions",
     href: "/solutions",
     children: [
-      { label: "All Core Offerings", href: "/core-offerings" },
-      { label: "All Specialised Solutions", href: "/specialised-solutions" },
+      { label: "All Core Offerings", href: "/services" },
+      { label: "All Specialised Solutions", href: "/services/partner-solutions" },
       { label: "MedPrivacy", href: "/medprivacy" },
     ],
   },
