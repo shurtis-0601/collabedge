@@ -302,40 +302,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Featured testimonial */}
+      {/* 7. Featured testimonials */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
-        <div className="max-w-[820px] mx-auto">
+        <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
               Trusted by Providers
             </h2>
           </FadeIn>
-          <FadeIn variant="fadeUp" delay={100}>
-            <div className="bg-white rounded-xl p-8 border border-border">
-              <blockquote className="font-serif italic text-[18px] text-text-dark leading-relaxed mb-6">
-                Working with Sinclair has transformed what once felt overwhelming into something clear, structured, and exciting. He did not just implement solutions. He taught me along the way.
-              </blockquote>
-              <div className="flex items-center gap-4 flex-wrap">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/enhance-ability-logo.webp"
-                  alt="Enhance Ability Services"
-                  className="h-12 w-auto"
-                />
-                <div>
-                  <span className="text-[14px] font-semibold text-text-dark block">Rebecca Delaney</span>
-                  <span className="text-[14px] text-slate">Director, Enhance Ability Services</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FadeIn variant="fadeUp" delay={100}>
+              <div className="bg-white rounded-xl p-8 border border-border h-full flex flex-col">
+                <blockquote className="font-serif italic text-[17px] text-text-dark leading-relaxed mb-6 flex-1">
+                  Working with Sinclair has transformed what once felt overwhelming into something clear, structured, and exciting. He did not just implement solutions. He taught me along the way.
+                </blockquote>
+                <div className="flex items-center gap-4 flex-wrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/enhance-ability-logo.webp"
+                    alt="Enhance Ability Services"
+                    className="h-12 w-auto"
+                  />
+                  <div>
+                    <span className="text-[14px] font-semibold text-text-dark block">Rebecca Delaney</span>
+                    <span className="text-[14px] text-slate">Director, Enhance Ability Services · Geelong VIC</span>
+                  </div>
                 </div>
+                <a
+                  href="/case-studies/enhance-ability-services"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-6"
+                >
+                  Read the full case study <ArrowRight size={13} />
+                </a>
               </div>
-              <a
-                href="/case-studies/enhance-ability-services"
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-6"
-              >
-                Read the full case study <ArrowRight size={13} />
-              </a>
-            </div>
-          </FadeIn>
+            </FadeIn>
+            <FadeIn variant="fadeUp" delay={200}>
+              <div className="bg-white rounded-xl p-8 border border-border h-full flex flex-col">
+                <blockquote className="font-serif italic text-[17px] text-text-dark leading-relaxed mb-6 flex-1">
+                  As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
+                </blockquote>
+                <div className="flex items-center gap-4 flex-wrap">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-[16px] font-bold text-brand-goldLight">SS</span>
+                  </div>
+                  <div>
+                    <span className="text-[14px] font-semibold text-text-dark block">Katelyn Leighton</span>
+                    <span className="text-[14px] text-slate">Founder, Safe Star Supports · Perth WA</span>
+                  </div>
+                </div>
+                <a
+                  href="/case-studies#safe-star-supports"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-6"
+                >
+                  Read the full case study <ArrowRight size={13} />
+                </a>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

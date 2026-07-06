@@ -172,7 +172,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Case Study — Safe Star Supports */}
-      <section className="bg-navy py-16 px-5 sm:px-10">
+      <section id="safe-star-supports" className="bg-navy py-16 px-5 sm:px-10 scroll-mt-24">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
