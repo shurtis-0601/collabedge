@@ -95,7 +95,7 @@ const partnerCards = [
 ]
 
 const pillars = [
-  'Senior-led, with no hand-offs to junior staff',
+  'Practitioner-led advisory on the healthcare side, partner-coordinated on the enterprise side',
   'We start with what you already have',
   'Transparent, published pricing where possible',
 ]
@@ -111,8 +111,8 @@ export default function ServicesPage() {
       {/* Hero */}
       <PageHero
         eyebrow="Services"
-        h1="Two pillars. One senior consultant."
-        answerBlock="CollabEdge Solutions delivers services across two areas: healthcare and NDIS operational consulting, and enterprise technology partnerships. Every engagement, regardless of size, is led directly by the same senior consultant from first conversation to final delivery."
+        h1="Two pillars. One trusted advisor."
+        answerBlock="CollabEdge Solutions operates across two service areas. For NDIS providers and healthcare operators, every engagement is practitioner-led and delivered directly by Sinclair Hurtis. For enterprise and technology needs, CollabEdge coordinates specialist delivery through a curated network of partners across Australia and Asia Pacific."
       />
 
       {/* Pillar Selector */}
@@ -161,7 +161,7 @@ export default function ServicesPage() {
                   Enterprise Partnerships
                 </h2>
                 <p className="text-[14px] text-slate leading-relaxed mb-6">
-                  Specialist enterprise technology delivered through selected partnerships: security, data quality, and property automation.
+                  Enterprise technology delivered through a curated network of specialist partners across communication security, property technology, and healthcare software platforms, coordinated by CollabEdge across Australia and Asia Pacific.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-navy group-hover:gap-3 group-hover:text-brand-goldLight transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
@@ -232,7 +232,7 @@ export default function ServicesPage() {
             </p>
           </FadeIn>
 
-          {/* SHIELD — Featured */}
+          {/* SHIELD: Featured */}
           <FadeIn variant="fadeUp" delay={0}>
             <a
               href="/services/partner-solutions/shield"
