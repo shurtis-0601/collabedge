@@ -71,7 +71,7 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-2.5 text-[14px] text-[#D1D5DB]">
               <li><Link href="/ai-automation" className="hover:text-white transition-colors">AI and Automation Hub</Link></li>
-              <li><Link href="/resources/articles" className="hover:text-white transition-colors">Articles and Guides</Link></li>
+              <li><Link href="/resources" className="hover:text-white transition-colors">Articles and Guides</Link></li>
               <li><Link href="/resources/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
               <li><Link href="/resources/videos" className="hover:text-white transition-colors">Video Walkthroughs</Link></li>
             </ul>

@@ -91,7 +91,7 @@ const NAV: NavItem[] = [
         heading: "Learn",
         links: [
           { label: "AI and Automation Hub", href: "/ai-automation" },
-          { label: "Articles and Guides", href: "/resources/articles" },
+          { label: "Articles and Guides", href: "/resources" },
         ],
       },
       {
