@@ -53,6 +53,7 @@ const NAV: NavItem[] = [
           { label: "NDIS Compliance and Audit", href: "/services/ndis-compliance-audit" },
           { label: "Workflow Automation", href: "/services/healthcare-workflow" },
           { label: "Document Governance", href: "/services/document-governance" },
+          { label: "Digital Services", href: "/services/digital" },
           { label: "AI Advisory", href: "/ai-automation" },
         ],
       },

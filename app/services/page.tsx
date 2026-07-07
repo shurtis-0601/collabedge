@@ -292,7 +292,7 @@ export default function ServicesPage() {
                   </span>
                   <h2 className="text-[26px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
                   <p className="text-[14px] text-slate leading-relaxed max-w-[480px]">
-                    Websites, branding, and digital marketing for growing businesses, not limited to healthcare. From $1,500.
+                    Websites, AI agents, CRM automation, and data analytics for small businesses. Digital foundations that earn their keep.
                   </p>
                 </div>
                 <a
