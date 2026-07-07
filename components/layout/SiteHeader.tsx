@@ -54,7 +54,7 @@ const NAV: NavItem[] = [
           { label: "Workflow Automation", href: "/services/healthcare-workflow" },
           { label: "Document Governance", href: "/services/document-governance" },
           { label: "Digital Services", href: "/services/digital" },
-          { label: "AI Advisory", href: "/ai-automation" },
+          { label: "AI Advisory", href: "/services/ai-advisory" },
         ],
       },
       {

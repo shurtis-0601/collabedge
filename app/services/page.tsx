@@ -70,9 +70,9 @@ const healthcareServices = [
   {
     icon: Brain,
     title: 'AI Advisory',
-    desc: 'Practical AI tooling for healthcare operators, tested before it reaches your team.',
+    desc: 'Honest advice on where AI fits your business. What to automate, what it saves, and whether bespoke beats your subscriptions.',
     price: 'Custom scope',
-    href: '/ai-automation',
+    href: '/services/ai-advisory',
   },
 ]
 
@@ -328,6 +328,36 @@ export default function ServicesPage() {
                 </div>
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Engagement Models */}
+      <section className="bg-white py-16 px-5 sm:px-10 border-t border-border">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+              Two Ways to Engage
+            </h2>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FadeIn variant="fadeUp" delay={80}>
+              <div className="bg-offwhite rounded-xl p-7 border border-border h-full">
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">By Project</h3>
+                <p className="text-[16px] text-slate leading-relaxed">
+                  A defined scope, a clear deliverable, and a senior-led team from start to finish. Right for a specific problem such as audit preparation, a registration, or a website build.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn variant="fadeUp" delay={160}>
+              <div className="bg-offwhite rounded-xl p-7 border border-border h-full">
+                <h3 className="text-[18px] font-bold text-text-dark mb-3">Managed Services</h3>
+                <p className="text-[16px] text-slate leading-relaxed">
+                  One ongoing relationship covering compliance, automation, digital, and advisory. Your operations partner rather than a one-off engagement, with every product CollabEdge builds included as part of your engagement, and a MedPrivacy licence arranged as part of the relationship.
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
