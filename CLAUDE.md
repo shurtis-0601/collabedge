@@ -13,11 +13,25 @@ claude/update-website-styling-c4LGQ
   link, use this instead of hand-rolling a new one)
 - Video embed: components/VideoEmbed.tsx (facade
   pattern, click to load, youtube-nocookie)
+- Product tabs: components/products/ProductTabs.tsx
+  (accessible tab pattern, deep-linkable via
+  #tab-available, #tab-development, or a card slug,
+  e.g. #ndis-crm)
 - Design tokens: tailwind.config.ts
 - Blog content: content/articles/*.md
 - Blog images: public/images/blog/
 - Download templates: content/downloads/
 - General images: public/images/
+
+## Next.js server/client boundary note
+
+Icons and other component references cannot pass from a
+Server Component into a Client Component as bare
+component types, this throws at build time. Pass
+pre-rendered JSX elements instead (render the icon in
+the server component, pass the resulting node as a
+prop). Applies anywhere a Client Component needs an
+icon or similar from page-level data.
 
 ## Products (live)
 
