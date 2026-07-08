@@ -1,0 +1,21 @@
+PLACEHOLDER FILE. This needs to be replaced with the actual
+template file before launch (likely an Excel or Google Sheets
+spreadsheet).
+
+TEMPLATE: NDIS Funding Tracker Template
+
+WHAT IT SHOULD CONTAIN:
+A simplified funding tracker for one participant. Track category
+spend against budget with automatic status alerts, the same logic
+behind the full Funding and Burn Rate Tracker product, scaled down
+so a provider can use it today without any setup.
+
+Structure should cover at minimum:
+- Support category rows (Core, Capacity Building, Capital)
+- Budget allocated per category
+- Spend to date per category
+- Automatic status alert comparing spend to plan timeline elapsed
+- Simple, print friendly layout
+
+This file is a stand-in only. Do not link this text file from the
+live download flow.

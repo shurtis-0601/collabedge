@@ -1,0 +1,18 @@
+PLACEHOLDER FILE. This needs to be replaced with the actual
+template file before launch (likely a Word document or PDF).
+
+TEMPLATE: Participant Funding Summary Template
+
+WHAT IT SHOULD CONTAIN:
+A clean, printable one page summary that a provider can hand to a
+participant or their family, showing funding status at a glance
+without needing to explain a spreadsheet.
+
+Structure should cover at minimum:
+- Participant name and plan period
+- Funding status by category, in plain language
+- Simple visual indicator of overall plan health
+- One page maximum, print ready formatting
+
+This file is a stand-in only. Do not link this text file from the
+live download flow.

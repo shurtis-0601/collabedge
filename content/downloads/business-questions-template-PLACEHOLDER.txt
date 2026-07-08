@@ -1,0 +1,18 @@
+PLACEHOLDER FILE. This needs to be replaced with the actual
+template file before launch (likely a Word document or PDF).
+
+TEMPLATE: NDIS Business Questions and Scenarios Template
+
+WHAT IT SHOULD CONTAIN:
+More than 30 strategic questions to help a provider work out what
+their organisation should actually be measuring, before building
+a single dashboard.
+
+Structure should cover at minimum:
+- Questions grouped by theme (service delivery, utilisation,
+  funding, compliance, workforce)
+- Space for the provider to note their own answer or current gap
+- Framed as a discovery exercise, not a checklist
+
+This file is a stand-in only. Do not link this text file from the
+live download flow.
