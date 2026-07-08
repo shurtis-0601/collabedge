@@ -6,12 +6,22 @@ claude/update-website-styling-c4LGQ
 ## File map (do not explore, use these paths)
 
 - Pages: app/[route]/page.tsx
-- Header: components/SiteHeader.tsx
-- Footer: components/SiteFooter.tsx
+- Header: components/layout/SiteHeader.tsx
+- Footer: components/layout/SiteFooter.tsx
 - Design tokens: tailwind.config.ts
 - Blog content: content/articles/*.md
 - Blog images: public/images/blog/
+- Download templates: content/downloads/
 - General images: public/images/
+
+## Products (live)
+
+- /products (hub)
+- /products/employee-onboarding-automation
+- /products/funding-burn-rate-tracker
+- MedPrivacy: external, https://medprivacy.com.au
+- NDIS CRM: In Development, no page yet, footer and
+  hub link to /appt
 
 ## Design tokens
 
