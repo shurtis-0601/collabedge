@@ -111,6 +111,30 @@ for it.
 - No fabricated metrics, testimonials, or claims.
   Client quotes render verbatim only
 
+## Verification scaling
+
+Match preview effort to the risk of the change, do not
+default to full interactive verification every time.
+
+Build check only, no interactive preview needed: pure
+copy edits, single class or colour swaps, removing an
+element, footer or metadata text changes. Confirm the
+build passes and move on.
+
+Quick visual check, one screenshot, no interactive
+testing: layout or spacing changes, new sections added
+to an existing page, image or component swaps. One
+preview screenshot at the relevant breakpoint is enough.
+
+Full interactive preview (click-through, hash state,
+form submission, keyboard navigation, multiple
+breakpoints): new interactive components, tabs, forms,
+deep linking, anything with client-side state or JS
+behaviour that could silently fail.
+
+When unsure which tier applies, ask rather than
+defaulting to the heaviest option.
+
 ## Working style
 
 - Make only the changes the prompt specifies
