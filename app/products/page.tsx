@@ -1,10 +1,11 @@
 ﻿import type { Metadata } from 'next'
 import {
-  Shield, Users, TrendingUp, Cpu, ArrowRight, ExternalLink, PlayCircle
+  Shield, Users, TrendingUp, Cpu, ArrowRight
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
+import ProductTabs, { Product } from '@/components/products/ProductTabs'
 
 export const metadata: Metadata = {
   title: 'Products | CollabEdge Solutions',
@@ -18,20 +19,10 @@ export const metadata: Metadata = {
   },
 }
 
-type Product = {
-  icon: typeof Shield
-  title: string
-  status: 'Available Now' | 'In Development'
-  desc: string
-  ctaLabel: string
-  href: string
-  external?: boolean
-  demoHref?: string
-}
-
 const products: Product[] = [
   {
-    icon: Shield,
+    slug: 'medprivacy',
+    icon: <Shield size={20} className="text-gold" />,
     title: 'MedPrivacy',
     status: 'Available Now',
     desc: 'De-identify participant and client data before it goes anywhere near an AI tool. Built for NDIS and healthcare providers who want to use AI safely and stay compliant with the Privacy Act.',
@@ -41,7 +32,8 @@ const products: Product[] = [
     demoHref: '/resources/videos#medprivacy-demo',
   },
   {
-    icon: Users,
+    slug: 'employee-onboarding-automation',
+    icon: <Users size={20} className="text-gold" />,
     title: 'Employee Onboarding Automation',
     status: 'Available Now',
     desc: 'Automated filing and expiry tracking for staff compliance documents, police checks, Working With Children Checks, first aid certificates, and NDIS worker screening checks.',
@@ -49,7 +41,8 @@ const products: Product[] = [
     href: '/products/employee-onboarding-automation',
   },
   {
-    icon: TrendingUp,
+    slug: 'funding-burn-rate-tracker',
+    icon: <TrendingUp size={20} className="text-gold" />,
     title: 'NDIS Funding and Burn Rate Tracker',
     status: 'Available Now',
     desc: 'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local. No participant data ever leaves your device.',
@@ -57,12 +50,12 @@ const products: Product[] = [
     href: '/products/funding-burn-rate-tracker',
   },
   {
-    icon: Cpu,
+    slug: 'ndis-crm',
+    icon: <Cpu size={20} className="text-gold" />,
     title: 'NDIS CRM',
     status: 'In Development',
     desc: 'An AI-powered CRM purpose-built for NDIS providers, replacing legacy case management software with a modern, Microsoft 365 native platform.',
-    ctaLabel: 'Register Interest',
-    href: '/appt',
+    statusNote: 'More detail coming soon.',
   },
 ]
 
@@ -112,7 +105,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* 3. Product cards */}
+      {/* 3. Product tabs */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -121,57 +114,7 @@ export default function ProductsPage() {
               Our Products
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {products.map((product, i) => (
-              <FadeIn key={i} variant="fadeUp" delay={i * 80}>
-                <div className="bg-white rounded-xl p-7 border border-border h-full flex flex-col hover:border-gold/30 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200">
-                  <div className="flex items-start justify-between mb-4 gap-4">
-                    <div className="w-11 h-11 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                      <product.icon size={20} className="text-gold" />
-                    </div>
-                    {product.status === 'Available Now' ? (
-                      <span className="text-[13px] font-semibold text-brand-goldLight bg-gold/10 border border-gold/30 rounded-full px-3 py-1 whitespace-nowrap">
-                        Available Now
-                      </span>
-                    ) : (
-                      <span className="text-[13px] font-semibold text-slate border border-border rounded-full px-3 py-1 whitespace-nowrap">
-                        In Development
-                      </span>
-                    )}
-                  </div>
-                  <h3 className="text-[18px] font-bold text-text-dark mb-3">{product.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{product.desc}</p>
-                  <div className="mt-auto flex flex-col gap-3">
-                    {product.external ? (
-                      <a
-                        href={product.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200"
-                      >
-                        {product.ctaLabel} <ExternalLink size={13} />
-                      </a>
-                    ) : (
-                      <a
-                        href={product.href}
-                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200"
-                      >
-                        {product.ctaLabel} <ArrowRight size={13} />
-                      </a>
-                    )}
-                    {product.demoHref && (
-                      <a
-                        href={product.demoHref}
-                        className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate hover:text-brand-goldLight transition-colors"
-                      >
-                        <PlayCircle size={14} /> Watch Demo
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <ProductTabs products={products} />
         </div>
       </section>
 

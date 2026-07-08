@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 type MegaColumn = {
   heading: string;
+  headingHref?: string;
   links: { label: string; href: string; featured?: boolean }[];
 };
 
@@ -76,15 +77,17 @@ const NAV: NavItem[] = [
     columns: [
       {
         heading: "Available Now",
+        headingHref: "/products#tab-available",
         links: [
-          { label: "MedPrivacy", href: "https://medprivacy.com.au" },
-          { label: "Employee Onboarding Automation", href: "/products/employee-onboarding-automation" },
-          { label: "Funding and Burn Rate Tracker", href: "/products/funding-burn-rate-tracker" },
+          { label: "MedPrivacy", href: "/products#medprivacy" },
+          { label: "Employee Onboarding Automation", href: "/products#employee-onboarding-automation" },
+          { label: "Funding and Burn Rate Tracker", href: "/products#funding-burn-rate-tracker" },
         ],
       },
       {
         heading: "In Development",
-        links: [{ label: "NDIS CRM", href: "/appt" }],
+        headingHref: "/products#tab-development",
+        links: [{ label: "NDIS CRM", href: "/products#ndis-crm" }],
       },
     ],
   },
@@ -255,9 +258,19 @@ export default function SiteHeader() {
                     >
                       {item.columns.map((col) => (
                         <div key={col.heading} className="p-5 border-r border-white/10 last:border-r-0">
-                          <p className="text-[13px] font-bold tracking-[.16em] uppercase text-[#D1D5DB] mb-3">
-                            {col.heading}
-                          </p>
+                          {col.headingHref ? (
+                            <Link
+                              href={col.headingHref}
+                              onClick={() => setOpenMenu(null)}
+                              className="block text-[13px] font-bold tracking-[.16em] uppercase text-[#D1D5DB] mb-3 hover:text-white transition-colors"
+                            >
+                              {col.heading}
+                            </Link>
+                          ) : (
+                            <p className="text-[13px] font-bold tracking-[.16em] uppercase text-[#D1D5DB] mb-3">
+                              {col.heading}
+                            </p>
+                          )}
                           <ul className="space-y-0.5">
                             {col.links.map((link) => (
                               <li key={link.href}>
@@ -396,9 +409,19 @@ export default function SiteHeader() {
                     i.kind === "mega" && i.label === mobileSection
                 )[0]?.columns.map((col) => (
                   <div key={col.heading} className="mb-6">
-                    <p className="text-[13px] font-semibold tracking-[.14em] uppercase text-slate-light mb-2">
-                      {col.heading}
-                    </p>
+                    {col.headingHref ? (
+                      <Link
+                        href={col.headingHref}
+                        onClick={() => { setMobileOpen(false); setMobileSection(null); }}
+                        className="block text-[13px] font-semibold tracking-[.14em] uppercase text-slate-light mb-2 hover:text-white transition-colors"
+                      >
+                        {col.heading}
+                      </Link>
+                    ) : (
+                      <p className="text-[13px] font-semibold tracking-[.14em] uppercase text-slate-light mb-2">
+                        {col.heading}
+                      </p>
+                    )}
                     <ul className="space-y-1">
                       {col.links.map((link) => (
                         <li key={link.href}>
