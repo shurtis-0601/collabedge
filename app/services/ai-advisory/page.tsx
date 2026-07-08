@@ -6,6 +6,7 @@ import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
+import VideoEmbed from '@/components/VideoEmbed'
 
 export const metadata: Metadata = {
   title: 'AI Advisory for NDIS Providers and Small Business | CollabEdge Solutions',
@@ -148,6 +149,18 @@ export default function AiAdvisoryPage() {
               </FadeIn>
             ))}
           </div>
+          <FadeIn variant="fadeUp" delay={coverage.length * 80}>
+            <p className="text-[14px] font-semibold text-slate mt-10 mb-4">
+              See MedPrivacy de-identification in action below.
+            </p>
+            <div className="max-w-[620px]">
+              <VideoEmbed
+                videoId="4egH7q4hG5I"
+                title="MedPrivacy Demo: Safe AI for NDIS and Allied Health Documentation"
+                duration="4:37"
+              />
+            </div>
+          </FadeIn>
         </div>
       </section>
 

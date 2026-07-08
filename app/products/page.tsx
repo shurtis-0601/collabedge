@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from 'next'
 import {
-  Shield, Users, TrendingUp, Cpu, ArrowRight, ExternalLink
+  Shield, Users, TrendingUp, Cpu, ArrowRight, ExternalLink, PlayCircle
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -26,6 +26,7 @@ type Product = {
   ctaLabel: string
   href: string
   external?: boolean
+  demoHref?: string
 }
 
 const products: Product[] = [
@@ -37,6 +38,7 @@ const products: Product[] = [
     ctaLabel: 'Visit MedPrivacy',
     href: 'https://medprivacy.com.au',
     external: true,
+    demoHref: '/resources/videos#medprivacy-demo',
   },
   {
     icon: Users,
@@ -139,23 +141,33 @@ export default function ProductsPage() {
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">{product.title}</h3>
                   <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{product.desc}</p>
-                  {product.external ? (
-                    <a
-                      href={product.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-auto"
-                    >
-                      {product.ctaLabel} <ExternalLink size={13} />
-                    </a>
-                  ) : (
-                    <a
-                      href={product.href}
-                      className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-auto"
-                    >
-                      {product.ctaLabel} <ArrowRight size={13} />
-                    </a>
-                  )}
+                  <div className="mt-auto flex flex-col gap-3">
+                    {product.external ? (
+                      <a
+                        href={product.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200"
+                      >
+                        {product.ctaLabel} <ExternalLink size={13} />
+                      </a>
+                    ) : (
+                      <a
+                        href={product.href}
+                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200"
+                      >
+                        {product.ctaLabel} <ArrowRight size={13} />
+                      </a>
+                    )}
+                    {product.demoHref && (
+                      <a
+                        href={product.demoHref}
+                        className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate hover:text-brand-goldLight transition-colors"
+                      >
+                        <PlayCircle size={14} /> Watch Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </FadeIn>
             ))}
