@@ -8,6 +8,11 @@ claude/update-website-styling-c4LGQ
 - Pages: app/[route]/page.tsx
 - Header: components/layout/SiteHeader.tsx
 - Footer: components/layout/SiteFooter.tsx
+- Shared final CTA block: components/CTASection.tsx
+  (navy background, gold button, heading, subline, CTA
+  link, use this instead of hand-rolling a new one)
+- Video embed: components/VideoEmbed.tsx (facade
+  pattern, click to load, youtube-nocookie)
 - Design tokens: tailwind.config.ts
 - Blog content: content/articles/*.md
 - Blog images: public/images/blog/
