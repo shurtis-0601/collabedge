@@ -72,14 +72,19 @@ const NAV: NavItem[] = [
   {
     kind: "mega",
     label: "Products",
+    href: "/products",
     columns: [
       {
-        heading: "Live",
-        links: [{ label: "MedPrivacy", href: "/products/medprivacy" }],
+        heading: "Available Now",
+        links: [
+          { label: "MedPrivacy", href: "https://medprivacy.com.au" },
+          { label: "Employee Onboarding Automation", href: "/products/employee-onboarding-automation" },
+          { label: "Funding and Burn Rate Tracker", href: "/products/funding-burn-rate-tracker" },
+        ],
       },
       {
-        heading: "Coming Soon",
-        links: [{ label: "NDIS Compliance Checker", href: "/products/ndis-compliance-checker" }],
+        heading: "In Development",
+        links: [{ label: "NDIS CRM", href: "/appt" }],
       },
     ],
   },

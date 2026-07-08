@@ -333,7 +333,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Engagement Models */}
-      <section className="bg-white py-16 px-5 sm:px-10 border-t border-border">
+      <section id="engagement-models" className="bg-white py-16 px-5 sm:px-10 border-t border-border scroll-mt-24">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />

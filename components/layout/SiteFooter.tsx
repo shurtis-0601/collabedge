@@ -77,8 +77,10 @@ export default function SiteFooter() {
             </ul>
             <div className="my-4 h-px bg-white/10" />
             <ul className="space-y-2.5 text-[14px] text-[#D1D5DB]">
-              <li><Link href="/products/medprivacy" className="hover:text-white transition-colors">MedPrivacy</Link></li>
-              <li><Link href="/products/ndis-compliance-checker" className="hover:text-white transition-colors">NDIS Compliance Checker</Link></li>
+              <li><a href="https://medprivacy.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">MedPrivacy</a></li>
+              <li><Link href="/products/employee-onboarding-automation" className="hover:text-white transition-colors">Employee Onboarding Automation</Link></li>
+              <li><Link href="/products/funding-burn-rate-tracker" className="hover:text-white transition-colors">Funding and Burn Rate Tracker</Link></li>
+              <li><Link href="/appt" className="hover:text-white transition-colors">NDIS CRM (Coming Soon)</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
