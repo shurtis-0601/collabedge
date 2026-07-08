@@ -39,9 +39,29 @@ claude/update-website-styling-c4LGQ
 - H1 44px, H2 26px, H3 18px
 - No opacity-based text colours on dark backgrounds.
   Use solid #F1F5F9, #D1D5DB, #9CA3AF
-- Animations: subtle fade up on scroll, hover lift on
-  cards, no auto-advance, always respect
-  prefers-reduced-motion
+
+## Animation
+
+Two registers, chosen by audience, not one rule for
+every page.
+
+Restrained register (NDIS and healthcare provider
+facing pages: Services hub, NDIS Compliance and Audit,
+SIL Registration, Document Governance, Healthcare
+Workflow Automation, About, Team): subtle fade up on
+scroll, gentle hover lift only. Nothing bold.
+
+Confident register (enterprise and small business
+digital audience pages: Digital Services, AI Advisory,
+Products, Home): more expressive motion is fine, richer
+hover states, more pronounced transitions, a hero
+element with genuine movement. Read as polish, not
+noise.
+
+Both registers always respect prefers-reduced-motion.
+This is non-negotiable regardless of page or audience,
+it only activates for users who have explicitly asked
+for it.
 
 ## Copy rules (all output, no exceptions)
 
