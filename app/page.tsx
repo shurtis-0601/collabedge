@@ -95,69 +95,89 @@ export default function HomePage() {
   return (
     <>
       {/* 1. Hero */}
-      <section className="relative min-h-[560px] flex items-center overflow-hidden bg-navy">
-        {/* Photo, right side on desktop */}
-        <div className="absolute inset-y-0 right-0 w-[55%] hidden lg:block">
-          <Image
-            src="/images/Sinclair-hero.jpeg"
-            alt="Sinclair Hurtis, Founder of CollabEdge Solutions"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(270deg, transparent 0%, rgba(3,15,35,0.2) 30%, rgba(3,15,35,0.75) 55%, rgba(3,15,35,0.97) 75%, rgba(3,15,35,1) 100%)',
-            }}
-            aria-hidden="true"
-          />
+      <section className="relative overflow-hidden bg-navy">
+        {/* Desktop: photo right (absolute, gradient overlay), content left. Unchanged from prior layout. */}
+        <div className="hidden lg:flex lg:items-center lg:min-h-[560px] lg:relative">
+          <div className="absolute inset-y-0 right-0 w-[55%]">
+            <Image
+              src="/images/Sinclair-hero.jpeg"
+              alt="Sinclair Hurtis, Founder of CollabEdge Solutions"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(270deg, transparent 0%, rgba(3,15,35,0.2) 30%, rgba(3,15,35,0.75) 55%, rgba(3,15,35,0.97) 75%, rgba(3,15,35,1) 100%)',
+              }}
+              aria-hidden="true"
+            />
+          </div>
+
+          <div className="relative z-10 w-[52%] px-6 py-16 lg:py-20 lg:pl-10 lg:mr-auto">
+            <FadeIn variant="fadeUp">
+              <div className="w-9 h-[2px] bg-gold mb-4" />
+              <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
+                Fortune 500 experience.{' '}
+                <em className="not-italic text-brand-goldDark">Applied to your business.</em>
+              </h1>
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
+                CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology solutions with specialist partners across Australia and Asia Pacific. Every engagement is senior-led and practitioner-tested.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-10">
+                <a href="/appt" className="btn-gold">Book a Free Consultation</a>
+                <a href="/services" className="btn-ghost">Explore Our Services</a>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-6 border-t border-white/15">
+                {trustBadges.map((badge, i) => (
+                  <span key={i} className="flex items-center gap-3 text-[14px] text-[#D1D5DB]">
+                    {i > 0 && <span className="text-brand-goldDark" aria-hidden="true">|</span>}
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
         </div>
 
-        {/* Photo behind with overlay on mobile */}
-        <div className="absolute inset-0 lg:hidden">
-          <Image
-            src="/images/Sinclair-hero.jpeg"
-            alt="Sinclair Hurtis, Founder of CollabEdge Solutions"
-            fill
-            className="object-cover object-top"
-            priority
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(to top, rgba(3,15,35,1) 0%, rgba(3,15,35,0.92) 50%, rgba(3,15,35,0.6) 100%)',
-            }}
-            aria-hidden="true"
-          />
-        </div>
+        {/* Mobile: sequential layout. Photo full width at full brightness, then a solid navy panel with the text below it. No overlay. */}
+        <div className="lg:hidden">
+          <div className="relative w-full aspect-[4/5] sm:aspect-[16/10]">
+            <Image
+              src="/images/Sinclair-hero.jpeg"
+              alt="Sinclair Hurtis, Founder of CollabEdge Solutions"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
 
-        {/* Content, left side */}
-        <div className="relative z-10 w-full lg:w-[52%] px-6 py-16 lg:py-20 lg:pl-10 max-w-[640px] lg:max-w-none lg:mr-auto mx-auto">
-          <FadeIn variant="fadeUp">
-            <div className="w-9 h-[2px] bg-gold mb-4" />
-            <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-              Fortune 500 experience.{' '}
-              <em className="font-serif not-italic text-brand-goldDark">Applied to your business.</em>
-            </h1>
-            <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-              CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology solutions with specialist partners across Australia and Asia Pacific. Every engagement is senior-led and practitioner-tested.
-            </p>
-            <div className="flex flex-wrap gap-3 mb-10">
-              <a href="/appt" className="btn-gold">Book a Free Consultation</a>
-              <a href="/services" className="btn-ghost">Explore Our Services</a>
-            </div>
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-6 border-t border-white/15">
-              {trustBadges.map((badge, i) => (
-                <span key={i} className="flex items-center gap-3 text-[14px] text-[#D1D5DB]">
-                  {i > 0 && <span className="text-brand-goldDark" aria-hidden="true">|</span>}
-                  {badge}
-                </span>
-              ))}
-            </div>
-          </FadeIn>
+          <div className="px-6 py-16 mx-auto max-w-[640px]">
+            <FadeIn variant="fadeUp">
+              <div className="w-9 h-[2px] bg-gold mb-4" />
+              <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
+                Fortune 500 experience.{' '}
+                <em className="not-italic text-brand-goldDark">Applied to your business.</em>
+              </h1>
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
+                CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology solutions with specialist partners across Australia and Asia Pacific. Every engagement is senior-led and practitioner-tested.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-10">
+                <a href="/appt" className="btn-gold">Book a Free Consultation</a>
+                <a href="/services" className="btn-ghost">Explore Our Services</a>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-6 border-t border-white/15">
+                {trustBadges.map((badge, i) => (
+                  <span key={i} className="flex items-center gap-3 text-[14px] text-[#D1D5DB]">
+                    {i > 0 && <span className="text-brand-goldDark" aria-hidden="true">|</span>}
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

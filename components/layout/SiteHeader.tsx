@@ -315,10 +315,10 @@ export default function SiteHeader() {
           })}
         </nav>
 
-        {/* Book Consultation CTA */}
+        {/* Book a Free Consultation CTA */}
         <div className="hidden lg:block shrink-0">
-          <Link href="/appt" className="btn-gold text-[14px] px-5 py-2.5">
-            Book Consultation
+          <Link href="/appt" className="btn-gold text-[14px] px-4 py-2.5 whitespace-nowrap">
+            Book a Free Consultation
           </Link>
         </div>
 
