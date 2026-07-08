@@ -8,17 +8,10 @@ export default function SiteFooter() {
 
           {/* Col 1: Brand */}
           <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logo.png"
-              alt="CollabEdge Solutions"
-              style={{ height: '56px', width: 'auto', display: 'block' }}
-              className="mb-5"
-            />
             <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
               ABN 38 557 169 242
               <br />
-              Point Cook VIC 3030
+              Melbourne, Victoria
               <br />
               <a
                 href="mailto:info@collabedgesolutions.com.au"
