@@ -110,6 +110,11 @@ for it.
 - All booking CTAs link to /appt
 - No fabricated metrics, testimonials, or claims.
   Client quotes render verbatim only
+- Healthcare Workflow Automation keeps its full name,
+  deliberately, since its actual page content is
+  healthcare and NDIS specific. General business
+  workflow automation is owned by Digital Services
+  instead, do not rename this service to broaden it
 
 ## Verification scaling
 
