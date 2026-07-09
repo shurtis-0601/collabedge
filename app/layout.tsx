@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import CampaignBanner from "@/components/CampaignBanner";
 import "./globals.css";
 
 const inter = Inter({
@@ -61,6 +62,7 @@ export default function RootLayout({
       </head>
       <body className="bg-navy text-white min-h-screen flex flex-col">
         <SiteHeader />
+        <CampaignBanner />
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <Analytics />
