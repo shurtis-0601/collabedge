@@ -142,6 +142,14 @@ defaulting to the heaviest option.
 
 ## Working style
 
+- One prompt, one fresh Claude Code session. Never
+  continue an old session for a new prompt, and never
+  let a session run long enough to need repeated
+  compaction, both burn tokens re-processing history
+  that a fresh session gets for free by reading this
+  file and the actual current state of the repo
+  instead. The codebase is the source of truth, not
+  chat history.
 - Make only the changes the prompt specifies
 - Do not run repo-wide searches unless the prompt
   explicitly asks
