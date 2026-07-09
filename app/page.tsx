@@ -77,8 +77,8 @@ const coreServices = [
   },
   {
     icon: Zap,
-    title: 'Workflow Automation',
-    body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools. For NDIS providers, healthcare organisations, and growing businesses alike.',
+    title: 'Healthcare Workflow Automation',
+    body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools. For NDIS providers and healthcare organisations.',
     href: '/services/healthcare-workflow',
   },
   {

@@ -29,7 +29,7 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-2.5 text-[14px] text-[#D1D5DB]">
               <li><Link href="/services/ndis-compliance-audit" className="hover:text-white transition-colors">NDIS Compliance and Audit</Link></li>
-              <li><Link href="/services/healthcare-workflow" className="hover:text-white transition-colors">Workflow Automation</Link></li>
+              <li><Link href="/services/healthcare-workflow" className="hover:text-white transition-colors">Healthcare Workflow Automation</Link></li>
               <li><Link href="/services/document-governance" className="hover:text-white transition-colors">Document Governance</Link></li>
               <li><Link href="/services/digital" className="hover:text-white transition-colors">Digital Services</Link></li>
               <li><Link href="/services/ai-advisory" className="hover:text-white transition-colors">AI Advisory</Link></li>
