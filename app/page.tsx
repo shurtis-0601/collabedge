@@ -32,7 +32,7 @@ const pillars = [
     eyebrow: 'For NDIS, Healthcare, and Growing Businesses',
     title: 'Simplify. Streamline. Automate. Grow.',
     body: 'We bring enterprise discipline down to earth. Compliance and audit readiness, AI-powered workflow automation, and document governance, built on the Microsoft 365 or Google Workspace tools you already pay for. Tested by an active NDIS practitioner before we recommend anything.',
-    ctaLabel: 'Explore Advisory Services',
+    ctaLabel: 'Start Simplifying Your Operations',
     ctaHref: '/services',
   },
   {
