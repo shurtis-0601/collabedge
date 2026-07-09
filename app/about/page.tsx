@@ -46,7 +46,7 @@ const schema = {
 
 const services = [
   { icon: Shield, label: 'NDIS Compliance and Audit' },
-  { icon: Zap, label: 'Workflow Automation' },
+  { icon: Zap, label: 'Healthcare Workflow Automation' },
   { icon: BookOpen, label: 'Document Governance' },
   { icon: Globe, label: 'Digital Services' },
   { icon: TrendingUp, label: 'AI Advisory' },
