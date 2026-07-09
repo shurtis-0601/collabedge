@@ -1,8 +1,8 @@
 ﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import {
-  Shield, Zap, BookOpen, Home as HomeIcon,
-  Users, TrendingUp, ArrowRight, CheckCircle
+  Shield, Zap, BookOpen, Globe, Brain,
+  Users, TrendingUp, ArrowRight, CheckCircle, LayoutGrid
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -37,7 +37,7 @@ const pillars = [
   },
   {
     eyebrow: 'For Enterprises',
-    title: 'Collaboration. Cutting Edge. Future-Proof.',
+    title: 'Collaborative. Cutting Edge. Future-Proof.',
     body: 'We bring that same experience forward. Data platform strategy, migration leadership, and niche technology solutions delivered with specialist partners, from voice fraud prevention to property technology, across Australia and Asia Pacific.',
     ctaLabel: 'Explore Partner Solutions',
     ctaHref: '/services/partner-solutions',
@@ -58,7 +58,7 @@ const differentiators = [
   {
     icon: TrendingUp,
     title: 'Fortune 500 Depth, Applied at Any Scale',
-    body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health, applied to Australian healthcare providers and growing businesses across Asia Pacific.',
+    body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health. That depth is applied directly to Australian healthcare providers and growing businesses, and delivered through specialist technology partners for enterprise transformation across Asia Pacific.',
   },
 ]
 
@@ -66,28 +66,41 @@ const coreServices = [
   {
     icon: Shield,
     title: 'NDIS Compliance and Audit',
-    body: 'Audit preparation, registration, and compliance systems that hold up under Commission scrutiny.',
+    body: 'Audit preparation, registration support including SIL mandatory registration, and compliance systems that hold up under Commission scrutiny.',
     href: '/services/ndis-compliance-audit',
-  },
-  {
-    icon: Zap,
-    title: 'Healthcare Workflow Automation',
-    body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools.',
-    href: '/services/healthcare-workflow',
   },
   {
     icon: BookOpen,
     title: 'Document Governance',
-    body: 'Structured, findable, compliant documentation systems for growing provider teams.',
+    body: 'Structured, findable, compliant documentation systems for growing provider teams, including SIL document suite delivery.',
     href: '/services/document-governance',
   },
   {
-    icon: HomeIcon,
-    title: 'SIL Registration',
-    body: 'End to end support to achieve SIL registration with confidence.',
-    href: '/services/ndis-compliance-audit/sil-registration',
+    icon: Zap,
+    title: 'Workflow Automation',
+    body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools. For NDIS providers, healthcare organisations, and growing businesses alike.',
+    href: '/services/healthcare-workflow',
+  },
+  {
+    icon: Globe,
+    title: 'Digital Services',
+    body: 'Websites, AI agents, CRM automation, and data analytics for small businesses. Digital foundations that earn their keep.',
+    href: '/services/digital',
+  },
+  {
+    icon: Brain,
+    title: 'Practical AI for NDIS Teams',
+    body: 'Ready-to-use AI prompts for support coordinators, plan managers, and admin teams, plus honest advice on what to automate and what to leave alone.',
+    href: '/services/ai-advisory',
   },
 ]
+
+const viewAllServices = {
+  icon: LayoutGrid,
+  title: 'View All Services',
+  body: 'See everything we offer, including enterprise partnerships and how Managed Services brings it all together.',
+  href: '/services',
+}
 
 const partners = ['SHIELD', 'Dynamic Netsoft', 'Property Automate', 'Newgen Consulting']
 
@@ -268,7 +281,7 @@ export default function HomePage() {
               What We Do
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {coreServices.map((service, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <a
@@ -286,6 +299,21 @@ export default function HomePage() {
                 </a>
               </FadeIn>
             ))}
+            <FadeIn variant="fadeUp" delay={coreServices.length * 80}>
+              <a
+                href={viewAllServices.href}
+                className="flex flex-col items-start justify-center bg-transparent border border-dashed border-white/25 rounded-xl p-6 h-full hover:border-gold/50 hover:bg-white/[0.02] transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-lg border border-white/20 flex items-center justify-center mb-4 group-hover:border-gold/40 transition-colors">
+                  <viewAllServices.icon size={18} className="text-[#D1D5DB]" />
+                </div>
+                <h3 className="text-[18px] font-bold text-white mb-2">{viewAllServices.title}</h3>
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-4">{viewAllServices.body}</p>
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
+                  View Services <ArrowRight size={13} />
+                </span>
+              </a>
+            </FadeIn>
           </div>
         </div>
       </section>
