@@ -73,7 +73,7 @@ export default function SiteFooter() {
               <li><a href="https://medprivacy.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">MedPrivacy</a></li>
               <li><Link href="/products/employee-onboarding-automation" className="hover:text-white transition-colors">Employee Onboarding Automation</Link></li>
               <li><Link href="/products/funding-burn-rate-tracker" className="hover:text-white transition-colors">Funding and Burn Rate Tracker</Link></li>
-              <li><Link href="/appt" className="hover:text-white transition-colors">NDIS CRM (Coming Soon)</Link></li>
+              <li><Link href="/products#ndis-crm" className="hover:text-white transition-colors">NDIS CRM (Coming Soon)</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>

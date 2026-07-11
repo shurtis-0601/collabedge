@@ -175,7 +175,7 @@ export default function TeamPage() {
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
                 <p className="text-[14px] text-brand-goldDark mb-4">NDIS, Healthcare and Enterprise</p>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
-                  30+ years across Citibank, Singtel, NAB, and the Victorian Department of Health. Active NDIS Support Coordinator at My Ability Services. Adjunct Lecturer at Monash University teaching Masters IT students. Leads every CollabEdge engagement.
+                  30+ years across Citibank, Singtel, NAB, and the Victorian Department of Health. Active NDIS Support Coordinator at My Ability Services. Sessional Academic at Monash University's Faculty of Information Technology, teaching Masters IT students. Leads every CollabEdge engagement.
                 </p>
                 <SkillList skills={sinclairSkills} />
                 <a
@@ -279,7 +279,7 @@ export default function TeamPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-[18px] font-bold text-text-dark mb-1">
-                  Adjunct Lecturer, Monash University
+                  Sessional Academic, Faculty of Information Technology, Monash University
                 </h3>
                 <p className="text-[14px] text-slate leading-relaxed max-w-[580px]">
                   Sinclair teaches soft skills and real-world business practice to Masters of Information Technology students at Monash University, mentoring the next generation of technology professionals across communication, collaboration, and applied consulting.

@@ -7,9 +7,9 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import Eyebrow from '@/components/ui/Eyebrow'
 
 export const metadata: Metadata = {
-  title: 'Book a Free Consultation | CollabEdge Solutions',
+  title: 'Contact Us | CollabEdge Solutions',
   description:
-    'Book a free 30-minute consultation with Sinclair Hurtis. Senior-led, no sales pitch. NDIS compliance, workflow automation, and enterprise technology advisory.',
+    'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',
 }
 
 const schema = {
@@ -165,7 +165,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-2 text-[13px] text-slate">
                   <GraduationCap size={13} className="text-gold flex-shrink-0" />
-                  Adjunct Faculty · Monash University
+                  Sessional Academic, Faculty of Information Technology, Monash University
                 </div>
                 <div className="flex items-center gap-2 text-[13px] text-slate">
                   <Stethoscope size={13} className="text-gold flex-shrink-0" />

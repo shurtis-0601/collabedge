@@ -13,7 +13,7 @@ import TestimonialCarousel from '@/components/sections/TestimonialCarousel'
 export const metadata: Metadata = {
   title: 'Sinclair Hurtis — Founder | CollabEdge Solutions',
   description:
-    'Sinclair Hurtis is the founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator. Adjunct Lecturer at Monash University.',
+    'Sinclair Hurtis is the founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator. Sessional Academic, Faculty of Information Technology, Monash University.',
   openGraph: {
     title: 'Sinclair Hurtis — Founder and Principal Consultant',
     description:
@@ -34,7 +34,7 @@ const schema = {
   },
   url: 'https://collabedgesolutions.com.au/about/sinclair-hurtis',
   description:
-    'Founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator and Adjunct Lecturer at Monash University.',
+    'Founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator and Sessional Academic, Faculty of Information Technology, Monash University.',
   alumniOf: [
     { '@type': 'Organization', name: 'Citibank Singapore' },
     { '@type': 'Organization', name: 'Singtel' },
@@ -151,7 +151,7 @@ const practitionerItems = [
   'Works directly with complex participants daily',
   'Tests every solution in a live environment before recommending it',
   'Navigates the NDIS Commission on behalf of real participants',
-  'Adjunct Lecturer at Monash University, Masters of IT',
+  'Sessional Academic, Faculty of Information Technology, Monash University',
   'Mentors the next generation of technology professionals',
 ]
 
@@ -449,7 +449,7 @@ export default function SinclairHurtisPage() {
                   Teaching the next generation
                 </h2>
                 <p className="text-[16px] text-slate leading-relaxed max-w-[580px]">
-                  As an Adjunct Lecturer at Monash University, Sinclair teaches soft skills and
+                  As a Sessional Academic at Monash University's Faculty of Information Technology, Sinclair teaches soft skills and
                   real-world business practice to Masters of Information Technology students,
                   equipping them not just with technical knowledge, but with the communication and
                   collaboration skills that drive real-world outcomes. It is part of a broader
@@ -460,7 +460,7 @@ export default function SinclairHurtisPage() {
                 <span className="text-[13px] font-semibold text-brand-goldDark uppercase tracking-wider">
                   Monash University
                 </span>
-                <span className="text-[13px] text-slate block mt-0.5">Adjunct Lecturer</span>
+                <span className="text-[13px] text-slate block mt-0.5">Sessional Academic</span>
               </div>
             </div>
           </FadeIn>
