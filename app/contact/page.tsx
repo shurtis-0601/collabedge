@@ -169,7 +169,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-2 text-[13px] text-slate">
                   <Stethoscope size={13} className="text-gold flex-shrink-0" />
-                  Active NDIS Coordinator · MAS
+                  Active NDIS Coordinator · My Ability Services
                 </div>
               </div>
             </div>
