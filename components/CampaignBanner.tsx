@@ -10,6 +10,8 @@ const banners = [
     id: 'sil-registration-2026',
     message:
       'NDIS SIL providers: registration is now mandatory. Find out what the 1 October 2026 deadline means for you.',
+    mobileMessage:
+      'NDIS SIL providers: registration is now mandatory. Learn what it means for you.',
     href: '/campaigns/sil-registration',
   },
 ]
@@ -49,14 +51,15 @@ export default function CampaignBanner() {
         opacity: state === 'dismissing' ? 0 : 1,
         transition: 'opacity 0.2s',
       }}
-      className="w-full bg-[#1C1000] border-b border-[#D4941E]/40"
+      className="w-full bg-[#030F23] border-y border-[#E6B85C]/40"
     >
       <div className="max-w-[1000px] mx-auto flex items-center justify-between gap-4 px-5 sm:px-10 py-2.5">
         <a
           href={banner.href}
           className="text-[13px] sm:text-[14px] font-medium text-[#E6B85C] hover:text-white transition-colors leading-snug flex-1"
         >
-          {banner.message}
+          <span className="sm:hidden">{banner.mobileMessage}</span>
+          <span className="hidden sm:inline">{banner.message}</span>
         </a>
         <button
           onClick={dismiss}
