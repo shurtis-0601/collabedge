@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             Principal contact: Sinclair Hurtis<br />
             Email: <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
             Phone: 0426 464 442<br />
-            Address: Point Cook VIC 3030, Australia
+            Address: Melbourne, Victoria
           </p>
 
           <h2 className="text-[26px] font-bold text-text-dark mt-10 mb-3 tracking-tight">2. What Personal Information We Collect</h2>
@@ -152,7 +152,7 @@ export default function PrivacyPage() {
             CollabEdge Solutions<br />
             <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
             0426 464 442<br />
-            Point Cook VIC 3030, Australia
+            Melbourne, Victoria
           </p>
         </div>
       </div>

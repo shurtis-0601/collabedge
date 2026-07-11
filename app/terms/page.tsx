@@ -85,7 +85,7 @@ export default function TermsPage() {
             CollabEdge Solutions<br />
             <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
             0426 464 442<br />
-            Point Cook VIC 3030, Australia
+            Melbourne, Victoria
           </p>
         </div>
       </div>

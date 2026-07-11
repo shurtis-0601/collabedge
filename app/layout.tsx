@@ -22,9 +22,8 @@ const orgSchema = {
     "NDIS compliance, workflow automation, and enterprise technology consulting. Melbourne, Australia.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Point Cook",
+    addressLocality: "Melbourne",
     addressRegion: "VIC",
-    postalCode: "3030",
     addressCountry: "AU",
   },
   telephone: "0426464442",
