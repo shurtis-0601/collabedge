@@ -1,9 +1,19 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { X } from 'lucide-react'
 
 const DISMISS_KEY = 'ce_sil_banner_dismissed'
+
+const EXCLUDED_PATHS = [
+  '/services/partner-solutions',
+  '/services/partner-solutions/shield',
+  '/campaigns/sil-registration',
+  '/campaigns/proptech-data-analytics',
+  '/campaigns/allied-health-data-analytics',
+  '/campaigns/retail-data-analytics',
+]
 
 const banners = [
   {
@@ -20,6 +30,7 @@ type BannerState = 'hidden' | 'visible' | 'dismissing'
 
 export default function CampaignBanner() {
   const [state, setState] = useState<BannerState>('hidden')
+  const pathname = usePathname()
 
   useEffect(() => {
     if (!sessionStorage.getItem(DISMISS_KEY)) {
@@ -38,7 +49,7 @@ export default function CampaignBanner() {
     }
   }
 
-  if (state === 'hidden') return null
+  if (state === 'hidden' || EXCLUDED_PATHS.includes(pathname)) return null
 
   const banner = banners[0]
 
@@ -51,7 +62,7 @@ export default function CampaignBanner() {
         opacity: state === 'dismissing' ? 0 : 1,
         transition: 'opacity 0.2s',
       }}
-      className="w-full bg-[#030F23] border-y border-[#E6B85C]/40"
+      className="sticky top-[72px] lg:top-[96px] z-40 w-full bg-[#030F23] border-y border-[#E6B85C]/40"
     >
       <div className="max-w-[1000px] mx-auto flex items-center justify-between gap-4 px-5 sm:px-10 py-2.5">
         <a
