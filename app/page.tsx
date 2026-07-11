@@ -116,7 +116,7 @@ export default function HomePage() {
               src="/images/Sinclair-hero.jpeg"
               alt="Sinclair Hurtis, Founder of CollabEdge Solutions"
               fill
-              className="object-cover object-center"
+              className="object-cover object-top"
               priority
             />
             <div
