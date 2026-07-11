@@ -3,6 +3,26 @@ import { ArrowRight } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
+import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
+
+const faqs: FAQ[] = [
+  {
+    q: 'How much does SIL registration cost?',
+    a: 'The NDIS Commission itself charges nothing to submit your registration application. Your independent audit and your insurance are paid separately, directly to those providers. CollabEdge\'s documentation and registration support starts from $2,000, with the exact scope confirmed once we understand your situation.',
+  },
+  {
+    q: 'Why does this cost less than other registration services?',
+    a: 'We build efficiently using AI-assisted tools, and we do not pad your documentation with unnecessary paperwork designed to look impressive rather than be useful. You get functional, easy to use documents that meet what an auditor actually needs, not a bloated pack that costs more to produce and is harder for your team to use day to day.',
+  },
+  {
+    q: 'Do I need a consultant to register?',
+    a: 'No, engaging support is not mandatory. Most providers find it meaningfully reduces the risk of delays or a failed first audit, and saves far more time than it costs.',
+  },
+  {
+    q: 'Can I keep delivering SIL while my registration application is being processed?',
+    a: 'Yes, provided you have submitted your application by 1 October 2026, you can continue delivering SIL while it is being processed.',
+  },
+]
 
 export const metadata: Metadata = {
   title: 'Get Registered Before the Deadline Closes | CollabEdge Solutions',
@@ -29,6 +49,13 @@ export default function SILRegistrationCampaignPage() {
               From 1 July 2026, Supported Independent Living became its own registration group under the NDIS Practice Standards. Providers already delivering SIL unregistered must apply by 1 October 2026 to keep operating. We get you audit ready, from the documents up.
             </p>
             <a href="/appt" className="btn-gold">Book a Free 30 Minute Conversation</a>
+
+            <div className="mt-8 inline-flex flex-col border border-[#E6B85C]/50 rounded-lg px-6 py-5 bg-[#E6B85C]/[0.06]">
+              <span className="text-[38px] font-extrabold text-[#E6B85C] leading-none tracking-tight">From $2,000</span>
+              <span className="text-[14px] text-[#D1D5DB] mt-2 max-w-[360px] leading-relaxed">
+                Registration support and documentation. Exact scope confirmed after we understand your situation.
+              </span>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -93,7 +120,22 @@ export default function SILRegistrationCampaignPage() {
         </div>
       </section>
 
-      {/* 6. Final CTA */}
+      {/* 6. FAQ */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+              Common Questions
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={faqs} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 7. Final CTA */}
       <CTASection
         heading="Do Not Wait for the Deadline to Find You"
         sub="A free 30 minute conversation, no obligation, to work out exactly where your documentation stands today."
