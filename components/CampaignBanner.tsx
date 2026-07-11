@@ -56,7 +56,7 @@ export default function CampaignBanner() {
       <div className="max-w-[1000px] mx-auto flex items-center justify-between gap-4 px-5 sm:px-10 py-2.5">
         <a
           href={banner.href}
-          className="text-[13px] sm:text-[14px] font-medium text-[#E6B85C] hover:text-white transition-colors leading-snug flex-1"
+          className="text-[13px] sm:text-[14px] font-medium text-[#E6B85C] hover:text-white transition-colors leading-snug flex-1 text-center sm:text-left"
         >
           <span className="sm:hidden">{banner.mobileMessage}</span>
           <span className="hidden sm:inline">{banner.message}</span>
