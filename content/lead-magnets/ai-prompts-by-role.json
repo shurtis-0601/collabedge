@@ -5,5 +5,7 @@
   "file": "/downloads/CollabEdge-100-NDIS-AI-Prompts.pdf",
   "immediateDelivery": true,
   "status": "available",
-  "order": 1
+  "order": 1,
+  "buttonLabel": "Download Now",
+  "modalDescription": "Enter your details and your download will open automatically in a new tab."
 }

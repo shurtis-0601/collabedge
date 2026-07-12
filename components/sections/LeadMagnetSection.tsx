@@ -13,6 +13,8 @@ export type LeadMagnetData = {
   immediateDelivery: boolean
   status: 'available' | 'placeholder'
   order: number
+  buttonLabel?: string
+  modalDescription?: string
 }
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
@@ -113,7 +115,7 @@ function LeadMagnetModal({
               {magnet.title}
             </h3>
             <p className="text-[14px] text-slate leading-relaxed mb-6">
-              Enter your details and we will send this template straight to your inbox.
+              {magnet.modalDescription ?? 'Enter your details and we will send this template straight to your inbox.'}
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div>
@@ -153,7 +155,7 @@ function LeadMagnetModal({
                 disabled={!nameValid || !emailValid || status === 'submitting'}
                 className="btn-gold w-full justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'submitting' ? 'Sending...' : magnet.immediateDelivery ? 'Download Now' : 'Send Me the Template'}
+                {status === 'submitting' ? 'Sending...' : (magnet.buttonLabel ?? 'Send Me the Template')}
               </button>
             </form>
           </>
