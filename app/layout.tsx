@@ -40,10 +40,6 @@ export const metadata: Metadata = {
   description:
     "NDIS compliance, workflow automation, and enterprise technology consulting for Australian healthcare providers and businesses. Melbourne-based, Australian-owned.",
   metadataBase: new URL("https://collabedgesolutions.com.au"),
-  robots: {
-    index: false,
-    follow: false,
-  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
