@@ -29,7 +29,6 @@ function LeadMagnetModal({
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<FormStatus>('idle')
-  const [errorMessage, setErrorMessage] = useState('')
 
   const nameValid = name.trim().length > 0
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
@@ -39,28 +38,26 @@ function LeadMagnetModal({
     if (!nameValid || !emailValid) return
 
     setStatus('submitting')
-    setErrorMessage('')
 
+    // Always POST first, then trigger download regardless of outcome.
+    // A backend error must never prevent the visitor receiving their file.
     try {
       const res = await fetch('/api/lead-magnet', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, template: magnet.id }),
       })
-      const data = await res.json()
-
-      if (res.ok && data.success) {
-        setStatus('success')
-        if (magnet.immediateDelivery && magnet.file) {
-          window.open(magnet.file, '_blank')
-        }
-      } else {
-        setStatus('error')
-        setErrorMessage(data.error || 'Something went wrong. Please try again.')
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        console.error('[lead-magnet] API error:', res.status, data)
       }
-    } catch {
-      setStatus('error')
-      setErrorMessage('Something went wrong. Please try again.')
+    } catch (err) {
+      console.error('[lead-magnet] POST failed:', err)
+    }
+
+    setStatus('success')
+    if (magnet.immediateDelivery && magnet.file) {
+      window.open(magnet.file, '_blank')
     }
   }
 
@@ -145,10 +142,6 @@ function LeadMagnetModal({
                 />
               </div>
               <input type="hidden" name="template" value={magnet.id} />
-
-              {status === 'error' && (
-                <p className="text-[14px] text-red-600">{errorMessage}</p>
-              )}
 
               <button
                 type="submit"
