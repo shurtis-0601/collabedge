@@ -5,7 +5,7 @@ import LeadMagnetSection from '@/components/sections/LeadMagnetSection'
 export const metadata: Metadata = {
   title: 'Downloads | CollabEdge Solutions',
   description:
-    'Free practical templates for NDIS providers. Funding tracking, participant summaries, and strategic business questions, built from real practice.',
+    'Free practical resources for NDIS providers, built from real practice. AI prompts, funding trackers, participant summaries, and strategic planning templates.',
   openGraph: {
     title: 'Downloads | CollabEdge Solutions',
     description:
@@ -29,7 +29,7 @@ export default function DownloadsPage() {
               Practical Templates, Ready to Use
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px]">
-              Three free resources built from real NDIS practice. Enter your details and we will send them straight to your inbox.
+              Practical resources built from real NDIS practice. Enter your details and we will send your chosen resource straight to your inbox.
             </p>
           </FadeIn>
         </div>
