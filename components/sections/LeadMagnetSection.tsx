@@ -147,7 +147,7 @@ function LeadMagnetModal({
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full text-[16px] border border-border rounded-lg px-4 py-2.5 focus:outline-none focus:border-gold transition-colors"
+                  className="w-full text-[16px] text-[#030F23] bg-white border border-[#D1D5DB] rounded-lg px-4 py-2.5 placeholder:text-[#6B7280] focus:outline-none focus:border-gold transition-colors"
                 />
               </div>
               <div>
@@ -160,7 +160,7 @@ function LeadMagnetModal({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full text-[16px] border border-border rounded-lg px-4 py-2.5 focus:outline-none focus:border-gold transition-colors"
+                  className="w-full text-[16px] text-[#030F23] bg-white border border-[#D1D5DB] rounded-lg px-4 py-2.5 placeholder:text-[#6B7280] focus:outline-none focus:border-gold transition-colors"
                 />
               </div>
               <input type="hidden" name="template" value={template.id} />
