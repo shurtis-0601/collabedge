@@ -1,48 +1,27 @@
 'use client'
 
 import { useState } from 'react'
-import { Download, X, CheckCircle2 } from 'lucide-react'
+import { Download, X, CheckCircle2, Clock } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
-type LeadMagnet = {
+export type LeadMagnetData = {
   id: string
   title: string
-  body: string
+  description: string
+  file: string | null
+  immediateDelivery: boolean
+  status: 'available' | 'placeholder'
+  order: number
 }
-
-const leadMagnets: LeadMagnet[] = [
-  {
-    id: 'funding-tracker',
-    title: 'NDIS Funding Tracker Template',
-    body: 'A simplified funding tracker for one participant. Track category spend against budget with automatic status alerts, the same logic behind our full Funding and Burn Rate Tracker product, scaled down so you can use it today.',
-  },
-  {
-    id: 'participant-summary',
-    title: 'Participant Funding Summary Template',
-    body: 'A clean, printable one page summary you can hand to a participant or their family, showing funding status at a glance without needing to explain a spreadsheet.',
-  },
-  {
-    id: 'business-questions',
-    title: 'NDIS Business Questions and Scenarios Template',
-    body: 'More than 30 strategic questions to help you work out what your organisation should actually be measuring, before you build a single dashboard.',
-  },
-  {
-    id: 'ai-prompts-by-role',
-    title: '100 NDIS AI Prompts by Role',
-    body: '100 ready-to-use AI prompts organised across 10 NDIS roles: participants, families, support coordinators, plan managers, allied health, and more. Copy, customise, and use with any AI tool.',
-  },
-]
-
-const AI_PROMPTS_PDF = '/downloads/CollabEdge-100-NDIS-AI-Prompts.pdf'
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
 function LeadMagnetModal({
-  template,
+  magnet,
   onClose,
 }: {
-  template: LeadMagnet
+  magnet: LeadMagnetData
   onClose: () => void
 }) {
   const [name, setName] = useState('')
@@ -64,14 +43,14 @@ function LeadMagnetModal({
       const res = await fetch('/api/lead-magnet', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, template: template.id }),
+        body: JSON.stringify({ name, email, template: magnet.id }),
       })
       const data = await res.json()
 
       if (res.ok && data.success) {
         setStatus('success')
-        if (template.id === 'ai-prompts-by-role') {
-          window.open(AI_PROMPTS_PDF, '_blank')
+        if (magnet.immediateDelivery && magnet.file) {
+          window.open(magnet.file, '_blank')
         }
       } else {
         setStatus('error')
@@ -109,11 +88,11 @@ function LeadMagnetModal({
               <CheckCircle2 size={24} className="text-gold" />
             </div>
             <h3 className="text-[18px] font-bold text-text-dark mb-2">Thank you.</h3>
-            {template.id === 'ai-prompts-by-role' ? (
+            {magnet.immediateDelivery && magnet.file ? (
               <p className="text-[16px] text-slate leading-relaxed">
                 Your download should open automatically. If it does not,{' '}
                 <a
-                  href={AI_PROMPTS_PDF}
+                  href={magnet.file}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-goldLight font-semibold underline hover:text-gold"
@@ -131,7 +110,7 @@ function LeadMagnetModal({
         ) : (
           <>
             <h3 id="lead-magnet-modal-title" className="text-[18px] font-bold text-text-dark mb-2">
-              {template.title}
+              {magnet.title}
             </h3>
             <p className="text-[14px] text-slate leading-relaxed mb-6">
               Enter your details and we will send this template straight to your inbox.
@@ -163,7 +142,7 @@ function LeadMagnetModal({
                   className="w-full text-[16px] text-[#030F23] bg-white border border-[#D1D5DB] rounded-lg px-4 py-2.5 placeholder:text-[#6B7280] focus:outline-none focus:border-gold transition-colors"
                 />
               </div>
-              <input type="hidden" name="template" value={template.id} />
+              <input type="hidden" name="template" value={magnet.id} />
 
               {status === 'error' && (
                 <p className="text-[14px] text-red-600">{errorMessage}</p>
@@ -174,7 +153,7 @@ function LeadMagnetModal({
                 disabled={!nameValid || !emailValid || status === 'submitting'}
                 className="btn-gold w-full justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'submitting' ? 'Sending...' : 'Send Me the Template'}
+                {status === 'submitting' ? 'Sending...' : magnet.immediateDelivery ? 'Download Now' : 'Send Me the Template'}
               </button>
             </form>
           </>
@@ -184,8 +163,8 @@ function LeadMagnetModal({
   )
 }
 
-export default function LeadMagnetSection() {
-  const [activeTemplate, setActiveTemplate] = useState<LeadMagnet | null>(null)
+export default function LeadMagnetSection({ magnets }: { magnets: LeadMagnetData[] }) {
+  const [activeMagnet, setActiveMagnet] = useState<LeadMagnetData | null>(null)
 
   return (
     <section className="bg-offwhite py-16 px-5 sm:px-10">
@@ -197,28 +176,41 @@ export default function LeadMagnetSection() {
           </h2>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {leadMagnets.map((magnet, i) => (
+          {magnets.map((magnet, i) => (
             <FadeIn key={magnet.id} variant="fadeUp" delay={i * 80}>
-              <div className="bg-white rounded-xl p-6 border border-border h-full flex flex-col hover:border-gold/30 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200">
-                <div className="w-11 h-11 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
-                  <Download size={20} className="text-gold" />
+              {magnet.status === 'placeholder' ? (
+                <div className="bg-white rounded-xl p-6 border border-border h-full flex flex-col opacity-60">
+                  <div className="w-11 h-11 rounded-lg bg-[#9CA3AF]/10 flex items-center justify-center mb-4">
+                    <Clock size={20} className="text-[#9CA3AF]" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">{magnet.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
+                  <span className="inline-flex items-center justify-center gap-2 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-semibold rounded-lg px-5 py-3 mt-auto cursor-default">
+                    Coming Soon
+                  </span>
                 </div>
-                <h3 className="text-[18px] font-bold text-text-dark mb-3">{magnet.title}</h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{magnet.body}</p>
-                <button
-                  onClick={() => setActiveTemplate(magnet)}
-                  className="inline-flex items-center justify-center gap-2 bg-navy text-white text-[14px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors mt-auto"
-                >
-                  {magnet.id === 'ai-prompts-by-role' ? 'Download Now' : 'Get This Template'}
-                </button>
-              </div>
+              ) : (
+                <div className="bg-white rounded-xl p-6 border border-border h-full flex flex-col hover:border-gold/30 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200">
+                  <div className="w-11 h-11 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
+                    <Download size={20} className="text-gold" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">{magnet.title}</h3>
+                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
+                  <button
+                    onClick={() => setActiveMagnet(magnet)}
+                    className="inline-flex items-center justify-center gap-2 bg-navy text-white text-[14px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors mt-auto"
+                  >
+                    {magnet.immediateDelivery ? 'Download Now' : 'Get This Template'}
+                  </button>
+                </div>
+              )}
             </FadeIn>
           ))}
         </div>
       </div>
 
-      {activeTemplate && (
-        <LeadMagnetModal template={activeTemplate} onClose={() => setActiveTemplate(null)} />
+      {activeMagnet && (
+        <LeadMagnetModal magnet={activeMagnet} onClose={() => setActiveMagnet(null)} />
       )}
     </section>
   )

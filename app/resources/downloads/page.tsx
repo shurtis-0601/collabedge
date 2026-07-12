@@ -1,6 +1,8 @@
+import fs from 'fs'
+import path from 'path'
 import type { Metadata } from 'next'
 import FadeIn from '@/components/FadeIn'
-import LeadMagnetSection from '@/components/sections/LeadMagnetSection'
+import LeadMagnetSection, { LeadMagnetData } from '@/components/sections/LeadMagnetSection'
 
 export const metadata: Metadata = {
   title: 'Downloads | CollabEdge Solutions',
@@ -14,7 +16,19 @@ export const metadata: Metadata = {
   },
 }
 
+function getLeadMagnets(): LeadMagnetData[] {
+  const dir = path.join(process.cwd(), 'content', 'lead-magnets')
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'))
+  const magnets = files.map((file) => {
+    const raw = fs.readFileSync(path.join(dir, file), 'utf-8')
+    return JSON.parse(raw) as LeadMagnetData
+  })
+  return magnets.sort((a, b) => a.order - b.order)
+}
+
 export default function DownloadsPage() {
+  const magnets = getLeadMagnets()
+
   return (
     <>
       {/* 1. Hero */}
@@ -36,7 +50,7 @@ export default function DownloadsPage() {
       </section>
 
       {/* 2 and 3. Lead magnet cards and email capture form */}
-      <LeadMagnetSection />
+      <LeadMagnetSection magnets={magnets} />
 
       {/* 4. Cross-link to AI Hub and Resources */}
       <section className="bg-navy py-16 px-5 sm:px-10">

@@ -1,0 +1,9 @@
+{
+  "id": "funding-tracker-template",
+  "title": "NDIS Funding Tracker Template",
+  "description": "A simplified funding tracker for one participant. Track category spend against budget with automatic status alerts.",
+  "file": null,
+  "immediateDelivery": false,
+  "status": "placeholder",
+  "order": 2
+}

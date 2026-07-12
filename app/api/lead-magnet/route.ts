@@ -17,10 +17,10 @@ import { NextRequest, NextResponse } from 'next/server'
 const LEAD_NOTIFICATION_ADDRESS = 'leads@collabedgesolutions.com.au'
 
 const TEMPLATE_LABELS: Record<string, string> = {
-  'funding-tracker': 'NDIS Funding Tracker Template',
-  'participant-summary': 'Participant Funding Summary Template',
-  'business-questions': 'NDIS Business Questions and Scenarios Template',
   'ai-prompts-by-role': '100 NDIS AI Prompts by Role',
+  'funding-tracker-template': 'NDIS Funding Tracker Template',
+  'participant-summary-template': 'Participant Funding Summary Template',
+  'business-questions-template': 'NDIS Business Questions and Scenarios Template',
 }
 
 function isValidEmail(email: string): boolean {
