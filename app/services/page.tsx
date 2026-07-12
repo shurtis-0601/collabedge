@@ -149,21 +149,22 @@ export default function ServicesPage() {
             <FadeIn variant="fadeUp" delay={150}>
               <a
                 href="#enterprise-services"
-                className="block bg-offwhite rounded-2xl p-8 h-full border border-border hover:shadow-xl hover:border-gold/30 transition-all duration-300 group relative overflow-hidden"
+                className="block bg-[#3C6E5E] rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
               >
-                <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
-                  <Building2 size={22} className="text-navy" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/[0.05] rounded-full -translate-y-16 translate-x-16 pointer-events-none" />
+                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center mb-6 group-hover:bg-gold/25 transition-colors">
+                  <Building2 size={22} className="text-brand-goldDark" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-slate mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
                   Transform Forward
                 </span>
-                <h2 className="text-[26px] font-bold text-text-dark mb-3 leading-snug">
+                <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                   Enterprise Partnerships
                 </h2>
-                <p className="text-[14px] text-slate leading-relaxed mb-6">
+                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   Enterprise technology delivered through a curated network of specialist partners across communication security, property technology, and healthcare software platforms, coordinated by CollabEdge across Australia and Asia Pacific.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-navy group-hover:gap-3 group-hover:text-brand-goldLight transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 group-hover:text-gold transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
                 </span>
               </a>
@@ -181,7 +182,7 @@ export default function ServicesPage() {
               Healthcare and NDIS Solutions
             </span>
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              What healthcare and NDIS services does CollabEdge Solutions offer?
+              Healthcare and NDIS Services
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
               CollabEdge Solutions supports NDIS providers and healthcare operators across four core areas: compliance and audit readiness, workflow automation, document governance, and AI advisory. Every service is delivered using infrastructure you already have, not new platforms you need to learn.
@@ -288,9 +289,12 @@ export default function ServicesPage() {
                 </div>
                 <div>
                   <span className="text-[13px] font-bold tracking-[.12em] uppercase text-slate mb-1 block">
-                    For Any Australian Business
+                    For Both Audiences
                   </span>
                   <h2 className="text-[26px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
+                  <p className="text-[14px] text-slate leading-relaxed max-w-[480px] mb-2">
+                    Whether you are an NDIS provider or a growing business, digital foundations support everything else you are trying to do.
+                  </p>
                   <p className="text-[14px] text-slate leading-relaxed max-w-[480px]">
                     Websites, AI agents, CRM automation, and data analytics for small businesses. Digital foundations that earn their keep.
                   </p>
