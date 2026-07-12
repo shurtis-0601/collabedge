@@ -20,6 +20,7 @@ const TEMPLATE_LABELS: Record<string, string> = {
   'funding-tracker': 'NDIS Funding Tracker Template',
   'participant-summary': 'Participant Funding Summary Template',
   'business-questions': 'NDIS Business Questions and Scenarios Template',
+  'ai-prompts-by-role': '100 NDIS AI Prompts by Role',
 }
 
 function isValidEmail(email: string): boolean {

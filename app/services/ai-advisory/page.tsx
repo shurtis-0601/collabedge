@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from 'next'
 import {
-  Brain, TrendingUp, Shield, Zap, ArrowRight
+  Brain, TrendingUp, Shield, Zap, ArrowRight, Download
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -159,6 +159,25 @@ export default function AiAdvisoryPage() {
                 title="MedPrivacy Demo: Safe AI for NDIS and Allied Health Documentation"
                 duration="4:37"
               />
+            </div>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={coverage.length * 80 + 80}>
+            <div className="mt-10 bg-white rounded-xl border border-border p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 max-w-[620px] hover:border-gold/30 hover:shadow-md transition-all duration-200">
+              <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <Download size={18} className="text-gold" />
+              </div>
+              <div className="flex-1">
+                <p className="text-[15px] font-semibold text-text-dark mb-1">
+                  Get 100 ready-to-use AI prompts for your team, organised by NDIS role.
+                </p>
+                <p className="text-[13px] text-slate">Support coordinators, plan managers, allied health, families, and more.</p>
+              </div>
+              <a
+                href="/resources/downloads"
+                className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:text-gold transition-colors whitespace-nowrap"
+              >
+                Download now <ArrowRight size={14} />
+              </a>
             </div>
           </FadeIn>
         </div>

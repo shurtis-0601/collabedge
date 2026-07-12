@@ -27,7 +27,14 @@ const leadMagnets: LeadMagnet[] = [
     title: 'NDIS Business Questions and Scenarios Template',
     body: 'More than 30 strategic questions to help you work out what your organisation should actually be measuring, before you build a single dashboard.',
   },
+  {
+    id: 'ai-prompts-by-role',
+    title: '100 NDIS AI Prompts by Role',
+    body: '100 ready-to-use AI prompts organised across 10 NDIS roles: participants, families, support coordinators, plan managers, allied health, and more. Copy, customise, and use with any AI tool.',
+  },
 ]
+
+const AI_PROMPTS_PDF = '/downloads/CollabEdge-100-NDIS-AI-Prompts.pdf'
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -63,6 +70,9 @@ function LeadMagnetModal({
 
       if (res.ok && data.success) {
         setStatus('success')
+        if (template.id === 'ai-prompts-by-role') {
+          window.open(AI_PROMPTS_PDF, '_blank')
+        }
       } else {
         setStatus('error')
         setErrorMessage(data.error || 'Something went wrong. Please try again.')
@@ -99,9 +109,24 @@ function LeadMagnetModal({
               <CheckCircle2 size={24} className="text-gold" />
             </div>
             <h3 className="text-[18px] font-bold text-text-dark mb-2">Thank you.</h3>
-            <p className="text-[16px] text-slate leading-relaxed">
-              Check your inbox for your template.
-            </p>
+            {template.id === 'ai-prompts-by-role' ? (
+              <p className="text-[16px] text-slate leading-relaxed">
+                Your download should open automatically. If it does not,{' '}
+                <a
+                  href={AI_PROMPTS_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-goldLight font-semibold underline hover:text-gold"
+                >
+                  click here
+                </a>
+                .
+              </p>
+            ) : (
+              <p className="text-[16px] text-slate leading-relaxed">
+                Check your inbox for your template.
+              </p>
+            )}
           </div>
         ) : (
           <>
@@ -171,7 +196,7 @@ export default function LeadMagnetSection() {
             Free Downloads
           </h2>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {leadMagnets.map((magnet, i) => (
             <FadeIn key={magnet.id} variant="fadeUp" delay={i * 80}>
               <div className="bg-white rounded-xl p-6 border border-border h-full flex flex-col hover:border-gold/30 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200">
@@ -184,7 +209,7 @@ export default function LeadMagnetSection() {
                   onClick={() => setActiveTemplate(magnet)}
                   className="inline-flex items-center justify-center gap-2 bg-navy text-white text-[14px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors mt-auto"
                 >
-                  Get This Template
+                  {magnet.id === 'ai-prompts-by-role' ? 'Download Now' : 'Get This Template'}
                 </button>
               </div>
             </FadeIn>
