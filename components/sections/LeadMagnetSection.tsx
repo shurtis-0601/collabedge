@@ -55,9 +55,11 @@ function LeadMagnetModal({
       console.error('[lead-magnet] POST failed:', err)
     }
 
-    setStatus('success')
     if (magnet.immediateDelivery && magnet.file) {
       window.open(magnet.file, '_blank')
+      onClose()
+    } else {
+      setStatus('success')
     }
   }
 
