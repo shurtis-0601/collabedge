@@ -150,7 +150,7 @@ export default function RajPurshothamPage() {
 
             {/* RIGHT — Bio content */}
             <FadeIn variant="fadeUp" delay={100}>
-              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-3 block">
                 Strategy, Growth and International Advisory
               </span>
               <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-2">
@@ -233,7 +233,7 @@ export default function RajPurshothamPage() {
 
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
                 Role at CollabEdge
               </span>
               <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">

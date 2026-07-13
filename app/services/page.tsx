@@ -217,7 +217,7 @@ export default function ServicesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Enterprise Partnerships
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">

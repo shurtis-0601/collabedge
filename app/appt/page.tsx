@@ -19,7 +19,7 @@ export default function ApptPage() {
       <section className="bg-navy py-16 px-5 sm:px-10 text-center">
         <div className="max-w-[680px] mx-auto">
           <FadeIn variant="fadeUp">
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-3 block">
               Book a Consultation
             </span>
             <h1 className="text-[32px] md:text-[38px] font-bold text-white tracking-tight leading-[1.1] mb-4">

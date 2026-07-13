@@ -218,7 +218,7 @@ export default function NDISComplianceAuditPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Transparent Pricing
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
@@ -381,7 +381,7 @@ export default function NDISComplianceAuditPage() {
             >
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/80 mb-2 block">
                     Case Study
                   </span>
                   <h3 className="text-[18px] font-bold text-white mb-2">

@@ -261,7 +261,7 @@ export default function DocumentGovernancePage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               The CollabEdge Approach
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
@@ -339,7 +339,7 @@ export default function DocumentGovernancePage() {
             {platforms.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
                 <div className="bg-navy rounded-xl p-7 border border-white/10 h-full">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/80 mb-2 block">
                     {item.suite}
                   </span>
                   <h3 className="text-[18px] font-bold text-white mb-5">{item.platform}</h3>
@@ -388,7 +388,7 @@ export default function DocumentGovernancePage() {
             <div className="bg-white/[0.04] border border-white/10 rounded-xl p-7 hover:border-gold/30 transition-colors">
               <div className="flex items-start justify-between flex-wrap gap-6">
                 <div>
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/60 mb-2 block">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldDark/80 mb-2 block">
                     Real Engagement
                   </span>
                   <h3 className="text-[18px] font-bold text-white mb-2">

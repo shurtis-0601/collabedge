@@ -34,6 +34,7 @@ const pillars = [
     body: 'We bring enterprise discipline down to earth. Compliance and audit readiness, AI-powered workflow automation, and document governance, built on the Microsoft 365 or Google Workspace tools you already pay for. Tested by an active NDIS practitioner before we recommend anything.',
     ctaLabel: 'Start Simplifying Your Operations',
     ctaHref: '/services',
+    isEnterprise: false,
   },
   {
     eyebrow: 'For Enterprises',
@@ -41,6 +42,7 @@ const pillars = [
     body: 'We bring that same experience forward. Data platform strategy, migration leadership, and niche technology solutions delivered with specialist partners, from voice fraud prevention to property technology, across Australia and Asia Pacific.',
     ctaLabel: 'Explore Partner Solutions',
     ctaHref: '/services/partner-solutions',
+    isEnterprise: true,
   },
 ]
 
@@ -224,19 +226,28 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {pillars.map((pillar, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 120}>
-                <div className="bg-white/[0.04] border border-white/10 rounded-xl p-8 hover:border-gold/30 transition-colors h-full flex flex-col">
-                  <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-3 block">
+                <div className={pillar.isEnterprise
+                  ? 'bg-eucalyptus rounded-xl p-8 hover:shadow-xl transition-all duration-300 h-full flex flex-col'
+                  : 'bg-white/[0.04] border border-white/10 rounded-xl p-8 hover:border-gold/30 transition-colors h-full flex flex-col'
+                }>
+                  <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-3 block">
                     {pillar.eyebrow}
                   </span>
                   <h3 className="text-[20px] font-bold text-white mb-4 leading-snug">
                     {pillar.title}
                   </h3>
-                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
+                  <p className={pillar.isEnterprise
+                    ? 'text-[16px] text-white/85 leading-relaxed mb-6 flex-1'
+                    : 'text-[16px] text-[#D1D5DB] leading-relaxed mb-6 flex-1'
+                  }>
                     {pillar.body}
                   </p>
                   <a
                     href={pillar.ctaHref}
-                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                    className={pillar.isEnterprise
+                      ? 'inline-flex items-center gap-2 text-[14px] font-semibold text-white hover:gap-3 transition-all duration-200'
+                      : 'inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200'
+                    }
                   >
                     {pillar.ctaLabel} <ArrowRight size={14} />
                   </a>

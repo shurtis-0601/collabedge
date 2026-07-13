@@ -110,7 +110,7 @@ export default function AiAdvisoryPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <div className="w-9 h-[2px] bg-gold mb-4" />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-3 block">
               AI Advisory
             </span>
             <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.15] mb-5 max-w-[680px]">

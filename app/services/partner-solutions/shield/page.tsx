@@ -208,7 +208,7 @@ export default function ShieldPage() {
             {/* European Tier-2 Carrier */}
             <FadeIn variant="slideRight">
               <div className="bg-white rounded-xl p-7 border border-border h-full">
-                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80 mb-2 block">
                   Live Deployment
                 </span>
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">
@@ -231,7 +231,7 @@ export default function ShieldPage() {
             {/* Financial Services Operator */}
             <FadeIn variant="fadeUp" delay={100}>
               <div className="bg-white rounded-xl p-7 border border-border h-full">
-                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80 mb-2 block">
                   Live Deployment
                 </span>
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">

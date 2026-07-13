@@ -71,7 +71,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Featured Case Study
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
@@ -123,7 +123,7 @@ export default function CaseStudiesPage() {
             {/* RIGHT — Results sidebar */}
             <FadeIn variant="fadeUp" delay={150}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-6 md:sticky md:top-24">
-                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/60 mb-5">
+                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/80 mb-5">
                   At a Glance
                 </h3>
 
@@ -176,7 +176,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Case Study
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug max-w-[680px]">
@@ -216,7 +216,7 @@ export default function CaseStudiesPage() {
             {/* RIGHT — Results sidebar */}
             <FadeIn variant="fadeUp" delay={150}>
               <div className="bg-white/[0.04] border border-white/10 rounded-xl p-6 md:sticky md:top-24">
-                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/60 mb-5">
+                <h3 className="text-[18px] font-bold tracking-[.1em] uppercase text-brand-goldDark/80 mb-5">
                   At a Glance
                 </h3>
 

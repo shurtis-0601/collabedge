@@ -99,7 +99,7 @@ export default function EnhanceAbilityServicesPage() {
       <section className="bg-navy pt-8 pb-16 px-5 sm:px-10">
         <div className="max-w-[860px] mx-auto">
           <FadeIn variant="fadeUp">
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-4 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-4 block">
               Case Study
             </span>
             <h1 className="text-[28px] md:text-[42px] font-bold text-white tracking-tight leading-[1.1] mb-6 max-w-[720px]">

@@ -184,7 +184,7 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="slideRight">
               <div id="dynamic-netsoft" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
                     Enterprise Lane
                   </span>
                   <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
@@ -216,7 +216,7 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="fadeUp" delay={80}>
               <div id="property-automate" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
                     Enterprise Lane
                   </span>
                   <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
@@ -248,7 +248,7 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="fadeUp" delay={160}>
               <div id="newgen-consulting" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/60">
+                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
                     SME Lane
                   </span>
                   <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">

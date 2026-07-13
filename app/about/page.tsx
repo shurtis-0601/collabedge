@@ -337,7 +337,7 @@ export default function AboutPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Our Dual Mission
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
@@ -351,7 +351,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-lg bg-gold/[0.15] flex items-center justify-center mb-5">
                   <Stethoscope size={20} className="text-gold" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-3 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-3 block">
                   Give Back
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">
@@ -374,7 +374,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-lg bg-gold/[0.15] flex items-center justify-center mb-5">
                   <Building2 size={20} className="text-gold" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-3 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-3 block">
                   Transform Forward
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">
@@ -414,7 +414,7 @@ export default function AboutPage() {
           <FadeIn variant="fadeUp" delay={100}>
             <div className="bg-navy rounded-xl p-8 border border-gold/20 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gold/[0.05] rounded-full -translate-y-20 translate-x-20 pointer-events-none" />
-              <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-4 block">
+              <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-4 block">
                 Case Study: NDIS Provider
               </span>
               <blockquote className="font-serif italic text-[17px] text-white leading-relaxed mb-6 max-w-[620px]">

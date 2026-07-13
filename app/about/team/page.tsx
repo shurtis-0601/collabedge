@@ -153,7 +153,7 @@ export default function TeamPage() {
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
               Our People
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
@@ -169,7 +169,7 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-sinclair.jpg" alt="Sinclair Hurtis" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-1 block">
                   Founder and Principal
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
@@ -194,7 +194,7 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-magda.jpg" alt="Magdalena Paczkowska" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-1 block">
                   NDIS Practitioner and Strategic Advisor
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
@@ -219,7 +219,7 @@ export default function TeamPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/team-raj.jpg" alt="Raj Purshotham" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/60 mb-1 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark/80 mb-1 block">
                   Strategy, Growth and International Advisory
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>

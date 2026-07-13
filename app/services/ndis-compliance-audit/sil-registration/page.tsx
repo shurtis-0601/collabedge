@@ -134,7 +134,7 @@ export default function SILRegistrationPage() {
               <Clock size={13} className="text-gold" />
               <span className="text-[13px] font-semibold text-brand-goldDark">10 spots available this round</span>
             </div>
-            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-3 block">
+            <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-3 block">
               SIL Registration Support
             </span>
             <h1 className="text-[26px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-5">

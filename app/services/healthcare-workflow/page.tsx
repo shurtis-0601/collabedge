@@ -180,7 +180,7 @@ export default function HealthcareWorkflowPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
-              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/60 mb-2 block">
+              <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
                 Our Approach
               </span>
               <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
