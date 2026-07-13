@@ -33,7 +33,6 @@ export default function PrivacyPage() {
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             Principal contact: Sinclair Hurtis<br />
             Email: <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a><br />
-            Phone: 0426 464 442<br />
             Address: Melbourne, Victoria
           </p>
 
@@ -157,7 +156,6 @@ export default function PrivacyPage() {
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             CollabEdge Solutions<br />
             <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a><br />
-            0426 464 442<br />
             Melbourne, Victoria
           </p>
         </div>
