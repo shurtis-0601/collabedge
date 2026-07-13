@@ -4,7 +4,13 @@ import PageHero from '@/components/corporate/PageHero'
 export const metadata: Metadata = {
   title: 'Privacy Policy | CollabEdge Solutions',
   description:
-    'Privacy Policy for CollabEdge Solutions — ABN 38 557 169 242. How we collect, use and protect your personal information.',
+    'Privacy Policy for CollabEdge Solutions, ABN 38 557 169 242. How we collect, use and protect your personal information.',
+  openGraph: {
+    title: 'Privacy Policy | CollabEdge Solutions',
+    description:
+      'Privacy Policy for CollabEdge Solutions, ABN 38 557 169 242. How we collect, use and protect your personal information.',
+    url: 'https://collabedgesolutions.com.au/privacy',
+  },
 }
 
 export default function PrivacyPage() {

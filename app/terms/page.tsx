@@ -3,7 +3,12 @@ import PageHero from '@/components/corporate/PageHero'
 
 export const metadata: Metadata = {
   title: 'Terms of Use | CollabEdge Solutions',
-  description: 'Terms of Use for the CollabEdge Solutions website — collabedgesolutions.com.au',
+  description: 'Terms of Use for the CollabEdge Solutions website, collabedgesolutions.com.au',
+  openGraph: {
+    title: 'Terms of Use | CollabEdge Solutions',
+    description: 'Terms of Use for the CollabEdge Solutions website, collabedgesolutions.com.au',
+    url: 'https://collabedgesolutions.com.au/terms',
+  },
 }
 
 export default function TermsPage() {

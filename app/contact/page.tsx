@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: 'Contact Us | CollabEdge Solutions',
   description:
     'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',
+  openGraph: {
+    title: 'Contact Us | CollabEdge Solutions',
+    description:
+      'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',
+    url: 'https://collabedgesolutions.com.au/contact',
+  },
 }
 
 const schema = {

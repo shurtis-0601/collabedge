@@ -5,6 +5,11 @@ import FadeIn from '@/components/FadeIn'
 export const metadata: Metadata = {
   title: 'Book a Free Consultation | CollabEdge Solutions',
   description: 'Book a free 30-minute consultation with CollabEdge Solutions. Senior-led, no obligation.',
+  openGraph: {
+    title: 'Book a Free Consultation | CollabEdge Solutions',
+    description: 'Book a free 30-minute consultation with CollabEdge Solutions. Senior-led, no obligation.',
+    url: 'https://collabedgesolutions.com.au/appt',
+  },
 }
 
 export default function ApptPage() {
