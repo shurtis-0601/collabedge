@@ -84,7 +84,7 @@ function ProductCard({ product }: { product: Product }) {
           </a>
         )}
         {product.statusNote && (
-          <p className="text-[13px] text-slate-light">{product.statusNote}</p>
+          <p className="text-[13px] text-slate">{product.statusNote}</p>
         )}
       </div>
     </div>

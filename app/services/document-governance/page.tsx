@@ -247,7 +247,7 @@ export default function DocumentGovernancePage() {
             {painPoints.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="flex items-start gap-3 bg-offwhite rounded-lg p-5 border border-border">
-                  <item.icon size={16} className="text-slate-light flex-shrink-0 mt-0.5" />
+                  <item.icon size={16} className="text-slate flex-shrink-0 mt-0.5" />
                   <span className="text-[14px] text-slate leading-relaxed">{item.text}</span>
                 </div>
               </FadeIn>

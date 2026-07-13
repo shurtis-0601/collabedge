@@ -191,13 +191,13 @@ export default function SILRegistrationPage() {
             <FadeIn variant="fadeUp" delay={100}>
               <div className="bg-white rounded-xl p-6 border border-border">
                 <div className="flex items-center gap-2 mb-4">
-                  <AlertTriangle size={16} className="text-slate-light" />
+                  <AlertTriangle size={16} className="text-slate" />
                   <span className="text-[14px] font-bold text-text-dark">This may not be for you if</span>
                 </div>
                 <div className="flex flex-col gap-2.5">
                   {notFit.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
-                      <span className="text-[14px] text-slate-light leading-relaxed">{item}</span>
+                      <span className="text-[14px] text-slate leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>

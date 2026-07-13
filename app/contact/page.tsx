@@ -109,7 +109,7 @@ export default function ContactPage() {
                 0426 464 442
               </a>
 
-              <div className="flex items-center gap-3 text-[14px] text-slate-light">
+              <div className="flex items-center gap-3 text-[14px] text-slate">
                 <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
                   <MapPin size={14} className="text-gold" />
                 </div>
@@ -195,15 +195,15 @@ export default function ContactPage() {
             <div className="flex gap-8 pt-5 border-t border-border">
               <div>
                 <span className="text-[22px] font-extrabold text-text-dark leading-none block">30+</span>
-                <span className="text-[13px] text-slate-light uppercase tracking-wider mt-1 block">Years experience</span>
+                <span className="text-[13px] text-slate uppercase tracking-wider mt-1 block">Years experience</span>
               </div>
               <div>
                 <span className="text-[22px] font-extrabold text-text-dark leading-none block">100%</span>
-                <span className="text-[13px] text-slate-light uppercase tracking-wider mt-1 block">Senior-led</span>
+                <span className="text-[13px] text-slate uppercase tracking-wider mt-1 block">Senior-led</span>
               </div>
               <div>
                 <span className="text-[22px] font-extrabold text-text-dark leading-none block">Active</span>
-                <span className="text-[13px] text-slate-light uppercase tracking-wider mt-1 block">NDIS Practitioner</span>
+                <span className="text-[13px] text-slate uppercase tracking-wider mt-1 block">NDIS Practitioner</span>
               </div>
             </div>
           </FadeIn>
