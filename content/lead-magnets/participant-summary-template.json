@@ -1,9 +1,11 @@
 {
   "id": "participant-summary-template",
   "title": "Participant Funding Summary Template",
-  "description": "A clean, printable one page summary you can hand to a participant or their family, showing funding status at a glance.",
-  "file": null,
-  "immediateDelivery": false,
-  "status": "placeholder",
-  "order": 3
+  "description": "An interactive one page summary you can fill in and hand to a participant or their family, with totals and status calculated automatically. Print or save as PDF when ready.",
+  "file": "/downloads/participant-funding-summary-template.html",
+  "immediateDelivery": true,
+  "status": "available",
+  "order": 3,
+  "buttonLabel": "Open Template",
+  "modalDescription": "Enter your details and the template will open automatically in a new tab."
 }
