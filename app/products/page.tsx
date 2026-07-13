@@ -45,7 +45,7 @@ const products: Product[] = [
     icon: <TrendingUp size={20} className="text-gold" />,
     title: 'NDIS Funding and Burn Rate Tracker',
     status: 'Available Now',
-    desc: 'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local. No participant data ever leaves your device.',
+    desc: 'Forecasts total committed spend against remaining budget for every participant, rate multiplied by sessions remaining added to spend to date, catching a shortfall while there is still time to act. Fully local. No participant data ever leaves your device.',
     ctaLabel: 'See How It Works',
     href: '/products/funding-burn-rate-tracker',
   },

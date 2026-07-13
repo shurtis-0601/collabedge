@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from 'next'
 import {
-  PieChart, Users, FileInput, Printer
+  PieChart, Users, FileInput, Printer, TrendingUp
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 }
 
 const features = [
+  { icon: TrendingUp, title: 'Forward-Looking Forecast', body: 'Future scheduled spend, rate multiplied by sessions remaining, added to spend to date, compared against remaining budget. A shortfall shows up while there is still time to adjust the roster, not at plan review.' },
   { icon: PieChart, title: 'Category Level Tracking', body: 'Spend against budget for every support category, with automatic status alerts comparing spend to plan timeline elapsed.' },
   { icon: Users, title: 'Provider and Rate Management', body: 'Track providers, rates, and sessions remaining per category, with built-in NDIS Price Guide rate lookup including remote area loading.' },
   { icon: FileInput, title: 'Automated Plan Import', body: 'Import plan documents directly, with automatic budget and date population from the plan itself.' },
@@ -58,7 +59,46 @@ export default function FundingTrackerPage() {
         </div>
       </section>
 
-      {/* 2. The privacy difference */}
+      {/* 2. Forecast differentiator */}
+      <section className="bg-white py-16 px-5 sm:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+              A Funding Statement Tells You What Already Happened
+            </h2>
+            <p className="text-[16px] text-slate leading-relaxed max-w-[720px] mb-10">
+              A plan manager statement shows spend to date. That is useful, but it does not tell you whether the money will last. This tracker calculates committed future spend, rate multiplied by sessions remaining, and adds it to what has already been spent. The result is a forecast of where the participant will land at the end of the plan, while there is still time to do something about it.
+            </p>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <FadeIn variant="slideRight">
+              <div className="bg-offwhite rounded-xl p-7 border border-border h-full">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-slate mb-3 block">
+                  Plan Manager Statement
+                </span>
+                <p className="text-[16px] font-bold text-text-dark mb-3">Backward looking</p>
+                <p className="text-[14px] text-slate leading-relaxed">
+                  Shows what has been claimed so far. Does not account for sessions booked but not yet invoiced, or what the remaining roster will cost. A participant can look fine on paper and run out of funding two months before plan review.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn variant="fadeUp">
+              <div className="bg-gold/[0.06] rounded-xl p-7 border border-gold/30 h-full">
+                <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight mb-3 block">
+                  This Tracker
+                </span>
+                <p className="text-[16px] font-bold text-text-dark mb-3">Forward looking</p>
+                <p className="text-[14px] text-slate leading-relaxed">
+                  Adds committed future spend to spend to date and compares the total against remaining budget. If the forecast exceeds what is left, the status alert fires now, when the roster can still be adjusted, not after the shortfall has already happened.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. The privacy difference */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -73,7 +113,7 @@ export default function FundingTrackerPage() {
         </div>
       </section>
 
-      {/* 3. What it does */}
+      {/* 4. What it does */}
       <section className="bg-navy py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -98,7 +138,7 @@ export default function FundingTrackerPage() {
         </div>
       </section>
 
-      {/* 4. Built by a practitioner */}
+      {/* 5. Built by a practitioner */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -113,7 +153,7 @@ export default function FundingTrackerPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA */}
+      {/* 6. Final CTA */}
       <CTASection
         heading="See It in Action"
         sub="A free 30 minute walkthrough of the tracker with your own caseload structure in mind."
