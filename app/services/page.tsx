@@ -149,11 +149,11 @@ export default function ServicesPage() {
             <FadeIn variant="fadeUp" delay={150}>
               <a
                 href="#enterprise-services"
-                className="block bg-navy border-l-4 border-eucalyptus rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
+                className="block bg-eucalyptus rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-eucalyptus/[0.08] rounded-full -translate-y-16 translate-x-16 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-eucalyptus/15 flex items-center justify-center mb-6 group-hover:bg-eucalyptus/25 transition-colors">
-                  <Building2 size={22} className="text-eucalyptus" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/[0.06] rounded-full -translate-y-16 translate-x-16 pointer-events-none" />
+                <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-6 group-hover:bg-white/25 transition-colors">
+                  <Building2 size={22} className="text-white" />
                 </div>
                 <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
                   Transform Forward
@@ -161,10 +161,10 @@ export default function ServicesPage() {
                 <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                   Enterprise Partnerships
                 </h2>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+                <p className="text-[14px] text-white/85 leading-relaxed mb-6">
                   Enterprise technology delivered through a curated network of specialist partners across communication security, property technology, and healthcare software platforms, coordinated by CollabEdge across Australia and Asia Pacific.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-eucalyptus group-hover:gap-3 transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-white group-hover:gap-3 transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
                 </span>
               </a>

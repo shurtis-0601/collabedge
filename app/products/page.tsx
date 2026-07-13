@@ -81,21 +81,21 @@ export default function ProductsPage() {
       </section>
 
       {/* 2. Managed Services banner, eucalyptus */}
-      <section className="py-12 px-5 sm:px-10" style={{ backgroundColor: '#3C6E5E' }}>
+      <section className="bg-navy py-12 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center">
             <FadeIn variant="slideRight">
               <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                 Included With Managed Services
               </h2>
-              <p className="text-[16px] text-white leading-relaxed max-w-[620px]">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px]">
                 CollabEdge Managed Services clients get every product on this page included as part of their engagement, including a MedPrivacy licence. No separate subscriptions to manage.
               </p>
             </FadeIn>
             <FadeIn variant="fadeUp" delay={100}>
               <a
                 href="/services#engagement-models"
-                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-6 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 bg-gold text-navy text-[14px] font-bold rounded-lg px-6 py-4 hover:bg-brand-goldDark transition-colors whitespace-nowrap"
               >
                 Learn About Managed Services
                 <ArrowRight size={14} />

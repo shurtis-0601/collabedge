@@ -49,7 +49,13 @@ icon or similar from page-level data.
 - Gold on dark backgrounds: brand.goldDark #E6B85C
 - Gold on light backgrounds: brand.goldLight #B8821A
 - Offwhite light sections: #EEF0EB (not bg-white)
-- Eucalyptus #3C6E5E: partner CTA sections ONLY
+- Eucalyptus #3C6E5E: Enterprise pillar identity colour. Use for
+  content that is genuinely part of the Enterprise Partnerships
+  pillar (the Services hub pillar card, partner CTA blocks on
+  SHIELD and Partner Solutions pages). Do NOT use for content
+  that applies across both pillars (e.g. Managed Services, which
+  spans healthcare and enterprise) or for general section styling
+  unrelated to Enterprise partnerships.
 
 ## Accessibility rules (all pages)
 
