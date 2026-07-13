@@ -44,11 +44,11 @@ function ProductCard({ product }: { product: Product }) {
           {product.icon}
         </div>
         {product.status === 'Available Now' ? (
-          <span className="text-[13px] font-semibold text-brand-goldLight bg-gold/10 border border-gold/30 rounded-full px-3 py-1 whitespace-nowrap">
+          <span className="text-[13px] font-semibold rounded-full px-3 py-1 whitespace-nowrap border bg-green-50 text-green-700 border-green-200">
             Available Now
           </span>
         ) : (
-          <span className="text-[13px] font-semibold text-slate border border-border rounded-full px-3 py-1 whitespace-nowrap">
+          <span className="text-[13px] font-semibold rounded-full px-3 py-1 whitespace-nowrap border bg-amber-50 text-amber-700 border-amber-200">
             In Development
           </span>
         )}
@@ -197,8 +197,10 @@ export default function ProductTabs({ products }: { products: Product[] }) {
             >
               {tab.label}
               <span
-                className={`text-[13px] font-semibold rounded-full px-2 py-0.5 ${
-                  isActive ? 'bg-gold/15 text-brand-goldLight' : 'bg-border text-slate'
+                className={`text-[13px] font-semibold rounded-full px-2 py-0.5 border ${
+                  tab.status === 'Available Now'
+                    ? 'bg-green-50 text-green-700 border-green-200'
+                    : 'bg-amber-50 text-amber-700 border-amber-200'
                 }`}
               >
                 {items.length}

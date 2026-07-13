@@ -55,7 +55,7 @@ const products: Product[] = [
     title: 'NDIS CRM',
     status: 'In Development',
     desc: 'An AI-powered CRM purpose-built for NDIS providers, replacing legacy case management software with a modern, Microsoft 365 native platform.',
-    statusNote: 'More detail coming soon.',
+    statusNote: 'More details coming soon.',
   },
 ]
 
