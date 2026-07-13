@@ -130,7 +130,7 @@ export default function ServicesPage() {
                 <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center mb-6 group-hover:bg-gold/25 transition-colors">
                   <Stethoscope size={22} className="text-gold" />
                 </div>
-                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldLight/60 mb-2 block">
+                <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
                   Give Back
                 </span>
                 <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
@@ -139,7 +139,7 @@ export default function ServicesPage() {
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   Compliance, automation, document governance, and AI advisory for NDIS providers and healthcare operators, built on what you already have.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                   View healthcare services <ArrowRight size={13} />
                 </span>
               </a>
@@ -149,11 +149,11 @@ export default function ServicesPage() {
             <FadeIn variant="fadeUp" delay={150}>
               <a
                 href="#enterprise-services"
-                className="block bg-[#3C6E5E] rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
+                className="block bg-navy border-l-4 border-eucalyptus rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/[0.05] rounded-full -translate-y-16 translate-x-16 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center mb-6 group-hover:bg-gold/25 transition-colors">
-                  <Building2 size={22} className="text-brand-goldDark" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-eucalyptus/[0.08] rounded-full -translate-y-16 translate-x-16 pointer-events-none" />
+                <div className="w-12 h-12 rounded-lg bg-eucalyptus/15 flex items-center justify-center mb-6 group-hover:bg-eucalyptus/25 transition-colors">
+                  <Building2 size={22} className="text-eucalyptus" />
                 </div>
                 <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
                   Transform Forward
@@ -164,7 +164,7 @@ export default function ServicesPage() {
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   Enterprise technology delivered through a curated network of specialist partners across communication security, property technology, and healthcare software platforms, coordinated by CollabEdge across Australia and Asia Pacific.
                 </p>
-                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 group-hover:text-gold transition-all duration-200">
+                <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-eucalyptus group-hover:gap-3 transition-all duration-200">
                   View enterprise solutions <ArrowRight size={13} />
                 </span>
               </a>
@@ -195,13 +195,8 @@ export default function ServicesPage() {
                   href={service.href}
                   className="block bg-white rounded-xl p-6 border border-border h-full hover:border-gold/40 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200 group"
                 >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors">
-                      <service.icon size={18} className="text-gold" />
-                    </div>
-                    <span className="text-[13px] font-semibold text-slate-light uppercase tracking-wide mt-1">
-                      {service.price}
-                    </span>
+                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors mb-4">
+                    <service.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
                     {service.title}
@@ -355,11 +350,23 @@ export default function ServicesPage() {
               </div>
             </FadeIn>
             <FadeIn variant="fadeUp" delay={160}>
-              <div className="bg-offwhite rounded-xl p-7 border border-border h-full">
+              <div className="bg-offwhite rounded-xl p-7 border border-border h-full flex flex-col">
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">Managed Services</h3>
-                <p className="text-[16px] text-slate leading-relaxed">
-                  One ongoing relationship covering compliance, automation, digital, and advisory. Your operations partner rather than a one-off engagement, with every product CollabEdge builds included as part of your engagement, and a MedPrivacy licence arranged as part of the relationship.
+                <p className="text-[16px] text-slate leading-relaxed mb-4">
+                  One ongoing relationship covering compliance, automation, digital, and advisory. Your operations partner rather than a one-off engagement.
                 </p>
+                <div className="bg-white rounded-lg p-4 border border-gold/20 flex items-start gap-3 mb-4">
+                  <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
+                  <p className="text-[14px] text-slate leading-relaxed">
+                    Every product CollabEdge builds is included as part of your engagement, plus a MedPrivacy licence arranged as part of the relationship.
+                  </p>
+                </div>
+                <a
+                  href="/products"
+                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-auto"
+                >
+                  See what is included <ArrowRight size={12} />
+                </a>
               </div>
             </FadeIn>
           </div>
