@@ -182,95 +182,104 @@ export default function PartnerSolutionsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Dynamic Netsoft Technologies */}
             <FadeIn variant="slideRight">
-              <div id="dynamic-netsoft" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
-                <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
-                    Enterprise Lane
-                  </span>
-                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
-                    Microsoft D365
-                  </span>
+              <div id="dynamic-netsoft" className="bg-white rounded-xl border border-border h-full overflow-hidden hover:border-eucalyptus/40 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200 scroll-mt-28">
+                <div className="h-1.5 bg-eucalyptus" />
+                <div className="p-7">
+                  <div className="flex items-center gap-2 mb-4 flex-wrap">
+                    <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
+                      Enterprise Lane
+                    </span>
+                    <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
+                      Microsoft D365
+                    </span>
+                  </div>
+                  <div className="w-10 h-10 rounded-lg bg-eucalyptus/10 flex items-center justify-center mb-4">
+                    <Building2 size={18} className="text-eucalyptus" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">
+                    Dynamic Netsoft Technologies
+                  </h3>
+                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                    Full-suite Microsoft Dynamics 365 Finance and Operations ISV, certified on Microsoft AppSource, focused on real estate and construction. Enterprise-grade property and contract lifecycle management for organisations on the Microsoft stack.
+                  </p>
+                  <a
+                    href="https://www.dynamicnetsoft.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                  >
+                    Visit Dynamic Netsoft
+                    <ExternalLink size={12} />
+                  </a>
                 </div>
-                <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
-                  <Building2 size={18} className="text-navy" />
-                </div>
-                <h3 className="text-[18px] font-bold text-text-dark mb-3">
-                  Dynamic Netsoft Technologies
-                </h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-5">
-                  Full-suite Microsoft Dynamics 365 Finance and Operations ISV, certified on Microsoft AppSource, focused on real estate and construction. Enterprise-grade property and contract lifecycle management for organisations on the Microsoft stack.
-                </p>
-                <a
-                  href="https://www.dynamicnetsoft.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
-                >
-                  Visit Dynamic Netsoft
-                  <ExternalLink size={12} />
-                </a>
               </div>
             </FadeIn>
 
             {/* Property Automate */}
             <FadeIn variant="fadeUp" delay={80}>
-              <div id="property-automate" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
-                <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
-                    Enterprise Lane
-                  </span>
-                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
-                    PropTech
-                  </span>
+              <div id="property-automate" className="bg-white rounded-xl border border-border h-full overflow-hidden hover:border-eucalyptus/40 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200 scroll-mt-28">
+                <div className="h-1.5 bg-eucalyptus" />
+                <div className="p-7">
+                  <div className="flex items-center gap-2 mb-4 flex-wrap">
+                    <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
+                      Enterprise Lane
+                    </span>
+                    <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
+                      PropTech
+                    </span>
+                  </div>
+                  <div className="w-10 h-10 rounded-lg bg-eucalyptus/10 flex items-center justify-center mb-4">
+                    <Home size={18} className="text-eucalyptus" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">
+                    Property Automate
+                  </h3>
+                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                    Property operations technology for residential, commercial, and facilities management. Purpose-built platforms that digitise property workflows end to end.
+                  </p>
+                  <a
+                    href="https://propertyautomate.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                  >
+                    Visit Property Automate
+                    <ExternalLink size={12} />
+                  </a>
                 </div>
-                <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
-                  <Home size={18} className="text-navy" />
-                </div>
-                <h3 className="text-[18px] font-bold text-text-dark mb-3">
-                  Property Automate
-                </h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-5">
-                  Property operations technology for residential, commercial, and facilities management. Purpose-built platforms that digitise property workflows end to end.
-                </p>
-                <a
-                  href="https://propertyautomate.com.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
-                >
-                  Visit Property Automate
-                  <ExternalLink size={12} />
-                </a>
               </div>
             </FadeIn>
 
             {/* Newgen Consulting */}
             <FadeIn variant="fadeUp" delay={160}>
-              <div id="newgen-consulting" className="bg-white rounded-xl p-7 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200 scroll-mt-28">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
-                    SME Lane
-                  </span>
-                  <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
-                    Healthcare Software
-                  </span>
+              <div id="newgen-consulting" className="bg-white rounded-xl border border-border h-full overflow-hidden hover:border-gold/40 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200 scroll-mt-28">
+                <div className="h-1.5 bg-gold" />
+                <div className="p-7">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-[13px] font-bold tracking-[.12em] uppercase text-brand-goldLight/80">
+                      SME Lane
+                    </span>
+                    <span className="text-[13px] bg-gold/10 text-brand-goldLight font-semibold px-2 py-0.5 rounded-full">
+                      Healthcare Software
+                    </span>
+                  </div>
+                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
+                    <Users size={18} className="text-brand-goldLight" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
+                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                    Zoho ecosystem specialist working with CollabEdge Solutions to bring healthcare domain expertise to Zoho CRM and operations platforms. For NDIS providers and allied health operators who prefer a packaged software solution over custom builds, CollabEdge provides the healthcare domain knowledge, Newgen provides the Zoho implementation depth.
+                  </p>
+                  <a
+                    href="https://newgenconsulting.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
+                  >
+                    Visit Newgen Consulting
+                    <ExternalLink size={12} />
+                  </a>
                 </div>
-                <div className="w-10 h-10 rounded-lg bg-navy/[0.08] flex items-center justify-center mb-4">
-                  <Users size={18} className="text-navy" />
-                </div>
-                <h3 className="text-[18px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-5">
-                  Zoho ecosystem specialist working with CollabEdge Solutions to bring healthcare domain expertise to Zoho CRM and operations platforms. For NDIS providers and allied health operators who prefer a packaged software solution over custom builds, CollabEdge provides the healthcare domain knowledge, Newgen provides the Zoho implementation depth.
-                </p>
-                <a
-                  href="https://newgenconsulting.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
-                >
-                  Visit Newgen Consulting
-                  <ExternalLink size={12} />
-                </a>
               </div>
             </FadeIn>
           </div>
@@ -278,7 +287,7 @@ export default function PartnerSolutionsPage() {
       </section>
 
       {/* Become a Partner — eucalyptus */}
-      <section className="py-16 px-5 sm:px-10" style={{ backgroundColor: '#3C6E5E' }}>
+      <section className="bg-eucalyptus py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
             <FadeIn variant="slideRight">
@@ -295,7 +304,7 @@ export default function PartnerSolutionsPage() {
             <FadeIn variant="fadeUp" delay={100}>
               <a
                 href="/appt"
-                className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-7 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 bg-white text-eucalyptus text-[14px] font-bold rounded-lg px-7 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
               >
                 Start a Conversation
                 <ArrowRight size={14} />
