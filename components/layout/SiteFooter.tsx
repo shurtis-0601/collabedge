@@ -4,7 +4,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-navy-deep border-t border-white/5">
       <div className="mx-auto max-w-container px-5 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
           {/* Col 1: Brand */}
           <div>
@@ -22,7 +22,7 @@ export default function SiteFooter() {
             </p>
           </div>
 
-          {/* Col 2: Services */}
+          {/* Col 2: Services + Partner Solutions */}
           <div>
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Services
@@ -34,10 +34,7 @@ export default function SiteFooter() {
               <li><Link href="/services/digital" className="hover:text-white transition-colors">Digital Services</Link></li>
               <li><Link href="/services/ai-advisory" className="hover:text-white transition-colors">AI Advisory</Link></li>
             </ul>
-          </div>
-
-          {/* Col 3: Partner Solutions */}
-          <div>
+            <div className="my-4 h-px bg-white/10" />
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Partner Solutions
             </h4>
@@ -50,7 +47,7 @@ export default function SiteFooter() {
             </ul>
           </div>
 
-          {/* Col 4: Products */}
+          {/* Col 3: Products */}
           <div>
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Products
@@ -63,7 +60,7 @@ export default function SiteFooter() {
             </ul>
           </div>
 
-          {/* Col 5: Company + Learn */}
+          {/* Col 4: Company + Learn */}
           <div>
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Company
