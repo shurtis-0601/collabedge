@@ -282,7 +282,7 @@ export default function DocumentGovernancePage() {
                     </div>
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{folder.name}</h3>
-                  <p className="text-[13px] text-[#D1D5DB] leading-relaxed">{folder.desc}</p>
+                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{folder.desc}</p>
                 </div>
               </FadeIn>
             ))}

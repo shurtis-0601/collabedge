@@ -170,7 +170,7 @@ export default function AiAdvisoryPage() {
                 <p className="text-[15px] font-semibold text-text-dark mb-1">
                   Get 100 ready-to-use AI prompts for your team, organised by NDIS role.
                 </p>
-                <p className="text-[13px] text-slate">Support coordinators, plan managers, allied health, families, and more.</p>
+                <p className="text-[14px] text-slate">Support coordinators, plan managers, allied health, families, and more.</p>
               </div>
               <a
                 href="/resources/downloads"

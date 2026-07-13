@@ -313,7 +313,7 @@ export default function AboutPage() {
                   <span className="text-[13px] font-semibold text-brand-goldLight uppercase tracking-wider block mb-3">
                     {member.role}
                   </span>
-                  <p className="text-[13px] text-slate leading-relaxed">{member.bio}</p>
+                  <p className="text-[14px] text-slate leading-relaxed">{member.bio}</p>
                 </a>
               </FadeIn>
             ))}
