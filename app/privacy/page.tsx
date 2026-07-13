@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             Principal contact: Sinclair Hurtis<br />
-            Email: <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
+            Email: <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a><br />
             Phone: 0426 464 442<br />
             Address: Melbourne, Victoria
           </p>
@@ -115,7 +115,7 @@ export default function PrivacyPage() {
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             To make a request, contact us at:{' '}
-            <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a>
+            <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a>
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             We will respond within a reasonable timeframe and in accordance with the Privacy Act 1988 (Cth).
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
           <h2 className="text-[26px] font-bold text-text-dark mt-10 mb-3 tracking-tight">9. Complaints</h2>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             If you believe we have breached the Australian Privacy Principles, you may lodge a complaint by contacting us at{' '}
-            <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a>.
+            <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a>.
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             We will acknowledge your complaint within 5 business days and aim to resolve it within 30 days. If you are not satisfied with our response, you may escalate your complaint to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.
@@ -156,7 +156,7 @@ export default function PrivacyPage() {
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             CollabEdge Solutions<br />
-            <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
+            <a href="mailto:info@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">info@collabedgesolutions.com.au</a><br />
             0426 464 442<br />
             Melbourne, Victoria
           </p>
