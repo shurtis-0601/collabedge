@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 type MegaColumn = {
   heading: string;
   headingHref?: string;
-  links: { label: string; href: string; featured?: boolean }[];
+  links: { label: string; href: string; featured?: boolean; external?: boolean }[];
 };
 
 type NavCTA = {
@@ -79,9 +79,9 @@ const NAV: NavItem[] = [
         heading: "Available Now",
         headingHref: "/products#tab-available",
         links: [
-          { label: "MedPrivacy", href: "/products#medprivacy" },
-          { label: "Employee Onboarding Automation", href: "/products#employee-onboarding-automation" },
-          { label: "Funding and Burn Rate Tracker", href: "/products#funding-burn-rate-tracker" },
+          { label: "MedPrivacy", href: "https://medprivacy.com.au", external: true },
+          { label: "Employee Onboarding Automation", href: "/products/employee-onboarding-automation" },
+          { label: "Funding and Burn Rate Tracker", href: "/products/funding-burn-rate-tracker" },
         ],
       },
       {
@@ -274,18 +274,35 @@ export default function SiteHeader() {
                           <ul className="space-y-0.5">
                             {col.links.map((link) => (
                               <li key={link.href}>
-                                <Link
-                                  href={link.href}
-                                  className={`group block pr-2 py-2 text-[14px] font-medium rounded transition-all border-l-2 ${
-                                    link.featured
-                                      ? "text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
-                                      : "text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
-                                  }`}
-                                  onClick={() => setOpenMenu(null)}
-                                >
-                                  {link.featured && <span className="mr-1">⭐</span>}
-                                  {link.label}
-                                </Link>
+                                {link.external ? (
+                                  <a
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`group block pr-2 py-2 text-[14px] font-medium rounded transition-all border-l-2 ${
+                                      link.featured
+                                        ? "text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
+                                        : "text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
+                                    }`}
+                                    onClick={() => setOpenMenu(null)}
+                                  >
+                                    {link.featured && <span className="mr-1">⭐</span>}
+                                    {link.label}
+                                  </a>
+                                ) : (
+                                  <Link
+                                    href={link.href}
+                                    className={`group block pr-2 py-2 text-[14px] font-medium rounded transition-all border-l-2 ${
+                                      link.featured
+                                        ? "text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
+                                        : "text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
+                                    }`}
+                                    onClick={() => setOpenMenu(null)}
+                                  >
+                                    {link.featured && <span className="mr-1">⭐</span>}
+                                    {link.label}
+                                  </Link>
+                                )}
                               </li>
                             ))}
                           </ul>
@@ -425,15 +442,29 @@ export default function SiteHeader() {
                     <ul className="space-y-1">
                       {col.links.map((link) => (
                         <li key={link.href}>
-                          <Link
-                            href={link.href}
-                            onClick={() => { setMobileOpen(false); setMobileSection(null); }}
-                            className={`block py-2.5 text-[16px] font-semibold border-b border-white/8 ${
-                              link.featured ? "text-brand-goldDark" : "text-white"
-                            }`}
-                          >
-                            {link.label}
-                          </Link>
+                          {link.external ? (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => { setMobileOpen(false); setMobileSection(null); }}
+                              className={`block py-2.5 text-[16px] font-semibold border-b border-white/8 ${
+                                link.featured ? "text-brand-goldDark" : "text-white"
+                              }`}
+                            >
+                              {link.label}
+                            </a>
+                          ) : (
+                            <Link
+                              href={link.href}
+                              onClick={() => { setMobileOpen(false); setMobileSection(null); }}
+                              className={`block py-2.5 text-[16px] font-semibold border-b border-white/8 ${
+                                link.featured ? "text-brand-goldDark" : "text-white"
+                              }`}
+                            >
+                              {link.label}
+                            </Link>
+                          )}
                         </li>
                       ))}
                     </ul>

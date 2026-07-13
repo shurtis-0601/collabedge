@@ -4,7 +4,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-navy-deep border-t border-white/5">
       <div className="mx-auto max-w-container px-5 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
 
           {/* Col 1: Brand */}
           <div>
@@ -34,8 +34,15 @@ export default function SiteFooter() {
               <li><Link href="/services/digital" className="hover:text-white transition-colors">Digital Services</Link></li>
               <li><Link href="/services/ai-advisory" className="hover:text-white transition-colors">AI Advisory</Link></li>
             </ul>
-            <div className="my-4 h-px bg-white/10" />
+          </div>
+
+          {/* Col 3: Partner Solutions */}
+          <div>
+            <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
+              Partner Solutions
+            </h4>
             <ul className="space-y-2.5 text-[14px]">
+              <li><Link href="/services/partner-solutions" className="text-[#D1D5DB] hover:text-white transition-colors">All Partners</Link></li>
               <li><Link href="/services/partner-solutions/shield" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">SHIELD Voice Fraud Prevention</Link></li>
               <li><Link href="/services/partner-solutions#dynamic-netsoft" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Dynamic Netsoft</Link></li>
               <li><Link href="/services/partner-solutions#property-automate" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Property Automate</Link></li>
@@ -43,7 +50,20 @@ export default function SiteFooter() {
             </ul>
           </div>
 
-          {/* Col 3: Company */}
+          {/* Col 4: Products */}
+          <div>
+            <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
+              Products
+            </h4>
+            <ul className="space-y-2.5 text-[14px] text-[#D1D5DB]">
+              <li><a href="https://medprivacy.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">MedPrivacy</a></li>
+              <li><Link href="/products/employee-onboarding-automation" className="hover:text-white transition-colors">Employee Onboarding Automation</Link></li>
+              <li><Link href="/products/funding-burn-rate-tracker" className="hover:text-white transition-colors">Funding and Burn Rate Tracker</Link></li>
+              <li><Link href="/products#ndis-crm" className="hover:text-white transition-colors">NDIS CRM (Coming Soon)</Link></li>
+            </ul>
+          </div>
+
+          {/* Col 5: Company + Learn */}
           <div>
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Company
@@ -53,12 +73,8 @@ export default function SiteFooter() {
               <li><Link href="/about/team" className="hover:text-white transition-colors">Our Team</Link></li>
               <li><Link href="/about/sinclair-hurtis" className="hover:text-white transition-colors">Sinclair Hurtis</Link></li>
               <li><Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
-              <li><Link href="/services/partner-solutions" className="hover:text-white transition-colors">Partner Ecosystem</Link></li>
             </ul>
-          </div>
-
-          {/* Col 4: Learn */}
-          <div>
+            <div className="my-4 h-px bg-white/10" />
             <h4 className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark mb-4">
               Learn
             </h4>
@@ -67,13 +83,6 @@ export default function SiteFooter() {
               <li><Link href="/resources" className="hover:text-white transition-colors">Articles and Guides</Link></li>
               <li><Link href="/resources/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
               <li><Link href="/resources/videos" className="hover:text-white transition-colors">Video Walkthroughs</Link></li>
-            </ul>
-            <div className="my-4 h-px bg-white/10" />
-            <ul className="space-y-2.5 text-[14px] text-[#D1D5DB]">
-              <li><a href="https://medprivacy.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">MedPrivacy</a></li>
-              <li><Link href="/products/employee-onboarding-automation" className="hover:text-white transition-colors">Employee Onboarding Automation</Link></li>
-              <li><Link href="/products/funding-burn-rate-tracker" className="hover:text-white transition-colors">Funding and Burn Rate Tracker</Link></li>
-              <li><Link href="/products#ndis-crm" className="hover:text-white transition-colors">NDIS CRM (Coming Soon)</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
