@@ -1,11 +1,67 @@
 'use client'
 
 import { useState } from 'react'
-import { Cpu, TrendingUp, Globe, ArrowRight, Code2 } from 'lucide-react'
+import { Cpu, TrendingUp, Globe, ArrowRight, Code2, CheckCircle2 } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
 import AutomationIdeaForm from '@/components/sections/AutomationIdeaForm'
+
+// --- Per-platform RAG status model (NDIS track) ---
+
+type RagStatus = 'available' | 'in-progress' | 'not-started'
+
+const RAG_LABELS: Record<RagStatus, string> = {
+  'available': 'Available Now',
+  'in-progress': 'In Progress',
+  'not-started': 'Next',
+}
+
+const RAG_STYLES: Record<RagStatus, string> = {
+  'available': 'bg-green-50 text-green-700 border-green-200',
+  'in-progress': 'bg-amber-50 text-amber-700 border-amber-200',
+  'not-started': 'bg-gray-50 text-slate border-border',
+}
+
+type PlatformItem = {
+  title: string
+  desc: string
+  statusByPlatform: {
+    microsoft: RagStatus
+    google: RagStatus
+  }
+}
+
+const ndisItems: PlatformItem[] = [
+  {
+    title: 'Employee Onboarding Automation',
+    desc: 'Automated filing and expiry tracking for staff compliance documents — police checks, Working With Children Checks, first aid certificates, and NDIS worker screening checks.',
+    statusByPlatform: { microsoft: 'available', google: 'not-started' },
+  },
+  {
+    title: 'NDIS Funding and Burn Rate Tracker',
+    desc: 'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local — no participant data ever leaves your device.',
+    statusByPlatform: { microsoft: 'available', google: 'not-started' },
+  },
+  {
+    title: 'NDIS CRM',
+    desc: 'An AI-powered CRM built on Power Automate, Azure, and Power BI. Replacing legacy case management with a modern, native Microsoft platform.',
+    statusByPlatform: { microsoft: 'in-progress', google: 'not-started' },
+  },
+]
+
+const crossPlatformItems: { title: string; desc: string }[] = [
+  {
+    title: 'Change of Circumstances and RORD Automation',
+    desc: 'NotebookLM-based frameworks that draft Part H fields and covering emails from source documents, already tested and in active use.',
+  },
+  {
+    title: 'Incident Management Process',
+    desc: 'A structured, auditable incident reporting and follow-up workflow, already tested and in active use.',
+  },
+]
+
+// --- Lane model (Growth track only) ---
 
 type Lane = 'now' | 'next' | 'exploring'
 
@@ -25,63 +81,36 @@ type RoadmapItem = {
   title: string
   desc: string
   lane: Lane
-  platform: 'microsoft' | 'google' | 'both'
 }
-
-const ndisItems: RoadmapItem[] = [
-  {
-    title: 'NDIS CRM on Microsoft 365',
-    desc: 'Built on Power Automate, Azure, and Power BI. Replacing legacy case management with a modern, native Microsoft platform.',
-    lane: 'now',
-    platform: 'microsoft',
-  },
-  {
-    title: 'NDIS CRM on Google Workspace',
-    desc: 'The same CRM capability, rebuilt for organisations running on Google Workspace rather than Microsoft 365.',
-    lane: 'next',
-    platform: 'google',
-  },
-  {
-    title: 'Change of Circumstances and RORD Automation',
-    desc: 'NotebookLM-based frameworks that draft Part H fields and covering emails from source documents, already tested in active practice.',
-    lane: 'now',
-    platform: 'both',
-  },
-]
 
 const growthItems: RoadmapItem[] = [
   {
     title: 'Lead Generation and Outreach Automation',
     desc: 'Web crawling, enrichment, and outreach sequencing, currently running for CollabEdge itself.',
     lane: 'now',
-    platform: 'both',
   },
   {
     title: 'Automation as a Service for Small Business',
     desc: 'Opening up the same lead generation and outreach tooling to other small and medium businesses, not just CollabEdge.',
     lane: 'next',
-    platform: 'both',
   },
   {
     title: 'Website and Content Build Pipelines',
     desc: 'The systems used to build and maintain sites like this one, in active use, refined as we go.',
     lane: 'exploring',
-    platform: 'both',
   },
 ]
 
-function RoadmapCard({ item, platformFilter }: { item: RoadmapItem; platformFilter: 'microsoft' | 'google' }) {
-  const isVisible = item.platform === 'both' || item.platform === platformFilter
-  if (!isVisible) return null
-
+function PlatformCard({ item, platform }: { item: PlatformItem; platform: 'microsoft' | 'google' }) {
+  const status = item.statusByPlatform[platform]
   return (
     <div className="bg-white rounded-xl p-6 border border-border">
       <div className="flex items-start justify-between gap-3 mb-3">
         <h3 className="text-[16px] font-bold text-text-dark leading-snug">{item.title}</h3>
         <span
-          className={`text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full border whitespace-nowrap flex-shrink-0 ${LANE_STYLES[item.lane]}`}
+          className={`text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full border whitespace-nowrap flex-shrink-0 ${RAG_STYLES[status]}`}
         >
-          {LANE_LABELS[item.lane]}
+          {RAG_LABELS[status]}
         </span>
       </div>
       <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
@@ -145,14 +174,54 @@ export default function AiAutomationHubClient() {
                 </button>
               </div>
             </div>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px] mb-8">
+            <p className="text-[14px] text-slate leading-relaxed max-w-[680px] mb-5">
               Every tool in this track is being built for both platforms, since that is what most small and medium NDIS and healthcare providers are already running on. Toggle above to see where each platform stands.
             </p>
+            <div className="flex flex-wrap items-center gap-4 mb-8">
+              <span className="flex items-center gap-1.5 text-[13px] text-slate">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-500 flex-shrink-0" />
+                Available now
+              </span>
+              <span className="flex items-center gap-1.5 text-[13px] text-slate">
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-400 flex-shrink-0" />
+                In progress
+              </span>
+              <span className="flex items-center gap-1.5 text-[13px] text-slate">
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-300 flex-shrink-0" />
+                Next
+              </span>
+            </div>
           </FadeIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {ndisItems.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
-                <RoadmapCard item={item} platformFilter={platform} />
+                <PlatformCard item={item} platform={platform} />
+              </FadeIn>
+            ))}
+          </div>
+
+          {/* Cross-platform completed items */}
+          <FadeIn variant="fadeUp" delay={200}>
+            <h3 className="text-[16px] font-bold text-text-dark mb-1">
+              Already Live, Across Both Platforms
+            </h3>
+            <p className="text-[14px] text-slate leading-relaxed mb-5">
+              These items do not depend on Microsoft or Google specifically and are already in active use.
+            </p>
+          </FadeIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {crossPlatformItems.map((item, i) => (
+              <FadeIn key={i} variant="fadeUp" delay={250 + i * 70}>
+                <div className="bg-white rounded-xl p-6 border border-border">
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h3 className="text-[16px] font-bold text-text-dark leading-snug">{item.title}</h3>
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full border whitespace-nowrap flex-shrink-0 bg-green-50 text-green-700 border-green-200">
+                      <CheckCircle2 size={11} />
+                      Completed
+                    </span>
+                  </div>
+                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                </div>
               </FadeIn>
             ))}
           </div>
@@ -204,7 +273,7 @@ export default function AiAutomationHubClient() {
                 <Code2 size={18} className="text-white" />
               </div>
               <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
-                This website is being built from scratch using Claude Code, alongside a separate build using Manus AI. Both are ongoing, and both are proof that we test the tools we recommend before anyone else has to.
+                This website was built from scratch using Claude Code, the same practitioner-first approach behind everything on this roadmap. We build and use these tools ourselves before recommending them to anyone else.
               </p>
             </div>
           </FadeIn>
