@@ -381,7 +381,7 @@ export default function AboutPage() {
                   Enterprise Partnerships
                 </h3>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-5">
-                  Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, Dynamic Netsoft for Microsoft Dynamics 365 property solutions, Property Automate for property operations technology, and Newgen Consulting for the Zoho ecosystem, with advisory and implementation included across Australia and Asia Pacific.
+                  Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, Dynamic Netsoft for Microsoft Dynamics 365 property solutions, Property Automate for property operations technology, and NewGen Consulting for the Zoho ecosystem, with advisory and implementation included across Australia and Asia Pacific.
                 </p>
                 <a
                   href="/services/partner-solutions"

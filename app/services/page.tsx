@@ -89,7 +89,7 @@ const partnerCards = [
   },
   {
     icon: Globe,
-    title: 'Newgen Consulting',
+    title: 'NewGen Consulting',
     desc: 'Zoho ecosystem specialist delivering CRM and operations platforms for healthcare providers and growing businesses.',
   },
 ]

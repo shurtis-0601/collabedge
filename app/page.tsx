@@ -104,7 +104,7 @@ const viewAllServices = {
   href: '/services',
 }
 
-const partners = ['SHIELD', 'Dynamic Netsoft', 'Property Automate', 'Newgen Consulting']
+const partners = ['SHIELD', 'Dynamic Netsoft', 'Property Automate', 'NewGen Consulting']
 
 export default function HomePage() {
   return (

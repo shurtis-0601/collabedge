@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Partner Solutions | CollabEdge Solutions',
   description:
-    'CollabEdge Solutions delivers enterprise technology through a curated bench of specialist partners, deployed only where the relationship on the ground is real. SHIELD, Property Automate, Newgen Consulting.',
+    'CollabEdge Solutions delivers enterprise technology through a curated bench of specialist partners, deployed only where the relationship on the ground is real. SHIELD, Property Automate, NewGen Consulting.',
   openGraph: {
     title: 'Partner Solutions | CollabEdge Solutions',
     description:
@@ -246,7 +246,7 @@ export default function PartnerSolutionsPage() {
               </div>
             </FadeIn>
 
-            {/* Newgen Consulting */}
+            {/* NewGen Consulting */}
             <FadeIn variant="fadeUp" delay={160}>
               <div id="newgen-consulting" className="bg-white rounded-xl border border-border h-full overflow-hidden hover:border-gold/40 hover:shadow-md hover:-translate-y-[2px] transition-all duration-200 scroll-mt-28">
                 <div className="h-1.5 bg-gold" />
@@ -262,7 +262,7 @@ export default function PartnerSolutionsPage() {
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
                     <Users size={18} className="text-brand-goldLight" />
                   </div>
-                  <h3 className="text-[18px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-3">NewGen Consulting</h3>
                   <p className="text-[14px] text-slate leading-relaxed mb-5">
                     Zoho ecosystem specialist. For NDIS providers and allied health operators who prefer a packaged software platform over a custom build, CollabEdge brings real NDIS and healthcare domain expertise to the conversation, so the platform reflects what actually happens on the ground.
                   </p>
@@ -270,7 +270,7 @@ export default function PartnerSolutionsPage() {
                     href="/services/partner-solutions/newgen-consulting"
                     className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
-                    View Newgen Consulting
+                    View NewGen Consulting
                     <ArrowRight size={12} />
                   </a>
                 </div>
