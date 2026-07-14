@@ -68,24 +68,24 @@ const checklist = [
 const team = [
   {
     name: 'Sinclair Hurtis',
-    role: 'Founder and Principal',
+    role: 'Founder and Principal Consultant',
     bio: '30+ years Fortune 500. Active NDIS coordinator. Leads every engagement.',
     icon: Award,
     href: '/about/sinclair-hurtis',
   },
   {
     name: 'Magdalena Paczkowska',
-    role: 'NDIS Strategic Advisor',
-    bio: 'Support Coordinator at My Ability Services. Deep NDIS operations expertise.',
+    role: 'NDIS Practitioner and Strategic Advisor',
+    bio: 'Senior Support Coordinator and Early Intervention Key Worker at My Ability Services. Deep NDIS operations expertise.',
     icon: Stethoscope,
-    href: '/about/team',
+    href: '/about/magdalena-paczkowska',
   },
   {
     name: 'Raj Purshotham',
-    role: 'Strategy and Growth',
-    bio: 'CMO at Property Automate. Go-to-market and growth strategy advisor.',
+    role: 'Strategy, Growth and International Advisory',
+    bio: 'CMO at Property Automate and VP Marketing at Dynamic Netsoft Technologies. Dubai-based, leading international business development across MEA and Southeast Asia.',
     icon: TrendingUp,
-    href: '/about/team',
+    href: '/about/raj-purshotham',
   },
   {
     name: 'Extended Network',
