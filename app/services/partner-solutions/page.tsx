@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from 'next'
 import {
   Shield, ArrowRight, CheckCircle,
-  Globe, Users, Star, Lock, ExternalLink, Building2, Home
+  Globe, Users, Star, Lock, Building2, Home
 } from 'lucide-react'
 import PageHero from '@/components/corporate/PageHero'
 import CTASection from '@/components/ui/CTASection'
@@ -264,16 +264,14 @@ export default function PartnerSolutionsPage() {
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">Newgen Consulting</h3>
                   <p className="text-[14px] text-slate leading-relaxed mb-5">
-                    Zoho ecosystem specialist working with CollabEdge Solutions to bring healthcare domain expertise to Zoho CRM and operations platforms. For NDIS providers and allied health operators who prefer a packaged software solution over custom builds, CollabEdge provides the healthcare domain knowledge, Newgen provides the Zoho implementation depth.
+                    Zoho ecosystem specialist. For NDIS providers and allied health operators who prefer a packaged software platform over a custom build, CollabEdge brings real NDIS and healthcare domain expertise to the conversation, so the platform reflects what actually happens on the ground.
                   </p>
                   <a
-                    href="https://newgenconsulting.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/services/partner-solutions/newgen-consulting"
                     className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
-                    Visit Newgen Consulting
-                    <ExternalLink size={12} />
+                    View Newgen Consulting
+                    <ArrowRight size={12} />
                   </a>
                 </div>
               </div>

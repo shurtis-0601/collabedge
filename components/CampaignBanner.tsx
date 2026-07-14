@@ -11,6 +11,7 @@ const EXCLUDED_PATHS = [
   '/services/partner-solutions/shield',
   '/services/partner-solutions/dynamic-netsoft',
   '/services/partner-solutions/property-automate',
+  '/services/partner-solutions/newgen-consulting',
   '/campaigns/sil-registration',
   '/campaigns/proptech-data-analytics',
   '/campaigns/allied-health-data-analytics',
