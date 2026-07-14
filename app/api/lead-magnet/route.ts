@@ -1,26 +1,19 @@
-// LAUNCH CHECKLIST:
-// 1. Replace placeholder values in .env.local with
-//    real Bigin credentials (Client ID, Client Secret,
-//    Refresh Token from Zoho API Console)
-// 2. Add the same three variables to Vercel dashboard:
-//    Project Settings > Environment Variables >
-//    Production
-// 3. Verify the Bigin Workflow Rule "Website Lead
-//    Magnet Download - Send Guide" is active
-// 4. Test end to end: submit the form, confirm a new
-//    Contact appears in Bigin with the tag
-//    "website-lead-magnet", and confirm the email
-//    arrives
-
 import { NextRequest, NextResponse } from 'next/server'
 
 const LEAD_NOTIFICATION_ADDRESS = 'leads@collabedgesolutions.com.au'
 
 const TEMPLATE_LABELS: Record<string, string> = {
   'ai-prompts-by-role': '100 NDIS AI Prompts by Role',
-  'funding-tracker-template': 'NDIS Funding Tracker Template',
+  'six-funding-checks': 'Six NDIS Funding Checks Worth Running Every Month',
   'participant-summary-template': 'Participant Funding Summary Template',
   'business-questions-template': 'NDIS Business Questions and Scenarios Template',
+}
+
+const TEMPLATE_TAGS: Record<string, string> = {
+  'ai-prompts-by-role': 'lead-magnet-ai-prompts',
+  'six-funding-checks': 'lead-magnet-funding-check',
+  'participant-summary-template': 'lead-magnet-part-summary',
+  'business-questions-template': 'lead-magnet-business-questions',
 }
 
 function isValidEmail(email: string): boolean {
@@ -52,7 +45,7 @@ async function getBiginAccessToken(): Promise<string | null> {
   }
 }
 
-async function createBiginContact(name: string, email: string, template: string): Promise<void> {
+async function createBiginContact(name: string, email: string, template: string, tag: string): Promise<void> {
   const accessToken = await getBiginAccessToken()
   if (!accessToken) return
 
@@ -66,7 +59,7 @@ async function createBiginContact(name: string, email: string, template: string)
         First_Name: firstName,
         Last_Name: lastName,
         Email: email,
-        Tag: [{ name: 'website-lead-magnet' }],
+        Tag: [{ name: tag }],
         Description: `Downloaded: ${template}`,
       },
     ],
@@ -84,7 +77,7 @@ async function createBiginContact(name: string, email: string, template: string)
     if (!res.ok) {
       console.error('[lead-magnet] Bigin contact creation failed:', res.status, await res.text())
     } else {
-      console.log('[lead-magnet] Bigin contact created successfully for:', email)
+      console.log('[lead-magnet] Bigin contact created successfully for:', email, 'tag:', tag)
     }
   } catch (err) {
     console.error('[lead-magnet] Bigin contact creation error:', err)
@@ -125,18 +118,20 @@ export async function POST(request: NextRequest) {
   }
 
   const templateLabel = TEMPLATE_LABELS[template]
+  const tag = TEMPLATE_TAGS[template]
   const submission = {
     name,
     email,
     template,
     templateLabel,
+    tag,
     submittedAt: new Date().toISOString(),
   }
 
   console.log('[lead-magnet] New download request:', submission)
   console.log(`[lead-magnet] Notification would be sent to: ${LEAD_NOTIFICATION_ADDRESS}`)
 
-  await createBiginContact(name, email, templateLabel)
+  await createBiginContact(name, email, templateLabel, tag)
 
   return NextResponse.json({ success: true })
 }
