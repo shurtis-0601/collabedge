@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       'Stop voice fraud before the call is accepted. $41.8B global problem. Sub-100ms inline defence.',
     url: 'https://collabedgesolutions.com.au/services/partner-solutions/shield',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

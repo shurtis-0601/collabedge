@@ -20,6 +20,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       description: article.description,
       url: `https://collabedgesolutions.com.au/resources/articles/${article.slug}`,
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+      type: 'article',
     },
   }
 }

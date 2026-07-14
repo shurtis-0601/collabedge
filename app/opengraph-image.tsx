@@ -29,19 +29,12 @@ export default function OpengraphImage() {
             display: 'flex',
           }}
         />
-        <div
-          style={{
-            fontSize: 30,
-            fontWeight: 700,
-            letterSpacing: 4,
-            textTransform: 'uppercase',
-            color: '#E6B85C',
-            marginBottom: 20,
-            display: 'flex',
-          }}
-        >
-          CollabEdge Solutions
-        </div>
+        <img
+          src="https://collabedgesolutions.com.au/images/logo.png"
+          width={420}
+          height={108}
+          style={{ marginBottom: 40 }}
+        />
         <div
           style={{
             fontSize: 58,

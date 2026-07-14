@@ -17,6 +17,7 @@ export const metadata: Metadata = {
       'Practical tools built and used in active NDIS practice before being offered to anyone else.',
     url: 'https://collabedgesolutions.com.au/products',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

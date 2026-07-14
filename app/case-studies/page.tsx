@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Documented client outcomes. Real organisations, real results.',
     url: 'https://collabedgesolutions.com.au/case-studies',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

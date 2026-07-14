@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Remove manual effort from day-to-day operations using tools you already own.',
     url: 'https://collabedgesolutions.com.au/services/healthcare-workflow',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

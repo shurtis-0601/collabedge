@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       'Enterprise and SME technology delivered through vetted specialist partners across communication technology, PropTech, and healthcare software.',
     url: 'https://collabedgesolutions.com.au/services/partner-solutions',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

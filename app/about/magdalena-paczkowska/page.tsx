@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       'Frontline NDIS practitioner with 25+ years experience across early childhood, special education, social work and physiotherapy.',
     url: 'https://collabedgesolutions.com.au/about/magdalena-paczkowska',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

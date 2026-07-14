@@ -17,6 +17,7 @@ export const metadata: Metadata = {
       'Digital foundations that earn their keep. Websites, AI agents, CRM automation, and data insights for Australian small businesses.',
     url: 'https://collabedgesolutions.com.au/services/digital',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 

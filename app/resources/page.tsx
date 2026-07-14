@@ -17,6 +17,7 @@ export const metadata: Metadata = {
       'Practical articles and guides for NDIS providers and Australian small businesses, written by an active practitioner.',
     url: 'https://collabedgesolutions.com.au/resources',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
   },
 }
 
