@@ -41,8 +41,8 @@ export default function SiteFooter() {
             <ul className="space-y-2.5 text-[14px]">
               <li><Link href="/services/partner-solutions" className="text-[#D1D5DB] hover:text-white transition-colors">All Partners</Link></li>
               <li><Link href="/services/partner-solutions/shield" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">SHIELD Voice Fraud Prevention</Link></li>
-              <li><Link href="/services/partner-solutions#dynamic-netsoft" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Dynamic Netsoft</Link></li>
-              <li><Link href="/services/partner-solutions#property-automate" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Property Automate</Link></li>
+              <li><Link href="/services/partner-solutions/dynamic-netsoft" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Dynamic Netsoft</Link></li>
+              <li><Link href="/services/partner-solutions/property-automate" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Property Automate</Link></li>
               <li><Link href="/services/partner-solutions#newgen-consulting" className="text-brand-goldDark hover:text-brand-goldDark/80 transition-colors">Newgen Consulting</Link></li>
             </ul>
           </div>

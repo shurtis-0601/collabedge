@@ -9,6 +9,8 @@ const DISMISS_KEY = 'ce_sil_banner_dismissed'
 const EXCLUDED_PATHS = [
   '/services/partner-solutions',
   '/services/partner-solutions/shield',
+  '/services/partner-solutions/dynamic-netsoft',
+  '/services/partner-solutions/property-automate',
   '/campaigns/sil-registration',
   '/campaigns/proptech-data-analytics',
   '/campaigns/allied-health-data-analytics',
