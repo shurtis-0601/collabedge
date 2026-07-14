@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import {
   Shield, ArrowRight, CheckCircle,
   Users, Lock, Zap, Building2
@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'SHIELD Voice Fraud Prevention | CollabEdge Solutions',
   description:
-    'SHIELD by Sekunce, enterprise inline voice fraud prevention. Blocks IRSF, CLI spoofing, deepfake voice, and account takeover in under 100ms per call. CollabEdge Solutions is the Australian and APAC delivery partner.',
+    'SHIELD by Sekunce, carrier-grade inline voice fraud prevention. Blocks IRSF, CLI spoofing, robocall traffic, and account takeover in under 100ms per call, with behavioural signaling analysis flagging suspected synthetic-voice campaigns. CollabEdge Solutions is the Australian and APAC delivery partner.',
   openGraph: {
     title: 'SHIELD Voice Fraud Prevention | CollabEdge Solutions',
     description:
@@ -25,7 +25,7 @@ const schema = {
   '@type': 'Product',
   name: 'SHIELD by Sekunce',
   description:
-    'Enterprise inline voice fraud prevention platform. Scores every call before acceptance, blocking IRSF, CLI spoofing, deepfake voice, robocall, and ATO attempts in under 100 milliseconds.',
+    'Carrier-grade inline voice fraud prevention platform. Scores every call before acceptance, blocking IRSF, CLI spoofing, robocall, and ATO attempts in under 100 milliseconds, with behavioural signaling analysis flagging suspected synthetic-voice campaigns.',
   brand: { '@type': 'Brand', name: 'Sekunce' },
   offers: {
     '@type': 'Offer',
@@ -35,36 +35,37 @@ const schema = {
 }
 
 const globalStats = [
-  { value: '$41.8B', label: 'Global voice fraud 2025 (CFCA)' },
-  { value: '5-15%', label: 'Operator revenue lost annually' },
-  { value: '1,633%', label: 'Deepfake vishing growth Q1 vs Q4 2025' },
+  { value: '$41.8B', label: 'Global telecom fraud 2025 (CFCA)' },
+  { value: '+$2.9B', label: 'Increase in losses 2023→2025 (CFCA)' },
+  { value: '1,633%', label: 'Deepfake vishing growth, Q1 2025 vs Q4 2024' },
 ]
 
 const attackVectors = [
   {
     icon: Lock,
     title: 'IRSF / Premium-Rate Fraud',
-    desc: 'Revenue leaking at $50,000 or more overnight per incident. SHIELD blocks pre-completion before settlement disputes arise.',
+    desc: 'Revenue leaking at $50,000 or more overnight per incident. SHIELD blocks pre-completion, before settlement disputes arise.',
   },
   {
     icon: Shield,
     title: 'CLI Spoofing',
-    desc: 'Bank impersonation causing reputational damage across the operator brand. SHIELD applies STIR/SHAKEN plus reputation scoring.',
+    desc: 'Bank impersonation causing reputational damage across the operator brand. SHIELD applies reputation scoring, with STIR/SHAKEN attestation where carrier support exists.',
   },
   {
     icon: Zap,
     title: 'Robocall and Spam',
-    desc: 'Network capacity consumed by unwanted traffic. SHIELD applies 10 or more layered controls, reducing spam by 85 percent.',
+    desc: 'Network capacity consumed by unwanted traffic. SHIELD applies layered signaling controls to cut spam traffic before it terminates.',
   },
   {
     icon: Users,
-    title: 'Deepfake Voice',
-    desc: 'Targeted vishing of enterprise and retail subscribers. SHIELD uses behavioural patterns and risk scoring to identify synthetic voice.',
+    title: 'Deepfake Voice Campaigns',
+    desc: 'Targeted vishing of enterprise and retail subscribers. Today, SHIELD identifies suspected synthetic-voice campaigns through signaling-layer behavioural patterns and risk scoring.',
+    roadmapNote: 'Roadmap Q3–Q4 2026: media-path audio analysis',
   },
   {
     icon: Building2,
     title: 'Account Takeover via Voice',
-    desc: '61 percent of account takeovers begin on the phone. SHIELD applies risk score and three-lane routing before the call reaches an agent.',
+    desc: 'A majority of account takeovers begin with a phone call. SHIELD applies its risk score and three-lane routing before the call ever reaches an agent.',
   },
 ]
 
@@ -81,10 +82,10 @@ const finServResult = [
 ]
 
 const capabilities = [
-  'Inline B2BUA in the SIP transport path',
-  'STIR/SHAKEN attestation plus carrier origin verification',
-  'Risk score 0 to 1000 in X-Shield-Score SIP header',
-  '325 or more calls per second per node, 25 million or more calls per day',
+  'Carrier-grade inline B2BUA in the SIP transport path',
+  'Carrier origin verification, with STIR/SHAKEN attestation where carrier support exists',
+  'Risk score 0 to 1000 delivered in the X-Shield-Score SIP header',
+  '510 calls per second per node (benchmarked), 25 million or more calls per day in production',
 ]
 
 const sectors = [
@@ -102,11 +103,11 @@ const sectors = [
   },
   {
     name: 'Government',
-    desc: 'STIR/SHAKEN compliance posture. Durable multi-year contracts.',
+    desc: 'Caller-authentication compliance posture. Durable multi-year contracts.',
   },
   {
     name: 'Retail and E-commerce',
-    desc: 'Loyalty and brand-line impersonation via deepfake, growing faster than current budgets.',
+    desc: 'Loyalty and brand-line impersonation growing faster than current budgets.',
   },
 ]
 
@@ -135,7 +136,7 @@ export default function ShieldPage() {
       <PageHero
         eyebrow="Sekunce SHIELD"
         h1="Stop the call before it costs you."
-        answerBlock="SHIELD is an enterprise inline voice fraud prevention platform that scores every call before it is accepted, blocking IRSF, CLI spoofing, deepfake voice attacks, robocall traffic, and account takeover attempts in under 100 milliseconds. CollabEdge Solutions delivers SHIELD across Australia and Asia Pacific."
+        answerBlock="SHIELD is a carrier-grade inline voice fraud prevention platform that scores every call before it is accepted, blocking IRSF, CLI spoofing, robocall traffic, and account takeover attempts in under 100 milliseconds. Behavioural signaling analysis flags suspected synthetic-voice (deepfake) campaigns in real time. CollabEdge Solutions delivers SHIELD across Australia and Asia Pacific."
       />
 
       {/* Problem section */}
@@ -147,7 +148,7 @@ export default function ShieldPage() {
               Why voice fraud is the fastest-growing threat operators face
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              Global telecom voice fraud reached $41.8 billion in 2025 and is accelerating. The average operator loses 5 to 15 percent of revenue annually to fraud, with deepfake vishing attacks growing 1,633 percent in Q1 2025 versus Q4 2024. The voice channel is the largest, fastest-growing, and least-defended revenue surface in modern telecoms.
+              Global telecom fraud reached $41.8 billion in 2025 (CFCA Global Fraud Loss Survey), up nearly $3 billion from 2023 as generative AI makes voice and text scams harder to detect. The voice channel is the largest, fastest-growing, and least-defended revenue surface in modern telecoms.
             </p>
           </FadeIn>
 
@@ -187,6 +188,11 @@ export default function ShieldPage() {
                   <div>
                     <h3 className="text-[18px] font-bold text-white mb-1">{vector.title}</h3>
                     <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{vector.desc}</p>
+                    {vector.roadmapNote && (
+                      <p className="text-[12.5px] text-brand-goldDark/80 italic leading-relaxed mt-2">
+                        {vector.roadmapNote}
+                      </p>
+                    )}
                   </div>
                 </div>
               </FadeIn>
@@ -325,6 +331,15 @@ export default function ShieldPage() {
               </a>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Roadmap disclosure */}
+      <section className="bg-white py-6 px-5 sm:px-10 border-t border-border">
+        <div className="max-w-[900px] mx-auto">
+          <p className="text-[12.5px] text-slate leading-relaxed">
+            SHIELD is developed by Sekunce. Media-path audio analysis capabilities are on the product roadmap for Q3–Q4 2026; all detection described in the present tense operates at the signaling layer today.
+          </p>
         </div>
       </section>
 
