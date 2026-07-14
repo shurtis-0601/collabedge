@@ -14,11 +14,11 @@ import AnimatedCounter from '@/components/ui/AnimatedCounter'
 export const metadata: Metadata = {
   title: 'About CollabEdge Solutions | Melbourne Consulting Firm',
   description:
-    'CollabEdge Solutions is a Melbourne-based operational consulting firm founded by Sinclair Hurtis. 30+ years Fortune 500 experience. NDIS compliance, automation, and enterprise technology for Australian businesses.',
+    'CollabEdge Solutions is a Melbourne-based operational consulting firm founded by Sinclair Hurtis. 30+ years Fortune 500 experience. NDIS compliance, automation, and enterprise technology for Australian and Asia Pacific businesses.',
   openGraph: {
     title: 'About CollabEdge Solutions',
     description:
-      'Practitioner-led consulting for NDIS providers and Australian enterprises. We start with what you already have.',
+      'Practitioner-led consulting for Australian NDIS providers and Asia Pacific enterprises. We start with what you already have.',
     url: 'https://collabedgesolutions.com.au/about',
   },
 }
@@ -29,7 +29,7 @@ const schema = {
   name: 'About CollabEdge Solutions',
   url: 'https://collabedgesolutions.com.au/about',
   description:
-    'CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm founded by Sinclair Hurtis. We simplify, streamline, automate and help Australian businesses grow.',
+    'CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm founded by Sinclair Hurtis. We simplify, streamline, automate and help Australian and Asia Pacific businesses grow.',
   mainEntity: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
@@ -108,19 +108,19 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         h1="Built by a practitioner. Tested in the field."
-        answerBlock="CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm. We work with NDIS providers, healthcare operators, and Australian enterprises to simplify operations, automate workflows, and implement technology that actually fits."
+        answerBlock="CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm. We work with NDIS providers, healthcare operators, and Asia Pacific enterprises to simplify operations, automate workflows, and implement technology that actually fits."
       />
 
-      {/* 3. AEO — Who is CollabEdge Solutions? */}
+      {/* 3. Company overview */}
       <section className="bg-white py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Who is CollabEdge Solutions?
+              An Operational Consulting and Technology Firm
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
-              CollabEdge Solutions is an Australian-based operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions.
+              CollabEdge Solutions is an Australian and Asia Pacific operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions.
             </p>
           </FadeIn>
 
@@ -196,7 +196,7 @@ export default function AboutPage() {
               Our Services
             </h2>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
-              CollabEdge Solutions delivers operational consulting, NDIS compliance support, workflow automation, AI advisory, digital services, and enterprise technology implementation. We serve NDIS providers, allied health operators, and Australian enterprises across two service pillars: healthcare and SME solutions, and enterprise technology partnerships.
+              CollabEdge Solutions delivers operational consulting, NDIS compliance support, workflow automation, AI advisory, digital services, and enterprise technology implementation. We serve NDIS providers, allied health operators, and Asia Pacific enterprises across two service pillars: healthcare and SME solutions, and enterprise technology partnerships.
             </p>
             <a
               href="/services"
