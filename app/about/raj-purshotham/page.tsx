@@ -86,7 +86,6 @@ const bioStats = [
 ]
 
 export default function RajPurshothamPage() {
-  /* TODO: Raj to review and approve bio content */
   return (
     <>
       <script
