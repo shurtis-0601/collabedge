@@ -6,14 +6,12 @@ const TEMPLATE_LABELS: Record<string, string> = {
   'ai-prompts-by-role': '100 NDIS AI Prompts by Role',
   'six-funding-checks': 'Six NDIS Funding Checks Worth Running Every Month',
   'participant-summary-template': 'Participant Funding Summary Template',
-  'business-questions-template': 'NDIS Business Questions and Scenarios Template',
 }
 
 const TEMPLATE_TAGS: Record<string, string> = {
   'ai-prompts-by-role': 'lead-magnet-ai-prompts',
   'six-funding-checks': 'lead-magnet-funding-check',
   'participant-summary-template': 'lead-magnet-part-summary',
-  'business-questions-template': 'lead-magnet-business-questions',
 }
 
 function isValidEmail(email: string): boolean {
