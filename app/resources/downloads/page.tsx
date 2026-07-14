@@ -59,8 +59,11 @@ export default function DownloadsPage() {
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
               Want More Like This?
             </h2>
-            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8 max-w-[520px] mx-auto">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-3 max-w-[560px] mx-auto">
               These templates sit alongside our articles and guides on NDIS productivity, compliance, and data.
+            </p>
+            <p className="text-[14px] text-brand-goldDark/80 leading-relaxed mb-8 max-w-[560px] mx-auto">
+              This page is growing. Bookmark it and check back, more practical templates are planned over the next quarter.
             </p>
             <a href="/resources" className="btn-gold">Explore Resources</a>
           </FadeIn>

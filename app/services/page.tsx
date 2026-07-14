@@ -50,7 +50,7 @@ const healthcareServices = [
     icon: Shield,
     title: 'NDIS Compliance and Audit',
     desc: 'Compliance documentation, audit readiness, and governance frameworks built to withstand scrutiny.',
-    price: 'From $3,500',
+    price: 'From $2,500',
     href: '/services/ndis-compliance-audit',
   },
   {

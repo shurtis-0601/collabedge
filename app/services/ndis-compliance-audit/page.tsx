@@ -12,7 +12,7 @@ import FAQAccordion from '@/components/sections/FAQAccordion'
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Audit Services | CollabEdge Solutions',
   description:
-    'NDIS compliance consulting, audit readiness, and governance frameworks for Australian providers. Transparent pricing from $3,500. Senior-led, practitioner-tested.',
+    'NDIS compliance consulting, audit readiness, and governance frameworks for Australian providers. Transparent pricing from $2,500. Senior-led, practitioner-tested.',
   openGraph: {
     title: 'NDIS Compliance and Audit | CollabEdge Solutions',
     description:
@@ -34,9 +34,9 @@ const serviceSchema = {
   description:
     'NDIS compliance documentation, audit readiness, and governance frameworks for Australian NDIS providers.',
   offers: [
-    { '@type': 'Offer', name: 'Tier 1 — Foundation', priceRange: '$3500-$5000', priceCurrency: 'AUD' },
-    { '@type': 'Offer', name: 'Tier 2 — Comprehensive', priceRange: '$6000-$8000', priceCurrency: 'AUD' },
-    { '@type': 'Offer', name: 'Tier 3 — Enterprise', priceRange: '$10000-$15000', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 1 — Foundation', priceRange: '$2500-$4000', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 2 — Comprehensive', priceRange: '$4500-$6500', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 3 — Enterprise', priceRange: '$8000-$12000', priceCurrency: 'AUD' },
   ],
 }
 
@@ -169,7 +169,7 @@ export default function NDISComplianceAuditPage() {
       <PageHero
         eyebrow="NDIS Compliance and Audit"
         h1="Compliance that holds up under review."
-        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers, structured, practitioner-tested, and built to withstand NDIS Commission scrutiny. Pricing starts from $3,500 with three transparent tiers based on scope."
+        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers, structured, practitioner-tested, and built to withstand NDIS Commission scrutiny. Pricing starts from $2,500 with three transparent tiers based on scope."
       />
 
       {/* What does NDIS compliance support include? */}
@@ -238,8 +238,8 @@ export default function NDISComplianceAuditPage() {
                   Tier 1: Foundation
                 </span>
                 <div className="mb-5">
-                  <span className="text-[26px] font-bold text-white">$3,500</span>
-                  <span className="text-[14px] text-[#9CA3AF]"> – $5,000</span>
+                  <span className="text-[26px] font-bold text-white">$2,500</span>
+                  <span className="text-[14px] text-[#9CA3AF]"> – $4,000</span>
                 </div>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For sole traders and small providers needing core compliance documentation in place.
@@ -271,8 +271,8 @@ export default function NDISComplianceAuditPage() {
                   Tier 2: Comprehensive
                 </span>
                 <div className="mb-5">
-                  <span className="text-[26px] font-bold text-white">$6,000</span>
-                  <span className="text-[14px] text-[#D1D5DB]"> – $8,000</span>
+                  <span className="text-[26px] font-bold text-white">$4,500</span>
+                  <span className="text-[14px] text-[#D1D5DB]"> – $6,500</span>
                 </div>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For established providers preparing for certification or surveillance audit.
@@ -301,8 +301,8 @@ export default function NDISComplianceAuditPage() {
                   Tier 3: Enterprise
                 </span>
                 <div className="mb-5">
-                  <span className="text-[26px] font-bold text-white">$10,000</span>
-                  <span className="text-[14px] text-[#9CA3AF]"> – $15,000</span>
+                  <span className="text-[26px] font-bold text-white">$8,000</span>
+                  <span className="text-[14px] text-[#9CA3AF]"> – $12,000</span>
                 </div>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
                   For larger providers or multi-site organisations with complex compliance needs.
