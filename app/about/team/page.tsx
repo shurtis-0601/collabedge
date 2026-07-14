@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Senior-led. Practitioner-tested. Meet the people behind every CollabEdge engagement.',
     url: 'https://collabedgesolutions.com.au/about/team',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

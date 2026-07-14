@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     title: 'SIL Registration Support | CollabEdge Solutions',
     description: 'Get SIL registered with senior-led support. $2,000. Limited spots.',
     url: 'https://collabedgesolutions.com.au/services/ndis-compliance-audit/sil-registration',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

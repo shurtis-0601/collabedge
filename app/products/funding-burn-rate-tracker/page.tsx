@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description:
       'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local.',
     url: 'https://collabedgesolutions.com.au/products/funding-burn-rate-tracker',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

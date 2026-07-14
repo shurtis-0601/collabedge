@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       'Automated filing and expiry tracking for the compliance documents every NDIS provider must keep current.',
     url: 'https://collabedgesolutions.com.au/products/employee-onboarding-automation',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

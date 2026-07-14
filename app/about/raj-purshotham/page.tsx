@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Enterprise technology and go-to-market specialist with deep experience across MEA, India and Asia Pacific.',
     url: 'https://collabedgesolutions.com.au/about/raj-purshotham',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

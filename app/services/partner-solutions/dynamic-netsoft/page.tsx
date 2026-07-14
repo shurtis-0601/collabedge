@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Microsoft Dynamics 365 ERP, CRM, and industry-specific solutions, coordinated by CollabEdge across Australia and Asia Pacific.',
     url: 'https://collabedgesolutions.com.au/services/partner-solutions/dynamic-netsoft',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

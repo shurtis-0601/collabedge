@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       'Free practical templates for NDIS providers, built from real practice.',
     url: 'https://collabedgesolutions.com.au/resources/downloads',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

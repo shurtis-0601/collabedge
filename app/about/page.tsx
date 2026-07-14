@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description:
       'Practitioner-led consulting for Australian NDIS providers and Asia Pacific enterprises. We start with what you already have.',
     url: 'https://collabedgesolutions.com.au/about',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'AI advice without the hype. Grounded recommendations with cost benefit numbers for NDIS providers and Australian small businesses.',
     url: 'https://collabedgesolutions.com.au/services/ai-advisory',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

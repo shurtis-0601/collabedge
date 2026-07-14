@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description:
       'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',
     url: 'https://collabedgesolutions.com.au/contact',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

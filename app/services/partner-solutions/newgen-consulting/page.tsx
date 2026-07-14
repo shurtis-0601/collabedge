@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'For NDIS and healthcare operators who prefer a packaged Zoho platform over a custom build, with CollabEdge bringing domain expertise to the table.',
     url: 'https://collabedgesolutions.com.au/services/partner-solutions/newgen-consulting',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

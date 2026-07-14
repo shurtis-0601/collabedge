@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'From overwhelmed to structured. A real NDIS provider transformation, documented in full.',
     url: 'https://collabedgesolutions.com.au/case-studies/enhance-ability-services',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

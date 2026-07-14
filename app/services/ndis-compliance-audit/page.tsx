@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description:
       'Compliance documentation and audit readiness that holds up under NDIS Commission review.',
     url: 'https://collabedgesolutions.com.au/services/ndis-compliance-audit',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

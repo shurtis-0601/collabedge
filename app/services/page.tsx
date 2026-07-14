@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description:
       'Two service pillars. One senior-led consultant. Real outcomes for NDIS providers and Australian enterprises.',
     url: 'https://collabedgesolutions.com.au/services',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

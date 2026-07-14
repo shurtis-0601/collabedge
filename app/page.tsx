@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Fortune 500 experience applied to Australian NDIS providers, healthcare organisations, and enterprises across Australia and Asia Pacific.',
     url: 'https://collabedgesolutions.com.au',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

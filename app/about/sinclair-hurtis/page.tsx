@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       'Practitioner-led consulting built on 30+ years of Fortune 500 and enterprise experience across Australia and Asia Pacific.',
     url: 'https://collabedgesolutions.com.au/about/sinclair-hurtis',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 

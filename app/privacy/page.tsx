@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     description:
       'Privacy Policy for CollabEdge Solutions, ABN 38 557 169 242. How we collect, use and protect your personal information.',
     url: 'https://collabedgesolutions.com.au/privacy',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }
 
