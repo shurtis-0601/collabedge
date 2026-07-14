@@ -203,13 +203,11 @@ export default function PartnerSolutionsPage() {
                     Full-suite Microsoft Dynamics 365 Finance and Operations ISV, certified on Microsoft AppSource, focused on real estate and construction. Enterprise-grade property and contract lifecycle management for organisations on the Microsoft stack.
                   </p>
                   <a
-                    href="https://dnetsoft.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/services/partner-solutions/dynamic-netsoft"
                     className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
-                    Visit Dynamic Netsoft
-                    <ExternalLink size={12} />
+                    View Dynamic Netsoft
+                    <ArrowRight size={12} />
                   </a>
                 </div>
               </div>
@@ -238,13 +236,11 @@ export default function PartnerSolutionsPage() {
                     Property operations technology for residential, commercial, and facilities management. Purpose-built platforms that digitise property workflows end to end.
                   </p>
                   <a
-                    href="https://propertyautomate.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/services/partner-solutions/property-automate"
                     className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark hover:gap-3 transition-all duration-200"
                   >
-                    Visit Property Automate
-                    <ExternalLink size={12} />
+                    View Property Automate
+                    <ArrowRight size={12} />
                   </a>
                 </div>
               </div>
