@@ -90,7 +90,7 @@ export default function SiteFooter() {
       {/* Copyright bar */}
       <div className="border-t border-white/5 py-5 text-center">
         <p className="text-[14px] text-[#9CA3AF]">
-          © {new Date().getFullYear()} CollabEdge Solutions Pty Ltd. All rights reserved. ABN 38 557 169 242.
+          © {new Date().getFullYear()} CollabEdge Solutions. All rights reserved. ABN 38 557 169 242.
         </p>
       </div>
     </footer>
