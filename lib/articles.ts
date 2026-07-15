@@ -263,6 +263,11 @@ export function getAllArticles(): Article[] {
   return articles.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
 }
 
+export function getPublishedArticles(): Article[] {
+  const today = new Date().toISOString().slice(0, 10)
+  return getAllArticles().filter((a) => a.date <= today)
+}
+
 export function getArticleBySlug(slug: string): Article | undefined {
   return getAllArticles().find((a) => a.slug === slug)
 }

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { getAllArticles } from '@/lib/articles'
+import { getPublishedArticles } from '@/lib/articles'
 
 const BASE_URL = 'https://www.collabedgesolutions.com.au'
 
@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route.priority,
   }))
 
-  const articleEntries: MetadataRoute.Sitemap = getAllArticles().map((article) => ({
+  const articleEntries: MetadataRoute.Sitemap = getPublishedArticles().map((article) => ({
     url: `${BASE_URL}/resources/articles/${article.slug}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,

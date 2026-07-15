@@ -5,7 +5,9 @@ import { ArrowRight } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
-import { getAllArticles, formatDate, SERIES, Article } from '@/lib/articles'
+import { getPublishedArticles, formatDate, SERIES, Article } from '@/lib/articles'
+
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'Resources | CollabEdge Solutions',
@@ -65,7 +67,7 @@ function ArticleCard({ article, dark }: { article: Article; dark?: boolean }) {
 }
 
 export default function ResourcesPage() {
-  const articles = getAllArticles()
+  const articles = getPublishedArticles()
   const seriesArticles = SERIES
     .map((s) => articles.find((a) => a.slug === s.slug))
     .filter((a): a is Article => a !== undefined)

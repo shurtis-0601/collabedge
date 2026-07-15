@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft } from 'lucide-react'
-import { getAllArticles, getArticleBySlug, formatDate, SERIES, Block } from '@/lib/articles'
+import { getPublishedArticles, getArticleBySlug, formatDate, SERIES, Block } from '@/lib/articles'
+
+export const revalidate = 3600
 
 export function generateStaticParams() {
-  return getAllArticles().map((a) => ({ slug: a.slug }))
+  return getPublishedArticles().map((a) => ({ slug: a.slug }))
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -150,6 +152,8 @@ function ArticleBlock({ block, slug }: { block: Block; slug: string }) {
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticleBySlug(params.slug)
   if (!article) notFound()
+  const today = new Date().toISOString().slice(0, 10)
+  if (article.date > today) notFound()
 
   return (
     <article className="bg-white">
