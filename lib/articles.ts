@@ -45,6 +45,10 @@ const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   '/images/blog/ndis-compliance-calendar-weekly-rhythm.webp': { width: 1672, height: 941 },
   '/images/blog/ndis-microsoft-365-workflow-tools.webp': { width: 1672, height: 941 },
   '/images/blog/ndis-participant-data-deidentification-safe-ai.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-ai-safe-vs-risky-documentation-hero.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-shadow-ai-risk-staff-chatgpt.webp': { width: 1500, height: 844 },
+  '/images/blog/ndis-safe-ai-workflow-deidentification-steps.webp': { width: 1500, height: 844 },
+  '/images/blog/ndis-provider-ai-policy-document-2026.webp': { width: 1500, height: 844 },
 }
 
 export const SERIES = [
@@ -71,7 +75,7 @@ export const SERIES = [
   {
     position: 5,
     title: 'AI and NDIS Documentation: What Is Safe, What Is Risky, and What Actually Works',
-    slug: null,
+    slug: 'ndis-ai-documentation-safe-risky-what-works-2026',
   },
 ] as const
 

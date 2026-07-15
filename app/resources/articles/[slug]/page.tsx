@@ -79,26 +79,17 @@ function SeriesNav({ currentSlug }: { currentSlug: string }) {
             <span className="text-[14px] font-bold text-brand-goldLight flex-shrink-0 w-5">
               {item.position}.
             </span>
-            {item.slug ? (
-              item.slug === currentSlug ? (
-                <span className="text-[16px] font-semibold text-text-dark">
-                  {item.title} <span className="text-[14px] text-slate font-normal">(this article)</span>
-                </span>
-              ) : (
-                <Link
-                  href={`/resources/articles/${item.slug}`}
-                  className="text-[16px] font-semibold text-brand-goldLight hover:underline"
-                >
-                  {item.title}
-                </Link>
-              )
-            ) : (
-              <span className="text-[16px] text-slate">
-                {item.title}{' '}
-                <span className="text-[14px] font-semibold uppercase tracking-wide text-slate-light">
-                  Coming Soon
-                </span>
+            {item.slug === currentSlug ? (
+              <span className="text-[16px] font-semibold text-text-dark">
+                {item.title} <span className="text-[14px] text-slate font-normal">(this article)</span>
               </span>
+            ) : (
+              <Link
+                href={`/resources/articles/${item.slug}`}
+                className="text-[16px] font-semibold text-brand-goldLight hover:underline"
+              >
+                {item.title}
+              </Link>
             )}
           </li>
         ))}

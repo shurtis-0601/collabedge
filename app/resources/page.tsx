@@ -66,10 +66,9 @@ function ArticleCard({ article, dark }: { article: Article; dark?: boolean }) {
 
 export default function ResourcesPage() {
   const articles = getAllArticles()
-  const seriesArticles = SERIES.filter((s) => s.slug !== null)
+  const seriesArticles = SERIES
     .map((s) => articles.find((a) => a.slug === s.slug))
     .filter((a): a is Article => a !== undefined)
-  const comingSoon = SERIES.filter((s) => s.slug === null)
 
   return (
     <>
@@ -109,18 +108,6 @@ export default function ResourcesPage() {
                 <ArticleCard article={article} />
               </FadeIn>
             ))}
-            <FadeIn variant="fadeUp" delay={seriesArticles.length * 80}>
-              <div className="bg-white/60 border border-dashed border-border rounded-xl p-6 h-full flex flex-col justify-center">
-                <span className="text-[13px] font-semibold tracking-[.12em] uppercase text-slate-light mb-4 block">
-                  Coming Soon
-                </span>
-                {comingSoon.map((item) => (
-                  <p key={item.position} className="text-[16px] font-semibold text-slate mb-3 leading-snug">
-                    {item.position}. {item.title}
-                  </p>
-                ))}
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>
