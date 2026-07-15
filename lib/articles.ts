@@ -41,6 +41,10 @@ const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   '/images/blog/ndis-utilisation-rate-dashboard.webp': { width: 1200, height: 679 },
   '/images/blog/ndis-compliance-dashboard.webp': { width: 1200, height: 798 },
   '/images/blog/ndis-business-questions-template-snippet.webp': { width: 1200, height: 254 },
+  '/images/blog/ndis-provider-productivity-wins-2026-hero.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-compliance-calendar-weekly-rhythm.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-microsoft-365-workflow-tools.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-participant-data-deidentification-safe-ai.webp': { width: 1672, height: 941 },
 }
 
 export const SERIES = [
@@ -62,7 +66,7 @@ export const SERIES = [
   {
     position: 4,
     title: 'Seven Practical Productivity Wins for NDIS Providers',
-    slug: null,
+    slug: 'ndis-provider-productivity-wins-2026',
   },
   {
     position: 5,
