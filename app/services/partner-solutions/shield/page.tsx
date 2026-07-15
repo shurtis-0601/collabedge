@@ -155,10 +155,10 @@ export default function ShieldPage() {
           </FadeIn>
 
           {/* Stat strip */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-stretch">
             {globalStats.map((stat, i) => (
-              <FadeIn key={i} variant="fadeUp" delay={i * 80}>
-                <div className="bg-gold rounded-xl p-6 text-center">
+              <FadeIn key={i} variant="fadeUp" delay={i * 80} className="h-full">
+                <div className="bg-gold rounded-xl p-6 text-center h-full flex flex-col justify-center">
                   <span className="text-[28px] font-bold text-navy block mb-1">{stat.value}</span>
                   <span className="text-[14px] text-navy/70 leading-snug">{stat.label}</span>
                 </div>
