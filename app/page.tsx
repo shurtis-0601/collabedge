@@ -61,8 +61,8 @@ const differentiators = [
   },
   {
     icon: TrendingUp,
-    title: 'Fortune 500 Depth, Applied at Any Scale',
-    body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health. That depth is applied directly to Australian healthcare providers and growing businesses, and delivered through specialist technology partners for enterprise transformation across Asia Pacific.',
+    title: 'Fortune 500 Experience, Applied at Any Scale',
+    body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health. That experience is applied directly by our team for Australian healthcare providers and growing businesses, and through specialist technology partners for enterprise transformation across Asia Pacific.',
   },
 ]
 
