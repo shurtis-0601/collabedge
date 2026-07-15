@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'NDIS Compliance and Audit | CollabEdge Solutions',
     description:
       'Compliance documentation and audit readiness that holds up under NDIS Commission review.',
-    url: 'https://collabedgesolutions.com.au/services/ndis-compliance-audit',
+    url: 'https://www.collabedgesolutions.com.au/services/ndis-compliance-audit',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -30,7 +30,7 @@ const serviceSchema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   description:

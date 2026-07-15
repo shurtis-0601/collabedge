@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Sinclair Hurtis — Founder and Principal Consultant',
     description:
       'Practitioner-led consulting built on 30+ years of Fortune 500 and enterprise experience across Australia and Asia Pacific.',
-    url: 'https://collabedgesolutions.com.au/about/sinclair-hurtis',
+    url: 'https://www.collabedgesolutions.com.au/about/sinclair-hurtis',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -32,9 +32,9 @@ const schema = {
   worksFor: {
     '@type': 'Organization',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
-  url: 'https://collabedgesolutions.com.au/about/sinclair-hurtis',
+  url: 'https://www.collabedgesolutions.com.au/about/sinclair-hurtis',
   description:
     'Founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator and Sessional Academic, Faculty of Information Technology, Monash University.',
   alumniOf: [

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'NDIS Funding and Burn Rate Tracker | CollabEdge Solutions',
     description:
       'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local.',
-    url: 'https://collabedgesolutions.com.au/products/funding-burn-rate-tracker',
+    url: 'https://www.collabedgesolutions.com.au/products/funding-burn-rate-tracker',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

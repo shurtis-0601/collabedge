@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Property Automate | CollabEdge Solutions',
     description:
       'Property operations technology for residential, commercial, and facilities management, coordinated by CollabEdge across Australia and Asia Pacific.',
-    url: 'https://collabedgesolutions.com.au/services/partner-solutions/property-automate',
+    url: 'https://www.collabedgesolutions.com.au/services/partner-solutions/property-automate',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

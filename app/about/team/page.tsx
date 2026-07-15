@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Our Team | CollabEdge Solutions',
     description:
       'Senior-led. Practitioner-tested. Meet the people behind every CollabEdge engagement.',
-    url: 'https://collabedgesolutions.com.au/about/team',
+    url: 'https://www.collabedgesolutions.com.au/about/team',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -26,7 +26,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'Our Team | CollabEdge Solutions',
-  url: 'https://collabedgesolutions.com.au/about/team',
+  url: 'https://www.collabedgesolutions.com.au/about/team',
   description:
     'The CollabEdge Solutions team includes founder Sinclair Hurtis, NDIS advisor Magdalena Paczkowska, and strategy advisor Raj Purshotham.',
   mainEntity: {
@@ -39,7 +39,7 @@ const schema = {
           '@type': 'Person',
           name: 'Sinclair Hurtis',
           jobTitle: 'Founder and Principal Consultant',
-          url: 'https://collabedgesolutions.com.au/about/sinclair-hurtis',
+          url: 'https://www.collabedgesolutions.com.au/about/sinclair-hurtis',
         },
         roleName: 'Founder and Principal Consultant',
       },

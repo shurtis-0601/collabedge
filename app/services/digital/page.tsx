@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Digital Services for Small Business | CollabEdge Solutions',
     description:
       'Digital foundations that earn their keep. Websites, AI agents, CRM automation, and data insights for Australian small businesses.',
-    url: 'https://collabedgesolutions.com.au/services/digital',
+    url: 'https://www.collabedgesolutions.com.au/services/digital',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -28,7 +28,7 @@ const serviceSchema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   description:

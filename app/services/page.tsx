@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Services | CollabEdge Solutions',
     description:
       'Two service pillars. One senior-led consultant. Real outcomes for NDIS providers and Australian enterprises.',
-    url: 'https://collabedgesolutions.com.au/services',
+    url: 'https://www.collabedgesolutions.com.au/services',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -30,7 +30,7 @@ const schema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   hasOfferCatalog: {

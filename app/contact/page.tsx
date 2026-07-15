@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | CollabEdge Solutions',
     description:
       'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',
-    url: 'https://collabedgesolutions.com.au/contact',
+    url: 'https://www.collabedgesolutions.com.au/contact',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -24,7 +24,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact CollabEdge Solutions',
-  url: 'https://collabedgesolutions.com.au/contact',
+  url: 'https://www.collabedgesolutions.com.au/contact',
   mainEntity: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',

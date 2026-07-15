@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title: article.title,
       description: article.description,
-      url: `https://collabedgesolutions.com.au/resources/articles/${article.slug}`,
+      url: `https://www.collabedgesolutions.com.au/resources/articles/${article.slug}`,
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
       type: 'article',
     },

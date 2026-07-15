@@ -16,8 +16,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "CollabEdge Solutions",
-  url: "https://collabedgesolutions.com.au",
-  logo: "https://collabedgesolutions.com.au/images/logo.png",
+  url: "https://www.collabedgesolutions.com.au",
+  logo: "https://www.collabedgesolutions.com.au/images/logo.png",
   description:
     "NDIS compliance, workflow automation, and enterprise technology consulting. Melbourne, Australia.",
   address: {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   title: "CollabEdge Solutions — NDIS Compliance & Enterprise Technology",
   description:
     "NDIS compliance, workflow automation, and enterprise technology consulting for Australian healthcare providers and businesses. Melbourne-based, Australian-owned.",
-  metadataBase: new URL("https://collabedgesolutions.com.au"),
+  metadataBase: new URL("https://www.collabedgesolutions.com.au"),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

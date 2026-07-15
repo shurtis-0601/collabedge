@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Document Governance | CollabEdge Solutions',
     description:
       'Stop losing documents before audits. CollabEdge builds staff-friendly, audit-ready document systems for NDIS providers.',
-    url: 'https://collabedgesolutions.com.au/services/document-governance',
+    url: 'https://www.collabedgesolutions.com.au/services/document-governance',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -31,7 +31,7 @@ const serviceSchema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   description:

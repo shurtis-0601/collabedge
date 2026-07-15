@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'About CollabEdge Solutions',
     description:
       'Practitioner-led consulting for Australian NDIS providers and Asia Pacific enterprises. We start with what you already have.',
-    url: 'https://collabedgesolutions.com.au/about',
+    url: 'https://www.collabedgesolutions.com.au/about',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -29,7 +29,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'About CollabEdge Solutions',
-  url: 'https://collabedgesolutions.com.au/about',
+  url: 'https://www.collabedgesolutions.com.au/about',
   description:
     'CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm founded by Sinclair Hurtis. We simplify, streamline, automate and help Australian and Asia Pacific businesses grow.',
   mainEntity: {
@@ -42,7 +42,7 @@ const schema = {
       alumniOf: ['Citibank', 'Singtel', 'NAB', 'Victorian Department of Health'],
     },
     areaServed: 'AU',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
 }
 

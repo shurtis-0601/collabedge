@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Healthcare Workflow Automation | CollabEdge Solutions',
     description: 'Remove manual effort from day-to-day operations using tools you already own.',
-    url: 'https://collabedgesolutions.com.au/services/healthcare-workflow',
+    url: 'https://www.collabedgesolutions.com.au/services/healthcare-workflow',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -29,7 +29,7 @@ const serviceSchema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   description: 'Workflow automation consulting for NDIS providers and healthcare operators, built on existing Microsoft 365 and Google Workspace infrastructure.',

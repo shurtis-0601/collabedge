@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Book a Free Consultation | CollabEdge Solutions',
     description: 'Book a free 30-minute consultation with CollabEdge Solutions. Senior-led, no obligation.',
-    url: 'https://collabedgesolutions.com.au/appt',
+    url: 'https://www.collabedgesolutions.com.au/appt',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

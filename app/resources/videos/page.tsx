@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Video Walkthroughs | CollabEdge Solutions',
     description:
       'Real walkthroughs of the tools we use, recorded from real practice.',
-    url: 'https://collabedgesolutions.com.au/resources/videos',
+    url: 'https://www.collabedgesolutions.com.au/resources/videos',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

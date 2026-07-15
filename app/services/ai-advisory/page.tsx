@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'AI Advisory | CollabEdge Solutions',
     description:
       'AI advice without the hype. Grounded recommendations with cost benefit numbers for NDIS providers and Australian small businesses.',
-    url: 'https://collabedgesolutions.com.au/services/ai-advisory',
+    url: 'https://www.collabedgesolutions.com.au/services/ai-advisory',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -29,7 +29,7 @@ const serviceSchema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: 'AU',
   description:

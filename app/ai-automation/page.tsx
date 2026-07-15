@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'AI and Automation Roadmap | CollabEdge Solutions',
     description:
       'A working roadmap of what CollabEdge is building now, next, and exploring, across NDIS, healthcare, and growth automation.',
-    url: 'https://collabedgesolutions.com.au/ai-automation',
+    url: 'https://www.collabedgesolutions.com.au/ai-automation',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

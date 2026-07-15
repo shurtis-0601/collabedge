@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://collabedgesolutions.com.au'
+const BASE_URL = 'https://www.collabedgesolutions.com.au'
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Terms of Use | CollabEdge Solutions',
     description: 'Terms of Use for the CollabEdge Solutions website, collabedgesolutions.com.au',
-    url: 'https://collabedgesolutions.com.au/terms',
+    url: 'https://www.collabedgesolutions.com.au/terms',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

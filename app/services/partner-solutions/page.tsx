@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Partner Solutions | CollabEdge Solutions',
     description:
       'Enterprise and SME technology delivered through vetted specialist partners across communication technology, PropTech, and healthcare software.',
-    url: 'https://collabedgesolutions.com.au/services/partner-solutions',
+    url: 'https://www.collabedgesolutions.com.au/services/partner-solutions',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -29,7 +29,7 @@ const schema = {
   provider: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   areaServed: ['AU', 'SG'],
   description:

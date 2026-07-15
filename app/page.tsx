@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'CollabEdge Solutions | NDIS Compliance and Enterprise Technology',
     description:
       'Fortune 500 experience applied to Australian NDIS providers, healthcare organisations, and enterprises across Australia and Asia Pacific.',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },

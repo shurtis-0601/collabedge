@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Case Studies | CollabEdge Solutions',
     description: 'Documented client outcomes. Real organisations, real results.',
-    url: 'https://collabedgesolutions.com.au/case-studies',
+    url: 'https://www.collabedgesolutions.com.au/case-studies',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -26,14 +26,14 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Case Studies — CollabEdge Solutions',
-  url: 'https://collabedgesolutions.com.au/case-studies',
+  url: 'https://www.collabedgesolutions.com.au/case-studies',
   description:
     'Documented client outcomes from CollabEdge Solutions consulting engagements with NDIS providers and Australian businesses.',
   hasPart: [
     {
       '@type': 'Article',
       headline: 'Enhance Ability Services — NDIS Operations Transformation',
-      url: 'https://collabedgesolutions.com.au/case-studies/enhance-ability-services',
+      url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
     },
   ],
 }

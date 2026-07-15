@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Raj Purshotham — Strategy, Growth and International Advisory',
     description:
       'Enterprise technology and go-to-market specialist with deep experience across MEA, India and Asia Pacific.',
-    url: 'https://collabedgesolutions.com.au/about/raj-purshotham',
+    url: 'https://www.collabedgesolutions.com.au/about/raj-purshotham',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -30,7 +30,7 @@ const schema = {
   worksFor: {
     '@type': 'Organization',
     name: 'CollabEdge Solutions',
-    url: 'https://collabedgesolutions.com.au',
+    url: 'https://www.collabedgesolutions.com.au',
   },
   description:
     'Fractional Consultant and Growth Advisor to CollabEdge Solutions. Based in Dubai with extensive enterprise technology and go-to-market experience across MEA, India and Asia Pacific.',

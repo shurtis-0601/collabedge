@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllArticles } from '@/lib/articles'
 
-const BASE_URL = 'https://collabedgesolutions.com.au'
+const BASE_URL = 'https://www.collabedgesolutions.com.au'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

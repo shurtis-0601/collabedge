@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Enhance Ability Services — NDIS Operations Case Study',
     description:
       'From overwhelmed to structured. A real NDIS provider transformation, documented in full.',
-    url: 'https://collabedgesolutions.com.au/case-studies/enhance-ability-services',
+    url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
   },
@@ -26,7 +26,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Enhance Ability Services — NDIS Operations Transformation',
-  url: 'https://collabedgesolutions.com.au/case-studies/enhance-ability-services',
+  url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
   datePublished: '2026-06-01',
   author: {
     '@type': 'Organization',
