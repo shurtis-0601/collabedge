@@ -1,11 +1,17 @@
 import { ImageResponse } from 'next/og'
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
-export const runtime = 'edge'
 export const alt = 'CollabEdge Solutions'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const logoData = await readFile(
+    join(process.cwd(), 'public/images/logo.png')
+  )
+  const logoSrc = `data:image/png;base64,${logoData.toString('base64')}`
+
   return new ImageResponse(
     (
       <div
@@ -30,7 +36,7 @@ export default function OpengraphImage() {
           }}
         />
         <img
-          src="https://collabedgesolutions.com.au/images/logo.png"
+          src={logoSrc}
           width={420}
           height={108}
           style={{ marginBottom: 40 }}
