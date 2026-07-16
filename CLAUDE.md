@@ -122,6 +122,17 @@ for it.
   workflow automation is owned by Digital Services
   instead, do not rename this service to broaden it
 
+## Campaign page indexing rules
+
+The SIL registration campaign page at `/campaigns/sil-registration`
+must remain noindex and nofollow at all times. It is a direct personal
+outreach page, not an organic search page, and must never be indexed
+regardless of any other setting. The three data analytics campaign
+pages at `/campaigns/allied-health-data-analytics`,
+`/campaigns/proptech-data-analytics` and
+`/campaigns/retail-data-analytics` are exempt from this rule and
+should be treated as permanent indexed service pages.
+
 ## Verification scaling
 
 Match preview effort to the risk of the change, do not

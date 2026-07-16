@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: 'Data Analytics for PropTech | CollabEdge Solutions',
   description:
     'Property managers and principals who want clear insight into vacancy trends, rent roll performance, and portfolio patterns. CollabEdge builds the reporting layer from the data you already have.',
-  robots: { index: false, follow: false },
 }
 
 const tabs: RoleTab[] = [

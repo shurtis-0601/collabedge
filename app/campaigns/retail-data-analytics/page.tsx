@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: 'Data Analytics for Retail | CollabEdge Solutions',
   description:
     'Retail owners and operations managers who want clear insight into what is selling, what is not, and where their margin goes. CollabEdge builds the reporting layer from the data already in your POS.',
-  robots: { index: false, follow: false },
 }
 
 const tabs: RoleTab[] = [

@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: 'Data Analytics for Allied Health | CollabEdge Solutions',
   description:
     'Practice managers and clinic owners who want clear insight into utilisation, patient flow, and billing patterns. CollabEdge builds the reporting layer from the data already in your practice management system.',
-  robots: { index: false, follow: false },
 }
 
 const tabs: RoleTab[] = [
