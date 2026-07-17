@@ -40,6 +40,57 @@ const nextConfig = {
         destination: "/resources",
         permanent: true,
       },
+      // Legacy site URL redirects
+      {
+        source: "/team",
+        destination: "/about/team",
+        permanent: true,
+      },
+      {
+        source: "/blogs/category/Data%2BSecurity",
+        destination: "https://www.collabedgesolutions.com.au/resources",
+        permanent: true,
+      },
+      {
+        source: "/medprivacy",
+        destination: "https://medprivacy.com.au",
+        permanent: true,
+      },
+      {
+        source: "/company",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/partners",
+        destination: "/services/partner-solutions",
+        permanent: true,
+      },
+      {
+        source: "/core-offerings",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/specialised-solutions",
+        destination: "/services/partner-solutions",
+        permanent: true,
+      },
+      {
+        source: "/hometest",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/thank-you",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/ndis/analytics-blog",
+        destination: "/services/analytics/health",
+        permanent: true,
+      },
     ];
   },
   images: {
