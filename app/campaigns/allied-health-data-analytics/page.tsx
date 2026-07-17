@@ -4,71 +4,63 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
 import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
-import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
-import type { ChartConfig, StatCardData } from '@/components/campaigns/CampaignDashboardMock'
+import AgedCareMarginDashboard from '@/components/campaigns/AgedCareMarginDashboard'
 
 export const metadata: Metadata = {
-  title: 'Data Analytics for Allied Health | CollabEdge Solutions',
+  title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
   description:
-    'Practice managers and clinic owners who want clear insight into utilisation, patient flow, and billing patterns. CollabEdge builds the reporting layer from the data already in your practice management system.',
+    'NDIS providers, allied health practices and aged care operators who want clear insight into workforce cost, client outcomes and operational performance. CollabEdge builds the reporting layer from the data you already have.',
 }
 
 const tabs: RoleTab[] = [
   {
-    id: 'practice-manager',
-    label: 'Practice Manager',
+    id: 'ndis-provider',
+    label: 'NDIS Provider',
     painPoints: [
-      'Appointment utilisation data sits inside your practice management system but is never automatically presented in a way that supports planning decisions.',
-      'DNA and late cancellation trends are visible in hindsight through individual calendar reviews, not in a form that lets you see the pattern across providers and time periods.',
+      'Workforce costs are tracked at the payroll level but never broken down by shift type, award penalty, or site, so the drivers of margin leakage are invisible until month end.',
+      'Client service hours are recorded in the CRM or rostering system but are never connected to funding utilisation or budget consumption in a way that surfaces risk early.',
+      'Incident and compliance reporting is manual and reactive, compiled for audits rather than used as an ongoing operational signal.',
+    ],
+  },
+  {
+    id: 'aged-care-operator',
+    label: 'Aged Care Operator',
+    painPoints: [
+      'Staff turnover and agency reliance are known problems but the cost is never quantified by site, role, or shift type, so it is managed as a general expense rather than a targeted one.',
+      'Co-contribution debt and clients quietly reducing service hours are visible individually but never surfaced as a portfolio-level risk until revenue has already been affected.',
+      'Client satisfaction data from feedback forms and complaints sits in separate records and is never connected to service usage trends that might have signalled disengagement earlier.',
+    ],
+  },
+  {
+    id: 'allied-health-practice',
+    label: 'Allied Health Practice',
+    painPoints: [
+      'Appointment utilisation data sits inside the practice management system but is never automatically structured into a view that supports planning decisions.',
+      'DNA and late cancellation trends are visible in hindsight through individual calendar reviews, not in a form that shows the pattern across providers and time periods.',
       'The split between bulk billing and private fees is known at the point of claim but is never compiled into a forward-looking picture of revenue risk.',
     ],
   },
   {
-    id: 'clinic-owner',
-    label: 'Clinic Owner',
+    id: 'practice-manager',
+    label: 'Practice Manager',
     painPoints: [
-      'There is no single view of which service types generate your best margin, so decisions about capacity and staffing are made without that information.',
-      'Referral sources are recorded inconsistently, which means the relationships actually driving new patient volume are impossible to identify with confidence.',
-      'Understanding whether growth is coming from new patients or from increased frequency among existing patients requires analysis that no one currently has time to do.',
-    ],
-  },
-  {
-    id: 'allied-health-provider',
-    label: 'Allied Health Provider',
-    painPoints: [
-      'Caseload data is recorded in your practice management system but is never compiled into a summary that would make supervision and case review preparation faster.',
-      'Comparing your outcome data across periods requires extracting reports manually and combining them in a spreadsheet, which takes time away from client contact.',
-      'There is no easy way to see how your current caseload mix compares to the same period last year, which makes planning conversations with the practice manager harder to support with evidence.',
+      'Month-end reports are assembled manually from multiple system exports, which means they are already out of date before they reach the principal or board.',
+      'Workforce scheduling decisions are made from experience and last year patterns rather than from real demand and utilisation data.',
+      'Compliance documentation and reporting is reactive and time-consuming, built for audits rather than embedded in day-to-day operations.',
     ],
   },
 ]
-
-const statCards: StatCardData[] = [
-  { value: '78%', label: 'Appointment Utilisation' },
-  { value: '8.4%', label: 'DNA Rate' },
-  { value: '34', label: 'New Patients This Month' },
-  { value: '312', label: 'Active Patient Load' },
-]
-
-const chart: ChartConfig = {
-  type: 'trend',
-  title: 'Weekly Appointment Utilisation (Last 12 Weeks)',
-  points: [72, 68, 75, 71, 78, 82, 79, 76, 74, 80, 83, 78],
-  xLabels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10', 'W11', 'W12'],
-  yMax: 100,
-  yUnit: '%',
-}
 
 const steps = [
   {
     step: '01',
     title: 'Understand the data you have',
-    body: 'We review your practice management system, billing records, and any manual reports your team currently produces. We map the data you already hold before recommending anything new.',
+    body: 'We review your existing systems, whether that is a rostering platform, practice management system, aged care software, or a set of spreadsheets your team currently relies on. We map what you already hold before recommending anything new.',
   },
   {
     step: '02',
     title: 'Design for the decisions you make',
-    body: 'We build a reporting structure around the questions your practice actually needs answered, whether that is utilisation by provider, DNA trends across time periods, or service type margin.',
+    body: 'We build a reporting structure around the questions your business actually needs answered, whether that is workforce cost by shift type, client retention risk, utilisation by provider, or funding budget consumption. We do not build generic dashboards, we build for your specific decision points.',
   },
   {
     step: '03',
@@ -86,13 +78,13 @@ export default function AlliedHealthDataAnalyticsPage() {
           <FadeIn variant="fadeUp">
             <div className="w-9 h-[2px] bg-gold mb-4" />
             <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-3 block">
-              Data Analytics for Allied Health
+              Data Analytics for Health Providers
             </span>
             <h1 className="text-[34px] md:text-[44px] font-bold text-white tracking-tight leading-[1.15] mb-5 max-w-[720px]">
-              Your Practice Data, Working Harder
+              Your Health Data, Made Useful
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px] mb-8">
-              Allied health providers and practice managers who want to understand utilisation, patient flow, and billing patterns can stop digging through reports and start seeing the picture clearly. We structure the data already in your practice management system so the answers are visible.
+              NDIS providers, allied health practices and aged care operators are sitting on more data than they use. The problem is not the data, it is that it is scattered across systems, manually reconciled, and never presented in a form that supports real decisions. We build the reporting layer from what you already have.
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -102,16 +94,16 @@ export default function AlliedHealthDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 2. Pain points */}
+      {/* 2. Where they get stuck */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-3 leading-snug">
-              Where Allied Health Practices Get Stuck
+              Where Health and Care Providers Get Stuck
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[640px]">
-              Practice management systems hold more useful data than most practices ever see. The problem is that it is never organised into a form that supports decisions. Select your role to see what we hear most often.
+              The data is usually there. The problem is that it is never organised into a form that supports operational or financial decisions. Select your role to see what we hear most often.
             </p>
           </FadeIn>
           <FadeIn variant="fadeUp" delay={100}>
@@ -120,7 +112,7 @@ export default function AlliedHealthDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 3. Dashboard example */}
+      {/* 3. Dashboard */}
       <section className="bg-navy py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -129,15 +121,24 @@ export default function AlliedHealthDataAnalyticsPage() {
               This Is What Clear Looks Like
             </h2>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8 max-w-[640px]">
-              A simple reporting structure built from the data already in your practice management system. The numbers below are illustrative, but the structure is exactly what we build.
+              A reporting structure built from the data already in your systems. The example below draws from aged care operations, one of the sectors where we have developed the most detailed use cases, but the approach applies across NDIS, allied health and aged care.
             </p>
           </FadeIn>
           <FadeIn variant="fadeUp" delay={100}>
-            <CampaignDashboardMock
-              dashboardTitle="Practice Utilisation Summary"
-              statCards={statCards}
-              chart={chart}
-            />
+            <AgedCareMarginDashboard />
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={150}>
+            <div className="mt-6 rounded-xl border border-white/10 bg-white/[0.04] p-5">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
+                SCHADS Award 2025 and the Aged Care Act 2024 both create specific wage and record-keeping obligations. This dashboard surfaces penalty exposure in real time rather than at payroll audit.
+              </p>
+            </div>
+            <p className="mt-5 text-[16px] text-[#D1D5DB] leading-relaxed">
+              We have also developed detailed use cases across workforce turnover and agency cost, client disengagement early warning, and co-contribution debtor risk. Ask about these in your free consultation.
+            </p>
+            <p className="mt-4 text-[13px] text-[#9CA3AF] italic">
+              All figures are illustrative mock data for demonstration purposes only.
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -159,7 +160,7 @@ export default function AlliedHealthDataAnalyticsPage() {
                     {item.step}
                   </span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[15px] text-slate leading-relaxed">{item.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.body}</p>
                 </div>
               </FadeIn>
             ))}
