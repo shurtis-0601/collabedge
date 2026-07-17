@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    outputFileTracingIncludes: {
+      '/sitemap': ['./content/articles/**'],
+      '/resources': ['./content/articles/**'],
+      '/resources/articles/[slug]': ['./content/articles/**'],
+    },
+  },
   async redirects() {
     return [
       {
