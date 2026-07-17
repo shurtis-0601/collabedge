@@ -5,6 +5,9 @@ import CTASection from '@/components/ui/CTASection'
 import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
 import AgedCareMarginDashboard from '@/components/campaigns/AgedCareMarginDashboard'
+import NDISFundingDashboard from '@/components/campaigns/NDISFundingDashboard'
+import PracticeManagerDashboard from '@/components/campaigns/PracticeManagerDashboard'
+import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
 
 export const metadata: Metadata = {
   title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
@@ -51,6 +54,15 @@ const tabs: RoleTab[] = [
   },
 ]
 
+const alliedHealthChart = {
+  type: 'bar' as const,
+  title: 'Appointment Utilisation by Provider (%)',
+  labels: ['Dr A', 'Dr B', 'Ms C', 'Mr D', 'Ms E'],
+  values: [82, 74, 91, 63, 78],
+  yMax: 100,
+  yUnit: '%',
+}
+
 const steps = [
   {
     step: '01',
@@ -68,6 +80,24 @@ const steps = [
     body: 'You receive dashboards your team can maintain, with a handover that means the insight does not stop when we leave. Ongoing support is available if you would rather we stay close.',
   },
 ]
+
+const dashboards = {
+  'ndis-provider': <NDISFundingDashboard />,
+  'aged-care-operator': <AgedCareMarginDashboard />,
+  'allied-health-practice': (
+    <CampaignDashboardMock
+      dashboardTitle="Allied Health Practice Dashboard"
+      statCards={[
+        { value: '74%', label: 'Avg Utilisation' },
+        { value: '18%', label: 'DNA Rate' },
+        { value: '$42k', label: 'Cancellation Risk' },
+        { value: '61%', label: 'Bulk Bill Mix' },
+      ]}
+      chart={alliedHealthChart}
+    />
+  ),
+  'practice-manager': <PracticeManagerDashboard />,
+}
 
 export default function AlliedHealthDataAnalyticsPage() {
   return (
@@ -94,7 +124,7 @@ export default function AlliedHealthDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 2. Where they get stuck */}
+      {/* 2. Where they get stuck + per-tab dashboards */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -103,52 +133,38 @@ export default function AlliedHealthDataAnalyticsPage() {
               Where Health and Care Providers Get Stuck
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[640px]">
-              The data is usually there. The problem is that it is never organised into a form that supports operational or financial decisions. Select your role to see what we hear most often.
+              The data is usually there. The problem is that it is never organised into a form that supports operational or financial decisions. Select your role to see what we hear most often, and what clear reporting looks like for that context.
             </p>
           </FadeIn>
           <FadeIn variant="fadeUp" delay={100}>
-            <IndustryRoleTabs tabs={tabs} />
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* 3. Dashboard */}
-      <section className="bg-navy py-16 px-5 sm:px-10">
-        <div className="max-w-[1000px] mx-auto">
-          <FadeIn variant="fadeUp">
-            <GoldRuleAnimated />
-            <h2 className="text-[26px] font-bold text-white tracking-tight mb-3 leading-snug">
-              This Is What Clear Looks Like
-            </h2>
-            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8 max-w-[640px]">
-              A reporting structure built from the data already in your systems. The example below draws from aged care operations, one of the sectors where we have developed the most detailed use cases, but the approach applies across NDIS, allied health and aged care.
-            </p>
-          </FadeIn>
-          <FadeIn variant="fadeUp" delay={100}>
-            <AgedCareMarginDashboard />
+            <IndustryRoleTabs
+              tabs={tabs}
+              initialTabId="aged-care-operator"
+              dashboards={dashboards}
+            />
           </FadeIn>
           <FadeIn variant="fadeUp" delay={150}>
-            <div className="mt-6 rounded-xl border border-white/10 bg-white/[0.04] p-5">
-              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
-                SCHADS Award 2025 and the Aged Care Act 2024 both create specific wage and record-keeping obligations. This dashboard surfaces penalty exposure in real time rather than at payroll audit.
+            <div className="mt-6 rounded-xl border border-text-dark/10 bg-text-dark/[0.04] p-5">
+              <p className="text-[16px] text-slate leading-relaxed">
+                SCHADS Award 2025 and the Aged Care Act 2024 both create specific wage and record-keeping obligations. The aged care dashboard above surfaces penalty exposure in real time rather than at payroll audit.
               </p>
             </div>
-            <p className="mt-5 text-[16px] text-[#D1D5DB] leading-relaxed">
+            <p className="mt-5 text-[16px] text-slate leading-relaxed">
               We have also developed detailed use cases across workforce turnover and agency cost, client disengagement early warning, and co-contribution debtor risk. Ask about these in your free consultation.
             </p>
-            <p className="mt-4 text-[13px] text-[#9CA3AF] italic">
+            <p className="mt-4 text-[13px] text-slate/60 italic">
               All figures are illustrative mock data for demonstration purposes only.
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* 4. How we work */}
-      <section className="bg-offwhite py-16 px-5 sm:px-10">
+      {/* 3. How we work */}
+      <section className="bg-navy py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
-            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
               How We Work
             </h2>
           </FadeIn>
@@ -156,11 +172,11 @@ export default function AlliedHealthDataAnalyticsPage() {
             {steps.map((item, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 90}>
                 <div>
-                  <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-3 font-serif">
+                  <span className="text-[32px] font-bold text-brand-goldDark/40 block mb-3 font-serif">
                     {item.step}
                   </span>
-                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[16px] text-slate leading-relaxed">{item.body}</p>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{item.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -168,7 +184,7 @@ export default function AlliedHealthDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA */}
+      {/* 4. Final CTA */}
       <CTASection
         heading="Start With a Conversation"
         sub="A free 30 minute session to look at the data you have and where the biggest reporting gaps are."

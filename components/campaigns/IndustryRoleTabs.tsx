@@ -10,10 +10,12 @@ export type RoleTab = {
 
 type Props = {
   tabs: RoleTab[]
+  initialTabId?: string
+  dashboards?: Record<string, React.ReactNode>
 }
 
-export default function IndustryRoleTabs({ tabs }: Props) {
-  const [activeId, setActiveId] = useState(tabs[0]?.id ?? '')
+export default function IndustryRoleTabs({ tabs, initialTabId, dashboards }: Props) {
+  const [activeId, setActiveId] = useState(initialTabId ?? tabs[0]?.id ?? '')
   const btnRefs = useRef<Record<string, HTMLButtonElement | null>>({})
 
   const selectTab = (id: string, focusButton = false) => {
@@ -74,7 +76,7 @@ export default function IndustryRoleTabs({ tabs }: Props) {
           aria-labelledby={`role-tab-${tab.id}`}
           hidden={tab.id !== activeId}
         >
-          <div className="space-y-5">
+          <div className="space-y-5 mb-8">
             {tab.painPoints.map((point, i) => (
               <p
                 key={i}
@@ -84,6 +86,7 @@ export default function IndustryRoleTabs({ tabs }: Props) {
               </p>
             ))}
           </div>
+          {dashboards?.[tab.id]}
         </div>
       ))}
     </div>
