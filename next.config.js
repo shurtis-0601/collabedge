@@ -47,7 +47,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/blogs/category/Data%2BSecurity",
+        source: "/blogs/category/Data\\+Security",
         destination: "https://www.collabedgesolutions.com.au/resources",
         permanent: true,
       },
