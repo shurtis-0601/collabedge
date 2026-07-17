@@ -182,29 +182,37 @@ export default function DigitalServicesPage() {
             ))}
           </div>
 
-          {/* Cross-links to industry-specific data analytics examples */}
+          {/* Cross-links to data analytics hub and industry pages */}
           <FadeIn variant="fadeUp" delay={480}>
             <div className="mt-8 pt-6 border-t border-border">
-              <p className="text-[13px] font-semibold tracking-[.08em] uppercase text-slate mb-3">
-                See data analytics in action for your industry
-              </p>
+              <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                <p className="text-[13px] font-semibold tracking-[.08em] uppercase text-slate">
+                  Data Analytics by Industry
+                </p>
+                <a
+                  href="/services/analytics"
+                  className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand-goldLight hover:underline underline-offset-2"
+                >
+                  View Data Analytics Hub <ArrowRight size={13} />
+                </a>
+              </div>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                 <a
-                  href="/campaigns/proptech-data-analytics"
+                  href="/services/analytics/proptech"
                   className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand-goldLight hover:underline underline-offset-2"
                 >
                   PropTech <ArrowRight size={13} />
                 </a>
                 <span className="text-border" aria-hidden="true">|</span>
                 <a
-                  href="/campaigns/allied-health-data-analytics"
+                  href="/services/analytics/health"
                   className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand-goldLight hover:underline underline-offset-2"
                 >
-                  Allied Health <ArrowRight size={13} />
+                  Health Providers <ArrowRight size={13} />
                 </a>
                 <span className="text-border" aria-hidden="true">|</span>
                 <a
-                  href="/campaigns/retail-data-analytics"
+                  href="/services/analytics/retail"
                   className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand-goldLight hover:underline underline-offset-2"
                 >
                   Retail <ArrowRight size={13} />
