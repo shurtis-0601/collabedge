@@ -1,19 +1,33 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import {
-  Chart,
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   BarElement,
   LineElement,
   PointElement,
+  ArcElement,
+  Title,
   Tooltip,
   Legend,
   Filler,
 } from 'chart.js'
 
-Chart.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Tooltip, Legend, Filler)
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  ArcElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+)
+
+import { useEffect, useRef } from 'react'
 
 const GOLD   = '#D4941E'
 const BLUE   = '#3B82F6'
@@ -64,11 +78,11 @@ const RISK_TEXT: Record<string, string> = {
 
 function StackedHBar() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'bar',
       data: {
         labels: CATEGORIES,
@@ -132,11 +146,11 @@ function StackedHBar() {
 
 function SpendLineChart() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'line',
       data: {
         labels: MONTHS,

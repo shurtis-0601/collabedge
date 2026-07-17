@@ -1,16 +1,33 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import {
-  Chart,
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   BarElement,
+  LineElement,
+  PointElement,
+  ArcElement,
+  Title,
   Tooltip,
   Legend,
+  Filler,
 } from 'chart.js'
 
-Chart.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend)
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  ArcElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+)
+
+import { useEffect, useRef } from 'react'
 
 const BLUE   = '#3B82F6'
 const RED    = '#EF4444'
@@ -42,11 +59,11 @@ const TILES = [
 
 function GroupedBarChart() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'bar',
       data: {
         labels: MONTHS,
@@ -109,11 +126,11 @@ function GroupedBarChart() {
 
 function HorizontalBarChart() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'bar',
       data: {
         labels: SHIFT_DATA.map((d) => d.label),

@@ -1,16 +1,33 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import {
-  Chart,
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   BarElement,
+  LineElement,
+  PointElement,
+  ArcElement,
+  Title,
   Tooltip,
   Legend,
+  Filler,
 } from 'chart.js'
 
-Chart.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend)
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  ArcElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+)
+
+import { useEffect, useRef } from 'react'
 
 const GOLD   = '#D4941E'
 const BLUE   = '#3B82F6'
@@ -65,7 +82,7 @@ function providerBarColor(u: number): string {
 
 const target80Plugin = {
   id: 'target80',
-  afterDraw(chart: Chart) {
+  afterDraw(chart: ChartJS) {
     const { ctx, chartArea, scales } = chart
     const xScale = scales['x']
     if (!xScale || !chartArea) return
@@ -84,11 +101,11 @@ const target80Plugin = {
 
 function GroupedBarChart() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'bar',
       data: {
         labels: WEEKS,
@@ -145,11 +162,11 @@ function GroupedBarChart() {
 
 function ProviderUtilisationChart() {
   const ref = useRef<HTMLCanvasElement>(null)
-  const chart = useRef<Chart | null>(null)
+  const chart = useRef<ChartJS | null>(null)
 
   useEffect(() => {
     if (!ref.current) return
-    chart.current = new Chart(ref.current, {
+    chart.current = new ChartJS(ref.current, {
       type: 'bar',
       data: {
         labels: PROVIDERS.map((p) => p.name),
