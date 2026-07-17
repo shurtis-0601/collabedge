@@ -1,13 +1,26 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
 import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
-import AgedCareMarginDashboard from '@/components/campaigns/AgedCareMarginDashboard'
-import NDISFundingDashboard from '@/components/campaigns/NDISFundingDashboard'
-import PracticeManagerDashboard from '@/components/campaigns/PracticeManagerDashboard'
 import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
+
+const AgedCareMarginDashboard = dynamic(
+  () => import('@/components/campaigns/AgedCareMarginDashboard'),
+  { ssr: false, loading: () => <div style={{ height: '400px' }} /> }
+)
+
+const NDISFundingDashboard = dynamic(
+  () => import('@/components/campaigns/NDISFundingDashboard'),
+  { ssr: false, loading: () => <div style={{ height: '400px' }} /> }
+)
+
+const PracticeManagerDashboard = dynamic(
+  () => import('@/components/campaigns/PracticeManagerDashboard'),
+  { ssr: false, loading: () => <div style={{ height: '400px' }} /> }
+)
 
 export const metadata: Metadata = {
   title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
