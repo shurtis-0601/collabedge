@@ -32,6 +32,7 @@ export default function SiteFooter() {
               <li><Link href="/services/healthcare-workflow" className="hover:text-white transition-colors">Healthcare Workflow Automation</Link></li>
               <li><Link href="/services/document-governance" className="hover:text-white transition-colors">Document Governance</Link></li>
               <li><Link href="/services/digital" className="hover:text-white transition-colors">Digital Services</Link></li>
+              <li className="pl-3 text-[13px] text-[#9CA3AF]"><Link href="/services/analytics" className="hover:text-[#D1D5DB] transition-colors">Data Analytics for SMEs</Link></li>
               <li><Link href="/services/ai-advisory" className="hover:text-white transition-colors">AI Advisory</Link></li>
             </ul>
             <div className="my-4 h-px bg-white/10" />
