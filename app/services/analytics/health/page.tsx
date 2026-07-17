@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
-import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
+import HealthTabsWithNote from '@/components/campaigns/HealthTabsWithNote'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
 import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
 
@@ -165,24 +165,11 @@ export default function HealthAnalyticsPage() {
             </p>
           </FadeIn>
           <FadeIn variant="fadeUp" delay={100}>
-            <IndustryRoleTabs
+            <HealthTabsWithNote
               tabs={tabs}
               initialTabId="aged-care-operator"
               dashboards={dashboards}
             />
-          </FadeIn>
-          <FadeIn variant="fadeUp" delay={150}>
-            <div className="mt-6 rounded-xl border border-text-dark/10 bg-text-dark/[0.04] p-5">
-              <p className="text-[16px] text-slate leading-relaxed">
-                SCHADS Award 2025 and the Aged Care Act 2024 both create specific wage and record-keeping obligations. The aged care dashboard above surfaces penalty exposure in real time rather than at payroll audit.
-              </p>
-            </div>
-            <p className="mt-5 text-[16px] text-slate leading-relaxed">
-              We have also developed detailed use cases across workforce turnover and agency cost, client disengagement early warning, and co-contribution debtor risk. Ask about these in your free consultation.
-            </p>
-            <p className="mt-4 text-[13px] text-slate/60 italic">
-              All figures are illustrative mock data for demonstration purposes only.
-            </p>
           </FadeIn>
         </div>
       </section>

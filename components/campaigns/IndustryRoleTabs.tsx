@@ -12,14 +12,16 @@ type Props = {
   tabs: RoleTab[]
   initialTabId?: string
   dashboards?: Record<string, React.ReactNode>
+  onTabChange?: (id: string) => void
 }
 
-export default function IndustryRoleTabs({ tabs, initialTabId, dashboards }: Props) {
+export default function IndustryRoleTabs({ tabs, initialTabId, dashboards, onTabChange }: Props) {
   const [activeId, setActiveId] = useState(initialTabId ?? tabs[0]?.id ?? '')
   const btnRefs = useRef<Record<string, HTMLButtonElement | null>>({})
 
   const selectTab = (id: string, focusButton = false) => {
     setActiveId(id)
+    onTabChange?.(id)
     if (focusButton) btnRefs.current[id]?.focus()
   }
 
