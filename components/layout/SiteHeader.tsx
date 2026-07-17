@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 type MegaColumn = {
   heading: string;
   headingHref?: string;
-  links: { label: string; href: string; featured?: boolean; external?: boolean }[];
+  links: { label: string; href: string; featured?: boolean; external?: boolean; sub?: boolean }[];
 };
 
 type NavCTA = {
@@ -55,6 +55,7 @@ const NAV: NavItem[] = [
           { label: "Healthcare Workflow Automation", href: "/services/healthcare-workflow" },
           { label: "Document Governance", href: "/services/document-governance" },
           { label: "Digital Services", href: "/services/digital" },
+          { label: "Data Analytics for SMEs", href: "/services/analytics", sub: true },
           { label: "AI Advisory", href: "/services/ai-advisory" },
         ],
       },
@@ -292,10 +293,12 @@ export default function SiteHeader() {
                                 ) : (
                                   <Link
                                     href={link.href}
-                                    className={`group block pr-2 py-2 text-[14px] font-medium rounded transition-all border-l-2 ${
-                                      link.featured
-                                        ? "text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
-                                        : "text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
+                                    className={`group block pr-2 rounded transition-all border-l-2 ${
+                                      link.sub
+                                        ? "pl-3 py-1.5 text-[13px] text-[#9CA3AF] border-transparent hover:border-gold/50 hover:text-[#D1D5DB] hover:pl-4"
+                                        : link.featured
+                                        ? "py-2 text-[14px] font-medium text-brand-goldDark font-semibold border-transparent hover:border-gold hover:pl-2"
+                                        : "py-2 text-[14px] font-medium text-[#F1F5F9] border-transparent hover:border-gold hover:text-white hover:pl-2"
                                     }`}
                                     onClick={() => setOpenMenu(null)}
                                   >
@@ -458,8 +461,12 @@ export default function SiteHeader() {
                             <Link
                               href={link.href}
                               onClick={() => { setMobileOpen(false); setMobileSection(null); }}
-                              className={`block py-2.5 text-[16px] font-semibold border-b border-white/8 ${
-                                link.featured ? "text-brand-goldDark" : "text-white"
+                              className={`block border-b border-white/8 ${
+                                link.sub
+                                  ? "pl-4 py-2 text-[14px] font-medium text-[#9CA3AF]"
+                                  : link.featured
+                                  ? "py-2.5 text-[16px] font-semibold text-brand-goldDark"
+                                  : "py-2.5 text-[16px] font-semibold text-white"
                               }`}
                             >
                               {link.label}
