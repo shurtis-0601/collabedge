@@ -88,7 +88,7 @@ const nextConfig = {
       },
       {
         source: "/ndis/analytics-blog",
-        destination: "/services/analytics/health",
+        destination: "/resources",
         permanent: true,
       },
     ];
