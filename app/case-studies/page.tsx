@@ -12,7 +12,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Case Studies | CollabEdge Solutions',
   description:
-    'Real client outcomes from CollabEdge Solutions. Documented results from NDIS providers and Australian businesses — named organisations, specific outcomes, no anonymous claims.',
+    'Real, documented client outcomes from CollabEdge Solutions. NDIS providers and Australian businesses, named organisations only, no anonymous claims.',
   openGraph: {
     title: 'Case Studies | CollabEdge Solutions',
     description: 'Documented client outcomes. Real organisations, real results.',

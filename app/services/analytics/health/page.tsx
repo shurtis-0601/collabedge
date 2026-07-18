@@ -25,11 +25,11 @@ const PracticeManagerDashboard = dynamic(
 export const metadata: Metadata = {
   title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
   description:
-    'NDIS providers, allied health practices and aged care operators who want clear insight into workforce cost, client outcomes and operational performance. CollabEdge builds the reporting layer from the data you already have.',
+    'For NDIS, allied health and aged care operators wanting insight into workforce cost, client outcomes and performance, built from data you already have.',
   openGraph: {
     title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
     description:
-      'NDIS providers, allied health practices and aged care operators who want clear insight into workforce cost, client outcomes and operational performance. CollabEdge builds the reporting layer from the data you already have.',
+      'For NDIS, allied health and aged care operators wanting insight into workforce cost, client outcomes and performance, built from data you already have.',
     url: 'https://www.collabedgesolutions.com.au/services/analytics/health',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',

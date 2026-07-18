@@ -4,7 +4,7 @@ slug: safeguarding-business-data-10-step-guide
 date: 2024-09-25
 category: Data Security
 author: Sinclair Hurtis
-description: "A practical 10 step guide to protecting your business data, covering Australian, Singapore and global security standards, privacy compliance, encryption, access control, governance and disaster recovery. Written for business owners, not security specialists."
+description: "A practical 10 step guide to protecting your business data, covering Australian and Singapore security standards, privacy, encryption, and governance."
 redirect_from: /blogs/nu3z35pb4fzq9e7bpxf3tkktyyxn52-z5974
 ---
 

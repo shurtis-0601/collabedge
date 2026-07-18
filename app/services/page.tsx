@@ -12,7 +12,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Services | CollabEdge Solutions',
   description:
-    'NDIS compliance, workflow automation, AI advisory, and enterprise technology partnerships. CollabEdge Solutions delivers practitioner-led consulting for Australian businesses.',
+    'NDIS compliance, workflow automation, AI advisory, and enterprise technology, delivered as practitioner-led consulting for Australian businesses.',
   openGraph: {
     title: 'Services | CollabEdge Solutions',
     description:

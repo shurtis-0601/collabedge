@@ -5,7 +5,7 @@ date: 2026-05-21
 category: NDIS Productivity Series
 series_position: 3
 author: Sinclair Hurtis
-description: "Support coordination spending faces a 30 per cent reduction target. RORD, COS and ART processes are consuming hours that should go to participants. Article 3 of the NDIS Productivity Series, written by an active Support Coordinator who lives this every week."
+description: "Support coordination spending faces a 30 per cent reduction target, while RORD, COS and ART processes consume hours that should go to participants."
 redirect_from: /blogs/the-productivity-paradox-why-doing-more-manually-is-hurting-participant-care
 ---
 

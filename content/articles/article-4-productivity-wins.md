@@ -5,7 +5,7 @@ date: 2026-07-15
 category: NDIS Productivity Series
 series_position: 4
 author: Sinclair Hurtis
-description: "Seven practical, low cost productivity improvements for NDIS providers in 2026. No new software required. Grounded in what is actually working for Victorian providers right now. Article 4 of the NDIS Productivity Series."
+description: "Seven practical, low cost productivity improvements for NDIS providers in 2026, grounded in what is actually working for Victorian providers right now."
 ---
 
 If you have been following this series, you already know the picture is

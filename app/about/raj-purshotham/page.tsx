@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Raj Purshotham — Strategy and Growth Advisor | CollabEdge Solutions',
   description:
-    'Raj Purshotham is Strategy, Growth and International Advisory at CollabEdge Solutions. Based in Dubai with nearly 10 years at Cisco and active roles at Property Automate and Dynamic Netsoft Technologies.',
+    'Raj Purshotham leads Strategy, Growth and International Advisory at CollabEdge Solutions, Dubai-based with nearly 10 years at Cisco.',
   openGraph: {
     title: 'Raj Purshotham — Strategy, Growth and International Advisory',
     description:

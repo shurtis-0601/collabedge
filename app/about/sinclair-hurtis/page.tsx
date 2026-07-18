@@ -13,7 +13,7 @@ import TestimonialCarousel from '@/components/sections/TestimonialCarousel'
 export const metadata: Metadata = {
   title: 'Sinclair Hurtis — Founder | CollabEdge Solutions',
   description:
-    'Sinclair Hurtis is the founder of CollabEdge Solutions. 30+ years across Citibank Singapore, Singtel, NAB, DBS Singapore and the Victorian Department of Health. Active NDIS Support Coordinator. Sessional Academic, Faculty of Information Technology, Monash University.',
+    'Sinclair Hurtis, CollabEdge Solutions founder, 30+ years across banks and telcos in APAC and Victorian Health. Sessional Academic, Monash University.',
   openGraph: {
     title: 'Sinclair Hurtis — Founder and Principal Consultant',
     description:

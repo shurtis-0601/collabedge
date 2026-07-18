@@ -14,7 +14,7 @@ import AnimatedCounter from '@/components/ui/AnimatedCounter'
 export const metadata: Metadata = {
   title: 'About CollabEdge Solutions | Melbourne Consulting Firm',
   description:
-    'CollabEdge Solutions is a Melbourne-based operational consulting firm founded by Sinclair Hurtis. 30+ years Fortune 500 experience. NDIS compliance, automation, and enterprise technology for Australian and Asia Pacific businesses.',
+    'CollabEdge Solutions is a Melbourne consulting firm founded by Sinclair Hurtis, with 30+ years Fortune 500 experience in NDIS and enterprise technology.',
   openGraph: {
     title: 'About CollabEdge Solutions',
     description:

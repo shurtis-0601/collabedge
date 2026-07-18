@@ -11,7 +11,7 @@ import VideoEmbed from '@/components/VideoEmbed'
 export const metadata: Metadata = {
   title: 'AI Advisory for NDIS Providers and Small Business | CollabEdge Solutions',
   description:
-    'Honest advice on where AI fits in your business. What to automate, what to leave alone, cost and time savings, and whether moving from SaaS subscriptions to bespoke AI-assisted solutions stacks up.',
+    'Honest advice on where AI fits your business, what to automate, what to leave alone, and whether bespoke AI-assisted solutions genuinely stack up.',
   openGraph: {
     title: 'AI Advisory | CollabEdge Solutions',
     description:

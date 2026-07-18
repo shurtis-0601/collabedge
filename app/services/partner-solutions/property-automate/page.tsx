@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Property Automate | CollabEdge Solutions',
   description:
-    'Property Automate, a connected operational platform for real estate, facilities, infrastructure, and corporate workplace operations. CollabEdge Solutions is the coordinating partner for Australia and Asia Pacific.',
+    'Property Automate, a connected platform for real estate, facilities, infrastructure, and workplace operations, coordinated by CollabEdge Solutions.',
   openGraph: {
     title: 'Property Automate | CollabEdge Solutions',
     description:

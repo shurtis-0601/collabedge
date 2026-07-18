@@ -6,7 +6,7 @@ updated: 2026-05-12
 category: NDIS Productivity Series
 series_position: 2
 author: Sinclair Hurtis
-description: "The May 2026 federal budget confirmed $36.2 billion in NDIS savings over four years. What the confirmed changes mean for small NDIS providers, and what ethical operators should do right now. Article 2 of the NDIS Productivity Series."
+description: "The May 2026 budget confirmed $36.2 billion in NDIS savings over four years, and what it means for small providers right now. Article 2 of the series."
 redirect_from: /blogs/what-the-may-2026-ndis-budget-really-means-for-small-providers
 ---
 

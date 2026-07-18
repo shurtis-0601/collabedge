@@ -5,7 +5,7 @@ date: 2026-07-15
 category: NDIS Productivity Series
 series_position: 5
 author: Sinclair Hurtis
-description: "NDIS practitioners are using AI tools without realising the privacy risk. Learn what is safe, what is risky, and the two step workflow that keeps participant data off external servers. Article 5 of the NDIS Productivity Series."
+description: "NDIS practitioners use AI tools without realising the privacy risk. What is safe, what is risky, and the workflow that protects participant data."
 ---
 
 This article publishes as the NDIS Commission releases its own AI

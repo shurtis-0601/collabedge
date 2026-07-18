@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Enhance Ability Services Case Study | CollabEdge Solutions',
   description:
-    'How CollabEdge Solutions helped Enhance Ability Services, a Geelong NDIS provider, rebuild compliance and operations using Microsoft 365 — without introducing new platforms.',
+    'How CollabEdge Solutions helped Enhance Ability Services, a Geelong NDIS provider, rebuild compliance using Microsoft 365, with no new platforms added.',
   openGraph: {
     title: 'Enhance Ability Services — NDIS Operations Case Study',
     description:

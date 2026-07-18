@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Partner Solutions | CollabEdge Solutions',
   description:
-    'CollabEdge Solutions delivers enterprise technology through a curated bench of specialist partners, deployed only where the relationship on the ground is real. SHIELD, Property Automate, NewGen Consulting.',
+    'CollabEdge delivers enterprise technology through a curated bench of specialist partners, deployed only where the relationship on the ground is real.',
   openGraph: {
     title: 'Partner Solutions | CollabEdge Solutions',
     description:

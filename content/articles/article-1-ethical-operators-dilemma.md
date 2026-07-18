@@ -5,7 +5,7 @@ date: 2026-04-21
 category: NDIS Productivity Series
 series_position: 1
 author: Sinclair Hurtis
-description: "Compliance costs are rising, margins are tightening, and the May 2026 budget confirmed the direction. Article 1 of the NDIS Productivity Series, written by an active Support Coordinator, on why productivity is now a survival requirement for ethical providers."
+description: "Compliance costs are rising and margins are tightening. An active Support Coordinator on why productivity is a survival requirement for ethical providers."
 redirect_from: /blogs/the-ethical-operators-dilemma-why-ndis-productivity-matters-more-than-ever-in-2026
 ---
 

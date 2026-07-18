@@ -10,11 +10,11 @@ import type { ChartConfig, StatCardData } from '@/components/campaigns/CampaignD
 export const metadata: Metadata = {
   title: 'Data Analytics for Retail | CollabEdge Solutions',
   description:
-    'Retail owners and operations managers who want clear insight into what is selling, what is not, and where their margin goes. CollabEdge builds the reporting layer from the data already in your POS.',
+    'For retail owners wanting clear insight into what is selling, what is not, and where margin goes, built from the data already in your POS.',
   openGraph: {
     title: 'Data Analytics for Retail | CollabEdge Solutions',
     description:
-      'Retail owners and operations managers who want clear insight into what is selling, what is not, and where their margin goes. CollabEdge builds the reporting layer from the data already in your POS.',
+      'For retail owners wanting clear insight into what is selling, what is not, and where margin goes, built from the data already in your POS.',
     url: 'https://www.collabedgesolutions.com.au/services/analytics/retail',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',

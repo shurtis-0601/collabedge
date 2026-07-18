@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'NewGen Consulting | CollabEdge Solutions',
   description:
-    'NewGen Consulting, a Zoho ecosystem specialist, working alongside CollabEdge Solutions for organisations that prefer a packaged software platform over a custom build. The NewGen NDIS and Healthcare Accelerator delivers a pre-configured Zoho platform purpose-built for NDIS providers and allied health operators.',
+    'NewGen Consulting, a Zoho specialist working with CollabEdge Solutions, delivers a pre-configured platform for NDIS and allied health providers.',
   openGraph: {
     title: 'NewGen Consulting | CollabEdge Solutions',
     description:

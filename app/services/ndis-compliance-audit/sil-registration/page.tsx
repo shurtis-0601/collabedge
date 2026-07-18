@@ -11,7 +11,7 @@ import FAQAccordion, { type FAQ } from '@/components/sections/FAQAccordion'
 export const metadata: Metadata = {
   title: 'SIL Registration Support | CollabEdge Solutions',
   description:
-    'NDIS SIL Registration support for Australian providers. $2,000 flat fee, 10 spots available. Micro-provider concession available. Senior-led, practitioner-tested.',
+    'NDIS SIL Registration support for Australian providers. $2,000 flat fee, 10 spots available, with a micro-provider concession available.',
   openGraph: {
     title: 'SIL Registration Support | CollabEdge Solutions',
     description: 'Get SIL registered with senior-led support. $2,000. Limited spots.',

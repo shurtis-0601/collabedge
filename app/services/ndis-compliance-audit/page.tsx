@@ -12,7 +12,7 @@ import FAQAccordion from '@/components/sections/FAQAccordion'
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Audit Services | CollabEdge Solutions',
   description:
-    'NDIS compliance consulting, audit readiness, and governance frameworks for Australian providers. Transparent pricing from $2,500. Senior-led, practitioner-tested.',
+    'NDIS compliance consulting, audit readiness, and governance frameworks for Australian providers, with transparent pricing from $2,500.',
   openGraph: {
     title: 'NDIS Compliance and Audit | CollabEdge Solutions',
     description:

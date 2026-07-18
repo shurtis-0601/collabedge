@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'SHIELD Voice Fraud Prevention | CollabEdge Solutions',
   description:
-    'SHIELD by Sekunce, carrier-grade inline voice fraud prevention. Blocks IRSF, CLI spoofing, robocall traffic, and account takeover in under 100ms per call, with behavioural signaling analysis flagging suspected synthetic-voice campaigns. CollabEdge Solutions is the Australian and APAC delivery partner.',
+    'SHIELD by Sekunce blocks voice fraud, IRSF and CLI spoofing, in under 100ms per call. CollabEdge Solutions is the Australian and APAC delivery partner.',
   openGraph: {
     title: 'SHIELD Voice Fraud Prevention | CollabEdge Solutions',
     description:

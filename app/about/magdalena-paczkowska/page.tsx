@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Magdalena Paczkowska — NDIS Practitioner | CollabEdge Solutions',
   description:
-    'Magdalena Paczkowska is a Senior Support Coordinator and Early Intervention Key Worker with 25+ years of experience across early childhood, special education, social work and physiotherapy.',
+    'Magdalena Paczkowska, Senior Support Coordinator and Early Intervention Key Worker, brings 25+ years across early childhood and special education.',
   openGraph: {
     title: 'Magdalena Paczkowska — NDIS Practitioner and Strategic Advisor',
     description:

@@ -4,7 +4,7 @@ import AiAutomationHubClient from './AiAutomationHubClient'
 export const metadata: Metadata = {
   title: 'AI and Automation Roadmap | CollabEdge Solutions',
   description:
-    'Where our AI and automation work is heading. NDIS and healthcare automation on Microsoft 365 and Google Workspace, growth and marketing automation, and a place to tell us what you would automate.',
+    'Where our AI and automation roadmap is heading, covering NDIS automation on Microsoft 365 and Google Workspace, and a place to tell us what to automate.',
   openGraph: {
     title: 'AI and Automation Roadmap | CollabEdge Solutions',
     description:

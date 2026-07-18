@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Dynamic Netsoft Technologies | CollabEdge Solutions',
   description:
-    'Dynamic Netsoft Technologies, a Microsoft Dynamics 365 implementation partner with industry-specific ISV solutions for real estate, construction, retail, and finance. CollabEdge Solutions is the coordinating partner for Australia and Asia Pacific.',
+    'Dynamic Netsoft Technologies, a Microsoft Dynamics 365 partner for real estate, construction, retail, and finance, coordinated by CollabEdge Solutions.',
   openGraph: {
     title: 'Dynamic Netsoft Technologies | CollabEdge Solutions',
     description:

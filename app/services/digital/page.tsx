@@ -10,7 +10,7 @@ import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Digital Services for Small Business | CollabEdge Solutions',
   description:
-    'Websites, AI agents, CRM automation, and data analytics for NDIS providers and Australian small businesses. Senior-led, practical, and recommended only where the cost benefit stacks up.',
+    'Websites, AI agents, CRM automation, and data analytics for NDIS providers and small businesses. Senior-led, practical, and cost-conscious.',
   openGraph: {
     title: 'Digital Services for Small Business | CollabEdge Solutions',
     description:

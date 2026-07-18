@@ -4,7 +4,7 @@ slug: unlocking-power-of-data-ndis
 date: 2026-04-21
 category: Data and Analytics
 author: Sinclair Hurtis
-description: "How NDIS providers, policymakers and coordinators can use public NDIS data for better decisions. Real Power BI dashboards covering projected growth, utilisation rates in Brimbank Melton, and compliance tracking, built with La Trobe University data analytics student Daniel Beelitz."
+description: "How NDIS providers and coordinators can use public NDIS data for better decisions, with real Power BI dashboards covering growth and compliance tracking."
 redirect_from: /blogs/unlocking-the-power-of-data-in-the-ndis-what-it-means-for-you
 ---
 

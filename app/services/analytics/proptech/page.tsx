@@ -10,11 +10,11 @@ import type { ChartConfig, StatCardData } from '@/components/campaigns/CampaignD
 export const metadata: Metadata = {
   title: 'Data Analytics for Proptech | CollabEdge Solutions',
   description:
-    'Property managers and principals who want clear insight into vacancy trends, rent roll performance, and portfolio patterns. CollabEdge builds the reporting layer from the data you already have.',
+    'For property managers wanting clear insight into vacancy trends, rent roll performance, and portfolio patterns, built from data you already have.',
   openGraph: {
     title: 'Data Analytics for Proptech | CollabEdge Solutions',
     description:
-      'Property managers and principals who want clear insight into vacancy trends, rent roll performance, and portfolio patterns. CollabEdge builds the reporting layer from the data you already have.',
+      'For property managers wanting clear insight into vacancy trends, rent roll performance, and portfolio patterns, built from data you already have.',
     url: 'https://www.collabedgesolutions.com.au/services/analytics/proptech',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',

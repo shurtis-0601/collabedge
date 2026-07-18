@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'CollabEdge Solutions | NDIS Compliance and Enterprise Technology, Melbourne',
   description:
-    'CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology with specialist partners across Australia and Asia Pacific.',
+    'CollabEdge Solutions helps Australian NDIS providers simplify compliance, and delivers enterprise technology through partners across Asia Pacific.',
   openGraph: {
     title: 'CollabEdge Solutions | NDIS Compliance and Enterprise Technology',
     description:
