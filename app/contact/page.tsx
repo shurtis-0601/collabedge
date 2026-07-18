@@ -30,6 +30,12 @@ const schema = {
     name: 'CollabEdge Solutions',
     telephone: '0426464442',
     email: 'sinclair@collabedgesolutions.com.au',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Melbourne',
+      addressRegion: 'VIC',
+      addressCountry: 'AU',
+    },
   },
 }
 
