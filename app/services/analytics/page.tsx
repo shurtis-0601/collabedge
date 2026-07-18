@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: 'Data Analytics for SMEs | CollabEdge Solutions',
   description:
     'CollabEdge builds the reporting layer from the data your business already has. Practical, senior-led data analytics for health providers, property businesses and retailers.',
+  openGraph: {
+    title: 'Data Analytics for SMEs | CollabEdge Solutions',
+    description:
+      'CollabEdge builds the reporting layer from the data your business already has. Practical, senior-led data analytics for health providers, property businesses and retailers.',
+    url: 'https://www.collabedgesolutions.com.au/services/analytics',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    type: 'website',
+  },
 }
 
 const industries = [

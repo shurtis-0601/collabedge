@@ -36,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about/magdalena-paczkowska', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/case-studies', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/case-studies/enhance-ability-services', priority: 0.5, changeFrequency: 'monthly' as const },
-    { path: '/campaigns/sil-registration', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/appt', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const },
