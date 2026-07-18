@@ -205,7 +205,7 @@ export default function NDISComplianceAuditPage() {
             <p className="text-[14px] text-slate mt-8">
               Unregistered SIL provider facing the registration deadline?{' '}
               <a
-                href="/campaigns/sil-registration"
+                href="/services/ndis-compliance-audit/sil-registration"
                 className="inline-flex items-center gap-1 font-semibold text-brand-goldLight hover:underline underline-offset-2"
               >
                 See how we help <ArrowRight size={13} />

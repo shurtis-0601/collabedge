@@ -83,6 +83,7 @@ export default function SiteFooter() {
               <li><Link href="/resources/videos" className="hover:text-white transition-colors">Video Walkthroughs</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link></li>
             </ul>
           </div>
         </div>
