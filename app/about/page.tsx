@@ -39,7 +39,12 @@ const schema = {
       '@type': 'Person',
       name: 'Sinclair Hurtis',
       jobTitle: 'Founder and Principal Consultant',
-      alumniOf: ['Citibank', 'Singtel', 'NAB', 'Victorian Department of Health'],
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Melbourne',
+      addressRegion: 'VIC',
+      addressCountry: 'AU',
     },
     areaServed: 'AU',
     url: 'https://www.collabedgesolutions.com.au',
