@@ -30,6 +30,12 @@ const schema = {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
     url: 'https://www.collabedgesolutions.com.au',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Melbourne',
+      addressRegion: 'VIC',
+      addressCountry: 'AU',
+    },
   },
   areaServed: ['AU', 'SG'],
   description:

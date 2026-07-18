@@ -30,6 +30,12 @@ const serviceSchema = {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
     url: 'https://www.collabedgesolutions.com.au',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Melbourne',
+      addressRegion: 'VIC',
+      addressCountry: 'AU',
+    },
   },
   areaServed: 'AU',
   description: 'Workflow automation consulting for NDIS providers and healthcare operators, built on existing Microsoft 365 and Google Workspace infrastructure.',
