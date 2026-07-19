@@ -16,6 +16,10 @@ const EXCLUDED_PATHS = [
   '/campaigns/proptech-data-analytics',
   '/campaigns/allied-health-data-analytics',
   '/campaigns/retail-data-analytics',
+  '/services/analytics',
+  '/services/analytics/health',
+  '/services/analytics/proptech',
+  '/services/analytics/retail',
 ]
 
 const banners = [
