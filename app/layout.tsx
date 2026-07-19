@@ -36,7 +36,7 @@ const orgSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "CollabEdge Solutions — NDIS Compliance & Enterprise Technology",
+  title: "CollabEdge Solutions | NDIS Compliance and Enterprise Technology",
   description:
     "NDIS compliance, workflow automation, and enterprise technology consulting for Australian healthcare providers and businesses. Melbourne-based, Australian-owned.",
   metadataBase: new URL("https://www.collabedgesolutions.com.au"),

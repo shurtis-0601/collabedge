@@ -41,7 +41,7 @@ const NAV: NavItem[] = [
     href: "/resources-1",
     children: [
       {
-        label: "Blog — Data Security",
+        label: "Blog: Data Security",
         href: "https://www.hurtiscollabedgesolutions.com.au/blog/nu3z35pb4fzq9e7bpxf3tkktyyxn52-z5974",
         external: true,
       },

@@ -42,9 +42,9 @@ const serviceSchema = {
   description:
     'NDIS compliance documentation, audit readiness, and governance frameworks for Australian NDIS providers.',
   offers: [
-    { '@type': 'Offer', name: 'Tier 1 — Foundation', priceRange: '$2500-$4000', priceCurrency: 'AUD' },
-    { '@type': 'Offer', name: 'Tier 2 — Comprehensive', priceRange: '$4500-$6500', priceCurrency: 'AUD' },
-    { '@type': 'Offer', name: 'Tier 3 — Enterprise', priceRange: '$8000-$12000', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 1: Foundation', priceRange: '$2500-$4000', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 2: Comprehensive', priceRange: '$4500-$6500', priceCurrency: 'AUD' },
+    { '@type': 'Offer', name: 'Tier 3: Enterprise', priceRange: '$8000-$12000', priceCurrency: 'AUD' },
   ],
 }
 

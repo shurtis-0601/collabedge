@@ -9,11 +9,11 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
-  title: 'Magdalena Paczkowska — NDIS Practitioner | CollabEdge Solutions',
+  title: 'Magdalena Paczkowska, NDIS Practitioner | CollabEdge Solutions',
   description:
     'Magdalena Paczkowska, Senior Support Coordinator and Early Intervention Key Worker, brings 25+ years across early childhood and special education.',
   openGraph: {
-    title: 'Magdalena Paczkowska — NDIS Practitioner and Strategic Advisor',
+    title: 'Magdalena Paczkowska, NDIS Practitioner and Strategic Advisor',
     description:
       'Frontline NDIS practitioner with 25+ years experience across early childhood, special education, social work and physiotherapy.',
     url: 'https://www.collabedgesolutions.com.au/about/magdalena-paczkowska',

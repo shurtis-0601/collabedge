@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Case Studies — CollabEdge Solutions',
+  name: 'Case Studies, CollabEdge Solutions',
   url: 'https://www.collabedgesolutions.com.au/case-studies',
   description:
     'Documented client outcomes from CollabEdge Solutions consulting engagements with NDIS providers and Australian businesses.',
   hasPart: [
     {
       '@type': 'Article',
-      headline: 'Enhance Ability Services — NDIS Operations Transformation',
+      headline: 'Enhance Ability Services, NDIS Operations Transformation',
       url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
     },
   ],

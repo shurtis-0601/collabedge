@@ -35,12 +35,12 @@ type PlatformItem = {
 const ndisItems: PlatformItem[] = [
   {
     title: 'Employee Onboarding Automation',
-    desc: 'Automated filing and expiry tracking for staff compliance documents — police checks, Working With Children Checks, first aid certificates, and NDIS worker screening checks.',
+    desc: 'Automated filing and expiry tracking for staff compliance documents, including police checks, Working With Children Checks, first aid certificates, and NDIS worker screening checks.',
     statusByPlatform: { microsoft: 'available', google: 'not-started' },
   },
   {
     title: 'NDIS Funding and Burn Rate Tracker',
-    desc: 'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local — no participant data ever leaves your device.',
+    desc: 'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local, with no participant data ever leaving your device.',
     statusByPlatform: { microsoft: 'available', google: 'not-started' },
   },
   {

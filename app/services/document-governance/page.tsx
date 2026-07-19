@@ -47,7 +47,7 @@ const serviceSchema = {
 const docFaqs: FAQ[] = [
   {
     q: 'Do I need to change my document platform to work with CollabEdge?',
-    a: 'No. CollabEdge builds document governance systems inside SharePoint (Microsoft 365) or Google Drive — whichever you already use. No new platform is required.',
+    a: 'No. CollabEdge builds document governance systems inside SharePoint (Microsoft 365) or Google Drive, whichever you already use. No new platform is required.',
   },
   {
     q: 'How long does a document governance engagement take?',
@@ -84,7 +84,7 @@ const painPoints = [
   },
   {
     icon: Search,
-    text: 'No consistent naming convention — files called "final", "final2", "final-USE-THIS"',
+    text: 'No consistent naming convention: files called "final", "final2", "final-USE-THIS"',
   },
   {
     icon: Users,
@@ -106,7 +106,7 @@ const folderStructure = [
   {
     number: '01',
     name: 'Human Resources',
-    desc: 'Staff files, contracts, screening checks, training records, and position descriptions — each worker has their own subfolder.',
+    desc: 'Staff files, contracts, screening checks, training records, and position descriptions. Each worker has their own subfolder.',
     icon: Users,
   },
   {
@@ -118,7 +118,7 @@ const folderStructure = [
   {
     number: '98',
     name: 'Staff Workspaces',
-    desc: 'Private per-worker folders with restricted access — visible only to that worker and management. Solves the confidentiality problem.',
+    desc: 'Private per-worker folders with restricted access, visible only to that worker and management. Solves the confidentiality problem.',
     icon: Lock,
   },
   {
@@ -130,7 +130,7 @@ const folderStructure = [
   {
     number: 'Rules',
     name: 'General Filing Rules',
-    desc: 'Clear naming conventions, version control rules, PDF signing requirements, and template discipline — documented and trained with your team.',
+    desc: 'Clear naming conventions, version control rules, PDF signing requirements, and template discipline, documented and trained with your team.',
     icon: CheckCircle,
   },
 ]
@@ -139,7 +139,7 @@ const differentiators = [
   {
     icon: Users,
     title: 'Staff-first design',
-    desc: 'Every folder, naming rule, and access control is designed around how staff actually work — not how an auditor thinks they should work. If staff find it confusing, they will not use it.',
+    desc: 'Every folder, naming rule, and access control is designed around how staff actually work, not how an auditor thinks they should work. If staff find it confusing, they will not use it.',
   },
   {
     icon: Shield,
@@ -400,7 +400,7 @@ export default function DocumentGovernancePage() {
                     Real Engagement
                   </span>
                   <h3 className="text-[18px] font-bold text-white mb-2">
-                    Safe Star Supports — Perth, WA
+                    Safe Star Supports, Perth, WA
                   </h3>
                   <p className="text-[14px] text-[#D1D5DB] max-w-[560px] leading-relaxed">
                     CollabEdge Solutions designed and implemented a complete document governance system for Safe Star Supports, a registered NDIS provider in Perth. The system included a five-folder numbered architecture, staff workspace privacy controls, a seven-year archive structure, general filing rules, and an AI Use Policy, all built inside their existing platform.

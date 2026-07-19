@@ -11,11 +11,11 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import TestimonialCarousel from '@/components/sections/TestimonialCarousel'
 
 export const metadata: Metadata = {
-  title: 'Sinclair Hurtis — Founder | CollabEdge Solutions',
+  title: 'Sinclair Hurtis, Founder | CollabEdge Solutions',
   description:
     'Sinclair Hurtis, CollabEdge Solutions founder, 30+ years across banks and telcos in APAC and Victorian Health. Sessional Academic, Monash University.',
   openGraph: {
-    title: 'Sinclair Hurtis — Founder and Principal Consultant',
+    title: 'Sinclair Hurtis, Founder and Principal Consultant',
     description:
       'Practitioner-led consulting built on 30+ years of Fortune 500 and enterprise experience across Australia and Asia Pacific.',
     url: 'https://www.collabedgesolutions.com.au/about/sinclair-hurtis',

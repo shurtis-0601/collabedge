@@ -42,7 +42,7 @@ export default function TermsPage() {
 
           <h2 className="text-[26px] font-bold text-text-dark mt-10 mb-3 tracking-tight">2. Intellectual Property</h2>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
-            All content on this website — including text, graphics, logos, images, and software — is the property of CollabEdge Solutions or its content suppliers and is protected by Australian and international copyright laws.
+            All content on this website, including text, graphics, logos, images, and software, is the property of CollabEdge Solutions or its content suppliers and is protected by Australian and international copyright laws.
           </p>
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             You may view and print pages for personal, non-commercial use only. You must not reproduce, distribute, modify or create derivative works without our express written consent.

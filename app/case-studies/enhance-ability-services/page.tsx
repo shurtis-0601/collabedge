@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     'How CollabEdge Solutions helped Enhance Ability Services, a Geelong NDIS provider, rebuild compliance using Microsoft 365, with no new platforms added.',
   openGraph: {
-    title: 'Enhance Ability Services — NDIS Operations Case Study',
+    title: 'Enhance Ability Services, NDIS Operations Case Study',
     description:
       'From overwhelmed to structured. A real NDIS provider transformation, documented in full.',
     url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Enhance Ability Services — NDIS Operations Transformation',
+  headline: 'Enhance Ability Services, NDIS Operations Transformation',
   url: 'https://www.collabedgesolutions.com.au/case-studies/enhance-ability-services',
   datePublished: '2026-06-01',
   author: {

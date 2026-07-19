@@ -9,11 +9,11 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
-  title: 'Raj Purshotham — Strategy and Growth Advisor | CollabEdge Solutions',
+  title: 'Raj Purshotham, Strategy and Growth Advisor | CollabEdge Solutions',
   description:
     'Raj Purshotham leads Strategy, Growth and International Advisory at CollabEdge Solutions, Dubai-based with nearly 10 years at Cisco.',
   openGraph: {
-    title: 'Raj Purshotham — Strategy, Growth and International Advisory',
+    title: 'Raj Purshotham, Strategy, Growth and International Advisory',
     description:
       'Enterprise technology and go-to-market specialist with deep experience across MEA, India and Asia Pacific.',
     url: 'https://www.collabedgesolutions.com.au/about/raj-purshotham',

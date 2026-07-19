@@ -252,7 +252,7 @@ export default function CampaignDashboardMock({ dashboardTitle, statCards, chart
         </text>
       </svg>
       <figcaption className="sr-only">
-        {dashboardTitle} — illustrative dashboard example, not real client data.
+        {dashboardTitle}: illustrative dashboard example, not real client data.
       </figcaption>
     </figure>
   )
