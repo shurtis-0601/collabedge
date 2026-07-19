@@ -6,6 +6,7 @@ import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
 import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
 import type { ChartConfig, StatCardData } from '@/components/campaigns/CampaignDashboardMock'
+import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Data Analytics for Retail | CollabEdge Solutions',
@@ -85,9 +86,43 @@ const steps = [
   },
 ]
 
+const retailAnalyticsFaqs: FAQ[] = [
+  {
+    q: 'Does this work with my POS system?',
+    a: 'Yes. We build from the data already sitting in your POS and inventory systems rather than requiring new software.',
+  },
+  {
+    q: 'Can this help with inventory and stock decisions, not just sales reporting?',
+    a: 'Yes. Margin, sell-through, and stock patterns are exactly the kind of decisions this is built to support, not just top line sales numbers.',
+  },
+  {
+    q: 'How is this different from the reports my POS already gives me?',
+    a: 'Most POS reporting is built to show you what happened, not to help you decide what to do next. We build the structure around your actual buying, ranging, or operational decisions.',
+  },
+  {
+    q: 'Do I need a certain size business for this to be worth it?',
+    a: 'No. The scope and cost adjust to the size of the business, this is not a large-retailer-only offer.',
+  },
+]
+
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: retailAnalyticsFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function RetailAnalyticsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
@@ -190,7 +225,22 @@ export default function RetailAnalyticsPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA */}
+      {/* 5. FAQ */}
+      <section className="bg-navy py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-8 leading-snug">
+              Common Questions
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={retailAnalyticsFaqs} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 6. Final CTA */}
       <CTASection
         heading="Start With a Conversation"
         sub="A free 30 minute session to look at the data you have and where the biggest reporting gaps are."

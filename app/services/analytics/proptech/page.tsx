@@ -6,6 +6,7 @@ import IndustryRoleTabs from '@/components/campaigns/IndustryRoleTabs'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
 import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
 import type { ChartConfig, StatCardData } from '@/components/campaigns/CampaignDashboardMock'
+import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Data Analytics for Proptech | CollabEdge Solutions',
@@ -86,9 +87,43 @@ const steps = [
   },
 ]
 
+const proptechAnalyticsFaqs: FAQ[] = [
+  {
+    q: 'Does this integrate with my property management software?',
+    a: 'Yes. We build from the data already in your existing PM system rather than requiring a new platform.',
+  },
+  {
+    q: 'Can this track compliance and maintenance obligations, not just financial performance?',
+    a: 'Yes. The reporting structure covers whatever your business actually needs visibility on, financial, compliance, or maintenance, not just rent roll numbers.',
+  },
+  {
+    q: 'How is this different from the reporting already built into my PM software?',
+    a: 'Most PM software reports on what it was designed to report on, not necessarily what your business needs to decide on. We build the specific structure around your actual decisions.',
+  },
+  {
+    q: 'Do you work with individual agents or only larger agencies?',
+    a: 'Both. The approach scales to the size of the business, a solo principal and a larger agency need different depth, not a different philosophy.',
+  },
+]
+
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: proptechAnalyticsFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function ProptechAnalyticsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
@@ -191,7 +226,22 @@ export default function ProptechAnalyticsPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA */}
+      {/* 5. FAQ */}
+      <section className="bg-navy py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-8 leading-snug">
+              Common Questions
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={proptechAnalyticsFaqs} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 6. Final CTA */}
       <CTASection
         heading="Start With a Conversation"
         sub="A free 30 minute session to look at the data you have and where the biggest reporting gaps are."

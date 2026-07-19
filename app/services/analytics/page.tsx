@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
+import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Data Analytics for SMEs | CollabEdge Solutions',
@@ -56,9 +57,47 @@ const steps = [
   },
 ]
 
+const analyticsFaqs: FAQ[] = [
+  {
+    q: 'Do I need to replace my current software to get this?',
+    a: 'No. We build the reporting layer from the systems you already use. A new platform is only recommended when the data genuinely cannot be pulled from what you have.',
+  },
+  {
+    q: 'How long does a typical project take?',
+    a: 'It depends on how many systems the data lives in and how clean it already is. We scope this properly in the first conversation rather than quoting a number before we have looked at your data.',
+  },
+  {
+    q: 'What does this actually cost?',
+    a: 'It depends on scope, which is why we define it upfront rather than pricing blind. You will see the investment and the reporting outcome side by side before deciding anything.',
+  },
+  {
+    q: 'Do you build a one off report or an ongoing dashboard?',
+    a: 'Either. Some clients want a single clear structure they can maintain themselves, others want it kept live and current. We scope this to what you actually need, not what is easiest for us to sell.',
+  },
+  {
+    q: 'What if my data is messy or spread across different systems?',
+    a: 'That is the normal starting point, not a blocker. Reconciling scattered or inconsistent data is part of the work, not a reason to wait until it is tidy first.',
+  },
+]
+
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: analyticsFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function AnalyticsHubPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
@@ -152,7 +191,22 @@ export default function AnalyticsHubPage() {
         </div>
       </section>
 
-      {/* 4. Final CTA */}
+      {/* 4. FAQ */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+              Common Questions
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={analyticsFaqs} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 5. Final CTA */}
       <CTASection
         heading="Start With a Conversation"
         sub="A free 30 minute session to look at the data you have and where the biggest reporting gaps are."

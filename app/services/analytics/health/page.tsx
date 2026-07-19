@@ -6,6 +6,7 @@ import CTASection from '@/components/ui/CTASection'
 import HealthTabsWithNote from '@/components/campaigns/HealthTabsWithNote'
 import type { RoleTab } from '@/components/campaigns/IndustryRoleTabs'
 import CampaignDashboardMock from '@/components/campaigns/CampaignDashboardMock'
+import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 const AgedCareMarginDashboard = dynamic(
   () => import('@/components/campaigns/AgedCareMarginDashboard'),
@@ -120,9 +121,43 @@ const dashboards = {
   'practice-manager': <PracticeManagerDashboard />,
 }
 
+const healthAnalyticsFaqs: FAQ[] = [
+  {
+    q: 'Does this work with the practice management or NDIS software I already use?',
+    a: 'Yes, in most cases. We connect to the systems you are already running rather than asking you to adopt something new.',
+  },
+  {
+    q: 'Is participant data safe when you build these reports?',
+    a: 'Yes. We work with de-identified or aggregated data wherever possible, consistent with the same privacy-first approach behind MedPrivacy, our own de-identification tool for NDIS documentation.',
+  },
+  {
+    q: 'Can this help with SCHADS Award or Aged Care Act compliance reporting?',
+    a: 'For aged care operators specifically, yes. Our reporting for aged care operators is built to surface wage and record-keeping exposure under the SCHADS Award and the Aged Care Act 2024, rather than waiting to find it at payroll audit.',
+  },
+  {
+    q: 'Do I need a data analyst on staff to use this?',
+    a: 'No. The reporting structure is built to be read and maintained by your existing team, not to require a dedicated analyst.',
+  },
+]
+
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: healthAnalyticsFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function HealthAnalyticsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-border px-5 sm:px-10 py-3">
         <div className="max-w-[1000px] mx-auto">
@@ -207,7 +242,22 @@ export default function HealthAnalyticsPage() {
         </div>
       </section>
 
-      {/* 4. Final CTA */}
+      {/* 4. FAQ */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+              Common Questions
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={healthAnalyticsFaqs} />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 5. Final CTA */}
       <CTASection
         heading="Start With a Conversation"
         sub="A free 30 minute session to look at the data you have and where the biggest reporting gaps are."
