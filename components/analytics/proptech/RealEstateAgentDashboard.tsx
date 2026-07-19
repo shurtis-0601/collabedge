@@ -54,10 +54,10 @@ export default function RealEstateAgentDashboard() {
           datasets: [{
             data: [48, 29, 11, 8, 4],
             backgroundColor: ['#2a78d6', '#1baf7a', '#eda100', '#e34948', '#4a3aa7'],
-            cutout: '62%',
           }],
         },
         options: {
+          cutout: '62%',
           responsive: true,
           maintainAspectRatio: false,
           plugins: { legend: { position: 'bottom', labels: { font: { size: 12 } } }, title: { display: true, text: 'Enquiry source split', font: { size: 13 } } },
