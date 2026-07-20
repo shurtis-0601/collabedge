@@ -1,5 +1,5 @@
 ---
-title: "SIL Registration for Unregistered Providers: What Actually Needs to Happen Before 1 October 2026"
+title: "SIL Registration: What Unregistered Providers Must Do Before October 2026"
 slug: sil-registration-unregistered-providers-2026
 date: 2026-07-20
 category: NDIS Compliance Series
