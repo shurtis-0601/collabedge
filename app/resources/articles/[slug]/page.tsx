@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft } from 'lucide-react'
-import { getPublishedArticles, getArticleBySlug, formatDate, SERIES, Block } from '@/lib/articles'
+import { getPublishedArticles, getArticleBySlug, formatDate, SERIES, COMPLIANCE_SERIES, Block } from '@/lib/articles'
 
 export const revalidate = 3600
 
@@ -72,11 +72,14 @@ function renderInline(text: string): React.ReactNode[] {
 }
 
 function SeriesNav({ currentSlug }: { currentSlug: string }) {
+  const inCompliance = COMPLIANCE_SERIES.some((item) => item.slug === currentSlug)
+  const series = inCompliance ? COMPLIANCE_SERIES : SERIES
+  const seriesTitle = inCompliance ? 'NDIS Compliance Series' : 'The NDIS Productivity Series'
   return (
     <div className="bg-offwhite border border-border rounded-xl p-6 my-8">
-      <h3 className="text-[18px] font-bold text-text-dark mb-4">The NDIS Productivity Series</h3>
+      <h3 className="text-[18px] font-bold text-text-dark mb-4">{seriesTitle}</h3>
       <ol className="flex flex-col gap-3">
-        {SERIES.map((item) => (
+        {series.map((item) => (
           <li key={item.position} className="flex items-start gap-3">
             <span className="text-[14px] font-bold text-brand-goldLight flex-shrink-0 w-5">
               {item.position}.
