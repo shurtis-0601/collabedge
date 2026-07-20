@@ -49,6 +49,10 @@ const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   '/images/blog/ndis-shadow-ai-risk-staff-chatgpt.webp': { width: 1500, height: 844 },
   '/images/blog/ndis-safe-ai-workflow-deidentification-steps.webp': { width: 1500, height: 844 },
   '/images/blog/ndis-provider-ai-policy-document-2026.webp': { width: 1500, height: 844 },
+  '/images/blog/sil-registration-hero.webp': { width: 1200, height: 800 },
+  '/images/blog/sil-registration-timeline.webp': { width: 1200, height: 800 },
+  '/images/blog/sil-registration-audit-review.webp': { width: 1200, height: 800 },
+  '/images/blog/sil-registration-practice-standards.webp': { width: 1200, height: 800 },
 }
 
 export const SERIES = [
@@ -76,6 +80,14 @@ export const SERIES = [
     position: 5,
     title: 'AI and NDIS Documentation: What Is Safe, What Is Risky, and What Actually Works',
     slug: 'ndis-ai-documentation-safe-risky-what-works-2026',
+  },
+] as const
+
+export const COMPLIANCE_SERIES = [
+  {
+    position: 1,
+    title: "SIL Registration for Unregistered Providers: What Actually Needs to Happen Before 1 October 2026",
+    slug: 'sil-registration-unregistered-providers-2026',
   },
 ] as const
 
