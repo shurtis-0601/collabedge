@@ -23,6 +23,11 @@ const PracticeManagerDashboard = dynamic(
   { ssr: false, loading: () => <div style={{ height: '400px' }} /> }
 )
 
+const CybersecurityDashboard = dynamic(
+  () => import('@/components/analytics/health/CybersecurityDashboard'),
+  { ssr: false, loading: () => <div style={{ height: '400px' }} /> }
+)
+
 export const metadata: Metadata = {
   title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
   description:
@@ -74,6 +79,15 @@ const tabs: RoleTab[] = [
       'Compliance documentation and reporting is reactive and time-consuming, built for audits rather than embedded in day-to-day operations.',
     ],
   },
+  {
+    id: 'cybersecurity-governance',
+    label: 'Cybersecurity and Data Governance',
+    painPoints: [
+      'Patient and client records are accessed across multiple systems daily, but most providers have no way of knowing whether that access follows expected patterns.',
+      'Systems that keep no logs at all create a blind spot: a breach there would only come to light when a patient reports something wrong.',
+      'Under the Notifiable Data Breaches scheme, providers have 30 days to assess a suspected breach, and that timeline only works if identifying who was affected takes days rather than weeks.',
+    ],
+  },
 ]
 
 const alliedHealthChart = {
@@ -119,6 +133,7 @@ const dashboards = {
     />
   ),
   'practice-manager': <PracticeManagerDashboard />,
+  'cybersecurity-governance': <CybersecurityDashboard />,
 }
 
 const healthAnalyticsFaqs: FAQ[] = [
