@@ -119,6 +119,7 @@ function FlagsBarChart() {
           },
           y: {
             beginAtZero: true,
+            suggestedMax: 12,
             ticks: { font: { size: 10 }, stepSize: 3 },
             grid: { color: '#F3F4F6' },
           },
