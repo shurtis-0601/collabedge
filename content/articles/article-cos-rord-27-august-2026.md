@@ -1,7 +1,7 @@
 ---
 title: "COS and RoRD After 27 August 2026: What Support Coordinators and Participants Need to Know"
 slug: cos-rord-27-august-2026-changes
-date: 2026-08-28
+date: 2026-08-27
 category: NDIS Reform Series
 series_position: 1
 author: Sinclair Hurtis
