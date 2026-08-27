@@ -96,29 +96,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* 2. Featured series */}
-      <section className="bg-offwhite py-16 px-5 sm:px-10">
-        <div className="max-w-[1000px] mx-auto">
-          <FadeIn variant="fadeUp">
-            <GoldRuleAnimated />
-            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-3 leading-snug">
-              The NDIS Productivity Series
-            </h2>
-            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              A five part series on staying viable and ethical as the scheme tightens.
-            </p>
-          </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {seriesArticles.map((article, i) => (
-              <FadeIn key={article.slug} variant="fadeUp" delay={i * 80}>
-                <ArticleCard article={article} />
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. NDIS Reform Series */}
+      {/* 2. NDIS Reform Series */}
       {reformSeriesArticles.length > 0 && (
         <section className="bg-offwhite py-16 px-5 sm:px-10">
           <div className="max-w-[1000px] mx-auto">
@@ -141,6 +119,28 @@ export default function ResourcesPage() {
           </div>
         </section>
       )}
+
+      {/* 3. Featured series */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-3 leading-snug">
+              The NDIS Productivity Series
+            </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
+              A five part series on staying viable and ethical as the scheme tightens.
+            </p>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {seriesArticles.map((article, i) => (
+              <FadeIn key={article.slug} variant="fadeUp" delay={i * 80}>
+                <ArticleCard article={article} />
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* 4. All articles */}
       <section className="bg-navy py-16 px-5 sm:px-10">
