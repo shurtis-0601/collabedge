@@ -53,6 +53,10 @@ const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   '/images/blog/sil-registration-timeline.webp': { width: 1200, height: 800 },
   '/images/blog/sil-registration-audit-review.webp': { width: 1200, height: 800 },
   '/images/blog/sil-registration-practice-standards.webp': { width: 1200, height: 800 },
+  '/images/blog/ndis-cos-rord-coordinator-lodgement-call.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-cos-vs-rord-comparison-graphic.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-cos-coordinator-family-handover.webp': { width: 1672, height: 941 },
+  '/images/blog/ndis-reform-27-august-1-october-timeline.webp': { width: 1672, height: 941 },
 }
 
 export const SERIES = [
@@ -88,6 +92,38 @@ export const COMPLIANCE_SERIES = [
     position: 1,
     title: "SIL Registration for Unregistered Providers: What Actually Needs to Happen Before 1 October 2026",
     slug: 'sil-registration-unregistered-providers-2026',
+  },
+] as const
+
+export const REFORM_SERIES = [
+  {
+    position: 1,
+    title: 'COS and RoRD After 27 August 2026: What Support Coordinators and Participants Need to Know',
+    slug: 'cos-rord-27-august-2026-changes',
+  },
+  {
+    position: 2,
+    title: 'NDIS Support Budget Resets: Social, Civic and Community Participation Supports from October 2026',
+    slug: 'ndis-reform-october-2026-support-budget-resets',
+    comingSoon: true,
+  },
+  {
+    position: 3,
+    title: 'The 90 Day Claims Submission Window: What Changes in December 2026',
+    slug: 'ndis-reform-december-2026-claims-window',
+    comingSoon: true,
+  },
+  {
+    position: 4,
+    title: 'Expanded Mandatory Provider Registration: What to Expect in 2027',
+    slug: 'ndis-reform-2027-mandatory-provider-registration',
+    comingSoon: true,
+  },
+  {
+    position: 5,
+    title: 'New Eligibility and Access Rules: Preparing for January 2028',
+    slug: 'ndis-reform-2028-eligibility-access-rules',
+    comingSoon: true,
   },
 ] as const
 

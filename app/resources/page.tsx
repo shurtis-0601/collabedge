@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import CTASection from '@/components/ui/CTASection'
-import { getPublishedArticles, formatDate, SERIES, Article } from '@/lib/articles'
+import { getPublishedArticles, formatDate, SERIES, REFORM_SERIES, Article } from '@/lib/articles'
 
 export const revalidate = 3600
 
@@ -71,6 +71,10 @@ export default function ResourcesPage() {
   const seriesArticles = SERIES
     .map((s) => articles.find((a) => a.slug === s.slug))
     .filter((a): a is Article => a !== undefined)
+  const reformSeriesArticles = REFORM_SERIES
+    .filter((s) => !('comingSoon' in s && s.comingSoon))
+    .map((s) => articles.find((a) => a.slug === s.slug))
+    .filter((a): a is Article => a !== undefined)
 
   return (
     <>
@@ -92,7 +96,31 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* 2. Featured series */}
+      {/* 2. NDIS Reform Series */}
+      {reformSeriesArticles.length > 0 && (
+        <section className="bg-offwhite py-16 px-5 sm:px-10">
+          <div className="max-w-[1000px] mx-auto">
+            <FadeIn variant="fadeUp">
+              <GoldRuleAnimated />
+              <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-3 leading-snug">
+                NDIS Reform Series
+              </h2>
+              <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
+                A five part series on the legislative changes reshaping Support Coordination and provider obligations from August 2026 through to January 2028.
+              </p>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {reformSeriesArticles.map((article, i) => (
+                <FadeIn key={article.slug} variant="fadeUp" delay={i * 80}>
+                  <ArticleCard article={article} />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 3. Featured series */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -114,7 +142,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* 3. All articles */}
+      {/* 4. All articles */}
       <section className="bg-navy py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -133,7 +161,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* 4. AI Hub crosslink */}
+      {/* 5. AI Hub crosslink */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -155,7 +183,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA */}
+      {/* 6. Final CTA */}
       <CTASection
         heading="Prefer a Conversation?"
         sub="A free 30 minute conversation beats an hour of reading. Bring your questions."
