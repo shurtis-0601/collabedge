@@ -91,6 +91,22 @@ const nextConfig = {
         destination: "/resources",
         permanent: true,
       },
+      // Temporary campaign short links, destinations may change
+      {
+        source: "/go/data",
+        destination: "https://au.bigin.online/org7006551924/forms/what-is-your-data-telling-you",
+        permanent: false,
+      },
+      {
+        source: "/go/tools",
+        destination: "/products",
+        permanent: false,
+      },
+      {
+        source: "/go/book",
+        destination: "/appt",
+        permanent: false,
+      },
     ];
   },
   images: {
