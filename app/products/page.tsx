@@ -10,7 +10,7 @@ import ProductTabs, { Product } from '@/components/products/ProductTabs'
 export const metadata: Metadata = {
   title: 'Products | CollabEdge Solutions',
   description:
-    'Practical tools built by an active NDIS practitioner. De-identification, staff compliance automation, and funding tracking, built for real caseloads.',
+    'Practical tools built by a practitioner active in NDIS operations and support coordination. De-identification, staff compliance automation, and funding tracking, built for real caseloads.',
   openGraph: {
     title: 'Products | CollabEdge Solutions',
     description:
@@ -27,7 +27,8 @@ const products: Product[] = [
     icon: <Shield size={20} className="text-gold" />,
     title: 'MedPrivacy',
     status: 'Available Now',
-    desc: 'De-identify participant and client data before it goes anywhere near an AI tool. Built for NDIS and healthcare providers who want to use AI safely and stay compliant with the Privacy Act.',
+    badge: 'Founding trial',
+    desc: 'Removes names, addresses, NDIS numbers and other direct identifiers from reports on your own computer, before you use an AI tool. Includes a review step. Currently available to founding trial users.',
     ctaLabel: 'Visit MedPrivacy',
     href: 'https://medprivacy.com.au',
     external: true,
