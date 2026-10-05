@@ -53,7 +53,7 @@ export default function VideoWalkthroughsPage() {
               <div id="medprivacy-demo" className="scroll-mt-24">
                 <VideoEmbed
                   videoId="4egH7q4hG5I"
-                  title="MedPrivacy Demo: Safe AI for NDIS and Allied Health Documentation"
+                  title="MedPrivacy Demo: De-identifying NDIS Documents Before AI Use"
                   duration="4:37"
                 />
                 <p className="text-[14px] text-slate leading-relaxed mt-4">
