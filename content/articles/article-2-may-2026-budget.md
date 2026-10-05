@@ -281,9 +281,8 @@ pitch. A conversation between practitioners about what
 your practice needs to address the direction the NDIS is
 heading.
 
-[Learn how MedPrivacy protects your practice](https://medprivacy.com.au):
-If you are using AI for documentation, make sure you are
-doing it safely and compliantly.
+[Learn how MedPrivacy works](https://medprivacy.com.au):
+If you are using AI for documentation, remove identifying details first and check every output.
 
 *Sinclair Hurtis is an active NDIS Support Coordinator,
 partnering with My Ability Services in Melbourne, and

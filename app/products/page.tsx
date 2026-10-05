@@ -32,7 +32,8 @@ const products: Product[] = [
     ctaLabel: 'Visit MedPrivacy',
     href: 'https://medprivacy.com.au',
     external: true,
-    demoHref: '/resources/videos#medprivacy-demo',
+    // Watch Demo hidden until a new demo video exists. Restore by uncommenting the next line.
+    // demoHref: '/resources/videos#medprivacy-demo',
   },
   {
     slug: 'employee-onboarding-automation',
@@ -48,7 +49,7 @@ const products: Product[] = [
     icon: <TrendingUp size={20} className="text-gold" />,
     title: 'NDIS Funding and Burn Rate Tracker',
     status: 'Available Now',
-    desc: 'Forecasts total committed spend against remaining budget for every participant, rate multiplied by sessions remaining added to spend to date, catching a shortfall while there is still time to act. Fully local. No participant data ever leaves your device.',
+    desc: 'Forecasts total committed spend against remaining budget for every participant, rate multiplied by sessions remaining added to spend to date, catching a shortfall while there is still time to act. Runs on your own computer.',
     ctaLabel: 'See How It Works',
     href: '/products/funding-burn-rate-tracker',
   },

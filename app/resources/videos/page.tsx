@@ -57,7 +57,7 @@ export default function VideoWalkthroughsPage() {
                   duration="4:37"
                 />
                 <p className="text-[14px] text-slate leading-relaxed mt-4">
-                  A walkthrough of MedPrivacy de-identifying participant and client documents before they go anywhere near an AI tool, keeping NDIS and allied health documentation safe and compliant.
+                  A walkthrough of MedPrivacy removing direct identifiers from participant and client documents on your own computer, before any AI tool is used.
                 </p>
               </div>
             </FadeIn>

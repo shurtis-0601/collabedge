@@ -282,9 +282,7 @@ biggest difference.
 *Sinclair Hurtis is an active NDIS Support Coordinator, partnering with
 My Ability Services in Melbourne, and the founder of CollabEdge
 Solutions. He builds practical tools for ethical NDIS providers,
-starting with the problems he encounters in his own practice. MedPrivacy,
-CollabEdge's local de-identification tool for safe AI use in NDIS
-documentation, is currently in founding member trial. Learn more at
+starting with the problems he encounters in his own practice. MedPrivacy, the CollabEdge local de-identification tool for NDIS documentation, is currently in founding member trial. Learn more at
 [medprivacy.com.au](https://medprivacy.com.au).*
 
 ---
