@@ -107,6 +107,11 @@ const nextConfig = {
         destination: "/appt",
         permanent: false,
       },
+      {
+        source: "/go/start",
+        destination: "/resources/downloads",
+        permanent: false,
+      },
     ];
   },
   images: {
