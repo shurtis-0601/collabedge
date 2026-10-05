@@ -54,7 +54,7 @@ export default function FundingTrackerPage() {
               NDIS Funding and Burn Rate Tracker
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px] mb-8">
-              Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local. Nothing is ever transmitted anywhere.
+              Track spend against budget for every participant in your caseload, with automatic status alerts. Runs on your own computer.
             </p>
             <a href="/appt" className="btn-gold">Book a Free Consultation</a>
           </FadeIn>
