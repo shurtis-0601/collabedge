@@ -160,7 +160,13 @@ function LeadMagnetModal({
   )
 }
 
-export default function LeadMagnetSection({ magnets }: { magnets: LeadMagnetData[] }) {
+export default function LeadMagnetSection({
+  magnets,
+  heading = 'Free Downloads',
+}: {
+  magnets: LeadMagnetData[]
+  heading?: string
+}) {
   const [activeMagnet, setActiveMagnet] = useState<LeadMagnetData | null>(null)
 
   return (
@@ -169,7 +175,7 @@ export default function LeadMagnetSection({ magnets }: { magnets: LeadMagnetData
         <FadeIn variant="fadeUp">
           <GoldRuleAnimated />
           <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-10 leading-snug">
-            Free Downloads
+            {heading}
           </h2>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
