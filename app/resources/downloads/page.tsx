@@ -2,16 +2,17 @@ import fs from 'fs'
 import path from 'path'
 import type { Metadata } from 'next'
 import FadeIn from '@/components/FadeIn'
+import { IndustryPicker, IndustryGuidesSection, MoreOnTheWay } from '@/components/downloads/IndustryGuides'
 import LeadMagnetSection, { LeadMagnetData } from '@/components/sections/LeadMagnetSection'
 
 export const metadata: Metadata = {
-  title: 'Downloads | CollabEdge Solutions',
+  title: 'Free Downloads | CollabEdge Solutions',
   description:
-    'Free practical resources for NDIS providers, built from real practice. AI prompts, funding trackers, participant summaries, and strategic planning templates.',
+    'Plain English guides and tools for growing businesses, NDIS and healthcare providers. Industry guides for health, property, mortgage, retail and accounting, plus NDIS templates.',
   openGraph: {
-    title: 'Downloads | CollabEdge Solutions',
+    title: 'Free Downloads | CollabEdge Solutions',
     description:
-      'Free practical templates for NDIS providers, built from real practice.',
+      'Plain English guides and tools for growing businesses, NDIS and healthcare providers.',
     url: 'https://www.collabedgesolutions.com.au/resources/downloads',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -42,17 +43,21 @@ export default function DownloadsPage() {
               Downloads
             </span>
             <h1 className="text-[34px] md:text-[44px] font-bold text-white tracking-tight leading-[1.15] mb-5 max-w-[680px]">
-              Practical Templates, Ready to Use
+              Free Downloads
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px]">
-              Practical resources built from real NDIS practice. Enter your details and we will send your chosen resource straight to your inbox.
+              Plain English guides and tools for growing businesses, NDIS and healthcare providers.
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* 2 and 3. Lead magnet cards and email capture form */}
-      <LeadMagnetSection magnets={magnets} />
+      <IndustryPicker />
+      <IndustryGuidesSection />
+
+      {/* NDIS lead magnet cards and email capture form, unchanged */}
+      <LeadMagnetSection magnets={magnets} heading="For NDIS providers" />
+      <MoreOnTheWay />
 
       {/* 4. Cross-link to AI Hub and Resources */}
       <section className="bg-navy py-16 px-5 sm:px-10">
