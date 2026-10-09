@@ -53,11 +53,11 @@ export default function VideoWalkthroughsPage() {
               <div id="medprivacy-demo" className="scroll-mt-24">
                 <VideoEmbed
                   videoId="4egH7q4hG5I"
-                  title="MedPrivacy Demo: Safe AI for NDIS and Allied Health Documentation"
+                  title="MedPrivacy Demo: De-identifying NDIS Documents Before AI Use"
                   duration="4:37"
                 />
                 <p className="text-[14px] text-slate leading-relaxed mt-4">
-                  A walkthrough of MedPrivacy de-identifying participant and client documents before they go anywhere near an AI tool, keeping NDIS and allied health documentation safe and compliant.
+                  A walkthrough of MedPrivacy removing direct identifiers from participant and client documents on your own computer, before any AI tool is used.
                 </p>
               </div>
             </FadeIn>

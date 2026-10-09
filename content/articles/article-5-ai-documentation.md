@@ -158,7 +158,7 @@ server involved.
 *A two step workflow, de-identify first, then process through a closed
 AI tool, keeps participant data off external servers at every stage.*
 
-## What Does a Safe AI Workflow for NDIS Documentation Actually Look Like?
+## What Does a Careful AI Workflow for NDIS Documentation Actually Look Like?
 
 This is a workflow that works well on complex reports including Change
 of Circumstances, behaviour support plans and functional assessments.
@@ -276,10 +276,10 @@ paradox and why doing more manually is hurting participant care
 [Series links to be rendered as a linked list component pointing to
 published articles at their /resources/articles/ slugs.]
 
-## Want to Use AI Safely in Your Practice Right Now?
+## Want to Use AI Carefully in Your Practice Right Now?
 
 If you are an NDIS or Allied Health provider and you want to start
-using AI safely in your documentation workflow today, here is where to
+using AI in your documentation workflow today, here is where to
 begin.
 
 [Try MedPrivacy free for 30 days](https://medprivacy.com.au/founding-members):
@@ -288,7 +288,7 @@ participant data never leaves your device before it reaches an AI
 tool.
 
 [Book a free 30 minute consultation](/appt): No sales pitch. A
-conversation about where your practice stands and what safe AI use
+conversation about where your practice stands and what careful AI use
 would actually look like for your team.
 
 *Sinclair Hurtis is an active NDIS Support Coordinator, partnering with

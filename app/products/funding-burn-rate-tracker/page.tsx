@@ -9,11 +9,11 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'NDIS Funding and Burn Rate Tracker | CollabEdge Solutions',
   description:
-    'Track NDIS participant funding and burn rate locally, with no participant data ever leaving your device. Built by an active NDIS Support Coordinator.',
+    'Track NDIS participant funding and burn rate in your browser. Built by an active NDIS Support Coordinator.',
   openGraph: {
     title: 'NDIS Funding and Burn Rate Tracker | CollabEdge Solutions',
     description:
-      'Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local.',
+      'Track spend against budget for every participant in your caseload, with automatic status alerts. Runs in your browser.',
     url: 'https://www.collabedgesolutions.com.au/products/funding-burn-rate-tracker',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -54,7 +54,7 @@ export default function FundingTrackerPage() {
               NDIS Funding and Burn Rate Tracker
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px] mb-8">
-              Track spend against budget for every participant in your caseload, with automatic status alerts. Fully local. Nothing is ever transmitted anywhere.
+              Track spend against budget for every participant in your caseload, with automatic status alerts. Runs in your browser on your own computer.
             </p>
             <a href="/appt" className="btn-gold">Book a Free Consultation</a>
           </FadeIn>
@@ -106,10 +106,10 @@ export default function FundingTrackerPage() {
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Nothing Leaves Your Device
+              Runs in Your Browser
             </h2>
             <p className="text-[16px] text-slate leading-relaxed max-w-[720px]">
-              This tool runs entirely in your browser, with no server and no cloud storage. Data is saved and restored through simple file export and import, stored wherever you already keep files. Participant data never travels anywhere it should not.
+              The tool itself has no server and no cloud storage. Data is saved and restored through file export and import, stored wherever you already keep files. Check where those files are kept, because a synced folder such as OneDrive or Google Drive stores them in the cloud.
             </p>
           </FadeIn>
         </div>

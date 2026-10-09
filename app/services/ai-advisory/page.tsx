@@ -164,7 +164,7 @@ export default function AiAdvisoryPage() {
             <div className="max-w-[620px]">
               <VideoEmbed
                 videoId="4egH7q4hG5I"
-                title="MedPrivacy Demo: Safe AI for NDIS and Allied Health Documentation"
+                title="MedPrivacy Demo: De-identifying NDIS Documents Before AI Use"
                 duration="4:37"
               />
             </div>

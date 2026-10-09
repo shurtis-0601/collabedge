@@ -176,8 +176,7 @@ conversation between practitioners.
 
 [Book your free 30 minute consultation](/appt)
 
-Struggling with documentation? We built MedPrivacy to
-help ethical providers use AI safely and securely.
+Struggling with documentation? We built MedPrivacy to help providers remove direct identifiers from documents on their own computer before using AI.
 
 [Learn how MedPrivacy protects your practice](https://medprivacy.com.au)
 

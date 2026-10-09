@@ -8,6 +8,7 @@ export type Product = {
   icon: React.ReactNode
   title: string
   status: 'Available Now' | 'In Development'
+  badge?: string
   desc: string
   ctaLabel?: string
   href?: string
@@ -45,7 +46,7 @@ function ProductCard({ product }: { product: Product }) {
         </div>
         {product.status === 'Available Now' ? (
           <span className="text-[13px] font-semibold rounded-full px-3 py-1 whitespace-nowrap border bg-green-50 text-green-700 border-green-200">
-            Available Now
+            {product.badge ?? 'Available Now'}
           </span>
         ) : (
           <span className="text-[13px] font-semibold rounded-full px-3 py-1 whitespace-nowrap border bg-amber-50 text-amber-700 border-amber-200">
