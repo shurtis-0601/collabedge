@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -181,13 +182,16 @@ export default function SiteHeader() {
 
       <div className="mx-auto max-w-[1200px] h-full flex items-center justify-between px-5 lg:px-8">
         {/* Logo */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <Link href="/">
-          <img
-            src="/images/logo.png"
+          <Image
+            src="/images/logo.webp"
             alt="CollabEdge Solutions"
+            width={1876}
+            height={483}
             className="h-12 md:h-14 w-auto"
             style={{ mixBlendMode: 'lighten', background: 'transparent' }}
+            priority
+            sizes="218px"
           />
         </Link>
 
@@ -361,12 +365,14 @@ export default function SiteHeader() {
           {/* Overlay header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
             <Link href="/" onClick={() => setMobileOpen(false)} aria-label="Home">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo.png"
+              <Image
+                src="/images/logo.webp"
                 alt="CollabEdge Solutions"
+                width={1876}
+                height={483}
                 className="h-11 w-auto"
                 style={{ mixBlendMode: 'lighten', background: 'transparent' }}
+                sizes="200px"
               />
             </Link>
             <button

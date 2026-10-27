@@ -122,6 +122,7 @@ export default function HomePage() {
               fill
               className="object-cover object-top"
               priority
+              sizes="(max-width: 1023px) 0vw, 55vw"
             />
             <div
               className="absolute inset-0"
@@ -168,6 +169,7 @@ export default function HomePage() {
               fill
               className="object-cover object-top"
               priority
+              sizes="(max-width: 1023px) 100vw, 0vw"
             />
           </div>
 
@@ -379,10 +381,11 @@ export default function HomePage() {
                   Working with Sinclair has transformed what once felt overwhelming into something clear, structured, and exciting. He did not just implement solutions. He taught me along the way.
                 </blockquote>
                 <div className="flex items-center gap-4 flex-wrap">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/images/enhance-ability-logo.webp"
                     alt="Enhance Ability Services"
+                    width={178}
+                    height={144}
                     className="h-12 w-auto"
                   />
                   <div>
@@ -404,10 +407,11 @@ export default function HomePage() {
                   As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
                 </blockquote>
                 <div className="flex items-center gap-4 flex-wrap">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/images/safe-star-logo.jpg"
                     alt="Safe Star Supports"
+                    width={640}
+                    height={197}
                     className="h-12 w-auto"
                   />
                   <div>
