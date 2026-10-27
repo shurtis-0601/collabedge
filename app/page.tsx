@@ -1,21 +1,21 @@
 ﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import {
-  Shield, Zap, BookOpen, Globe, Brain,
-  Users, TrendingUp, ArrowRight, CheckCircle, LayoutGrid
+  Shield, Zap, BookOpen,
+  Users, ArrowRight, CheckCircle, LayoutGrid
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
-  title: 'CollabEdge Solutions | NDIS Compliance and Enterprise Technology, Melbourne',
+  title: 'NDIS Compliance Support in Wyndham | CollabEdge Solutions',
   description:
-    'CollabEdge Solutions helps Australian NDIS providers simplify compliance, and delivers enterprise technology through partners across Asia Pacific.',
+    'NDIS audit preparation and compliance support for emerging providers in Wyndham, Melbourne and Geelong, from a Support Coordinator active in NDIS every day.',
   openGraph: {
-    title: 'CollabEdge Solutions | NDIS Compliance and Enterprise Technology',
+    title: 'NDIS Compliance Support in Wyndham | CollabEdge Solutions',
     description:
-      'Fortune 500 experience applied to Australian NDIS providers, healthcare organisations, and enterprises across Australia and Asia Pacific.',
+      'Active in NDIS every day, with 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, serving Melbourne, Geelong and beyond.',
     url: 'https://www.collabedgesolutions.com.au',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -23,9 +23,7 @@ export const metadata: Metadata = {
 }
 
 const trustBadges = [
-  'Australian owned',
-  'Melbourne based',
-  '30+ years experience',
+  'Wyndham based',
   'Active in NDIS operations and support coordination',
 ]
 
@@ -51,18 +49,13 @@ const pillars = [
 const differentiators = [
   {
     icon: Users,
-    title: 'Practitioner-Led',
-    body: 'Sinclair actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it to clients.',
+    title: 'Active in NDIS Every Day',
+    body: 'I coordinate NDIS participants through My Ability Services, and I test every solution with real participants before I recommend it to a client.',
   },
   {
     icon: Zap,
     title: 'We Start With What You Have',
     body: 'Most clients already have Microsoft 365 or Google Workspace. We show them how to unlock compliance, automation, and AI capability from tools they are already paying for.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Fortune 500 Experience, Applied at Any Scale',
-    body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health. That experience is applied directly by our team for Australian healthcare providers and growing businesses, and through specialist technology partners for enterprise transformation across Asia Pacific.',
   },
 ]
 
@@ -85,24 +78,12 @@ const coreServices = [
     body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools. For NDIS providers and healthcare organisations.',
     href: '/services/healthcare-workflow',
   },
-  {
-    icon: Globe,
-    title: 'Digital Services',
-    body: 'Websites, AI agents, CRM automation, and data analytics for small businesses. Digital foundations that earn their keep.',
-    href: '/services/digital',
-  },
-  {
-    icon: Brain,
-    title: 'Practical AI for NDIS Teams',
-    body: 'Ready-to-use AI prompts for support coordinators, plan managers, and admin teams, plus honest advice on what to automate and what to leave alone.',
-    href: '/services/ai-advisory',
-  },
 ]
 
 const viewAllServices = {
   icon: LayoutGrid,
   title: 'View All Services',
-  body: 'See everything we offer, including enterprise partnerships and how Managed Services brings it all together.',
+  body: 'See everything we offer, including digital services, AI advisory, enterprise partnerships and how Managed Services brings it all together.',
   href: '/services',
 }
 
@@ -138,11 +119,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                Fortune 500 experience.{' '}
-                <em className="not-italic text-brand-goldDark">Applied to your business.</em>
+                NDIS compliance help from someone{' '}
+                <em className="not-italic text-brand-goldDark">who is active in NDIS every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology solutions with specialist partners across Australia and Asia Pacific. Every engagement is senior-led and practitioner-tested.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready and cut the admin.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -177,11 +158,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                Fortune 500 experience.{' '}
-                <em className="not-italic text-brand-goldDark">Applied to your business.</em>
+                NDIS compliance help from someone{' '}
+                <em className="not-italic text-brand-goldDark">who is active in NDIS every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                CollabEdge Solutions helps Australian NDIS providers and healthcare organisations simplify compliance and automate operations, and delivers enterprise technology solutions with specialist partners across Australia and Asia Pacific. Every engagement is senior-led and practitioner-tested.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready and cut the admin.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -271,7 +252,7 @@ export default function HomePage() {
               Why Organisations Choose CollabEdge
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {differentiators.map((card, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
                 <div className="bg-white rounded-xl p-6 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200">
@@ -296,7 +277,7 @@ export default function HomePage() {
               What We Do
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {coreServices.map((service, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <a
@@ -333,39 +314,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Partner strip, eucalyptus */}
-      <section className="py-16 px-5 sm:px-10" style={{ backgroundColor: '#3C6E5E' }}>
-        <div className="max-w-[1000px] mx-auto">
-          <FadeIn variant="fadeUp">
-            <h2 className="text-[26px] font-bold text-white tracking-tight mb-3 leading-snug">
-              Specialist Technology, Delivered Through Partners
-            </h2>
-            <p className="text-[16px] text-white leading-relaxed mb-8 max-w-[640px]">
-              Carefully selected partners extend what we deliver, from voice fraud prevention to property technology and the Zoho ecosystem.
-            </p>
-          </FadeIn>
-          <div className="flex flex-wrap items-center gap-4 mb-10">
-            {partners.map((partner, i) => (
-              <FadeIn key={i} variant="fadeUp" delay={i * 70}>
-                <span className="inline-block bg-white/10 border border-white/25 rounded-lg px-5 py-3 text-[16px] font-semibold text-white">
-                  {partner}
-                </span>
-              </FadeIn>
-            ))}
-          </div>
-          <FadeIn variant="fadeUp" delay={300}>
-            <a
-              href="/services/partner-solutions"
-              className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-6 py-3 hover:bg-white/90 transition-colors"
-            >
-              View Partner Solutions
-              <ArrowRight size={14} />
-            </a>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* 7. Featured testimonials */}
+      {/* 6. Featured testimonials */}
       <section className="bg-offwhite py-16 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
@@ -428,6 +377,38 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* 7. Partner strip, eucalyptus */}
+      <section className="py-16 px-5 sm:px-10" style={{ backgroundColor: '#3C6E5E' }}>
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <h2 className="text-[26px] font-bold text-white tracking-tight mb-3 leading-snug">
+              Specialist Technology, Delivered Through Partners
+            </h2>
+            <p className="text-[16px] text-white leading-relaxed mb-8 max-w-[640px]">
+              Carefully selected partners extend what we deliver, from voice fraud prevention to property technology and the Zoho ecosystem.
+            </p>
+          </FadeIn>
+          <div className="flex flex-wrap items-center gap-4 mb-10">
+            {partners.map((partner, i) => (
+              <FadeIn key={i} variant="fadeUp" delay={i * 70}>
+                <span className="inline-block bg-white/10 border border-white/25 rounded-lg px-5 py-3 text-[16px] font-semibold text-white">
+                  {partner}
+                </span>
+              </FadeIn>
+            ))}
+          </div>
+          <FadeIn variant="fadeUp" delay={300}>
+            <a
+              href="/services/partner-solutions"
+              className="inline-flex items-center gap-2 bg-white text-[#3C6E5E] text-[14px] font-bold rounded-lg px-6 py-3 hover:bg-white/90 transition-colors"
+            >
+              View Partner Solutions
+              <ArrowRight size={14} />
+            </a>
+          </FadeIn>
         </div>
       </section>
 
