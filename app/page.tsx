@@ -50,7 +50,7 @@ const differentiators = [
   {
     icon: Users,
     title: 'Active in NDIS Every Day',
-    body: 'I coordinate NDIS participants through My Ability Services, and I test every solution with real participants before I recommend it to a client.',
+    body: 'I coordinate NDIS participants through My Ability Services, and I test every solution with real participants before I recommend it to a client. Privacy and data security sit behind every system I set up, because I handle participant information myself.',
   },
   {
     icon: Zap,
@@ -123,7 +123,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, keep participant data secure and make sense of their data.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, handle participant data with care and turn it into useful insight.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -162,7 +162,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, keep participant data secure and make sense of their data.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, handle participant data with care and turn it into useful insight.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
