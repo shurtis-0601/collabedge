@@ -9,13 +9,13 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
-  title: 'NDIS Compliance Support in Wyndham | CollabEdge Solutions',
+  title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge',
   description:
-    'NDIS audit preparation and compliance support for emerging providers in Wyndham, Melbourne and Geelong, from a Support Coordinator active in NDIS every day.',
+    'NDIS audit preparation, healthcare data security and data analytics for emerging providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
   openGraph: {
-    title: 'NDIS Compliance Support in Wyndham | CollabEdge Solutions',
+    title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge Solutions',
     description:
-      'Active in NDIS every day, with 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, serving Melbourne, Geelong and beyond.',
+      'Compliance, data security and analytics from someone active with participants every day, with 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham.',
     url: 'https://www.collabedgesolutions.com.au',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -119,11 +119,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance help from someone{' '}
-                <em className="not-italic text-brand-goldDark">who is active in NDIS every day.</em>
+                NDIS compliance and data security from someone{' '}
+                <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready and cut the admin.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, keep participant data secure and make sense of their data.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -158,11 +158,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance help from someone{' '}
-                <em className="not-italic text-brand-goldDark">who is active in NDIS every day.</em>
+                NDIS compliance and data security from someone{' '}
+                <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready and cut the admin.
+                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, keep participant data secure and make sense of their data.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
