@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {
   Shield, Zap, BookOpen,
-  Users, ArrowRight, CheckCircle, LayoutGrid, Layers
+  Users, ArrowRight, CheckCircle, LayoutGrid, Layers, Brain
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge',
   description:
-    'NDIS audit preparation, data security, analytics and ongoing Managed Services for providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
+    'NDIS audit preparation, data security, AI automation and ongoing Managed Services for providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
   openGraph: {
     title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge Solutions',
     description:
@@ -83,8 +83,17 @@ const coreServices = [
 const managedServices = {
   icon: Layers,
   title: 'Managed Services',
-  body: 'One ongoing relationship instead of a string of separate projects. Managed Services brings compliance, document governance and workflow automation together, so you stay audit ready through the year and always know where you stand.',
+  body: 'One ongoing relationship instead of a string of separate projects. Managed Services brings compliance, document governance and workflow automation together, complemented by AI where it helps, so you stay audit ready through the year and always know where you stand.',
   href: '/services',
+  ctaLabel: 'See how Managed Services works',
+}
+
+const aiAutomation = {
+  icon: Brain,
+  title: 'AI and Automation, Used with Care',
+  body: 'I show providers how to get more from the software they already own, complemented by AI and automation where it genuinely lifts the admin, and where it is better to leave things alone. Participant privacy is part of every decision.',
+  href: '/ai-automation',
+  ctaLabel: 'Explore AI and automation',
 }
 
 const viewAllServices = {
@@ -130,7 +139,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin and handle participant data with care, through ongoing Managed Services or a single project.
+                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -169,7 +178,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin and handle participant data with care, through ongoing Managed Services or a single project.
+                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -284,25 +293,25 @@ export default function HomePage() {
               What We Do
             </h2>
           </FadeIn>
-          <FadeIn variant="fadeUp">
-            <a
-              href={managedServices.href}
-              className="block bg-white/[0.04] border border-gold/40 rounded-xl p-6 sm:p-8 mb-5 hover:border-gold/70 transition-colors group"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-                  <managedServices.icon size={18} className="text-gold" />
-                </div>
-                <div>
-                  <h3 className="text-[18px] font-bold text-white mb-2">{managedServices.title}</h3>
-                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4 max-w-[720px]">{managedServices.body}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+            {[managedServices, aiAutomation].map((card, i) => (
+              <FadeIn key={card.title} variant="fadeUp" delay={i * 80}>
+                <a
+                  href={card.href}
+                  className="block bg-white/[0.04] border border-gold/40 rounded-xl p-6 h-full hover:border-gold/70 transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                    <card.icon size={18} className="text-gold" />
+                  </div>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{card.title}</h3>
+                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-4">{card.body}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
-                    See how Managed Services works <ArrowRight size={13} />
+                    {card.ctaLabel} <ArrowRight size={13} />
                   </span>
-                </div>
-              </div>
-            </a>
-          </FadeIn>
+                </a>
+              </FadeIn>
+            ))}
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {coreServices.map((service, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
