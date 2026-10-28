@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {
   Shield, Zap, BookOpen,
-  Users, ArrowRight, CheckCircle, LayoutGrid, Layers, Brain
+  Users, ArrowRight, CheckCircle, LayoutGrid, Layers, Brain, GraduationCap
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge Solutions',
     description:
-      'Compliance, data security and analytics from someone active with participants every day, with 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham.',
+      'NDIS compliance, carefully managed by someone active with participants every day. Based in Wyndham, with 30 years of large enterprise and government health experience.',
     url: 'https://www.collabedgesolutions.com.au',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -56,6 +56,22 @@ const differentiators = [
     icon: Zap,
     title: 'We Start With What You Have',
     body: 'Most clients already have Microsoft 365 or Google Workspace. We show them how to unlock compliance, automation, and AI capability from tools they are already paying for.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Teaching at Monash University',
+    body: 'Since 2025 I have taught Professional Practice to IT masters students at Monash University as a sessional academic, covering ethics, governance, and quality and reliability. I bring the same clear, plain-spoken approach to your operations.',
+  },
+]
+
+const trustRows = [
+  {
+    label: 'Experience built at',
+    names: ['Citibank Singapore', 'Singtel', 'NAB', 'Tech Mahindra', 'Victorian Department of Health', 'Business Victoria'],
+  },
+  {
+    label: 'Delivered projects for',
+    names: ['DBS', 'DTAC', 'M1', 'DFS', 'Singapore Department of Statistics', 'Integral Energy'],
   },
 ]
 
@@ -139,7 +155,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
+                I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -178,7 +194,7 @@ export default function HomePage() {
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
+                I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -194,6 +210,33 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* 1b. Trust banner */}
+      <section className="bg-navy border-t border-white/10 py-10 px-5 sm:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <p className="text-[16px] text-[#F1F5F9] font-medium leading-relaxed max-w-[720px] mb-6">
+              30 years across banking, telecommunications, government and consulting in Australia and Asia Pacific.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {trustRows.map((row) => (
+                <div key={row.label}>
+                  <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
+                    {row.label}
+                  </span>
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
+                    {row.names.map((name) => (
+                      <span key={name} className="text-[16px] font-semibold text-[#D1D5DB]">
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -268,7 +311,7 @@ export default function HomePage() {
               Why Organisations Choose CollabEdge
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {differentiators.map((card, i) => (
               <FadeIn key={i} variant="fadeUp" delay={i * 100}>
                 <div className="bg-white rounded-xl p-6 border border-border h-full hover:border-gold/30 hover:shadow-sm transition-all duration-200">
