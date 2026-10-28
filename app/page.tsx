@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {
   Shield, Zap, BookOpen,
-  Users, ArrowRight, CheckCircle, LayoutGrid
+  Users, ArrowRight, CheckCircle, LayoutGrid, Layers
 } from 'lucide-react'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
@@ -11,7 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge',
   description:
-    'NDIS audit preparation, healthcare data security and data analytics for emerging providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
+    'NDIS audit preparation, data security, analytics and ongoing Managed Services for providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
   openGraph: {
     title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge Solutions',
     description:
@@ -50,7 +50,7 @@ const differentiators = [
   {
     icon: Users,
     title: 'Active in NDIS Every Day',
-    body: 'I coordinate NDIS participants through My Ability Services, and I test every solution with real participants before I recommend it to a client. Privacy and data security sit behind every system I set up, because I handle participant information myself.',
+    body: 'I coordinate NDIS participants through My Ability Services, and I test every solution with real participants before I recommend it to a client. Privacy and data security are part of how I evaluate every tool, because I handle participant information myself.',
   },
   {
     icon: Zap,
@@ -79,6 +79,13 @@ const coreServices = [
     href: '/services/healthcare-workflow',
   },
 ]
+
+const managedServices = {
+  icon: Layers,
+  title: 'Managed Services',
+  body: 'One ongoing relationship instead of a string of separate projects. Managed Services brings compliance, document governance and workflow automation together, so you stay audit ready through the year and always know where you stand.',
+  href: '/services',
+}
 
 const viewAllServices = {
   icon: LayoutGrid,
@@ -119,11 +126,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance and data security from someone{' '}
+                NDIS compliance, carefully managed by someone{' '}
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, handle participant data with care and turn it into useful insight.
+                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -158,11 +165,11 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance and data security from someone{' '}
+                NDIS compliance, carefully managed by someone{' '}
                 <em className="not-italic text-brand-goldDark">active with participants every day.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
-                I coordinate real participants, and I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help emerging NDIS providers across Melbourne, Geelong and beyond get audit ready, handle participant data with care and turn it into useful insight.
+                I bring 30 years of experience from Citibank Singapore, Singtel, NAB and the Victorian Department of Health. Based in Wyndham, I help NDIS providers across Melbourne, Geelong and beyond stay audit ready, take on the admin and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
@@ -276,6 +283,25 @@ export default function HomePage() {
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
               What We Do
             </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp">
+            <a
+              href={managedServices.href}
+              className="block bg-white/[0.04] border border-gold/40 rounded-xl p-6 sm:p-8 mb-5 hover:border-gold/70 transition-colors group"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
+                  <managedServices.icon size={18} className="text-gold" />
+                </div>
+                <div>
+                  <h3 className="text-[18px] font-bold text-white mb-2">{managedServices.title}</h3>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4 max-w-[720px]">{managedServices.body}</p>
+                  <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
+                    See how Managed Services works <ArrowRight size={13} />
+                  </span>
+                </div>
+              </div>
+            </a>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {coreServices.map((service, i) => (
