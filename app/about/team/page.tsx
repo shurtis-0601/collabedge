@@ -176,7 +176,7 @@ export default function TeamPage() {
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Sinclair Hurtis</h3>
                 <p className="text-[14px] text-brand-goldDark mb-4">NDIS, Healthcare and Enterprise</p>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   30+ years across Citibank, Singtel, NAB, and the Victorian Department of Health. Active NDIS Support Coordinator at My Ability Services. Sessional Academic at Monash University's Faculty of Information Technology, teaching Masters IT students. Leads every CollabEdge engagement.
                 </p>
                 <SkillList skills={sinclairSkills} />
@@ -201,7 +201,7 @@ export default function TeamPage() {
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Magdalena Paczkowska</h3>
                 <p className="text-[14px] text-brand-goldDark mb-4">Complex Participant Support and Advocacy</p>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   Magdalena works directly with complex NDIS participants at My Ability Services every day, navigating the system at its most demanding level. That frontline knowledge is what she brings to CollabEdge, grounding every recommendation in what actually works for real participants and providers. She is the practitioner who empowered Sinclair to become a Support Coordinator, and her daily contact with the NDIS Commission and complex participants keeps CollabEdge&apos;s advice connected to ground-level reality.
                 </p>
                 <SkillList skills={magdalenaSkills} />
@@ -226,7 +226,7 @@ export default function TeamPage() {
                 </span>
                 <h3 className="text-[18px] font-bold text-white mb-1 leading-snug">Raj Purshotham</h3>
                 <p className="text-[14px] text-brand-goldDark mb-4">Dubai, UAE</p>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6 flex-1">
                   CMO at Property Automate and Strategy, Growth and International Advisory to CollabEdge Solutions. Based in Dubai, Raj brings go-to-market strategy, enterprise applications expertise, and international partnership reach across Asia Pacific and beyond to the CollabEdge advisory team.
                 </p>
                 <SkillList skills={rajSkills} />
@@ -263,7 +263,7 @@ export default function TeamPage() {
                     <card.icon size={16} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.heading}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -283,7 +283,7 @@ export default function TeamPage() {
                 <h3 className="text-[18px] font-bold text-text-dark mb-1">
                   Sessional Academic, Faculty of Information Technology, Monash University
                 </h3>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[580px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[580px]">
                   Sinclair teaches soft skills and real-world business practice to Masters of Information Technology students at Monash University, mentoring the next generation of technology professionals across communication, collaboration, and applied consulting.
                 </p>
               </div>

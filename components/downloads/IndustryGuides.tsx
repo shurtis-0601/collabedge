@@ -98,9 +98,9 @@ export function IndustryGuidesSection() {
                     <FileText size={20} className="text-gold" aria-hidden="true" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{g.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-3">{g.audience}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-3">{g.audience}</p>
                   <p className="text-[14px] font-semibold text-text-dark mb-1">5 questions to ask your data</p>
-                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">
+                  <p className="text-[16px] text-slate leading-relaxed mb-6 flex-1">
                     PDF, {g.pages} pages{size ? `, ${size}` : ''}
                   </p>
                   <a

@@ -257,7 +257,7 @@ export default function DocumentGovernancePage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="flex items-start gap-3 bg-offwhite rounded-lg p-5 border border-border">
                   <item.icon size={16} className="text-slate flex-shrink-0 mt-0.5" />
-                  <span className="text-[14px] text-slate leading-relaxed">{item.text}</span>
+                  <span className="text-[16px] text-slate leading-relaxed">{item.text}</span>
                 </div>
               </FadeIn>
             ))}
@@ -291,13 +291,13 @@ export default function DocumentGovernancePage() {
                     </div>
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{folder.name}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{folder.desc}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{folder.desc}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
           <FadeIn variant="fadeUp" delay={400}>
-            <p className="text-[14px] text-[#9CA3AF] border-l-2 border-gold/30 pl-4">
+            <p className="text-[16px] text-[#9CA3AF] border-l-2 border-gold/30 pl-4">
               This structure is implemented inside SharePoint (Microsoft 365) or Google Drive, the platform your team already uses. No new software required.
             </p>
           </FadeIn>
@@ -324,7 +324,7 @@ export default function DocumentGovernancePage() {
                     <item.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -382,7 +382,7 @@ export default function DocumentGovernancePage() {
                 <div>
                   <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -403,7 +403,7 @@ export default function DocumentGovernancePage() {
                   <h3 className="text-[18px] font-bold text-white mb-2">
                     Safe Star Supports, Perth, WA
                   </h3>
-                  <p className="text-[14px] text-[#D1D5DB] max-w-[560px] leading-relaxed">
+                  <p className="text-[16px] text-[#D1D5DB] max-w-[560px] leading-relaxed">
                     CollabEdge Solutions designed and implemented a complete document governance system for Safe Star Supports, a registered NDIS provider in Perth. The system included a five-folder numbered architecture, staff workspace privacy controls, a seven-year archive structure, general filing rules, and an AI Use Policy, all built inside their existing platform.
                   </p>
                 </div>

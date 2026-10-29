@@ -182,7 +182,7 @@ export default function DigitalServicesPage() {
                     <service.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">{service.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{service.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{service.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -249,7 +249,7 @@ export default function DigitalServicesPage() {
                     {item.step}
                   </span>
                   <h3 className="text-[18px] font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{item.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{item.body}</p>
                 </div>
               </FadeIn>
             ))}

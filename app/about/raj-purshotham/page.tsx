@@ -161,7 +161,7 @@ export default function RajPurshothamPage() {
                 <Globe size={13} className="text-gold/60" />
                 <span className="text-[14px] text-[#9CA3AF]">Based in Dubai, UAE</span>
               </div>
-              <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
                 Raj Purshotham is a Fractional Consultant and Growth Advisor to CollabEdge
                 Solutions, bringing deep enterprise technology, go-to-market, and international
                 business development expertise built across nearly two decades in the Middle East,
@@ -218,7 +218,7 @@ export default function RajPurshothamPage() {
                         {item.period}
                       </span>
                     </div>
-                    <p className="text-[14px] text-slate leading-relaxed">{item.focus}</p>
+                    <p className="text-[16px] text-slate leading-relaxed">{item.focus}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -262,7 +262,7 @@ export default function RajPurshothamPage() {
                   <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                     <div className="flex items-start gap-3 bg-white/[0.04] border border-white/[0.08] rounded-lg p-4">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[14px] text-[#D1D5DB] leading-relaxed">{item}</span>
+                      <span className="text-[16px] text-[#D1D5DB] leading-relaxed">{item}</span>
                     </div>
                   </FadeIn>
                 ))}

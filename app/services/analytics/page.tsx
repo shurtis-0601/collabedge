@@ -155,7 +155,7 @@ export default function AnalyticsHubPage() {
                   <h3 className="text-[18px] font-bold text-text-dark mb-3 group-hover:text-brand-goldLight transition-colors">
                     {industry.label}
                   </h3>
-                  <p className="text-[15px] text-slate leading-relaxed mb-4">{industry.description}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-4">{industry.description}</p>
                   <span className="text-[14px] font-semibold text-brand-goldLight group-hover:underline underline-offset-2">
                     See use cases &rarr;
                   </span>

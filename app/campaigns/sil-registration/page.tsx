@@ -52,7 +52,7 @@ export default function SILRegistrationCampaignPage() {
 
             <div className="mt-8 inline-flex flex-col border border-[#E6B85C]/50 rounded-lg px-6 py-5 bg-[#E6B85C]/[0.06]">
               <span className="text-[38px] font-extrabold text-[#E6B85C] leading-none tracking-tight">From $2,000</span>
-              <span className="text-[14px] text-[#D1D5DB] mt-2 max-w-[360px] leading-relaxed">
+              <span className="text-[16px] text-[#D1D5DB] mt-2 max-w-[360px] leading-relaxed">
                 Registration support and documentation. Exact scope confirmed after we understand your situation.
               </span>
             </div>

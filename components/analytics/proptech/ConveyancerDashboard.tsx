@@ -126,7 +126,7 @@ export default function ConveyancerDashboard() {
 
       <div className="rounded-lg bg-amber-50 border border-amber-300 p-4">
         <p className="text-[13px] font-semibold text-amber-800 mb-1">Compliance notice</p>
-        <p className="text-[13px] text-amber-700 leading-relaxed">
+        <p className="text-[16px] text-amber-700 leading-relaxed">
           Cooling-off periods under the Sale of Land Act 1962 (Vic) run for three clear business days from the day of contract signing, excluding weekends and public holidays. VOI requirements apply to all parties. Trust account reconciliation is a statutory daily obligation under the Legal Profession Uniform Law. This dashboard surfaces deadline risk before a breach.
         </p>
       </div>

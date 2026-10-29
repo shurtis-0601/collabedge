@@ -141,7 +141,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-[14px] font-semibold text-text-dark mb-1">{step.heading}</p>
-                      <p className="text-[14px] text-slate leading-relaxed">{step.body}</p>
+                      <p className="text-[16px] text-slate leading-relaxed">{step.body}</p>
                     </div>
                   </div>
                 </FadeIn>

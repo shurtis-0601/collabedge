@@ -153,7 +153,7 @@ export default function AiAdvisoryPage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">{card.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}

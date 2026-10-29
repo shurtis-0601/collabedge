@@ -46,7 +46,7 @@ export default function FAQAccordion({ faqs = defaultFaqs }: { faqs?: FAQ[] }) {
           </button>
           {openIndex === i && (
             <div className="px-5 pb-5">
-              <p className="text-[14px] text-slate leading-relaxed">{faq.a}</p>
+              <p className="text-[16px] text-slate leading-relaxed">{faq.a}</p>
             </div>
           )}
         </div>

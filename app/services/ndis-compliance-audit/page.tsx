@@ -202,7 +202,7 @@ export default function NDISComplianceAuditPage() {
                   </div>
                   <div>
                     <h3 className="text-[18px] font-bold text-text-dark mb-1.5">{item.title}</h3>
-                    <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                    <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -250,7 +250,7 @@ export default function NDISComplianceAuditPage() {
                   <span className="text-[26px] font-bold text-white">$2,500</span>
                   <span className="text-[14px] text-[#9CA3AF]"> – $4,000</span>
                 </div>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                   For sole traders and small providers needing core compliance documentation in place.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
@@ -283,7 +283,7 @@ export default function NDISComplianceAuditPage() {
                   <span className="text-[26px] font-bold text-white">$4,500</span>
                   <span className="text-[14px] text-[#D1D5DB]"> – $6,500</span>
                 </div>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                   For established providers preparing for certification or surveillance audit.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
@@ -313,7 +313,7 @@ export default function NDISComplianceAuditPage() {
                   <span className="text-[26px] font-bold text-white">$8,000</span>
                   <span className="text-[14px] text-[#9CA3AF]"> – $12,000</span>
                 </div>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                   For larger providers or multi-site organisations with complex compliance needs.
                 </p>
                 <div className="flex flex-col gap-2.5 mb-8 flex-1">
@@ -335,7 +335,7 @@ export default function NDISComplianceAuditPage() {
           </div>
 
           <FadeIn variant="fadeUp" delay={300}>
-            <p className="text-[14px] text-[#9CA3AF] text-center mt-8">
+            <p className="text-[16px] text-[#9CA3AF] text-center mt-8">
               Not sure which tier fits? Every engagement starts with a free 30-minute consultation to confirm scope.
             </p>
           </FadeIn>
@@ -357,7 +357,7 @@ export default function NDISComplianceAuditPage() {
                 <div>
                   <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -396,7 +396,7 @@ export default function NDISComplianceAuditPage() {
                   <h3 className="text-[18px] font-bold text-white mb-2">
                     See this in action: Enhance Ability Services
                   </h3>
-                  <p className="text-[14px] text-[#D1D5DB] max-w-[520px]">
+                  <p className="text-[16px] text-[#D1D5DB] max-w-[520px]">
                     How a Geelong NDIS provider moved from overwhelmed to structured, audit-ready operations.
                   </p>
                 </div>

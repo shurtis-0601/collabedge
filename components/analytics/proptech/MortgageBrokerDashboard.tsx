@@ -162,7 +162,7 @@ export default function MortgageBrokerDashboard() {
         </div>
       </div>
 
-      <p className="text-[13px] text-slate leading-relaxed border-l-2 border-brand-goldLight pl-3">
+      <p className="text-[16px] text-slate leading-relaxed border-l-2 border-brand-goldLight pl-3">
         Best interests duty obligations under the National Consumer Credit Protection Act 2009 apply at every recommendation. Expiring pre-approvals may require a fresh serviceability assessment before a new recommendation is made.
       </p>
     </div>

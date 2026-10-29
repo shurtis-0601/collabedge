@@ -99,7 +99,7 @@ export default function DynamicNetsoftPage() {
                     <cap.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[16px] font-bold text-text-dark mb-2">{cap.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{cap.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{cap.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -127,7 +127,7 @@ export default function DynamicNetsoftPage() {
                     {sol.tag}
                   </span>
                   <h3 className="text-[15px] font-bold text-white mb-2">{sol.name}</h3>
-                  <p className="text-[13px] text-[#D1D5DB] leading-relaxed">{sol.desc}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{sol.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -183,7 +183,7 @@ export default function DynamicNetsoftPage() {
                     <ind.icon size={16} className="text-gold" />
                   </div>
                   <h3 className="text-[14.5px] font-bold text-text-dark mb-1.5">{ind.name}</h3>
-                  <p className="text-[13px] text-slate leading-relaxed">{ind.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{ind.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -201,7 +201,7 @@ export default function DynamicNetsoftPage() {
               </div>
               <div>
                 <h3 className="text-[16px] font-bold text-text-dark mb-1.5">Regional and Global Delivery</h3>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
                   Dynamic Netsoft supports customers through delivery and operating locations serving India, the Middle East, North America, Southeast Asia, ANZ, Europe, the Levant, and Africa. CollabEdge Solutions coordinates delivery specifically for Australian and Asia Pacific engagements.
                 </p>
               </div>
@@ -219,7 +219,7 @@ export default function DynamicNetsoftPage() {
                 <h3 className="text-[18px] font-bold text-white mb-2">
                   CollabEdge Solutions, Coordinating Partner
                 </h3>
-                <p className="text-[14px] text-white/85 leading-relaxed">
+                <p className="text-[16px] text-white/85 leading-relaxed">
                   CollabEdge Solutions coordinates Dynamic Netsoft engagements for organisations in Australia and Asia Pacific, providing the initial conversation and connecting you with the Dynamic Netsoft delivery team for the Microsoft Dynamics 365 programme itself.
                 </p>
               </div>

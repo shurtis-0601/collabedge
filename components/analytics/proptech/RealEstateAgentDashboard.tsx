@@ -148,7 +148,7 @@ export default function RealEstateAgentDashboard() {
 
       <div className="rounded-lg bg-amber-50 border border-amber-300 p-4">
         <p className="text-[13px] font-semibold text-amber-800 mb-1">Compliance notice</p>
-        <p className="text-[13px] text-amber-700 leading-relaxed">
+        <p className="text-[16px] text-amber-700 leading-relaxed">
           The Estate Agents Act 1980 (Vic) requires advertised price ranges to accurately reflect genuine sale price expectation. This dashboard maintains an audit trail linking every advertised price to comparable sales data at the time of listing.
         </p>
       </div>

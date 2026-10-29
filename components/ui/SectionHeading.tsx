@@ -22,7 +22,7 @@ export default function SectionHeading({ eyebrow, heading, sub, dark = false, cl
         {heading}
       </h2>
       {sub && (
-        <p className={`mt-3 text-[14px] leading-relaxed ${dark ? "text-[#D1D5DB]" : "text-slate"}`}>
+        <p className={`mt-3 text-[16px] leading-relaxed ${dark ? "text-[#D1D5DB]" : "text-slate"}`}>
           {sub}
         </p>
       )}

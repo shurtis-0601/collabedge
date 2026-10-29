@@ -15,7 +15,7 @@ export default function AEOSection({ question, answer, children }: Props) {
         <h2 className="text-[26px] font-bold text-text-dark leading-tight tracking-[-0.02em] max-w-2xl mb-4">
           {question}
         </h2>
-        <p className="text-[15px] text-slate leading-relaxed max-w-2xl">
+        <p className="text-[16px] text-slate leading-relaxed max-w-2xl">
           {answer}
         </p>
         {children && <div className="mt-8">{children}</div>}

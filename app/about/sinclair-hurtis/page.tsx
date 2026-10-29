@@ -248,7 +248,7 @@ export default function SinclairHurtisPage() {
               <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.1] mb-5">
                 Sinclair Hurtis
               </h1>
-              <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
                 With over 30 years across large enterprises in Australia and Asia Pacific,
                 Sinclair founded CollabEdge Solutions to give healthcare providers and growing
                 businesses access to the same calibre of operational expertise that was previously
@@ -329,7 +329,7 @@ export default function SinclairHurtisPage() {
                       </span>
                     </div>
                     <p className="text-[14px] font-semibold text-brand-goldLight mb-2">{item.role}</p>
-                    <p className="text-[14px] text-slate leading-relaxed">{item.focus}</p>
+                    <p className="text-[16px] text-slate leading-relaxed">{item.focus}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -368,7 +368,7 @@ export default function SinclairHurtisPage() {
                   <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                     <div className="flex items-start gap-3 bg-white/[0.04] border border-white/[0.08] rounded-lg p-4">
                       <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-[14px] text-[#D1D5DB] leading-relaxed">{item}</span>
+                      <span className="text-[16px] text-[#D1D5DB] leading-relaxed">{item}</span>
                     </div>
                   </FadeIn>
                 ))}

@@ -56,7 +56,7 @@ export default function AutomationIdeaForm() {
           <CheckCircle2 size={24} className="text-brand-goldLight" />
         </div>
         <h3 className="text-[18px] font-bold text-text-dark mb-2">Thanks, that has been logged</h3>
-        <p className="text-[14px] text-slate leading-relaxed max-w-[440px]">
+        <p className="text-[16px] text-slate leading-relaxed max-w-[440px]">
           Your idea has gone straight into the roadmap review pile. If it turns into something we build, we will let you know.
         </p>
       </div>
@@ -143,7 +143,7 @@ export default function AutomationIdeaForm() {
       </div>
 
       {status === 'error' && (
-        <p className="text-[13px] text-red-600 mb-4">
+        <p className="text-[16px] text-red-600 mb-4">
           Something went wrong sending that through. Please try again, or email sinclair@collabedgesolutions.com.au directly.
         </p>
       )}

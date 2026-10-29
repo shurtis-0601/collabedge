@@ -55,7 +55,7 @@ function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       <h3 className="text-[18px] font-bold text-text-dark mb-3">{product.title}</h3>
-      <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{product.desc}</p>
+      <p className="text-[16px] text-slate leading-relaxed mb-6 flex-1">{product.desc}</p>
       <div className="mt-auto flex flex-col gap-3">
         {product.href && (
           product.external ? (

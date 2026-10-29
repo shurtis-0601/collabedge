@@ -316,7 +316,7 @@ export default function CybersecurityDashboard() {
 
       <div className="px-5 pt-5 pb-5">
         <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
-          <p className="text-[13px] text-amber-800 leading-relaxed">
+          <p className="text-[16px] text-amber-800 leading-relaxed">
             The Privacy Act 1988 and the Notifiable Data Breaches scheme require health providers to assess a suspected breach within 30 days and notify affected individuals. Three of twelve systems in this example keep no access logs, meaning a breach there would stay invisible until a patient reports it. This dashboard surfaces access risk before a breach rather than after.
           </p>
         </div>

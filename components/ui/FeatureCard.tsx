@@ -17,7 +17,7 @@ export default function FeatureCard({ icon, title, body, href, linkLabel, index 
       <div className="bg-white border border-border rounded-lg p-[22px] shadow-sm flex flex-col hover:-translate-y-[2px] hover:shadow-md hover:border-gold/30 transition-all duration-200 group cursor-default h-full">
         <div className="text-2xl mb-3">{icon}</div>
         <h3 className="text-[18px] font-bold text-text-dark leading-snug mb-2">{title}</h3>
-        <p className="text-[14px] text-slate leading-relaxed flex-1">{body}</p>
+        <p className="text-[16px] text-slate leading-relaxed flex-1">{body}</p>
         {href && linkLabel && (
           <Link
             href={href}

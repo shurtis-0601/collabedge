@@ -180,7 +180,7 @@ export default function PropertyManagerDashboard() {
         </div>
       </div>
 
-      <p className="text-[13px] text-slate leading-relaxed border-l-2 border-brand-goldLight pl-3">
+      <p className="text-[16px] text-slate leading-relaxed border-l-2 border-brand-goldLight pl-3">
         Residential Tenancies Act 1997 (Vic) notice periods apply to all arrears action. This view surfaces at-risk tenants before a breach rather than after.
       </p>
     </div>

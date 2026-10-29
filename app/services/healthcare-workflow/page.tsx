@@ -175,7 +175,7 @@ export default function HealthcareWorkflowPage() {
                     <item.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -234,7 +234,7 @@ export default function HealthcareWorkflowPage() {
                 <div>
                   <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}

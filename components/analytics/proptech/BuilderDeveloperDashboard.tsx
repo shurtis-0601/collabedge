@@ -119,7 +119,7 @@ export default function BuilderDeveloperDashboard() {
 
       <div className="rounded-lg bg-amber-50 border border-amber-300 p-4">
         <p className="text-[13px] font-semibold text-amber-800 mb-1">Compliance notice</p>
-        <p className="text-[13px] text-amber-700 leading-relaxed">
+        <p className="text-[16px] text-amber-700 leading-relaxed">
           Domestic Building Insurance must be in place before taking a deposit. SWMS and subcontractor licence verification are mandatory before site mobilisation under the Building and Construction Industry Security of Payment Act 2002 (Vic). This dashboard surfaces compliance gaps before work begins.
         </p>
       </div>

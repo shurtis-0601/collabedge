@@ -113,7 +113,7 @@ function PlatformCard({ item, platform }: { item: PlatformItem; platform: 'micro
           {RAG_LABELS[status]}
         </span>
       </div>
-      <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+      <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
     </div>
   )
 }
@@ -174,7 +174,7 @@ export default function AiAutomationHubClient() {
                 </button>
               </div>
             </div>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px] mb-5">
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px] mb-5">
               Every tool in this track is being built for both platforms, since that is what most small and medium NDIS and healthcare providers are already running on. Toggle above to see where each platform stands.
             </p>
             <div className="flex flex-wrap items-center gap-4 mb-8">
@@ -205,7 +205,7 @@ export default function AiAutomationHubClient() {
             <h3 className="text-[16px] font-bold text-text-dark mb-1">
               Already Live, Across Both Platforms
             </h3>
-            <p className="text-[14px] text-slate leading-relaxed mb-5">
+            <p className="text-[16px] text-slate leading-relaxed mb-5">
               These items do not depend on Microsoft or Google specifically and are already in active use.
             </p>
           </FadeIn>
@@ -220,7 +220,7 @@ export default function AiAutomationHubClient() {
                       Completed
                     </span>
                   </div>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -240,7 +240,7 @@ export default function AiAutomationHubClient() {
                 Growth and Marketing Automation
               </h2>
             </div>
-            <p className="text-[14px] text-slate leading-relaxed max-w-[680px] mb-8">
+            <p className="text-[16px] text-slate leading-relaxed max-w-[680px] mb-8">
               Separate from the NDIS work, and open to any small or medium business, not just healthcare and disability providers.
             </p>
           </FadeIn>
@@ -256,7 +256,7 @@ export default function AiAutomationHubClient() {
                       {LANE_LABELS[item.lane]}
                     </span>
                   </div>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -272,7 +272,7 @@ export default function AiAutomationHubClient() {
               <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
                 <Code2 size={18} className="text-white" />
               </div>
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                 This website was built from scratch using Claude Code, the same hands-on approach behind everything on this roadmap. We build and use these tools ourselves before recommending them to anyone else.
               </p>
             </div>
@@ -310,7 +310,7 @@ export default function AiAutomationHubClient() {
                 <h3 className="text-[18px] font-bold text-text-dark mb-1">
                   Need advice for your business right now?
                 </h3>
-                <p className="text-[14px] text-slate leading-relaxed">
+                <p className="text-[16px] text-slate leading-relaxed">
                   This roadmap is about where things are heading. For recommendations specific to your organisation today, with cost benefit numbers behind them, that is AI Advisory.
                 </p>
               </div>

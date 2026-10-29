@@ -56,7 +56,7 @@ export default function VideoWalkthroughsPage() {
                   title="MedPrivacy Demo: De-identifying NDIS Documents Before AI Use"
                   duration="4:37"
                 />
-                <p className="text-[14px] text-slate leading-relaxed mt-4">
+                <p className="text-[16px] text-slate leading-relaxed mt-4">
                   A walkthrough of MedPrivacy removing direct identifiers from participant and client documents on your own computer, before any AI tool is used.
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function VideoWalkthroughsPage() {
                   title="How to Use NotebookLM for NDIS Change of Circumstances Reports"
                   duration="7:54"
                 />
-                <p className="text-[14px] text-slate leading-relaxed mt-4">
+                <p className="text-[16px] text-slate leading-relaxed mt-4">
                   A walkthrough of building a Change of Circumstances report using NotebookLM, showing how the process comes together from source documents to a finished submission.
                 </p>
               </div>

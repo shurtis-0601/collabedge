@@ -80,7 +80,7 @@ export default function FundingTrackerPage() {
                   Plan Manager Statement
                 </span>
                 <p className="text-[16px] font-bold text-text-dark mb-3">Backward looking</p>
-                <p className="text-[14px] text-slate leading-relaxed">
+                <p className="text-[16px] text-slate leading-relaxed">
                   Shows what has been claimed so far. Does not account for sessions booked but not yet invoiced, or what the remaining roster will cost. A participant can look fine on paper and run out of funding two months before plan review.
                 </p>
               </div>
@@ -91,7 +91,7 @@ export default function FundingTrackerPage() {
                   This Tracker
                 </span>
                 <p className="text-[16px] font-bold text-text-dark mb-3">Forward looking</p>
-                <p className="text-[14px] text-slate leading-relaxed">
+                <p className="text-[16px] text-slate leading-relaxed">
                   Adds committed future spend to spend to date and compares the total against remaining budget. If the forecast exceeds what is left, the status alert fires now, when the roster can still be adjusted, not after the shortfall has already happened.
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function FundingTrackerPage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}

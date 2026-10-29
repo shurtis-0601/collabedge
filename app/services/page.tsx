@@ -145,7 +145,7 @@ export default function ServicesPage() {
                 <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                   Healthcare and NDIS Solutions
                 </h2>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                   Compliance, automation, document governance, and AI advisory for NDIS providers and healthcare operators, built on what you already have.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
@@ -170,7 +170,7 @@ export default function ServicesPage() {
                 <h2 className="text-[26px] font-bold text-white mb-3 leading-snug">
                   Enterprise Partnerships
                 </h2>
-                <p className="text-[14px] text-white/85 leading-relaxed mb-6">
+                <p className="text-[16px] text-white/85 leading-relaxed mb-6">
                   Enterprise technology delivered through a curated network of specialist partners across communication security, property technology, and healthcare software platforms, coordinated by CollabEdge across Australia and Asia Pacific.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-white group-hover:gap-3 transition-all duration-200">
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                   <h3 className="text-[18px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-4">{service.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-4">{service.desc}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={12} />
                   </span>
@@ -259,7 +259,7 @@ export default function ServicesPage() {
                   View partner page <ArrowRight size={13} />
                 </span>
               </div>
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mt-4 max-w-[680px]">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mt-4 max-w-[680px]">
                 Enterprise-grade voice authentication protecting call centres and customer-facing operations from synthetic voice fraud, delivered by CollabEdge Solutions as Sekunce&apos;s Australian and APAC delivery partner.
               </p>
             </a>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
                     <partner.icon size={16} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{partner.title}</h3>
-                  <p className="text-[14px] text-[#9CA3AF] leading-relaxed">{partner.desc}</p>
+                  <p className="text-[16px] text-[#9CA3AF] leading-relaxed">{partner.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -296,10 +296,10 @@ export default function ServicesPage() {
                     For Both Audiences
                   </span>
                   <h2 className="text-[26px] font-bold text-text-dark mb-2 leading-snug">Digital Services</h2>
-                  <p className="text-[14px] text-slate leading-relaxed max-w-[480px] mb-2">
+                  <p className="text-[16px] text-slate leading-relaxed max-w-[480px] mb-2">
                     Whether you are an NDIS provider or a growing business, digital foundations support everything else you are trying to do.
                   </p>
-                  <p className="text-[14px] text-slate leading-relaxed max-w-[480px]">
+                  <p className="text-[16px] text-slate leading-relaxed max-w-[480px]">
                     Websites, AI agents, CRM automation, and data analytics for small businesses. Digital foundations that earn their keep.
                   </p>
                 </div>
@@ -332,7 +332,7 @@ export default function ServicesPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <div className="flex items-start gap-3 bg-white rounded-lg p-4 border border-border">
                   <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span className="text-[14px] text-text-body leading-relaxed">{item}</span>
+                  <span className="text-[16px] text-text-body leading-relaxed">{item}</span>
                 </div>
               </FadeIn>
             ))}
@@ -366,7 +366,7 @@ export default function ServicesPage() {
                 </p>
                 <div className="bg-white rounded-lg p-4 border border-gold/20 flex items-start gap-3 mb-4">
                   <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                  <p className="text-[14px] text-slate leading-relaxed">
+                  <p className="text-[16px] text-slate leading-relaxed">
                     Every product CollabEdge builds is included as part of your engagement, plus a MedPrivacy licence arranged as part of the relationship.
                   </p>
                 </div>

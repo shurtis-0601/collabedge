@@ -96,24 +96,24 @@ export default function CaseStudiesPage() {
               </div>
 
               <h3 className="text-[18px] font-bold text-white mb-2 mt-6">The Challenge</h3>
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 Enhance Ability Services was managing NDIS compliance and operations through fragmented, manual processes. Documentation, audit readiness, and day-to-day workflows were consuming time that should have been spent on participant outcomes, and the business felt overwhelmed by the complexity of staying compliant.
               </p>
 
               <h3 className="text-[18px] font-bold text-white mb-2">The Approach</h3>
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-6">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
                 CollabEdge Solutions worked directly with the Director to map existing processes, identify where manual effort could be safely automated, and rebuild documentation and compliance workflows using the Microsoft 365 environment the business already had. No new platforms were introduced. The existing tools were simply used properly.
               </p>
 
               <h3 className="text-[18px] font-bold text-white mb-2">The Outcome</h3>
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-8">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8">
                 Operations and documentation became structured and auditable. The business moved from feeling overwhelmed to having a clear operational system they understood and trusted, with significantly reduced administrative burden and improved audit confidence.
               </p>
 
               {/* Quote block */}
               <div className="bg-white/[0.04] border-l-2 border-gold pl-6 py-5 pr-5 rounded-r-lg">
                 <Quote size={18} className="text-gold/40 mb-3" />
-                <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
+                <blockquote className="font-serif italic text-[16px] text-white leading-relaxed mb-4">
                   Working with Sinclair has transformed what once felt overwhelming into something
                   <em className="text-brand-goldDark not-italic font-medium"> clear, structured, and exciting.</em> He did not just implement solutions. He taught me along the way.
                 </blockquote>
@@ -200,14 +200,14 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
 
-              <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-8">
+              <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-8">
                 Katelyn came to CollabEdge as a new NDIS provider navigating a complex onboarding process. We worked together on compliance documentation, service agreements, and building an audit-ready operational foundation.
               </p>
 
               {/* Quote block */}
               <div className="bg-white/[0.04] border-l-2 border-gold pl-6 py-5 pr-5 rounded-r-lg">
                 <Quote size={18} className="text-gold/40 mb-3" />
-                <blockquote className="font-serif italic text-[15px] text-white leading-relaxed mb-4">
+                <blockquote className="font-serif italic text-[16px] text-white leading-relaxed mb-4">
                   As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
                 </blockquote>
                 <span className="text-[14px] font-semibold text-white block">Katelyn Leighton</span>
@@ -267,7 +267,7 @@ export default function CaseStudiesPage() {
             <h2 className="text-[26px] font-bold text-text-dark mb-3">
               More case studies are in progress
             </h2>
-            <p className="text-[14px] text-slate max-w-[480px] mx-auto mb-2">
+            <p className="text-[16px] text-slate max-w-[480px] mx-auto mb-2">
               We are documenting outcomes from current engagements as they conclude. Every case study published here will be a named, verifiable client.
             </p>
           </FadeIn>

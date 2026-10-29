@@ -124,7 +124,7 @@ export default function EnhanceAbilityServicesPage() {
           </FadeIn>
 
           <FadeIn variant="fadeUp" delay={100}>
-            <p className="text-[15px] text-[#D1D5DB] leading-relaxed max-w-[680px] border-l-2 border-gold pl-5">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[680px] border-l-2 border-gold pl-5">
               CollabEdge Solutions helped Enhance Ability Services, a Geelong-based NDIS provider, move from fragmented manual processes to structured, auditable operations, using only the Microsoft 365 environment they already had. No new platforms were introduced.
             </p>
           </FadeIn>
@@ -264,7 +264,7 @@ export default function EnhanceAbilityServicesPage() {
                   <h3 className="text-[18px] font-bold text-text-dark mb-2 group-hover:text-navy transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-4">{service.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-4">{service.desc}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={12} />
                   </span>

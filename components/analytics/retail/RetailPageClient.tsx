@@ -193,7 +193,7 @@ export default function RetailPageClient() {
             </div>
 
             <div className="bg-white rounded-xl border border-border p-5">
-              <p className="text-[15px] text-slate leading-relaxed">{active.painPoints}</p>
+              <p className="text-[16px] text-slate leading-relaxed">{active.painPoints}</p>
             </div>
           </FadeIn>
         </div>
@@ -234,7 +234,7 @@ export default function RetailPageClient() {
                     {item.step}
                   </span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[15px] text-slate leading-relaxed">{item.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.body}</p>
                 </div>
               </FadeIn>
             ))}

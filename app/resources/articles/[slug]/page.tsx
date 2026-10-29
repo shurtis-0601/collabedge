@@ -132,7 +132,7 @@ function ArticleBlock({ block, slug }: { block: Block; slug: string }) {
       )
     case 'note':
       return (
-        <p className="text-[14px] italic text-slate border-l-2 border-gold/40 pl-4 my-6 leading-relaxed">
+        <p className="text-[16px] italic text-slate border-l-2 border-gold/40 pl-4 my-6 leading-relaxed">
           {renderInline(block.text)}
         </p>
       )

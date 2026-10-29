@@ -149,7 +149,7 @@ export default function SILRegistrationPage() {
               Get SIL registered.{' '}
               <span className="text-brand-goldDark">$2,000.</span>
             </h1>
-            <p className="text-[15px] text-[#D1D5DB] leading-relaxed max-w-[540px] mx-auto mb-8">
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[540px] mx-auto mb-8">
               Senior-led support to get your Supported Independent Living registration documentation right the first time, without the back and forth that usually comes with it.
             </p>
             <a
@@ -205,7 +205,7 @@ export default function SILRegistrationPage() {
                 <div className="flex flex-col gap-2.5">
                   {notFit.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
-                      <span className="text-[14px] text-slate leading-relaxed">{item}</span>
+                      <span className="text-[16px] text-slate leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -241,7 +241,7 @@ export default function SILRegistrationPage() {
                   <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
                     <item.icon size={16} className="text-gold" />
                   </div>
-                  <span className="text-[14px] text-text-body leading-relaxed">{item.text}</span>
+                  <span className="text-[16px] text-text-body leading-relaxed">{item.text}</span>
                 </div>
               </FadeIn>
             ))}
@@ -259,7 +259,7 @@ export default function SILRegistrationPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-[18px] font-bold text-white mb-2">Micro-Provider Concession</h3>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                   If your organisation supports fewer than 10 NDIS participants, a reduced rate applies. This reflects the smaller documentation scope typically required for micro and emerging providers. Confirm eligibility during your free consultation.
                 </p>
               </div>
@@ -290,7 +290,7 @@ export default function SILRegistrationPage() {
                 <div>
                   <span className="text-[32px] font-bold text-brand-goldLight/40 block mb-2">{item.step}</span>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{item.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{item.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
             ))}

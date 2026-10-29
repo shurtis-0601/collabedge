@@ -86,7 +86,7 @@ export default function PropertyAutomatePage() {
                     <d.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[16px] font-bold text-text-dark mb-2">{d.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{d.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{d.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -152,7 +152,7 @@ export default function PropertyAutomatePage() {
               </div>
               <div>
                 <h3 className="text-[16px] font-bold text-text-dark mb-1.5">Connected and Region-Ready</h3>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
                   Property Automate integrates with the ERP, accounting, CRM, payment, and identity systems already in use, and supports region-specific financial and compliance workflows for GCC and broader Asia Pacific real estate and corporate operations.
                 </p>
               </div>
@@ -170,7 +170,7 @@ export default function PropertyAutomatePage() {
                 <h3 className="text-[18px] font-bold text-white mb-2">
                   CollabEdge Solutions, Coordinating Partner
                 </h3>
-                <p className="text-[14px] text-white/85 leading-relaxed">
+                <p className="text-[16px] text-white/85 leading-relaxed">
                   CollabEdge Solutions coordinates Property Automate engagements for organisations in Australia and Asia Pacific, providing the initial conversation and connecting you with the Property Automate delivery team for the platform deployment itself.
                 </p>
               </div>

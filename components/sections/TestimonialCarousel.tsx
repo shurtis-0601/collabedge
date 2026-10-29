@@ -69,7 +69,7 @@ function SlideContent({ t }: { t: typeof testimonials[number] }) {
   return (
     <>
       <div className="text-[36px] text-brand-goldDark/25 font-serif leading-none mb-4">&ldquo;</div>
-      <blockquote className="font-serif italic text-[15px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
+      <blockquote className="font-serif italic text-[16px] md:text-[17px] text-white leading-relaxed mb-6 min-h-[120px]">
         {t.quote}
       </blockquote>
       <div className="pb-2">

@@ -113,7 +113,7 @@ function LeadMagnetModal({
             <h3 id="lead-magnet-modal-title" className="text-[18px] font-bold text-text-dark mb-2">
               {magnet.title}
             </h3>
-            <p className="text-[14px] text-slate leading-relaxed mb-6">
+            <p className="text-[16px] text-slate leading-relaxed mb-6">
               {magnet.modalDescription ?? 'Enter your details and we will send this template straight to your inbox.'}
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -187,7 +187,7 @@ export default function LeadMagnetSection({
                     <Clock size={20} className="text-[#9CA3AF]" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">{magnet.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
                   <span className="inline-flex items-center justify-center gap-2 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-semibold rounded-lg px-5 py-3 mt-auto cursor-default">
                     Coming Soon
                   </span>
@@ -198,7 +198,7 @@ export default function LeadMagnetSection({
                     <Download size={20} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">{magnet.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
+                  <p className="text-[16px] text-slate leading-relaxed mb-6 flex-1">{magnet.description}</p>
                   <button
                     onClick={() => setActiveMagnet(magnet)}
                     className="inline-flex items-center justify-center gap-2 bg-navy text-white text-[14px] font-semibold rounded-lg px-5 py-3 hover:bg-navy-mid transition-colors mt-auto"

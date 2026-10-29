@@ -53,7 +53,7 @@ function ArticleCard({ article, dark }: { article: Article; dark?: boolean }) {
         <h3 className={`text-[18px] font-bold mb-2 leading-snug ${dark ? 'text-white' : 'text-text-dark'}`}>
           {article.title}
         </h3>
-        <p className={`text-[14px] leading-relaxed mb-4 ${dark ? 'text-[#D1D5DB]' : 'text-slate'}`}>
+        <p className={`text-[16px] leading-relaxed mb-4 ${dark ? 'text-[#D1D5DB]' : 'text-slate'}`}>
           {article.description.length > 150
             ? article.description.slice(0, article.description.lastIndexOf(' ', 150)) + '...'
             : article.description}

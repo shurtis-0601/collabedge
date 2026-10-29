@@ -189,7 +189,7 @@ export default function ShieldPage() {
                   </div>
                   <div>
                     <h3 className="text-[18px] font-bold text-white mb-1">{vector.title}</h3>
-                    <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{vector.desc}</p>
+                    <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{vector.desc}</p>
                     {vector.roadmapNote && (
                       <p className="text-[12.5px] text-brand-goldDark/80 italic leading-relaxed mt-2">
                         {vector.roadmapNote}
@@ -222,7 +222,7 @@ export default function ShieldPage() {
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">
                   European Tier-2 Carrier
                 </h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-6">
+                <p className="text-[16px] text-slate leading-relaxed mb-6">
                   A carrier with EUR 25 million annual revenue deployed SHIELD drop-in alongside an existing SBC with zero CapEx. Results: EUR 575,000 annual revenue leak closed, 35 percent reduction in failed calls, 84 percent reduction in partner penalties, 8.1 month payback.
                 </p>
                 <div className="grid grid-cols-3 gap-3 border-t border-border pt-5">
@@ -245,7 +245,7 @@ export default function ShieldPage() {
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">
                   Financial Services Operator
                 </h3>
-                <p className="text-[14px] text-slate leading-relaxed mb-6">
+                <p className="text-[16px] text-slate leading-relaxed mb-6">
                   Real-time per-call scoring replaced batch updates. Every call scored in flight against origination network and behavioural stack. Results: 35 percent per-call cost reduction with 100 percent coverage, 11 percent lift in fraudulent attempt identification, 15 percent reduction in telecom-based fraud.
                 </p>
                 <div className="grid grid-cols-3 gap-3 border-t border-border pt-5">
@@ -280,7 +280,7 @@ export default function ShieldPage() {
                 {capabilities.map((cap, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle size={15} className="text-gold flex-shrink-0 mt-0.5" />
-                    <span className="text-[14px] text-text-body leading-relaxed">{cap}</span>
+                    <span className="text-[16px] text-text-body leading-relaxed">{cap}</span>
                   </div>
                 ))}
               </div>
@@ -303,7 +303,7 @@ export default function ShieldPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 70}>
                 <div className="bg-white/[0.04] border border-white/10 rounded-xl p-5 hover:border-gold/30 transition-colors h-full">
                   <h3 className="text-[18px] font-bold text-white mb-2">{sector.name}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{sector.desc}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{sector.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -320,7 +320,7 @@ export default function ShieldPage() {
                 <h3 className="text-[18px] font-bold text-white mb-2">
                   CollabEdge Solutions, Australian and Asia Pacific Delivery Partner
                 </h3>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
                   CollabEdge Solutions brings SHIELD to Australian and Asia Pacific operators, carriers, and enterprises, providing local advisory, implementation support, and ongoing account management. Enquiries for SHIELD deployments in this region are handled directly by CollabEdge.
                 </p>
               </div>

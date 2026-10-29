@@ -117,7 +117,7 @@ export default function PartnerSolutionsPage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -207,7 +207,7 @@ export default function PartnerSolutionsPage() {
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">
                     Dynamic Netsoft Technologies
                   </h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                  <p className="text-[16px] text-slate leading-relaxed mb-5">
                     Full-suite Microsoft Dynamics 365 Finance and Operations ISV, certified on Microsoft AppSource, focused on real estate and construction. Enterprise-grade property and contract lifecycle management for organisations on the Microsoft stack.
                   </p>
                   <a
@@ -240,7 +240,7 @@ export default function PartnerSolutionsPage() {
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">
                     Property Automate
                   </h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                  <p className="text-[16px] text-slate leading-relaxed mb-5">
                     Property operations technology for residential, commercial, and facilities management. Purpose-built platforms that digitise property workflows end to end.
                   </p>
                   <a
@@ -271,7 +271,7 @@ export default function PartnerSolutionsPage() {
                     <Users size={18} className="text-brand-goldLight" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-3">NewGen Consulting</h3>
-                  <p className="text-[14px] text-slate leading-relaxed mb-5">
+                  <p className="text-[16px] text-slate leading-relaxed mb-5">
                     Zoho ecosystem specialist. For NDIS providers and allied health operators who prefer a packaged software platform over a custom build, CollabEdge brings real NDIS and healthcare domain expertise to the conversation, so the platform reflects what actually happens on the ground.
                   </p>
                   <a

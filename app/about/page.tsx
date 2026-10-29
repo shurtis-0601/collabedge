@@ -187,7 +187,7 @@ export default function AboutPage() {
                     <card.icon size={20} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -262,7 +262,7 @@ export default function AboutPage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 60}>
                 <div className="flex items-start gap-3 bg-white rounded-lg p-4 border border-border hover:border-gold/30 hover:shadow-sm transition-all duration-200">
                   <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span className="text-[14px] text-text-body leading-relaxed">{item}</span>
+                  <span className="text-[16px] text-text-body leading-relaxed">{item}</span>
                 </div>
               </FadeIn>
             ))}
@@ -302,7 +302,7 @@ export default function AboutPage() {
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-2 leading-snug">
               The Team Behind Every Engagement
             </h2>
-            <p className="text-[14px] text-slate mb-8 max-w-[540px]">
+            <p className="text-[16px] text-slate mb-8 max-w-[540px]">
               CollabEdge Solutions is senior-led and supported by a small team of specialists and strategic advisors, not a large agency where you never know who you will work with.
             </p>
           </FadeIn>
@@ -321,7 +321,7 @@ export default function AboutPage() {
                   <span className="text-[13px] font-semibold text-brand-goldLight uppercase tracking-wider block mb-3">
                     {member.role}
                   </span>
-                  <p className="text-[14px] text-slate leading-relaxed">{member.bio}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{member.bio}</p>
                 </a>
               </FadeIn>
             ))}
@@ -365,7 +365,7 @@ export default function AboutPage() {
                 <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">
                   Healthcare and NDIS Solutions
                 </h3>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-5">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-5">
                   Supporting NDIS providers and healthcare operators with compliance, document governance, and workflow automation complemented by AI, built on the systems they already have.
                 </p>
                 <a
@@ -388,7 +388,7 @@ export default function AboutPage() {
                 <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">
                   Enterprise Partnerships
                 </h3>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-5">
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-5">
                   Delivering specialist enterprise technology through selected partnerships, including SHIELD voice fraud prevention, Dynamic Netsoft for Microsoft Dynamics 365 property solutions, Property Automate for property operations technology, and NewGen Consulting for the Zoho ecosystem, with advisory and implementation included across Australia and Asia Pacific.
                 </p>
                 <a

@@ -106,7 +106,7 @@ export default function EmployeeOnboardingPage() {
                       <h3 className="text-[18px] font-bold text-white">{step.label}</h3>
                     </div>
                   </div>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{step.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{step.body}</p>
                   {i < steps.length - 1 && (
                     <div className="hidden md:block absolute top-[22px] right-[-4px] w-2 h-2 border-t-2 border-r-2 border-gold/40 rotate-45" aria-hidden="true" />
                   )}
@@ -134,7 +134,7 @@ export default function EmployeeOnboardingPage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}

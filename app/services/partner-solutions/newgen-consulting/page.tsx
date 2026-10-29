@@ -100,7 +100,7 @@ export default function NewGenConsultingPage() {
                     <p.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[16px] font-bold text-text-dark mb-2">{p.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{p.desc}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{p.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -130,7 +130,7 @@ export default function NewGenConsultingPage() {
                     <area.icon size={18} className="text-brand-goldDark" />
                   </div>
                   <h3 className="text-[16px] font-bold text-white mb-2">{area.title}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed">{area.desc}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed">{area.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -148,7 +148,7 @@ export default function NewGenConsultingPage() {
               </div>
               <div>
                 <h3 className="text-[16px] font-bold text-text-dark mb-1.5">Where This Stands Today</h3>
-                <p className="text-[14px] text-slate leading-relaxed max-w-[680px]">
+                <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
                   The Accelerator is NewGen's platform, built and delivered by NewGen. CollabEdge involvement in a given engagement, whether as advisory input into configuration, domain requirements scoping, or something else, is worked out per organisation. If you are weighing a packaged platform against a custom build, the conversation is worth having either way.
                 </p>
               </div>
