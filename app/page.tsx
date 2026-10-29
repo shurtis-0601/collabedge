@@ -319,7 +319,7 @@ export default function HomePage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-slate leading-relaxed">{card.body}</p>
+                  <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -347,7 +347,7 @@ export default function HomePage() {
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{card.title}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-4">{card.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4">{card.body}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                     {card.ctaLabel} <ArrowRight size={13} />
                   </span>
@@ -366,7 +366,7 @@ export default function HomePage() {
                     <service.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-4">{service.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4">{service.body}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={13} />
                   </span>
@@ -382,7 +382,7 @@ export default function HomePage() {
                   <viewAllServices.icon size={18} className="text-[#D1D5DB]" />
                 </div>
                 <h3 className="text-[18px] font-bold text-white mb-2">{viewAllServices.title}</h3>
-                <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-4">{viewAllServices.body}</p>
+                <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4">{viewAllServices.body}</p>
                 <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                   View Services <ArrowRight size={13} />
                 </span>
