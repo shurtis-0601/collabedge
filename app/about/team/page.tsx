@@ -100,7 +100,7 @@ const networkCards = [
   {
     icon: Users,
     heading: 'Monash University Network',
-    body: 'Masters IT students supervised by Sinclair in his Adjunct Lecturer role, contributing to analytics and research projects under direct oversight.',
+    body: 'Masters IT students supervised by Sinclair in his sessional academic role, contributing to analytics and research projects under direct oversight.',
   },
 ]
 

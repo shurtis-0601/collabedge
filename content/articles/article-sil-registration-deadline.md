@@ -8,6 +8,8 @@ author: Sinclair Hurtis
 description: "Unregistered SIL providers must apply by 1 October 2026 or cease delivering SIL. Here is what the process actually involves, written by a practitioner doing this work now."
 ---
 
+*This article was published on 20 July 2026, before the 1 October 2026 deadline. The rules may have changed since, so please check the NDIS Commission website or contact me for the current position.*
+
 There is a lot of noise in the market right now about SIL registration.
 Fear based marketing, countdown timers, and warnings about penalties are
 everywhere. Most of it is technically accurate but practically unhelpful
