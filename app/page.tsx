@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge Solutions',
     description:
-      'NDIS compliance, carefully managed by someone active with participants every day. Based in Wyndham, with 30 years of large enterprise and government health experience.',
+      'NDIS compliance, carefully managed by an active Support Coordinator. Based in Wyndham, with 30 years of large enterprise and government health experience.',
     url: 'https://www.collabedgesolutions.com.au',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -146,8 +146,8 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance, carefully managed by someone{' '}
-                <em className="not-italic text-brand-goldDark">active with participants every day.</em>
+                NDIS compliance, carefully managed by{' '}
+                <em className="not-italic text-brand-goldDark">an active Support Coordinator.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
                 I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
@@ -177,8 +177,8 @@ export default function HomePage() {
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
-                NDIS compliance, carefully managed by someone{' '}
-                <em className="not-italic text-brand-goldDark">active with participants every day.</em>
+                NDIS compliance, carefully managed by{' '}
+                <em className="not-italic text-brand-goldDark">an active Support Coordinator.</em>
               </h1>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
                 I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
