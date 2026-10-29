@@ -12,9 +12,10 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import AnimatedCounter from '@/components/ui/AnimatedCounter'
 
 export const metadata: Metadata = {
-  title: 'About CollabEdge Solutions | Melbourne Consulting Firm',
+  title: 'About CollabEdge Solutions | Wyndham and Melbourne',
+  alternates: { canonical: '/about' },
   description:
-    'CollabEdge Solutions is a Melbourne consulting firm founded by Sinclair Hurtis, an active Support Coordinator with 30+ years of large enterprise experience.',
+    'CollabEdge Solutions is a Wyndham based consulting firm founded by Sinclair Hurtis, an active Support Coordinator with 30+ years of large enterprise experience.',
   openGraph: {
     title: 'About CollabEdge Solutions',
     description:

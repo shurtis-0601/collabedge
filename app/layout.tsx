@@ -19,15 +19,37 @@ const orgSchema = {
   url: "https://www.collabedgesolutions.com.au",
   logo: "https://www.collabedgesolutions.com.au/images/logo.png",
   description:
-    "NDIS compliance, workflow automation, and enterprise technology consulting. Melbourne, Australia.",
+    "NDIS audit preparation, compliance, AI and workflow automation, data security and Managed Services for providers in Wyndham, Melbourne and Geelong.",
+  email: "info@collabedgesolutions.com.au",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Melbourne",
+    addressLocality: "Wyndham",
     addressRegion: "VIC",
     addressCountry: "AU",
   },
-  telephone: "0426464442",
-  areaServed: "AU",
+  telephone: "+61426464442",
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Wyndham, Victoria" },
+    { "@type": "City", name: "Melbourne" },
+    { "@type": "City", name: "Geelong" },
+    { "@type": "Country", name: "Australia" },
+    { "@type": "Place", name: "Asia Pacific" },
+  ],
+  sameAs: ["https://www.linkedin.com/company/collabedge-solutions/"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "CollabEdge Solutions services",
+    itemListElement: [
+      "NDIS Compliance and Audit",
+      "Document Governance",
+      "Healthcare Workflow Automation",
+      "AI Advisory",
+      "Managed Services",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name },
+    })),
+  },
   founder: {
     "@type": "Person",
     name: "Sinclair Hurtis",

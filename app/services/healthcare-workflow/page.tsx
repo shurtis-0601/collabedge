@@ -12,7 +12,8 @@ import FAQAccordion, { type FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Healthcare Workflow Automation | CollabEdge Solutions',
-  description: 'Workflow automation for NDIS providers and healthcare operators using Microsoft 365 and Google Workspace. Reduce manual admin without new platforms. Senior-led.',
+  alternates: { canonical: '/services/healthcare-workflow' },
+  description: 'Workflow automation complemented by AI for NDIS providers and healthcare operators, using Microsoft 365 or Google Workspace. Wyndham, Melbourne and Geelong.',
   openGraph: {
     title: 'Healthcare Workflow Automation | CollabEdge Solutions',
     description: 'Remove manual effort from day-to-day operations using tools you already own.',

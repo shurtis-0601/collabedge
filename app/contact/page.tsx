@@ -28,7 +28,7 @@ const schema = {
   mainEntity: {
     '@type': 'ProfessionalService',
     name: 'CollabEdge Solutions',
-    telephone: '0426464442',
+    telephone: '+61426464442',
     email: 'sinclair@collabedgesolutions.com.au',
     address: {
       '@type': 'PostalAddress',
@@ -108,13 +108,13 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="tel:0426464442"
+                href="tel:+61426464442"
                 className="flex items-center gap-3 text-[14px] text-slate hover:text-brand-goldLight transition-colors group"
               >
                 <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors flex-shrink-0">
                   <Phone size={14} className="text-gold" />
                 </div>
-                0426 464 442
+                +61 426 464 442
               </a>
 
               <div className="flex items-center gap-3 text-[14px] text-slate">

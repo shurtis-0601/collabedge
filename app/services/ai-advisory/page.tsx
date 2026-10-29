@@ -9,11 +9,12 @@ import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 import VideoEmbed from '@/components/VideoEmbed'
 
 export const metadata: Metadata = {
-  title: 'AI Advisory for NDIS Providers and Small Business | CollabEdge Solutions',
+  title: 'AI Advisory for NDIS Providers | CollabEdge Solutions',
+  alternates: { canonical: '/services/ai-advisory' },
   description:
-    'Honest advice on where AI fits your business, what to automate, what to leave alone, and whether bespoke AI-assisted solutions genuinely stack up.',
+    'Honest advice on where AI fits your NDIS business, what to automate, what to leave alone, and how to protect participant data while you do.',
   openGraph: {
-    title: 'AI Advisory | CollabEdge Solutions',
+    title: 'AI Advisory for NDIS Providers | CollabEdge Solutions',
     description:
       'AI advice without the hype. Grounded recommendations with cost benefit numbers for NDIS providers and Australian small businesses.',
     url: 'https://www.collabedgesolutions.com.au/services/ai-advisory',

@@ -10,13 +10,14 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
-  title: 'Services | CollabEdge Solutions',
+  title: 'NDIS Compliance and Managed Services | CollabEdge Solutions',
+  alternates: { canonical: '/services' },
   description:
-    'NDIS compliance, workflow automation, AI advisory, and enterprise technology, delivered as consulting led by an active Support Coordinator for Australian businesses.',
+    'NDIS audit preparation, document governance, workflow automation complemented by AI, and Managed Services for providers in Wyndham, Melbourne and Geelong.',
   openGraph: {
-    title: 'Services | CollabEdge Solutions',
+    title: 'NDIS Compliance and Managed Services | CollabEdge Solutions',
     description:
-      'Two service pillars. One senior-led consultant. Real outcomes for NDIS providers and Australian enterprises.',
+      'Consulting led by an active Support Coordinator for NDIS providers, with enterprise technology delivered through specialist partners.',
     url: 'https://www.collabedgesolutions.com.au/services',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',

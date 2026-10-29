@@ -10,6 +10,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge',
+  alternates: { canonical: '/' },
   description:
     'NDIS audit preparation, data security, AI automation and ongoing Managed Services for providers in Wyndham, Melbourne and Geelong, from a Support Coordinator.',
   openGraph: {

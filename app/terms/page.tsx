@@ -91,7 +91,7 @@ export default function TermsPage() {
           <p className="text-[16px] text-slate leading-relaxed mb-4">
             CollabEdge Solutions<br />
             <a href="mailto:sinclair@collabedgesolutions.com.au" className="text-brand-goldLight hover:underline">sinclair@collabedgesolutions.com.au</a><br />
-            0426 464 442<br />
+            +61 426 464 442<br />
             Melbourne, Victoria
           </p>
         </div>

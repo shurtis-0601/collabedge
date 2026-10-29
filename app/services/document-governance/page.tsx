@@ -12,8 +12,9 @@ import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Document Governance for NDIS Providers | CollabEdge Solutions',
+  alternates: { canonical: '/services/document-governance' },
   description:
-    'NDIS document governance, folder structure design, and audit-ready filing systems for Australian providers, built on SharePoint and Google Drive.',
+    'NDIS document governance and audit-ready filing systems for providers in Wyndham, Melbourne and Geelong, built on SharePoint and Google Drive.',
   openGraph: {
     title: 'Document Governance | CollabEdge Solutions',
     description:

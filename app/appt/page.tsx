@@ -66,11 +66,11 @@ export default function ApptPage() {
                 sinclair@collabedgesolutions.com.au
               </a>
               <a
-                href="tel:0426464442"
+                href="tel:+61426464442"
                 className="flex items-center gap-2 text-[14px] font-semibold text-navy hover:text-brand-goldLight transition-colors"
               >
                 <Phone size={15} className="text-gold" />
-                0426 464 442
+                +61 426 464 442
               </a>
               <a
                 href="https://wa.me/61426464442"

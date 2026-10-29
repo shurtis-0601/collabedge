@@ -10,11 +10,12 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import FAQAccordion from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'NDIS Compliance and Audit Services | CollabEdge Solutions',
+  title: 'NDIS Audit Preparation and Compliance | CollabEdge Solutions',
+  alternates: { canonical: '/services/ndis-compliance-audit' },
   description:
-    'NDIS compliance consulting, audit readiness, and governance frameworks for Australian providers, with transparent pricing from $2,500.',
+    'NDIS audit preparation, registration support and compliance systems for providers in Wyndham, Melbourne and Geelong, with transparent pricing from $2,500.',
   openGraph: {
-    title: 'NDIS Compliance and Audit | CollabEdge Solutions',
+    title: 'NDIS Audit Preparation and Compliance | CollabEdge Solutions',
     description:
       'Compliance documentation and audit readiness that holds up under NDIS Commission review.',
     url: 'https://www.collabedgesolutions.com.au/services/ndis-compliance-audit',
