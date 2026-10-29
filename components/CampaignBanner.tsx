@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { X } from 'lucide-react'
 
-const DISMISS_KEY = 'ce_sil_banner_dismissed'
+const DISMISS_KEY = 'ce_registration_banner_dismissed'
 
 const EXCLUDED_PATHS = [
+  '/services/ndis-compliance-audit',
   '/services/partner-solutions',
   '/services/partner-solutions/shield',
   '/services/partner-solutions/dynamic-netsoft',
@@ -24,12 +25,12 @@ const EXCLUDED_PATHS = [
 
 const banners = [
   {
-    id: 'sil-registration-2026',
+    id: 'registration-or-audit-2026',
     message:
-      'NDIS SIL providers: registration is now mandatory. Find out what the 1 October 2026 deadline means for you.',
+      'Is it time to get registered, or are you preparing for your next audit? See how I can help.',
     mobileMessage:
-      'NDIS SIL providers: registration is now mandatory. Learn what it means for you.',
-    href: '/campaigns/sil-registration',
+      'Time to get registered, or preparing for your next audit? See how I can help.',
+    href: '/services/ndis-compliance-audit',
   },
 ]
 
@@ -74,7 +75,7 @@ export default function CampaignBanner() {
       <div className="max-w-[1000px] mx-auto flex items-center justify-between gap-4 px-5 sm:px-10 py-2.5">
         <a
           href={banner.href}
-          className="text-[13px] sm:text-[14px] font-medium text-[#E6B85C] hover:text-white transition-colors leading-snug flex-1 text-center sm:text-left"
+          className="text-[14px] font-medium text-[#E6B85C] hover:text-white transition-colors leading-snug flex-1 text-center sm:text-left"
         >
           <span className="sm:hidden">{banner.mobileMessage}</span>
           <span className="hidden sm:inline">{banner.message}</span>

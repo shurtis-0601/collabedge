@@ -26,7 +26,7 @@ const pillars = [
   {
     eyebrow: 'For NDIS, Healthcare, and Growing Businesses',
     title: 'Simplify. Streamline. Automate. Grow.',
-    body: 'We bring enterprise discipline down to earth. Compliance and audit readiness, AI-powered workflow automation, and document governance, built on the Microsoft 365 or Google Workspace tools you already pay for. Built and used in live NDIS operations before we recommend anything.',
+    body: 'We bring enterprise discipline down to earth. Compliance and audit readiness, workflow automation complemented by AI, and document governance, built on the Microsoft 365 or Google Workspace tools you already pay for. Built and used in live NDIS operations before we recommend anything.',
     ctaLabel: 'Start Simplifying Your Operations',
     ctaHref: '/services',
     isEnterprise: false,
@@ -74,7 +74,7 @@ const coreServices = [
   {
     icon: Shield,
     title: 'NDIS Compliance and Audit',
-    body: 'Audit preparation, registration support including SIL mandatory registration, and compliance systems that hold up under Commission scrutiny.',
+    body: 'Audit preparation and registration support, whether you are deciding to register or preparing for your next audit, with compliance systems that hold up under Commission scrutiny.',
     href: '/services/ndis-compliance-audit',
   },
   {
@@ -86,7 +86,7 @@ const coreServices = [
   {
     icon: Zap,
     title: 'Healthcare Workflow Automation',
-    body: 'AI-powered automation that takes repetitive admin off your team, built on your existing tools. For NDIS providers and healthcare organisations.',
+    body: 'Workflow automation, complemented by AI, that takes repetitive admin off your team, built on your existing tools. For NDIS providers and healthcare organisations.',
     href: '/services/healthcare-workflow',
   },
 ]
