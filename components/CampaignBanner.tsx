@@ -69,7 +69,7 @@ export default function CampaignBanner() {
         opacity: state === 'dismissing' ? 0 : 1,
         transition: 'opacity 0.2s',
       }}
-      className="sticky top-[72px] lg:top-[96px] z-40 w-full bg-[#030F23] border-y border-[#E6B85C]/40"
+      className="lg:sticky lg:top-[96px] z-40 w-full bg-[#030F23] border-y border-[#E6B85C]/40"
     >
       <div className="max-w-[1000px] mx-auto flex items-center justify-between gap-4 px-5 sm:px-10 py-2.5">
         <a

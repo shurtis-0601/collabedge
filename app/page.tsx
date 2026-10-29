@@ -22,11 +22,6 @@ export const metadata: Metadata = {
   },
 }
 
-const trustBadges = [
-  'Wyndham based',
-  'Active in NDIS operations and support coordination',
-]
-
 const pillars = [
   {
     eyebrow: 'For NDIS, Healthcare, and Growing Businesses',
@@ -147,7 +142,7 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="relative z-10 w-[52%] px-6 py-16 lg:py-20 lg:pl-10 lg:mr-auto">
+          <div className="relative z-10 w-[58%] pr-6 py-16 lg:py-20 pl-[max(2.5rem,calc((100%_-_1000px)/2))] lg:mr-auto">
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
@@ -157,17 +152,9 @@ export default function HomePage() {
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
                 I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
-              <div className="flex flex-wrap gap-3 mb-10">
+              <div className="flex flex-wrap gap-3">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
                 <a href="/services" className="btn-ghost">Explore Our Services</a>
-              </div>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-6 border-t border-white/15">
-                {trustBadges.map((badge, i) => (
-                  <span key={i} className="flex items-center gap-3 text-[14px] text-[#D1D5DB]">
-                    {i > 0 && <span className="text-brand-goldDark" aria-hidden="true">|</span>}
-                    {badge}
-                  </span>
-                ))}
               </div>
             </FadeIn>
           </div>
@@ -186,7 +173,7 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="px-6 py-16 mx-auto max-w-[640px]">
+          <div className="px-5 sm:px-6 pt-12 pb-10 mx-auto max-w-[640px]">
             <FadeIn variant="fadeUp">
               <div className="w-9 h-[2px] bg-gold mb-4" />
               <h1 className="text-[36px] sm:text-[44px] font-bold text-white leading-tight tracking-[-0.035em] mb-5 max-w-[560px]">
@@ -196,17 +183,9 @@ export default function HomePage() {
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[520px] mb-8">
                 I bring 30 years of large enterprise and government health experience to the daily reality of NDIS operations. Based in Wyndham, I help providers across Melbourne, Geelong and beyond stay audit ready, take on the admin with the software you already own complemented by AI, and handle participant data with care, through ongoing Managed Services or a single project.
               </p>
-              <div className="flex flex-wrap gap-3 mb-10">
+              <div className="flex flex-wrap gap-3">
                 <a href="/appt" className="btn-gold">Book a Free Consultation</a>
                 <a href="/services" className="btn-ghost">Explore Our Services</a>
-              </div>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-6 border-t border-white/15">
-                {trustBadges.map((badge, i) => (
-                  <span key={i} className="flex items-center gap-3 text-[14px] text-[#D1D5DB]">
-                    {i > 0 && <span className="text-brand-goldDark" aria-hidden="true">|</span>}
-                    {badge}
-                  </span>
-                ))}
               </div>
             </FadeIn>
           </div>
@@ -214,10 +193,10 @@ export default function HomePage() {
       </section>
 
       {/* 1b. Trust banner */}
-      <section className="bg-navy border-t border-white/10 py-10 px-5 sm:px-10">
+      <section className="bg-navy border-t border-white/10 py-8 md:py-10 px-5 sm:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeIn variant="fadeUp">
-            <p className="text-[16px] text-[#F1F5F9] font-medium leading-relaxed max-w-[720px] mb-6">
+            <p className="text-[16px] text-[#F1F5F9] font-normal md:font-medium leading-relaxed max-w-[720px] mb-6">
               30 years across banking, telecommunications, government and consulting in Australia and Asia Pacific.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -226,9 +205,9 @@ export default function HomePage() {
                   <span className="text-[13px] font-bold tracking-[.14em] uppercase text-brand-goldDark mb-2 block">
                     {row.label}
                   </span>
-                  <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
+                  <div className="flex flex-wrap items-center gap-x-5 md:gap-x-6 gap-y-0.5 md:gap-y-1">
                     {row.names.map((name) => (
-                      <span key={name} className="text-[16px] font-semibold text-[#D1D5DB]">
+                      <span key={name} className="text-[16px] font-medium md:font-semibold text-[#D1D5DB]">
                         {name}
                       </span>
                     ))}
