@@ -320,13 +320,13 @@ export default function HomePage() {
               <FadeIn key={card.title} variant="fadeUp" delay={i * 80}>
                 <a
                   href={card.href}
-                  className="block bg-white/[0.04] border border-gold/40 rounded-xl p-6 h-full hover:border-gold/70 transition-colors group"
+                  className="flex flex-col bg-white/[0.04] border border-gold/40 rounded-xl p-6 h-full hover:border-gold/70 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <card.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{card.title}</h3>
-                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4">{card.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4 flex-1">{card.body}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                     {card.ctaLabel} <ArrowRight size={13} />
                   </span>
@@ -339,13 +339,13 @@ export default function HomePage() {
               <FadeIn key={i} variant="fadeUp" delay={i * 80}>
                 <a
                   href={service.href}
-                  className="block bg-white/[0.04] border border-white/10 rounded-xl p-6 h-full hover:border-gold/30 transition-colors group"
+                  className="flex flex-col bg-white/[0.04] border border-white/10 rounded-xl p-6 h-full hover:border-gold/30 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <service.icon size={18} className="text-gold" />
                   </div>
                   <h3 className="text-[18px] font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4">{service.body}</p>
+                  <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-4 flex-1">{service.body}</p>
                   <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldDark group-hover:gap-3 transition-all duration-200">
                     Learn more <ArrowRight size={13} />
                   </span>
@@ -386,7 +386,7 @@ export default function HomePage() {
                 <blockquote className="font-serif italic text-[17px] text-text-dark leading-relaxed mb-6 flex-1">
                   Working with Sinclair has transformed what once felt overwhelming into something clear, structured, and exciting. He did not just implement solutions. He taught me along the way.
                 </blockquote>
-                <div className="flex items-center gap-4 flex-wrap">
+                <div className="flex flex-col items-start gap-3">
                   <Image
                     src="/images/enhance-ability-logo.webp"
                     alt="Enhance Ability Services"
@@ -412,7 +412,7 @@ export default function HomePage() {
                 <blockquote className="font-serif italic text-[17px] text-text-dark leading-relaxed mb-6 flex-1">
                   As a new business owner, the stress was quite overwhelming for me, but Sinclair&apos;s expertise has been incredibly reassuring and supportive. His professionalism, integrity, and genuine care for his clients and service delivery outweighs the rest. I am extremely grateful to have him in my corner.
                 </blockquote>
-                <div className="flex items-center gap-4 flex-wrap">
+                <div className="flex flex-col items-start gap-3">
                   <Image
                     src="/images/safe-star-logo.jpg"
                     alt="Safe Star Supports"
