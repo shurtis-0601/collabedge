@@ -194,10 +194,10 @@ export default function ContactPage() {
             <GoldRuleAnimated />
             <Eyebrow>Who You Will Work With</Eyebrow>
             <h3 className="text-[20px] font-bold text-text-dark mb-4 leading-snug tracking-tight">
-              Every consultation is with a senior practitioner. No hand-offs.
+              Every consultation is with a senior consultant. No hand-offs.
             </h3>
             <p className="text-[16px] text-slate leading-relaxed mb-5">
-              Sinclair Hurtis brings 30+ years of Fortune 500 experience across Citibank, Singtel, NAB, and the Victorian Department of Health. He actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it.
+              Sinclair Hurtis brings 30+ years of large enterprise experience across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health. He actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it.
             </p>
 
             <div className="flex gap-8 pt-5 border-t border-border">
@@ -211,7 +211,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <span className="text-[22px] font-extrabold text-text-dark leading-none block">Active</span>
-                <span className="text-[13px] text-slate uppercase tracking-wider mt-1 block">NDIS Practitioner</span>
+                <span className="text-[13px] text-slate uppercase tracking-wider mt-1 block">NDIS Support Coordinator</span>
               </div>
             </div>
           </FadeIn>

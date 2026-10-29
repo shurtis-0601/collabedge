@@ -12,7 +12,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Services | CollabEdge Solutions',
   description:
-    'NDIS compliance, workflow automation, AI advisory, and enterprise technology, delivered as practitioner-led consulting for Australian businesses.',
+    'NDIS compliance, workflow automation, AI advisory, and enterprise technology, delivered as consulting led by an active Support Coordinator for Australian businesses.',
   openGraph: {
     title: 'Services | CollabEdge Solutions',
     description:
@@ -103,7 +103,7 @@ const partnerCards = [
 ]
 
 const pillars = [
-  'Practitioner-led advisory on the healthcare side, partner-coordinated on the enterprise side',
+  'Advisory led by an active Support Coordinator on the healthcare side, partner-coordinated on the enterprise side',
   'We start with what you already have',
   'Transparent, published pricing where possible',
 ]
@@ -120,7 +120,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         h1="Two pillars. One trusted advisor."
-        answerBlock="CollabEdge Solutions operates across two service areas. For NDIS providers and healthcare operators, every engagement is practitioner-led and delivered directly by Sinclair Hurtis. For enterprise and technology needs, CollabEdge coordinates specialist delivery through a curated network of partners across Australia and Asia Pacific."
+        answerBlock="CollabEdge Solutions operates across two service areas. For NDIS providers and healthcare operators, every engagement is led and delivered directly by Sinclair Hurtis, an active Support Coordinator. For enterprise and technology needs, CollabEdge coordinates specialist delivery through a curated network of partners across Australia and Asia Pacific."
       />
 
       {/* Pillar Selector */}

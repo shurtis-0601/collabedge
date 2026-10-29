@@ -177,7 +177,7 @@ export default function NDISComplianceAuditPage() {
       <PageHero
         eyebrow="NDIS Compliance and Audit"
         h1="Compliance that holds up under review."
-        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers, structured, practitioner-tested, and built to withstand NDIS Commission scrutiny. Pricing starts from $2,500 with three transparent tiers based on scope."
+        answerBlock="CollabEdge Solutions builds NDIS compliance documentation and audit readiness frameworks for Australian providers, structured, tested in live NDIS work, and built to withstand NDIS Commission scrutiny. Pricing starts from $2,500 with three transparent tiers based on scope."
       />
 
       {/* What does NDIS compliance support include? */}

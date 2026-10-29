@@ -142,7 +142,7 @@ export default function AnalyticsHubPage() {
               Three Industries. One Approach.
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[640px]">
-              We have built specific, practitioner-tested use cases for three industries. Select your sector to see the problems we solve and the reporting structures we build.
+              We have built specific use cases, tested in practice, for three industries. Select your sector to see the problems we solve and the reporting structures we build.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

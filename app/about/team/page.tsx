@@ -11,11 +11,11 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 export const metadata: Metadata = {
   title: 'Our Team | CollabEdge Solutions Melbourne',
   description:
-    'Meet the CollabEdge Solutions team: senior consultants, NDIS specialists, and strategic advisors delivering practitioner-led consulting across Australia.',
+    'Meet the CollabEdge Solutions team: senior consultants, NDIS specialists, and strategic advisors delivering consulting led by an active Support Coordinator across Australia.',
   openGraph: {
     title: 'Our Team | CollabEdge Solutions',
     description:
-      'Senior-led. Practitioner-tested. Meet the people behind every CollabEdge engagement.',
+      'Senior-led. Tested in live NDIS work. Meet the people behind every CollabEdge engagement.',
     url: 'https://www.collabedgesolutions.com.au/about/team',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -129,7 +129,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="Our Team"
         h1="Senior-led. Every engagement."
-        answerBlock="CollabEdge Solutions is built around a small team of senior practitioners and strategic advisors. Every client engagement is led by the same person who assessed your situation, Sinclair Hurtis, supported by specialists drawn in when the work requires it."
+        answerBlock="CollabEdge Solutions is built around a small team of senior consultants and strategic advisors. Every client engagement is led by the same person who assessed your situation, Sinclair Hurtis, supported by specialists drawn in when the work requires it."
       />
 
       {/* 3. AEO: Who leads CollabEdge engagements? */}
@@ -144,7 +144,7 @@ export default function TeamPage() {
               Every CollabEdge Solutions engagement is led by Sinclair Hurtis, founder and principal consultant. There are no hand-offs to junior staff. Sinclair is supported by a small team of strategic advisors and a vetted specialist network drawn in based on the specific requirements of each engagement.
             </p>
             <p className="text-[16px] text-slate leading-relaxed max-w-[680px]">
-              This model gives clients Fortune 500 depth and accountability without the overhead of a large consulting firm.
+              This model gives clients large enterprise depth and accountability without the overhead of a large consulting firm.
             </p>
           </FadeIn>
         </div>

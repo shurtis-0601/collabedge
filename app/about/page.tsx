@@ -14,11 +14,11 @@ import AnimatedCounter from '@/components/ui/AnimatedCounter'
 export const metadata: Metadata = {
   title: 'About CollabEdge Solutions | Melbourne Consulting Firm',
   description:
-    'CollabEdge Solutions is a Melbourne consulting firm founded by Sinclair Hurtis, with 30+ years Fortune 500 experience in NDIS and enterprise technology.',
+    'CollabEdge Solutions is a Melbourne consulting firm founded by Sinclair Hurtis, an active Support Coordinator with 30+ years of large enterprise experience.',
   openGraph: {
     title: 'About CollabEdge Solutions',
     description:
-      'Practitioner-led consulting for Australian NDIS providers and Asia Pacific enterprises. We start with what you already have.',
+      'Consulting led by an active Support Coordinator for Australian NDIS providers and Asia Pacific enterprises. We start with what you already have.',
     url: 'https://www.collabedgesolutions.com.au/about',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -63,11 +63,11 @@ const services = [
 const checklist = [
   'Every engagement is senior-led, with no hand-offs',
   'We start with what you already have',
-  'Practitioner-tested before it reaches you',
+  'Tested in live NDIS work before it reaches you',
   'Transparent pricing, published on our site',
   'Honest recommendations backed by cost benefit analysis, not sales pitches',
   'Active NDIS coordinator, not just a consultant',
-  'Fortune 500 methods applied to SME budgets',
+  'Large enterprise methods applied to SME budgets',
   'Melbourne-based, Australia-wide delivery',
   'Victorian Government registered supplier',
 ]
@@ -76,7 +76,7 @@ const team = [
   {
     name: 'Sinclair Hurtis',
     role: 'Founder and Principal Consultant',
-    bio: '30+ years Fortune 500. Active NDIS coordinator. Leads every engagement.',
+    bio: '30+ years in large enterprise. Active Support Coordinator. Leads every engagement.',
     icon: Award,
     href: '/about/sinclair-hurtis',
   },
@@ -114,7 +114,7 @@ export default function AboutPage() {
       {/* 2. Hero */}
       <PageHero
         eyebrow="About Us"
-        h1="Built by a practitioner. Tested in the field."
+        h1="Built by an active Support Coordinator. Tested in the field."
         answerBlock="CollabEdge Solutions is a Melbourne-based operational consulting and digital transformation firm. We work with NDIS providers, healthcare operators, and Asia Pacific enterprises to simplify operations, automate workflows, and implement technology that actually fits."
       />
 
@@ -139,7 +139,7 @@ export default function AboutPage() {
                   Healthcare &amp; NDIS
                 </span>
                 <p className="text-[16px] text-slate leading-relaxed">
-                  We support NDIS providers and healthcare organisations with compliance, AI-powered workflow automation, and practical advisory.
+                  We support NDIS providers and healthcare organisations with compliance, workflow automation complemented by AI, and practical advisory.
                 </p>
               </div>
             </FadeIn>
@@ -158,7 +158,7 @@ export default function AboutPage() {
 
           <FadeIn variant="fadeUp" delay={200}>
             <p className="text-[16px] font-medium text-text-dark leading-relaxed mb-6 max-w-[680px]">
-              Every engagement is senior-led, practitioner-tested, and built around what is right for your organisation.
+              Every engagement is senior-led, tested in live NDIS work, and built around what is right for your organisation.
             </p>
           </FadeIn>
 
@@ -166,7 +166,7 @@ export default function AboutPage() {
             {[
               {
                 icon: Users,
-                title: 'Practitioner-Led',
+                title: 'Active in NDIS Every Day',
                 body: 'Sinclair actively coordinates NDIS participants through My Ability Services, testing every solution in a live environment before recommending it to clients.',
               },
               {
@@ -176,7 +176,7 @@ export default function AboutPage() {
               },
               {
                 icon: TrendingUp,
-                title: 'Fortune 500 Depth, Applied at Any Scale',
+                title: 'Large Enterprise Depth, Applied at Any Scale',
                 body: '30+ years across Citibank Singapore, Singtel, NAB, and the Victorian Department of Health, delivered from within global System Integrators and end client environments alike. That dual perspective, business and IT, functional and technical, is applied to the specific challenges of Australian healthcare providers and growing businesses across Asia Pacific.',
               },
             ].map((card, i) => (
@@ -239,7 +239,7 @@ export default function AboutPage() {
           <AnimatedCounter value="30+" label="Years experience" dark={false} />
           <AnimatedCounter value="100%" label="Senior-led" dark={false} />
           <AnimatedCounter value="2" label="Service pillars" dark={false} />
-          <AnimatedCounter value="Active" label="NDIS practitioner" dark={false} />
+          <AnimatedCounter value="Active" label="NDIS Support Coordinator" dark={false} />
         </div>
       </section>
 
@@ -249,10 +249,10 @@ export default function AboutPage() {
           <FadeIn variant="slideRight">
             <GoldRuleAnimated />
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
-              Boutique Accountability, Fortune 500 Depth
+              Boutique Accountability, Large Enterprise Depth
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
-              CollabEdge Solutions combines Fortune 500 experience with boutique accountability. Every engagement is led by the same senior practitioner who assessed your situation, with no hand-offs to junior staff. We recommend what simplifies your operation, not what pays us the most.
+              CollabEdge Solutions combines large enterprise experience with boutique accountability. Every engagement is led by the same senior consultant who assessed your situation, with no hand-offs to junior staff. We recommend what simplifies your operation, not what pays us the most.
             </p>
           </FadeIn>
 
@@ -365,7 +365,7 @@ export default function AboutPage() {
                   Healthcare and NDIS Solutions
                 </h3>
                 <p className="text-[14px] text-[#D1D5DB] leading-relaxed mb-5">
-                  Supporting NDIS providers and healthcare operators with compliance, workflow automation, document governance, and AI-powered tools, built on the systems they already have.
+                  Supporting NDIS providers and healthcare operators with compliance, document governance, and workflow automation complemented by AI, built on the systems they already have.
                 </p>
                 <a
                   href="/services/ndis-compliance-audit"

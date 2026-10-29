@@ -297,7 +297,7 @@ export default function MagdalenaPaczkowskaPage() {
 
       {/* CTA */}
       <CTASection
-        heading="Work with a practitioner-led team."
+        heading="Work with a team that is active in NDIS."
         sub="Every CollabEdge NDIS engagement is informed by active frontline practice."
         ctaLabel="Book a Free Consultation"
         ctaHref="/appt"

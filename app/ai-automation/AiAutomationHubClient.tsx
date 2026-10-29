@@ -273,7 +273,7 @@ export default function AiAutomationHubClient() {
                 <Code2 size={18} className="text-white" />
               </div>
               <p className="text-[14px] text-[#D1D5DB] leading-relaxed">
-                This website was built from scratch using Claude Code, the same practitioner-first approach behind everything on this roadmap. We build and use these tools ourselves before recommending them to anyone else.
+                This website was built from scratch using Claude Code, the same hands-on approach behind everything on this roadmap. We build and use these tools ourselves before recommending them to anyone else.
               </p>
             </div>
           </FadeIn>

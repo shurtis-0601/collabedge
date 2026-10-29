@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sinclair Hurtis, Founder and Principal Consultant',
     description:
-      'Practitioner-led consulting built on 30+ years of Fortune 500 and enterprise experience across Australia and Asia Pacific.',
+      'Consulting led by an active Support Coordinator, built on 30+ years of large enterprise experience across Australia and Asia Pacific.',
     url: 'https://www.collabedgesolutions.com.au/about/sinclair-hurtis',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -178,7 +178,7 @@ const expertiseTags = [
 const bioStats = [
   { value: '30+', label: 'Years experience' },
   { value: '4 Countries', label: 'APAC delivery experience' },
-  { value: 'Active', label: 'NDIS practitioner' },
+  { value: 'Active', label: 'NDIS Support Coordinator' },
 ]
 
 export default function SinclairHurtisPage() {
@@ -249,7 +249,7 @@ export default function SinclairHurtisPage() {
                 Sinclair Hurtis
               </h1>
               <p className="text-[15px] text-[#D1D5DB] leading-relaxed mb-5 border-l-2 border-gold pl-5">
-                With over 30 years across Fortune 500 organisations in Australia and Asia Pacific,
+                With over 30 years across large enterprises in Australia and Asia Pacific,
                 Sinclair founded CollabEdge Solutions to give healthcare providers and growing
                 businesses access to the same calibre of operational expertise that was previously
                 available only to large enterprises.
@@ -259,7 +259,7 @@ export default function SinclairHurtisPage() {
                 Department of Health, covering financial services, telecommunications, government,
                 and healthcare across Australia, Singapore, Thailand, and Asia Pacific. Today he
                 applies that experience directly to NDIS providers, allied health operators, and
-                Australian enterprises, as both a consultant and an active practitioner.
+                Australian enterprises, as both a consultant and an active Support Coordinator.
               </p>
               <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                 {bioStats.map((stat, i) => (
@@ -345,7 +345,7 @@ export default function SinclairHurtisPage() {
             <FadeIn variant="slideRight">
               <GoldRuleAnimated />
               <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
-                Active Practitioner
+                Active Support Coordinator
               </span>
               <h2 className="text-[26px] font-bold text-white tracking-tight mb-4 leading-snug">
                 What makes Sinclair different from other consultants?
@@ -357,9 +357,9 @@ export default function SinclairHurtisPage() {
                 client has been tested in a live environment first.
               </p>
               <p className="text-[16px] text-[#D1D5DB] leading-relaxed">
-                This dual role as practitioner and consultant is the foundation of CollabEdge&apos;s
-                Built by Practitioners positioning, and the reason clients trust that
-                recommendations are grounded in operational reality, not theory.
+                This dual role as Support Coordinator and consultant is the foundation of how
+                CollabEdge works, and the reason clients trust that recommendations are grounded
+                in operational reality, not theory.
               </p>
             </FadeIn>
             <FadeIn variant="fadeUp" delay={150}>

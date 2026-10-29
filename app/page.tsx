@@ -243,7 +243,7 @@ export default function HomePage() {
               One Foundation. Two Ways We Help.
             </h2>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-10 max-w-[680px]">
-              Three decades inside Fortune 500 transformations, now working in two directions.
+              Three decades inside large enterprise transformations, now working in two directions.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

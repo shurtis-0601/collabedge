@@ -12,11 +12,11 @@ export const revalidate = 3600
 export const metadata: Metadata = {
   title: 'Resources | CollabEdge Solutions',
   description:
-    'Practical articles and guides for NDIS providers and Australian small businesses. Productivity, compliance, data and AI, written by an active practitioner.',
+    'Practical articles and guides for NDIS providers and Australian small businesses. Productivity, compliance, data and AI, written by an active Support Coordinator.',
   openGraph: {
     title: 'Resources | CollabEdge Solutions',
     description:
-      'Practical articles and guides for NDIS providers and Australian small businesses, written by an active practitioner.',
+      'Practical articles and guides for NDIS providers and Australian small businesses, written by an active Support Coordinator.',
     url: 'https://www.collabedgesolutions.com.au/resources',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     type: 'website',
@@ -87,7 +87,7 @@ export default function ResourcesPage() {
               Resources
             </span>
             <h1 className="text-[34px] md:text-[40px] font-bold text-white tracking-tight leading-[1.15] mb-5 max-w-[680px]">
-              Practical Guidance, Written by Practitioners
+              Practical Guidance from People Active in NDIS
             </h1>
             <p className="text-[16px] text-[#D1D5DB] leading-relaxed max-w-[620px]">
               Articles and guides on NDIS productivity, compliance, data and AI. No theory for the sake of it. Everything here comes from work we do every week.

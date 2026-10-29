@@ -10,7 +10,7 @@ import ProductTabs, { Product } from '@/components/products/ProductTabs'
 export const metadata: Metadata = {
   title: 'Products | CollabEdge Solutions',
   description:
-    'Practical tools built by a practitioner active in NDIS operations and support coordination. De-identification, staff compliance automation, and funding tracking, built for real caseloads.',
+    'Practical tools built by an active Support Coordinator. De-identification, staff compliance automation, and funding tracking, built for real caseloads.',
   openGraph: {
     title: 'Products | CollabEdge Solutions',
     description:
