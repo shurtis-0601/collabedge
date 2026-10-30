@@ -200,6 +200,29 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <ArticleBlock key={i} block={block} slug={article.slug} />
           ))}
 
+          <aside aria-label="Next step" className="mt-12 rounded-xl bg-navy p-8">
+            <h2 className="text-[22px] font-bold text-white tracking-tight mb-3 leading-snug">
+              Put this into practice with an active Support Coordinator
+            </h2>
+            <p className="text-[16px] text-[#D1D5DB] leading-relaxed mb-6">
+              I help NDIS providers get audit ready, use the software they already own complemented by AI, and handle participant data with care. Book a free 30 minute conversation and we will look at where you stand.
+            </p>
+            <Link href="/appt" className="btn-gold">
+              Book a Free Consultation
+            </Link>
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+              <Link href="/services/ai-advisory" className="text-[16px] font-semibold text-brand-goldDark hover:underline underline-offset-2">
+                AI Advisory for NDIS Providers
+              </Link>
+              <Link href="/services/ndis-compliance-audit" className="text-[16px] font-semibold text-brand-goldDark hover:underline underline-offset-2">
+                NDIS Audit Preparation and Compliance
+              </Link>
+              <Link href="/services" className="text-[16px] font-semibold text-brand-goldDark hover:underline underline-offset-2">
+                Managed Services
+              </Link>
+            </div>
+          </aside>
+
           <div className="mt-12 pt-8 border-t border-border">
             <Link
               href="/resources"

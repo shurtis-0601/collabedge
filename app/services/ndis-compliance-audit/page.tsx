@@ -7,13 +7,13 @@ import PageHero from '@/components/corporate/PageHero'
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
-import FAQAccordion from '@/components/sections/FAQAccordion'
+import FAQAccordion, { type FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'NDIS Audit Preparation and Compliance | CollabEdge Solutions',
   alternates: { canonical: '/services/ndis-compliance-audit' },
   description:
-    'NDIS audit preparation, registration support and compliance systems for providers in Wyndham, Melbourne and Geelong, with transparent pricing from $2,500.',
+    'NDIS audit preparation, registration support and compliance management systems for providers in Wyndham, Melbourne and Geelong, with clear pricing from $2,500.',
   openGraph: {
     title: 'NDIS Audit Preparation and Compliance | CollabEdge Solutions',
     description:
@@ -49,51 +49,44 @@ const serviceSchema = {
   ],
 }
 
+const complianceFaqs: FAQ[] = [
+  {
+    q: 'What is an NDIS compliance management system?',
+    a: 'It is the set of documented policies, procedures, records and regular checks that shows your organisation meets the NDIS Practice Standards, and keeps showing it as you grow. We build it on the Microsoft 365 or Google Workspace tools you already own, so your team can find evidence quickly, keep it current and be ready when an auditor asks.',
+  },
+  {
+    q: 'How long does an NDIS compliance engagement take?',
+    a: 'Tier 1 engagements typically take 3-4 weeks. Tier 2 engagements take 6-8 weeks. Tier 3 multi-site engagements are scoped individually based on complexity.',
+  },
+  {
+    q: 'Do I need to change software or platforms?',
+    a: 'No. CollabEdge Solutions builds compliance frameworks using the Microsoft 365 or Google Workspace environment you already have. We do not require new platform purchases.',
+  },
+  {
+    q: 'What happens if I am audited during the engagement?',
+    a: 'We prioritise the highest-risk documentation first specifically to reduce this risk, and can accelerate timelines if an audit date is already confirmed.',
+  },
+  {
+    q: 'Is pricing negotiable for smaller providers?',
+    a: 'Tier 1 pricing already reflects a foundation-level scope for smaller and sole trader providers. Contact us to discuss your specific situation.',
+  },
+  {
+    q: 'Do you work with providers outside Victoria?',
+    a: 'Yes. CollabEdge Solutions works with NDIS providers across Australia, with most engagements delivered remotely.',
+  },
+]
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How long does an NDIS compliance engagement take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Tier 1 engagements typically take 3-4 weeks. Tier 2 engagements take 6-8 weeks. Tier 3 multi-site engagements are scoped individually based on complexity.',
-      },
+  mainEntity: complianceFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
     },
-    {
-      '@type': 'Question',
-      name: 'Do I need to change software or platforms?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. CollabEdge Solutions builds compliance frameworks using the Microsoft 365 or Google Workspace environment you already have. We do not require new platform purchases.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What happens if I am audited during the engagement?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We prioritise the highest-risk documentation first specifically to reduce this risk, and can accelerate timelines if an audit date is already confirmed.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is pricing negotiable for smaller providers?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Tier 1 pricing already reflects a foundation-level scope for smaller and sole trader providers. Contact us to discuss your specific situation.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you work with providers outside Victoria?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. CollabEdge Solutions works with NDIS providers across Australia, with most engagements delivered remotely.',
-      },
-    },
-  ],
+  })),
 }
 
 const features = [
@@ -210,7 +203,7 @@ export default function NDISComplianceAuditPage() {
           </div>
           <FadeIn variant="fadeUp" delay={200}>
             <p className="text-[14px] text-slate mt-8">
-              Unregistered SIL provider facing the registration deadline?{' '}
+              Unregistered SIL provider deciding what to do next?{' '}
               <a
                 href="/services/ndis-compliance-audit/sil-registration"
                 className="inline-flex items-center gap-1 font-semibold text-brand-goldLight hover:underline underline-offset-2"
@@ -218,6 +211,30 @@ export default function NDISComplianceAuditPage() {
                 See how we help <ArrowRight size={13} />
               </a>
             </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* NDIS compliance management system */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+              An NDIS Compliance Management System Without New Software
+            </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
+              When providers search for an NDIS compliance management system, they often expect to buy new software. Most do not need to. A compliance management system is the set of documented policies, procedures, records and regular checks that shows you meet the NDIS Practice Standards today, and keeps showing it as your organisation grows.
+            </p>
+            <p className="text-[16px] text-slate leading-relaxed mb-6 max-w-[680px]">
+              We build yours on the Microsoft 365 or Google Workspace tools you already pay for, so your team can find evidence quickly, keep it current without extra effort, and be ready whenever an audit is due. Where a specialist platform genuinely makes sense, we will tell you honestly and show you the cost benefit first.
+            </p>
+            <a
+              href="/appt"
+              className="inline-flex items-center gap-2 text-[16px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200"
+            >
+              Book a free 30 minute conversation <ArrowRight size={14} />
+            </a>
           </FadeIn>
         </div>
       </section>
@@ -375,7 +392,7 @@ export default function NDISComplianceAuditPage() {
             </h2>
           </FadeIn>
           <FadeIn variant="fadeUp" delay={100}>
-            <FAQAccordion />
+            <FAQAccordion faqs={complianceFaqs} />
           </FadeIn>
         </div>
       </section>

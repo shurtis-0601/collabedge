@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import CampaignBanner from "@/components/CampaignBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import "./globals.css";
 
 const inter = Inter({
@@ -97,6 +98,7 @@ export default function RootLayout({
       <body className="bg-navy text-white min-h-screen flex flex-col">
         <SiteHeader />
         <CampaignBanner />
+        <BreadcrumbJsonLd />
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <Analytics />
