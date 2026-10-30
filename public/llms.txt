@@ -18,6 +18,7 @@
 ## Services
 
 - [Services overview](https://www.collabedgesolutions.com.au/services): NDIS compliance, document governance, workflow automation complemented by AI, AI advisory and Managed Services.
+- [Managed Services](https://www.collabedgesolutions.com.au/services/managed-services): ongoing NDIS compliance and operations support for providers, not plan management. Monthly documentation monitoring and maintenance, document governance, compliance health checks and automation complemented by AI.
 - [NDIS Compliance and Audit](https://www.collabedgesolutions.com.au/services/ndis-compliance-audit): audit preparation, registration support and compliance systems. Pricing is published on the page.
 - [Document Governance](https://www.collabedgesolutions.com.au/services/document-governance): audit-ready document systems built on SharePoint and Google Drive.
 - [Healthcare Workflow Automation](https://www.collabedgesolutions.com.au/services/healthcare-workflow): workflow automation complemented by AI for NDIS providers and healthcare operators.

@@ -22,6 +22,7 @@ const TRAILS: Record<string, Crumb[]> = {
   '/services': [HOME, SERVICES],
   '/services/ndis-compliance-audit': [HOME, SERVICES, COMPLIANCE],
   '/services/ndis-compliance-audit/sil-registration': [HOME, SERVICES, COMPLIANCE, ['SIL Registration', '/services/ndis-compliance-audit/sil-registration']],
+  '/services/managed-services': [HOME, SERVICES, ['Managed Services', '/services/managed-services']],
   '/services/healthcare-workflow': [HOME, SERVICES, ['Healthcare Workflow Automation', '/services/healthcare-workflow']],
   '/services/document-governance': [HOME, SERVICES, ['Document Governance', '/services/document-governance']],
   '/services/digital': [HOME, SERVICES, DIGITAL],

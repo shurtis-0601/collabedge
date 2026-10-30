@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/services', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-10-29' },
     { path: '/services/ndis-compliance-audit', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-10-29' },
     { path: '/services/ndis-compliance-audit/sil-registration', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/services/managed-services', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-10-30' },
     { path: '/services/healthcare-workflow', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-10-29' },
     { path: '/services/document-governance', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-10-29' },
     { path: '/services/digital', priority: 0.8, changeFrequency: 'monthly' },

@@ -97,7 +97,7 @@ const managedServices = {
   icon: Layers,
   title: 'Managed Services',
   body: 'One ongoing relationship instead of a string of separate projects. Managed Services brings compliance, document governance and workflow automation together, complemented by AI where it helps, so you stay audit ready through the year and always know where you stand.',
-  href: '/services',
+  href: '/services/managed-services',
   ctaLabel: 'See how Managed Services works',
 }
 

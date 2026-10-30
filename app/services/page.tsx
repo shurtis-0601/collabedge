@@ -362,7 +362,7 @@ export default function ServicesPage() {
               <div className="bg-offwhite rounded-xl p-7 border border-border h-full flex flex-col">
                 <h3 className="text-[18px] font-bold text-text-dark mb-3">Managed Services</h3>
                 <p className="text-[16px] text-slate leading-relaxed mb-4">
-                  One ongoing relationship covering compliance, automation, digital, and advisory. Your operations partner rather than a one-off engagement.
+                  One ongoing relationship covering compliance, automation, digital, and advisory. Ongoing operations support rather than a one-off engagement.
                 </p>
                 <div className="bg-white rounded-lg p-4 border border-gold/20 flex items-start gap-3 mb-4">
                   <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
@@ -371,7 +371,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <a
-                  href="/products"
+                  href="/services/managed-services"
                   className="inline-flex items-center gap-2 text-[14px] font-semibold text-brand-goldLight hover:gap-3 transition-all duration-200 mt-auto"
                 >
                   See what is included <ArrowRight size={12} />

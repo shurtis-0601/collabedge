@@ -53,6 +53,7 @@ const NAV: NavItem[] = [
         heading: "NDIS and Healthcare",
         links: [
           { label: "NDIS Compliance and Audit", href: "/services/ndis-compliance-audit" },
+          { label: "Managed Services", href: "/services/managed-services" },
           { label: "Healthcare Workflow Automation", href: "/services/healthcare-workflow" },
           { label: "Document Governance", href: "/services/document-governance" },
           { label: "Digital Services", href: "/services/digital" },
