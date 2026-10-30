@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export type FAQ = { q: string; a: string }
@@ -29,12 +29,16 @@ const defaultFaqs: FAQ[] = [
 
 export default function FAQAccordion({ faqs = defaultFaqs }: { faqs?: FAQ[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const baseId = useId()
 
   return (
     <div className="flex flex-col gap-3">
       {faqs.map((faq, i) => (
         <div key={i} className="border border-border rounded-lg overflow-hidden bg-white">
           <button
+            id={`${baseId}-q-${i}`}
+            aria-expanded={openIndex === i}
+            aria-controls={`${baseId}-a-${i}`}
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-offwhite transition-colors"
           >
@@ -44,11 +48,16 @@ export default function FAQAccordion({ faqs = defaultFaqs }: { faqs?: FAQ[] }) {
               className={`text-brand-goldLight flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
             />
           </button>
-          {openIndex === i && (
-            <div className="px-5 pb-5">
-              <p className="text-[16px] text-slate leading-relaxed">{faq.a}</p>
-            </div>
-          )}
+          {/* Answers stay in the page HTML so search and AI crawlers can read them; only visibility changes. */}
+          <div
+            id={`${baseId}-a-${i}`}
+            role="region"
+            aria-labelledby={`${baseId}-q-${i}`}
+            hidden={openIndex !== i}
+            className="px-5 pb-5"
+          >
+            <p className="text-[16px] text-slate leading-relaxed">{faq.a}</p>
+          </div>
         </div>
       ))}
     </div>

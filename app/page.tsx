@@ -7,6 +7,7 @@ import {
 import CTASection from '@/components/ui/CTASection'
 import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
+import FAQAccordion, { type FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'NDIS Compliance and Data Security in Wyndham | CollabEdge',
@@ -117,9 +118,58 @@ const viewAllServices = {
 
 const partners = ['SHIELD', 'Dynamic Netsoft', 'Property Automate', 'NewGen Consulting']
 
+const homeFaqs: FAQ[] = [
+  {
+    q: 'How can I prepare for my NDIS audit?',
+    a: 'Get your key documents and evidence into one findable place, check them against the NDIS Practice Standards that apply to you, and fix the gaps before the auditor finds them. I help providers do this with the software they already own, and because I am an active Support Coordinator, I know what holds up in practice. Book a free 30 minute conversation and we will look at where you stand.',
+  },
+  {
+    q: 'How can I automate my NDIS business using AI?',
+    a: 'Start with the admin that repeats every week, such as intake, reminders, document filing and reporting. Automate it using the software you already own, such as Microsoft 365 or Google Workspace, complemented by AI where it genuinely helps. Protect participant privacy first by removing identifying details before any information goes into an AI tool, and always review what the AI produces before you use it.',
+  },
+  {
+    q: 'How do I choose a trustworthy NDIS compliance consultant?',
+    a: 'Look for someone who works inside the NDIS every day, can show real provider results, and is open about what will and will not work. I am an active Support Coordinator through My Ability Services, with 30 years of large enterprise and government health experience, and you can read what providers say about working with me on this page.',
+  },
+  {
+    q: 'What are Managed Services?',
+    a: 'Managed Services is how I work with providers on an ongoing basis, instead of a string of separate projects. It brings compliance, document governance and workflow automation together, complemented by AI where it helps, so you stay audit ready through the year and always know where you stand. You can also start with a single project.',
+  },
+  {
+    q: 'How do I keep participant data safe when using AI or cloud tools?',
+    a: 'Treat participant information as sensitive by default. Limit who can see it, keep it in systems you control, and remove identifying details before any information goes into an AI tool. I weigh privacy and data security when I evaluate every tool, because I handle participant information myself.',
+  },
+  {
+    q: 'Should I get registered as an NDIS provider, or prepare for my next audit?',
+    a: 'That depends on the supports you deliver and how your participants manage their funding, so check the current requirements on the NDIS Commission website before you decide. I can help you work out where you stand and what to do next, whether you are deciding to register or preparing for your next audit.',
+  },
+  {
+    q: 'Do you work with providers outside Wyndham?',
+    a: 'Yes. I am based in Wyndham and work with providers across Melbourne and Geelong, and with clients in other states, with most engagements delivered remotely.',
+  },
+]
+
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+}
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
+
       {/* 1. Hero */}
       <section className="relative overflow-hidden bg-navy">
         {/* Desktop: photo right (absolute, gradient overlay), content left. Unchanged from prior layout. */}
@@ -435,6 +485,21 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* 6b. FAQ */}
+      <section className="bg-white py-16 px-5 sm:px-10">
+        <div className="max-w-[760px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+              Questions I Hear from NDIS Providers
+            </h2>
+          </FadeIn>
+          <FadeIn variant="fadeUp" delay={100}>
+            <FAQAccordion faqs={homeFaqs} />
+          </FadeIn>
         </div>
       </section>
 

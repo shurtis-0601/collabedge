@@ -1,0 +1,45 @@
+# CollabEdge Solutions
+
+> NDIS audit preparation, compliance, document governance, AI and workflow automation, data security and Managed Services for providers in Wyndham, Melbourne and Geelong. Led by Sinclair Hurtis, an active NDIS Support Coordinator with 30 years of large enterprise and government health experience. Enterprise technology is delivered with specialist partners across Australia and Asia Pacific.
+
+## About the business
+
+- Name: CollabEdge Solutions
+- Founder and Principal Consultant: Sinclair Hurtis
+- Based in Wyndham, Victoria. Works with providers across Melbourne and Geelong and in other Australian states, with most engagements delivered remotely.
+- Two pillars: NDIS and healthcare advisory, and enterprise transformation with technology partners.
+- The engagement model is called Managed Services: an ongoing relationship instead of separate projects. Single projects are also available.
+- Approach: use the software a client already owns (Microsoft 365 or Google Workspace), complemented by AI where it genuinely helps, with participant privacy considered in every tool.
+- Support Coordination is delivered through My Ability Services.
+- Contact: info@collabedgesolutions.com.au, +61 426 464 442
+- Book a free 30 minute conversation: https://www.collabedgesolutions.com.au/appt
+- LinkedIn: https://www.linkedin.com/company/collabedge-solutions/
+
+## Services
+
+- [Services overview](https://www.collabedgesolutions.com.au/services): NDIS compliance, document governance, workflow automation complemented by AI, AI advisory and Managed Services.
+- [NDIS Compliance and Audit](https://www.collabedgesolutions.com.au/services/ndis-compliance-audit): audit preparation, registration support and compliance systems. Pricing is published on the page.
+- [Document Governance](https://www.collabedgesolutions.com.au/services/document-governance): audit-ready document systems built on SharePoint and Google Drive.
+- [Healthcare Workflow Automation](https://www.collabedgesolutions.com.au/services/healthcare-workflow): workflow automation complemented by AI for NDIS providers and healthcare operators.
+- [AI Advisory](https://www.collabedgesolutions.com.au/services/ai-advisory): honest advice on where AI fits, what to automate and what to leave alone.
+- [Digital Services](https://www.collabedgesolutions.com.au/services/digital): websites, AI agents, CRM automation and data analytics for small businesses.
+- [Data Analytics](https://www.collabedgesolutions.com.au/services/analytics): analytics for allied health, property technology and retail.
+- [Partner Solutions](https://www.collabedgesolutions.com.au/services/partner-solutions): enterprise technology through SHIELD (Sekunce), Dynamic Netsoft, Property Automate and NewGen Consulting.
+
+## People and proof
+
+- [About CollabEdge Solutions](https://www.collabedgesolutions.com.au/about): vision, mission and the COLLAB values.
+- [Sinclair Hurtis](https://www.collabedgesolutions.com.au/about/sinclair-hurtis): background, certifications and teaching as a sessional academic at Monash University.
+- [Team](https://www.collabedgesolutions.com.au/about/team)
+- [Case studies](https://www.collabedgesolutions.com.au/case-studies)
+
+## Products and resources
+
+- [Products](https://www.collabedgesolutions.com.au/products): tools for NDIS providers, including MedPrivacy (external site) and funding tracking.
+- [Resources and articles](https://www.collabedgesolutions.com.au/resources): guides on NDIS compliance, AI, data and productivity.
+- [Downloads](https://www.collabedgesolutions.com.au/resources/downloads)
+
+## Optional
+
+- [Sitemap](https://www.collabedgesolutions.com.au/sitemap.xml)
+- [Contact](https://www.collabedgesolutions.com.au/contact)
