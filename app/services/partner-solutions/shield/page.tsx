@@ -24,16 +24,18 @@ export const metadata: Metadata = {
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
+  '@type': 'Service',
   name: 'SHIELD by Sekunce',
+  serviceType: 'Voice fraud prevention delivery and advisory',
   description:
     'Carrier-grade inline voice fraud prevention platform. Scores every call before acceptance, blocking IRSF, CLI spoofing, robocall, and ATO attempts in under 100 milliseconds, with behavioural signaling analysis flagging suspected synthetic-voice campaigns.',
   brand: { '@type': 'Brand', name: 'Sekunce' },
-  offers: {
-    '@type': 'Offer',
-    seller: { '@type': 'Organization', name: 'CollabEdge Solutions' },
-    areaServed: ['AU', 'SG', 'IN'],
+  provider: {
+    '@type': 'Organization',
+    name: 'CollabEdge Solutions',
+    url: 'https://www.collabedgesolutions.com.au',
   },
+  areaServed: ['AU', 'SG', 'IN'],
 }
 
 const globalStats = [
