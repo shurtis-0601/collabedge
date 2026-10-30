@@ -73,6 +73,39 @@ const checklist = [
   'Victorian Government registered supplier',
 ]
 
+const coreValues = [
+  {
+    letter: 'C',
+    title: 'Clarity',
+    body: 'We simplify compliance and cut through jargon so your team can focus on care and outcomes.',
+  },
+  {
+    letter: 'O',
+    title: 'Openness',
+    body: 'We tell you what will and will not work, backed by cost benefit, not sales pitches.',
+  },
+  {
+    letter: 'L',
+    title: 'Leverage',
+    body: 'We get more from the software you already own before suggesting anything new.',
+  },
+  {
+    letter: 'L',
+    title: 'Live Practice',
+    body: 'Every approach is tested in live NDIS work before we recommend it.',
+  },
+  {
+    letter: 'A',
+    title: 'Automation, with Care',
+    body: 'We take repetitive admin off your team, complemented by AI where it genuinely helps, and protect privacy while we do.',
+  },
+  {
+    letter: 'B',
+    title: 'Bridging',
+    body: 'We connect large enterprise know-how with local delivery in Wyndham, Melbourne, Geelong and across Asia Pacific.',
+  },
+]
+
 const team = [
   {
     name: 'Sinclair Hurtis',
@@ -128,7 +161,7 @@ export default function AboutPage() {
               An Operational Consulting and Technology Firm
             </h2>
             <p className="text-[16px] text-slate leading-relaxed mb-8 max-w-[680px]">
-              CollabEdge Solutions is an Australian and Asia Pacific operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary missions.
+              CollabEdge Solutions is an Australian and Asia Pacific operational consulting and technology firm founded by Sinclair Hurtis, operating across two complementary service areas.
             </p>
           </FadeIn>
 
@@ -188,6 +221,63 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-[18px] font-bold text-text-dark mb-2">{card.title}</h3>
                   <p className="text-[16px] text-slate leading-relaxed">{card.body}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3b. Vision, mission and values */}
+      <section className="bg-offwhite py-16 px-5 sm:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn variant="fadeUp">
+            <GoldRuleAnimated />
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
+              Collaboration Is How We Give You the Edge
+            </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
+              The name says it plainly: collaboration gives you the edge. Every engagement is a collaboration with you, your team and the specialists involved, so you finish with a clearer, stronger organisation.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
+            <FadeIn variant="fadeUp">
+              <div className="border-l-2 border-gold pl-6 h-full">
+                <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate block mb-2">
+                  Our Vision
+                </span>
+                <p className="text-[16px] text-text-dark leading-relaxed">
+                  To remove the friction between complex technology and everyday operations, so organisations of every size can focus on growth, human connection and care.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn variant="fadeUp" delay={120}>
+              <div className="border-l-2 border-gold pl-6 h-full">
+                <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-slate block mb-2">
+                  Our Mission
+                </span>
+                <p className="text-[16px] text-text-dark leading-relaxed">
+                  To bridge large enterprise discipline and on the ground reality. We work alongside you and the specialists you need to simplify compliance, automate repetitive work with the software you already own complemented by AI, and handle sensitive data with care, so you have the edge.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+
+          <FadeIn variant="fadeUp">
+            <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-8 leading-snug">
+              Six Values That Spell COLLAB
+            </h2>
+          </FadeIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {coreValues.map((value, i) => (
+              <FadeIn key={i} variant="fadeUp" delay={(i % 3) * 100}>
+                <div className="bg-white rounded-xl p-6 border border-border h-full hover:-translate-y-[2px] hover:shadow-sm transition-all duration-200">
+                  <span className="font-serif text-[40px] leading-none text-brand-goldLight block mb-3" aria-hidden="true">
+                    {value.letter}
+                  </span>
+                  <h3 className="text-[18px] font-bold text-text-dark mb-2">{value.title}</h3>
+                  <p className="text-[16px] text-slate leading-relaxed">{value.body}</p>
                 </div>
               </FadeIn>
             ))}
@@ -346,10 +436,10 @@ export default function AboutPage() {
           <FadeIn variant="fadeUp">
             <GoldRuleAnimated />
             <span className="text-[13px] font-semibold tracking-[.16em] uppercase text-brand-goldDark/80 mb-2 block">
-              Our Dual Mission
+              Two Service Pillars
             </span>
             <h2 className="text-[26px] font-bold text-white tracking-tight mb-10 leading-snug">
-              Our Dual Mission
+              Two Ways We Work
             </h2>
           </FadeIn>
 
