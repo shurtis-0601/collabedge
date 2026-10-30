@@ -236,8 +236,11 @@ export default function AboutPage() {
             <h2 className="text-[26px] font-bold text-text-dark tracking-tight mb-4 leading-snug">
               Collaboration Is How We Give You the Edge
             </h2>
+            <p className="text-[16px] text-slate leading-relaxed mb-4 max-w-[680px]">
+              Productivity is my passion, and collaboration is how I deliver it. We build, we validate, and we succeed together. That is the <span className="font-semibold text-brand-goldLight">&apos;edge&apos;</span> in CollabEdge.
+            </p>
             <p className="text-[16px] text-slate leading-relaxed mb-10 max-w-[680px]">
-              The name says it plainly: collaboration gives you the edge. Every engagement is a collaboration with you, your team and the specialists involved, so you finish with a clearer, stronger organisation.
+              Every engagement is a collaboration with you, your team and the specialists involved, so you finish with a clearer, stronger organisation.
             </p>
           </FadeIn>
 
