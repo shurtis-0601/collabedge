@@ -485,6 +485,19 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
+          <FadeIn variant="fadeUp" delay={300}>
+            <p className="text-[16px] text-slate leading-relaxed mt-8">
+              Worked with me?{' '}
+              <a
+                href="https://g.page/r/CTGhBTvtq-38EAI/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-brand-goldLight hover:underline"
+              >
+                Leave a Google review
+              </a>
+            </p>
+          </FadeIn>
         </div>
       </section>
 
