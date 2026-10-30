@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies/enhance-ability-services' },
   title: 'Enhance Ability Services Case Study | CollabEdge Solutions',
   description:
     'How CollabEdge Solutions helped Enhance Ability Services, a Geelong NDIS provider, rebuild compliance using Microsoft 365, with no new platforms added.',

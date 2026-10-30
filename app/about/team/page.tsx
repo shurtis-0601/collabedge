@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/team' },
   title: 'Our Team | CollabEdge Solutions Melbourne',
   description:
     'Meet the CollabEdge Solutions team: senior consultants, NDIS specialists, and strategic advisors delivering consulting led by an active Support Coordinator across Australia.',

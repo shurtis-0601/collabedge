@@ -3,6 +3,7 @@ import { Mail, MessageCircle, Phone } from 'lucide-react'
 import FadeIn from '@/components/FadeIn'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/appt' },
   title: 'Book a Free Consultation | CollabEdge Solutions',
   description: 'Book a free 30-minute consultation with CollabEdge Solutions. Senior-led, no obligation.',
   openGraph: {

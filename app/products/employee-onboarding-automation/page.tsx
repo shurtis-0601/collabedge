@@ -8,6 +8,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/employee-onboarding-automation' },
   title: 'Employee Onboarding Automation | CollabEdge Solutions',
   description:
     'Automated staff compliance document filing and expiry tracking for NDIS providers. Built for Microsoft 365 and SharePoint.',

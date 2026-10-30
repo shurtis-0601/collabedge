@@ -8,6 +8,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import ProductTabs, { Product } from '@/components/products/ProductTabs'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products' },
   title: 'Products | CollabEdge Solutions',
   description:
     'Practical tools built by an active Support Coordinator. De-identification, staff compliance automation, and funding tracking, built for real caseloads.',

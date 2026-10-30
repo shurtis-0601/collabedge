@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/partner-solutions/newgen-consulting' },
   title: 'NewGen Consulting | CollabEdge Solutions',
   description:
     'NewGen Consulting, a Zoho specialist working with CollabEdge Solutions, delivers a pre-configured platform for NDIS and allied health providers.',

@@ -8,6 +8,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/digital' },
   title: 'Digital Services for Small Business | CollabEdge Solutions',
   description:
     'Websites, AI agents, CRM automation, and data analytics for NDIS providers and small businesses. Senior-led, practical, and cost-conscious.',

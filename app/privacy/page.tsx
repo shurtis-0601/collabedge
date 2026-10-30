@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import PageHero from '@/components/corporate/PageHero'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy' },
   title: 'Privacy Policy | CollabEdge Solutions',
   description:
     'Privacy Policy for CollabEdge Solutions, ABN 38 557 169 242. How we collect, use and protect your personal information.',

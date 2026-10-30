@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/magdalena-paczkowska' },
   title: 'Magdalena Paczkowska, NDIS Practitioner | CollabEdge Solutions',
   description:
     'Magdalena Paczkowska, Senior Support Coordinator and Early Intervention Key Worker, brings 25+ years across early childhood and special education.',

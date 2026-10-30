@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import AiAutomationHubClient from './AiAutomationHubClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/ai-automation' },
   title: 'AI and Automation Roadmap | CollabEdge Solutions',
   description:
     'Where our AI and automation roadmap is heading, covering NDIS automation on Microsoft 365 and Google Workspace, and a place to tell us what to automate.',

@@ -7,6 +7,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import Eyebrow from '@/components/ui/Eyebrow'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact Us | CollabEdge Solutions',
   description:
     'Get in touch with CollabEdge Solutions. Reach us by email, phone, or book a free 30-minute consultation with Sinclair Hurtis.',

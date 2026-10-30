@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import PageHero from '@/components/corporate/PageHero'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/terms' },
   title: 'Terms of Use | CollabEdge Solutions',
   description: 'Terms of Use for the CollabEdge Solutions website, collabedgesolutions.com.au',
   openGraph: {

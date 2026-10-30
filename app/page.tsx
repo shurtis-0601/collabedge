@@ -133,7 +133,7 @@ const homeFaqs: FAQ[] = [
   },
   {
     q: 'What are Managed Services?',
-    a: 'Managed Services is how I work with providers on an ongoing basis, instead of a string of separate projects. It brings compliance, document governance and workflow automation together, complemented by AI where it helps, so you stay audit ready through the year and always know where you stand. You can also start with a single project.',
+    a: 'Managed Services is ongoing NDIS compliance and operations support for providers, not plan management. It is how I work with you over time, instead of a string of separate projects, bringing compliance, document governance and workflow automation together, complemented by AI where it helps, so you stay audit ready through the year and always know where you stand. You can also start with a single project.',
   },
   {
     q: 'How do I keep participant data safe when using AI or cloud tools?',

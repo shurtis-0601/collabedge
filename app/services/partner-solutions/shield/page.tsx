@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/partner-solutions/shield' },
   title: 'SHIELD Voice Fraud Prevention | CollabEdge Solutions',
   description:
     'SHIELD by Sekunce blocks voice fraud, IRSF and CLI spoofing, in under 100ms per call. CollabEdge Solutions is the Australian and APAC delivery partner.',

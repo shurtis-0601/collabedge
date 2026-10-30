@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/raj-purshotham' },
   title: 'Raj Purshotham, Strategy and Growth Advisor | CollabEdge Solutions',
   description:
     'Raj Purshotham leads Strategy, Growth and International Advisory at CollabEdge Solutions, Dubai-based with nearly 10 years at Cisco.',

@@ -11,6 +11,7 @@ import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 import TestimonialCarousel from '@/components/sections/TestimonialCarousel'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/sinclair-hurtis' },
   title: 'Sinclair Hurtis, Founder | CollabEdge Solutions',
   description:
     'Sinclair Hurtis, CollabEdge Solutions founder, 30+ years across banks and telcos in APAC and Victorian Health. Sessional Academic, Monash University.',

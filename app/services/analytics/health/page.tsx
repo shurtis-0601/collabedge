@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import HealthPageClient from '@/components/analytics/health/HealthPageClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/analytics/health' },
   title: 'Data Analytics for Health and Care Providers | CollabEdge Solutions',
   description:
     'For NDIS, allied health and aged care operators wanting insight into workforce cost, client outcomes and performance, built from data you already have.',

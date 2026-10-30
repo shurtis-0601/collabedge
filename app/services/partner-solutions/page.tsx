@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/partner-solutions' },
   title: 'Partner Solutions | CollabEdge Solutions',
   description:
     'CollabEdge delivers enterprise technology through a curated bench of specialist partners, deployed only where the relationship on the ground is real.',

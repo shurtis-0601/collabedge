@@ -5,6 +5,7 @@ import CTASection from '@/components/ui/CTASection'
 import VideoEmbed from '@/components/VideoEmbed'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources/videos' },
   title: 'Video Walkthroughs | CollabEdge Solutions',
   description:
     'Real walkthroughs of the tools we use. MedPrivacy in action, and how NotebookLM builds NDIS Change of Circumstances reports.',

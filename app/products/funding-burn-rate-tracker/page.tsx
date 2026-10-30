@@ -7,6 +7,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/funding-burn-rate-tracker' },
   title: 'NDIS Funding and Burn Rate Tracker | CollabEdge Solutions',
   description:
     'Track NDIS participant funding and burn rate in your browser. Built by an active NDIS Support Coordinator.',

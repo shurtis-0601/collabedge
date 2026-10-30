@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/partner-solutions/dynamic-netsoft' },
   title: 'Dynamic Netsoft Technologies | CollabEdge Solutions',
   description:
     'Dynamic Netsoft Technologies, a Microsoft Dynamics 365 partner for real estate, construction, retail, and finance, coordinated by CollabEdge Solutions.',

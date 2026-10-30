@@ -10,6 +10,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies' },
   title: 'Case Studies | CollabEdge Solutions',
   description:
     'Real, documented client outcomes from CollabEdge Solutions. NDIS providers and Australian businesses, named organisations only, no anonymous claims.',

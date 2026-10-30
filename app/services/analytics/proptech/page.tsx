@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ProptechPageClient from '@/components/analytics/proptech/ProptechPageClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/analytics/proptech' },
   title: 'Data Analytics for Proptech | CollabEdge Solutions',
   description:
     'For property managers, mortgage brokers, builders and conveyancers wanting insight into portfolio risk, pipeline performance and compliance obligations.',

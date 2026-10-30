@@ -10,6 +10,7 @@ import { getPublishedArticles, formatDate, SERIES, REFORM_SERIES, Article } from
 export const revalidate = 3600
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources' },
   title: 'Resources | CollabEdge Solutions',
   description:
     'Practical articles and guides for NDIS providers and Australian small businesses. Productivity, compliance, data and AI, written by an active Support Coordinator.',

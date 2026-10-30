@@ -16,6 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!article) return {}
   return {
     title: article.title,
+    alternates: { canonical: `/resources/articles/${article.slug}` },
     description: article.description,
     openGraph: {
       title: article.title,

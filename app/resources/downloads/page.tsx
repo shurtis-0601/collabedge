@@ -6,6 +6,7 @@ import { IndustryPicker, IndustryGuidesSection, MoreOnTheWay } from '@/component
 import LeadMagnetSection, { LeadMagnetData } from '@/components/sections/LeadMagnetSection'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources/downloads' },
   title: 'Free Downloads | CollabEdge Solutions',
   description:
     'Plain English guides and tools for growing businesses, NDIS and healthcare providers. Industry guides for health, property, mortgage, retail and accounting, plus NDIS templates.',

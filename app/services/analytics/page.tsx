@@ -5,6 +5,7 @@ import CTASection from '@/components/ui/CTASection'
 import FAQAccordion, { FAQ } from '@/components/sections/FAQAccordion'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/analytics' },
   title: 'Data Analytics for SMEs | CollabEdge Solutions',
   description:
     'CollabEdge builds the reporting layer from data your business already has. Practical analytics for health providers, property businesses and retailers.',

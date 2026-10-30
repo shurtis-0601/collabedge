@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import RetailPageClient from '@/components/analytics/retail/RetailPageClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/analytics/retail' },
   title: 'Data Analytics for Retail | CollabEdge Solutions',
   description:
     'For physical retailers, omnichannel operators and specialty independents wanting insight into sales performance, margin efficiency and supply chain risk.',

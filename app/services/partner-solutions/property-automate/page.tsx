@@ -9,6 +9,7 @@ import FadeIn from '@/components/FadeIn'
 import GoldRuleAnimated from '@/components/ui/GoldRuleAnimated'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/partner-solutions/property-automate' },
   title: 'Property Automate | CollabEdge Solutions',
   description:
     'Property Automate, a connected platform for real estate, facilities, infrastructure, and workplace operations, coordinated by CollabEdge Solutions.',

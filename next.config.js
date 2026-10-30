@@ -91,6 +91,27 @@ const nextConfig = {
         destination: "/resources",
         permanent: true,
       },
+      // Old website paths that Google still reports as errors or duplicates
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/partners-new",
+        destination: "/services/partner-solutions",
+        permanent: true,
+      },
+      {
+        source: "/ndis/category/:path*",
+        destination: "/resources",
+        permanent: true,
+      },
+      {
+        source: "/blog/:path*",
+        destination: "/resources",
+        permanent: true,
+      },
       // Temporary campaign short links, destinations may change
       {
         source: "/go/data",
